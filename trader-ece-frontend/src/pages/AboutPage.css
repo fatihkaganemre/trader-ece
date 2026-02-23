@@ -1,0 +1,239 @@
+.about-page {}
+
+.page-hero {
+  position: relative;
+  padding: 100px 0 80px;
+  overflow: hidden;
+}
+
+.page-hero__bg {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 60% 80% at 80% 50%, rgba(0,200,150,0.06) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.about-bio-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.about-bio-visual {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+
+.bio-circle {
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  padding: 4px;
+  background: linear-gradient(135deg, var(--accent), transparent, var(--gold));
+}
+
+.bio-circle__inner {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: var(--navy-light);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.bio-years {
+  font-family: var(--font-display);
+  font-size: 64px;
+  font-weight: 900;
+  color: var(--accent);
+  line-height: 1;
+}
+
+.bio-years-label {
+  font-size: 13px;
+  color: var(--gray);
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.bio-badges {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.bio-badge {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 20px;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--gray);
+}
+
+.bio-badge span {
+  font-size: 18px;
+}
+
+.about-text {
+  font-size: 16px;
+  color: var(--gray);
+  line-height: 1.75;
+  margin-bottom: 16px;
+}
+
+.about-text strong {
+  color: var(--white);
+}
+
+/* HFM About Section */
+.hfm-about-section {
+  background: rgba(255,255,255,0.02);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.hfm-feature-card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.hfm-feature-card h3 {
+  font-family: var(--font-display);
+  font-size: 18px;
+  color: var(--white);
+}
+
+.hfm-feature-card p {
+  font-size: 14px;
+  color: var(--gray);
+  line-height: 1.65;
+}
+
+.feature-icon-lg {
+  font-size: 32px;
+}
+
+/* Timeline */
+.timeline-section {
+  overflow: hidden;
+}
+
+.timeline {
+  position: relative;
+  margin-top: 60px;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, var(--accent), transparent);
+  transform: translateX(-50%);
+}
+
+.timeline-item {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 40px 1fr;
+  gap: 24px;
+  align-items: start;
+  margin-bottom: 48px;
+}
+
+.timeline-item.left .timeline-year { grid-column: 1; text-align: right; order: 1; }
+.timeline-item.left .timeline-dot { grid-column: 2; order: 2; }
+.timeline-item.left .timeline-card { grid-column: 3; order: 3; }
+
+.timeline-item.right .timeline-year { grid-column: 3; text-align: left; order: 3; }
+.timeline-item.right .timeline-dot { grid-column: 2; order: 2; }
+.timeline-item.right .timeline-card { grid-column: 1; order: 1; }
+
+.timeline-year {
+  font-family: var(--font-display);
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--accent);
+  padding-top: 8px;
+}
+
+.timeline-dot {
+  width: 16px;
+  height: 16px;
+  background: var(--accent);
+  border-radius: 50%;
+  border: 3px solid var(--navy);
+  box-shadow: 0 0 12px rgba(0,200,150,0.4);
+  margin: 12px auto 0;
+  flex-shrink: 0;
+}
+
+.timeline-card {
+  padding: 24px;
+}
+
+.timeline-card h3 {
+  font-family: var(--font-display);
+  font-size: 18px;
+  color: var(--white);
+  margin-bottom: 8px;
+}
+
+.timeline-card p {
+  font-size: 14px;
+  color: var(--gray);
+  line-height: 1.65;
+}
+
+@media (max-width: 768px) {
+  .about-bio-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .timeline::before { left: 20px; }
+
+  .timeline-item {
+    grid-template-columns: 40px 1fr;
+    grid-template-rows: auto auto;
+    gap: 12px;
+  }
+
+  .timeline-item.left .timeline-year,
+  .timeline-item.right .timeline-year {
+    grid-column: 2;
+    grid-row: 1;
+    order: 2;
+    text-align: left;
+    font-size: 22px;
+  }
+
+  .timeline-item.left .timeline-dot,
+  .timeline-item.right .timeline-dot {
+    grid-column: 1;
+    grid-row: 1;
+    order: 1;
+  }
+
+  .timeline-item.left .timeline-card,
+  .timeline-item.right .timeline-card {
+    grid-column: 2;
+    grid-row: 2;
+    order: 3;
+  }
+}
