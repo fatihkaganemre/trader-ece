@@ -1,0 +1,28 @@
+.hero {
+  @apply min-h-screen flex items-center justify-center text-center;
+  background: radial-gradient(circle at top, #1B2229, #0F1419);
+}
+
+.hero h1 {
+  @apply text-4xl md:text-6xl font-bold mb-6;
+}
+
+.hero p {
+  @apply text-textMuted mb-8 text-lg;
+}
+
+.primary-btn {
+  @apply bg-primary text-black px-6 py-3 rounded-xl shadow-glow font-semibold transition;
+}
+
+.primary-btn:hover {
+  @apply scale-105;
+}
+
+.secondary-btn {
+  @apply border border-primary text-primary px-6 py-3 rounded-xl ml-4 transition;
+}
+
+.secondary-btn:hover {
+  @apply bg-primary text-black;
+}

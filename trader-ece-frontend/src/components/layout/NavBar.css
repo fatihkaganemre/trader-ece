@@ -1,0 +1,23 @@
+.navbar {
+  @apply fixed w-full backdrop-blur-lg bg-black/40 z-50;
+}
+
+.navbar-container {
+  @apply flex justify-between items-center px-8 py-4;
+}
+
+.logo {
+  width: 40px;
+}
+
+.brand {
+  @apply text-xl font-bold ml-2;
+}
+
+.brand span {
+  @apply text-primary;
+}
+
+.nav-links a {
+  @apply ml-6 text-textMuted hover:text-primary transition duration-300;
+}

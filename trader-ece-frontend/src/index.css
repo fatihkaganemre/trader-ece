@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-darkBg text-white font-sans;
+}
+
+.section-padding {
+  @apply py-20 px-6 md:px-16;
+}
