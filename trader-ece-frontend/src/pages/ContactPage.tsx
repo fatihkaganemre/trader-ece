@@ -134,7 +134,7 @@ export default function ContactPage() {
                     <p>IB bağlantımız üzerinden resmi HFM hesabınızı açın</p>
                   </div>
                 </div>
-                <a href="https://www.hfm.com" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
+                <a href="https://register.hfm-trade.com/sv/en/new-live-account/?refid=365189&acid=h4ywf710tx" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
                   HFM'e Git →
                 </a>
               </div>
