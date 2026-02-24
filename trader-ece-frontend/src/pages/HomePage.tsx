@@ -147,7 +147,7 @@ export default function HomePage({ navigate }: HomePageProps) {
             Atın
           </h1>
           <p className="hero__subtitle">
-            15+ yıllık piyasa deneyimi ile HFM güvencesinde. Regüle edilmiş
+            15+ yıllık piyasa deneyimi ile HFM ortaklığında. Regüle edilmiş
             ortamda hesap açılışı ve sinyal grupları. Yatırım danışmanlığı
             verilmemektedir.
           </p>

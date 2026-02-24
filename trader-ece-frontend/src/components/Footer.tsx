@@ -46,7 +46,7 @@ export default function Footer({ navigate }: FooterProps) {
             </div>
             <p className="footer__desc">
               HFM (HF Markets) resmi Introducing Broker (IB) ve affiliate
-              ortağı olarak hizmet vermekteyiz. Forex sinyalleri sunmaktayız.
+              ortağı olarak hizmet vermekteyiz. Piyasa analiz içerikleri bilgilendirme amaçlı olarak paylaşılmaktadır.
               Yatırım danışmanlığı veya portföy yönetimi hizmeti
               verilmemektedir.
             </p>

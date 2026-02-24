@@ -64,6 +64,7 @@ export default function Header({ currentPage, navigate }: HeaderProps) {
           ))}
           <button
             className="btn btn-primary btn-sm"
+            style={{ marginLeft: "20px" }}
             onClick={() => { navigate("contact"); setMenuOpen(false); }}
           >
             İletişime Geç

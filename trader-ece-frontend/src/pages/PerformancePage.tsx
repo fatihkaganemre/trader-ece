@@ -114,7 +114,7 @@ export default function PerformancePage({ navigate }: PerformancePageProps) {
           <h1 className="section-title" style={{ fontSize: "clamp(40px, 6vw, 64px)" }}>
             Rakamlarla
             <br />
-            <span className="highlight">Kanıtlanmış Deneyim</span>
+            <span className="highlight">Geçmiş Deneyim</span>
           </h1>
           <p className="section-subtitle" style={{ fontSize: 18 }}>
             15+ yıllık piyasa pratiğimiz ve HFM üzerinden takip edilen hacimler.
