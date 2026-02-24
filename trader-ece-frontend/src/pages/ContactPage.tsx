@@ -54,7 +54,7 @@ const channels: ContactChannel[] = [
     icon: telegramIcon,
   },
   {
-    href: "https://wa.me/",
+    href: "https://wa.link/yy3thb",
     color: "#25d366",
     title: "WhatsApp",
     subtitle: "WhatsApp üzerinden mesaj gönder",
