@@ -38,17 +38,17 @@ const emailIcon = (
 
 const channels: ContactChannel[] = [
   {
-    href: "https://t.me/",
+    href: "https://t.me/bullexardav",
     color: "#0088cc",
-    title: "Telegram Grubum",
+    title: "Bullex Telegram",
     subtitle: "Sinyal ve analiz kanalına katıl",
     linkLabel: "t.me/kanalınız →",
     icon: telegramIcon,
   },
   {
-    href: "https://t.me/",
+    href: "https://t.me/tradereceteam",
     color: "#0088cc",
-    title: "Telegram Grubu (Eş)",
+    title: "Trader Ece Telegram",
     subtitle: "İkinci kanal için buraya tıkla",
     linkLabel: "t.me/ikincikanal →",
     icon: telegramIcon,
