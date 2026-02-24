@@ -115,7 +115,7 @@ export default function ServicesPage({ navigate }: ServicesPageProps) {
       <section className="page-hero">
         <div className="page-hero__bg" />
         <div className="container">
-          <div className="section-tag" style={{ marginTop: 150 }}>Hizmetlerimiz</div>
+          <div className="section-tag">Hizmetlerimiz</div>
           <h1 className="section-title" style={{ fontSize: "clamp(40px, 6vw, 64px)" }}>
             Sunduklarımız
           </h1>

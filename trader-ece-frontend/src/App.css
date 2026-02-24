@@ -51,6 +51,7 @@ main { flex: 1; }
   text-transform: uppercase;
   color: var(--accent);
   margin-bottom: 16px;
+  margin-top: 150px;
 }
 
 .section-tag::before {
@@ -143,6 +144,7 @@ main { flex: 1; }
 
 @media (max-width: 768px) {
   .section { padding: 64px 0; }
+  .section-tag { margin-top: 40px; }
   .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; }
 }
 

@@ -90,7 +90,7 @@ export default function ContactPage() {
       <section className="page-hero">
         <div className="page-hero__bg" />
         <div className="container">
-          <div className="section-tag" style={{ marginTop: 150 }}>İletişim</div>
+          <div className="section-tag">İletişim</div>
           <h1 className="section-title" style={{ fontSize: "clamp(40px, 6vw, 64px)" }}>
             Bize Ulaşın
           </h1>
