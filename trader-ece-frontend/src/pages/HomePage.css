@@ -374,6 +374,13 @@
   flex-shrink: 0;
   flex-wrap: wrap;
 }
+  
+
+@media (max-width: 1400px) {
+  .hero__badge {
+    margin-top: 250px;
+  }
+}
 
 @media (max-width: 768px) {
   .stats-grid {

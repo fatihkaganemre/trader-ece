@@ -18,6 +18,12 @@
   margin-bottom: 20px;
 }
 
+.footer_logo_group {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
 .footer__logo .logo-mark {
   width: 42px;
   height: 42px;
@@ -46,6 +52,12 @@
 
 .footer__logo .logo-trader { color: var(--white); }
 .footer__logo .logo-ece { color: var(--accent); }
+.footer__logo .logo-bullex { 
+  background: linear-gradient(135deg, #00d4e8 0%, #a050dc 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+ }
 
 .footer__logo .logo-sub {
   font-size: 10px;
@@ -62,7 +74,6 @@
   border-radius: 50%;
   padding: 2px;
   background: linear-gradient(135deg, var(--silver-light), #606878, var(--silver-light));
-  box-shadow: 0 0 10px rgba(0, 212, 232, 0.2);
   flex-shrink: 0;
   overflow: hidden;
 }

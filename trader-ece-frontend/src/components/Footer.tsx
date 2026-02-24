@@ -19,17 +19,30 @@ export default function Footer({ navigate }: FooterProps) {
       <div className="container">
         <div className="footer__top">
           <div className="footer__brand">
-            <div className="footer__logo">
-              <div className="footer-logo-img-wrap">
-                <img src="/traderEceLogo.jpeg" alt="Trader ECE" className="footer-logo-img" />
-              </div>
-              <div className="logo-text">
-                <span className="logo-brand">
-                  <span className="logo-trader">TRADER</span>
-                  <span className="logo-ece"> ECE</span>
-                </span>
-                <span className="logo-sub">HFM IB &amp; Affiliate</span>
-              </div>
+            <div className="footer_logo_group">
+                <div className="footer__logo">
+                  <div className="footer-logo-img-wrap">
+                    <img src="/traderEceLogo.png" alt="Trader ECE" className="footer-logo-img" />
+                  </div>
+                  <div className="logo-text">
+                    <span className="logo-brand">
+                      <span className="logo-trader">TRADER</span>
+                      <span className="logo-ece"> ECE</span>
+                    </span>
+                    <span className="logo-sub">HFM IB &amp; Affiliate</span>
+                  </div>
+                </div>
+                <div className="footer__logo">
+                  <div className="footer-logo-img-wrap">
+                    <img src="/bullexLogo.png" alt="Trader ECE" className="footer-logo-img" />
+                  </div>
+                  <div className="logo-text">
+                    <span className="logo-brand">
+                      <span className="logo-bullex">BULLEX</span>
+                    </span>
+                    <span className="logo-sub">SINYAL KANALI</span>
+                  </div>
+                </div>
             </div>
             <p className="footer__desc">
               HFM (HF Markets) resmi Introducing Broker (IB) ve affiliate
