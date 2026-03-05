@@ -39,7 +39,7 @@
 .header__inner {
   display: flex;
   align-items: center;
-  height: 200px;
+  height: 150px;
   width: 100%;
 }
 
@@ -83,14 +83,14 @@
 /* ── LOGO IMAGES ── */
 .logo-img {
   display: block;
-  object-fit: contain;
+  object-fit: fill;
   flex-shrink: 0;
   transition: transform 0.3s ease, filter 0.3s ease;
 }
 
 .logo-img--left {
-  width: 180px;
-  height: 180px;
+  width: 130px;
+  height: 130px;
   filter: drop-shadow(0 0 8px rgba(0, 212, 232, 0.15));
 }
 
@@ -100,8 +100,8 @@
 }
 
 .logo-img--right {
-  width: 180px;
-  height: 180px;
+  width: 130px;
+  height: 130px;
   filter: drop-shadow(0 0 8px rgba(140, 60, 200, 0.15));
 }
 

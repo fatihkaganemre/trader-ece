@@ -18,6 +18,9 @@
   --font-display: 'Playfair Display', serif;
   --font-body: 'DM Sans', sans-serif;
   --transition: 0.3s cubic-bezier(0.4,0,0.2,1);
+
+  /* Header height as a CSS variable — single source of truth */
+  --header-h: 150px;
 }
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -34,7 +37,11 @@ body {
 
 .app { min-height: 100vh; display: flex; flex-direction: column; }
 
-main { flex: 1; }
+/* main is pushed down by exactly the header height */
+main {
+  flex: 1;
+  padding-top: var(--header-h);
+}
 
 /* Utilities */
 .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
@@ -51,7 +58,7 @@ main { flex: 1; }
   text-transform: uppercase;
   color: var(--accent);
   margin-bottom: 16px;
-  margin-top: 150px;
+  /* NO margin-top here — page heroes handle their own top spacing */
 }
 
 .section-tag::before {
@@ -137,18 +144,6 @@ main { flex: 1; }
 .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
 .grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
 
-@media (max-width: 1024px) {
-  .grid-4 { grid-template-columns: repeat(2, 1fr); }
-  .grid-3 { grid-template-columns: repeat(2, 1fr); }
-  .section-tag { margin-top: 100px; }
-}
-
-@media (max-width: 768px) {
-  .section { padding: 64px 0; }
-  .section-tag { margin-top: 40px; }
-  .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; }
-}
-
 /* Decorative elements */
 .glow {
   position: absolute;
@@ -173,11 +168,34 @@ main { flex: 1; }
   50% { opacity: 0.6; }
 }
 
-.animate-fade-up {
-  animation: fadeUp 0.7s ease forwards;
-}
-
+.animate-fade-up { animation: fadeUp 0.7s ease forwards; }
 .animate-delay-1 { animation-delay: 0.1s; }
 .animate-delay-2 { animation-delay: 0.2s; }
 .animate-delay-3 { animation-delay: 0.3s; }
 .animate-delay-4 { animation-delay: 0.4s; }
+
+/* ── RESPONSIVE ── */
+/* Header shrinks at these breakpoints — main padding must match */
+@media (max-width: 1200px) {
+  :root { --header-h: 150px; }
+}
+
+@media (max-width: 960px) {
+  :root { --header-h: 130px; }
+}
+
+@media (max-width: 768px) {
+  :root { --header-h: 110px; }
+  .section { padding: 64px 0; }
+  .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 480px) {
+  :root { --header-h: 84px; }
+  .grid-4 { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 1024px) {
+  .grid-4 { grid-template-columns: repeat(2, 1fr); }
+  .grid-3 { grid-template-columns: repeat(2, 1fr); }
+}
