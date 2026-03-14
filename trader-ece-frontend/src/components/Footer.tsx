@@ -62,9 +62,8 @@ export default function Footer({ navigate }: FooterProps) {
             <div className="footer__col">
               <h4>Yasal</h4>
               <a href="https://www.hfm.com" target="_blank" rel="noopener noreferrer">HFM Resmi Site</a>
-              <a href="https://www.hfm.com/regulation" target="_blank" rel="noopener noreferrer">HFM Regülasyon</a>
+              <a href="https://www.hfeu.com/en/about/regulatory-environment" target="_blank" rel="noopener noreferrer">HFM Regülasyon</a>
               <a href="https://www.spk.gov.tr" target="_blank" rel="noopener noreferrer">SPK</a>
-              <button onClick={() => navigate("contact")}>İletişim</button>
             </div>
           </div>
         </div>

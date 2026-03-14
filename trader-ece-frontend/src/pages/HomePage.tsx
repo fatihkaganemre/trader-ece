@@ -124,9 +124,31 @@ const hfmFeatures: string[] = [
 
 const regAuthorities: string[] = ["FCA", "CySEC", "DFSA", "FSC"];
 
+function TickerTape() {
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "https://widgets.tradingview-widget.com/w/en/tv-ticker-tape.js";
+    script.type = "module";
+    script.async = true;
+    document.head.appendChild(script);
+    return () => {
+      document.head.removeChild(script);
+    };
+  }, []);
+
+  return (
+    <div className="ticker-tape">
+      {/* @ts-ignore */}
+      <tv-ticker-tape symbols="FOREXCOM:SPXUSD,FOREXCOM:NSXUSD,FOREXCOM:DJI,FX:EURUSD,BITSTAMP:BTCUSD,BITSTAMP:ETHUSD,CMCMARKETS:GOLD" />
+    </div>
+  );
+}
+
 export default function HomePage({ navigate }: HomePageProps) {
   return (
     <div className="home">
+      <TickerTape />
+      
       {/* Hero */}
       <section className="hero">
         <div className="hero__bg">
