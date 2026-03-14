@@ -7,7 +7,6 @@ const router = express.Router();
 
 router.post("/", async (req, res) => {
   const { name, email, title, message } = req.body;
-  console.log("Received contact form submission:", { name, email, title, message });
 
   try {
     const transporter = nodemailer.createTransport({
