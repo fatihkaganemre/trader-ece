@@ -76,18 +76,16 @@ export default function Header({ currentPage, navigate }: HeaderProps) {
 
         {/* RIGHT — Bullex + hamburger */}
         <div className="header__actions">
-          <a
-            href="https://t.me/"
-            target="_blank"
-            rel="noopener noreferrer"
+          <div
             className="header__logo-right"
+            onClick={() => navigate("home")}
           >
             <div className="logo-text logo-text--right">
               <span className="bullex-name">BULLEX</span>
               <span className="logo-sub logo-sub--right">Sinyal Kanalı</span>
             </div>
             <img src="/bullexLogo.png" alt="Bullex" className="logo-img logo-img--right" />
-          </a>
+          </div>
           <button
             className={`hamburger ${menuOpen ? "open" : ""}`}
             onClick={() => setMenuOpen(!menuOpen)}
