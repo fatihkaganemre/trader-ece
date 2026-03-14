@@ -9,25 +9,24 @@ import contactRoutes from "./routes/contact.js";
 
 const app = express();
 const PORT = process.env.PORT || 5060;
-// const allowedOrigins = [
-//   'http://localhost:3000',
-//   'https://trader-ece.com',
-//   'http://localhost:5173', // add this
-//   'https://www.trader-ece.com'
-// ];
+const allowedOrigins = [
+  'http://localhost:5173',
+  'https://trader-ece.vercel.app',
+  'https://trader-ece.com',
+  'https://www.trader-ece.com'
+];
 dotenv.config();
 
-// app.use(cors({
-//   origin: (origin, callback) => {
-//     if (!origin) return callback(null, true); // allow Postman / server requests
-//     if (allowedOrigins.includes(origin) || /^https:\/\/([a-z0-9-]+\.)?trader-ece\.com$/.test(origin)) {
-//       return callback(null, true);
-//     }
-//     return callback(new Error("Not allowed by CORS"));
-//   },
-//   credentials: true,
-// }));
-app.use(cors());
+app.use(cors({
+  origin: (origin, callback) => {
+    if (!origin) return callback(null, true); // allow Postman / server requests
+    if (allowedOrigins.includes(origin) || /^https:\/\/([a-z0-9-]+\.)?trader-ece\.com$/.test(origin)) {
+      return callback(null, true);
+    }
+    return callback(new Error("Not allowed by CORS"));
+  },
+  credentials: true,
+}));
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true })); // <--- needed for passport-local
