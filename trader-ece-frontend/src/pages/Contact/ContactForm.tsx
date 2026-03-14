@@ -10,7 +10,7 @@ export default function ContactForm() {
         <h3>Mesajınız İletildi!</h3>
         <p>En kısa sürede size geri dönüş yapacağız. Telegram grubuna da katılabilirsiniz.</p>
         <a
-          href="https://t.me/"
+          href="https://t.me/tradereceteam"
           target="_blank"
           rel="noopener noreferrer"
           className="btn btn-primary"
