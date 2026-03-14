@@ -5,7 +5,7 @@ import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import ServicesPage from "./pages/ServicesPage";
 import PerformancePage from "./pages/PerformancePage";
-import ContactPage from "./pages/ContactPage";
+import ContactPage from "./pages/Contact/ContactPage";
 import "./App.css";
 
 export type Page = "home" | "about" | "services" | "performance" | "contact";

@@ -1,12 +1,5 @@
-import { useState, ChangeEvent, FormEvent } from "react";
 import "./ContactPage.css";
-
-interface FormState {
-  name: string;
-  email: string;
-  topic: string;
-  message: string;
-}
+import ContactForm from "./ContactForm";
 
 interface ContactChannel {
   href: string;
@@ -72,18 +65,6 @@ const channels: ContactChannel[] = [
 ];
 
 export default function ContactPage() {
-  const [form, setForm] = useState<FormState>({ name: "", email: "", topic: "", message: "" });
-  const [submitted, setSubmitted] = useState<boolean>(false);
-
-  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    setSubmitted(true);
-  };
-
-  const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
-    setForm({ ...form, [e.target.name]: e.target.value });
-  };
-
   return (
     <div className="contact-page">
       {/* Hero */}
@@ -142,84 +123,7 @@ export default function ContactPage() {
 
             {/* Contact Form */}
             <div className="contact-form-wrap">
-              {!submitted ? (
-                <div className="card contact-form-card">
-                  <h3>Mesaj Gönder</h3>
-                  <p className="form-subtitle">
-                    HFM hesabı, platform veya analiz içerikleri hakkında sorularınızı gönderin.
-                  </p>
-                  <form onSubmit={handleSubmit} className="contact-form">
-                    <div className="form-group">
-                      <label>Ad Soyad *</label>
-                      <input
-                        type="text"
-                        name="name"
-                        value={form.name}
-                        onChange={handleChange}
-                        required
-                        placeholder="Adınız Soyadınız"
-                        className="form-input"
-                      />
-                    </div>
-                    <div className="form-group">
-                      <label>E-posta *</label>
-                      <input
-                        type="email"
-                        name="email"
-                        value={form.email}
-                        onChange={handleChange}
-                        required
-                        placeholder="ornek@email.com"
-                        className="form-input"
-                      />
-                    </div>
-                    <div className="form-group">
-                      <label>Konu</label>
-                      <select name="topic" value={form.topic} onChange={handleChange} className="form-input">
-                        <option value="">Konu Seçin</option>
-                        <option value="hesap">HFM Hesap Açılışı</option>
-                        <option value="telegram">Telegram Grubu</option>
-                        <option value="platform">Platform Desteği</option>
-                        <option value="diger">Diğer</option>
-                      </select>
-                    </div>
-                    <div className="form-group">
-                      <label>Mesajınız *</label>
-                      <textarea
-                        name="message"
-                        value={form.message}
-                        onChange={handleChange}
-                        required
-                        placeholder="Mesajınızı buraya yazın..."
-                        className="form-input form-textarea"
-                        rows={5}
-                      />
-                    </div>
-                    <div className="form-disclaimer">
-                      Bu form yatırım danışmanlığı talebi için kullanılamaz.
-                      Yalnızca HFM hesap desteği ve bilgilendirme amaçlıdır.
-                    </div>
-                    <button type="submit" className="btn btn-primary" style={{ width: "100%", justifyContent: "center" }}>
-                      Mesaj Gönder
-                    </button>
-                  </form>
-                </div>
-              ) : (
-                <div className="card contact-success">
-                  <div className="success-icon">✓</div>
-                  <h3>Mesajınız İletildi!</h3>
-                  <p>En kısa sürede size geri dönüş yapacağız. Telegram grubuna da katılabilirsiniz.</p>
-                  <a
-                    href="https://t.me/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="btn btn-primary"
-                    style={{ marginTop: 16 }}
-                  >
-                    Telegram Grubuna Katıl
-                  </a>
-                </div>
-              )}
+              <ContactForm />
             </div>
           </div>
         </div>
