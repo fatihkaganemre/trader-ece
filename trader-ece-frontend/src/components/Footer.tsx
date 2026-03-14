@@ -63,7 +63,6 @@ export default function Footer({ navigate }: FooterProps) {
               <h4>Yasal</h4>
               <a href="https://www.hfm.com" target="_blank" rel="noopener noreferrer">HFM Resmi Site</a>
               <a href="https://www.hfeu.com/en/about/regulatory-environment" target="_blank" rel="noopener noreferrer">HFM Regülasyon</a>
-              <a href="https://www.spk.gov.tr" target="_blank" rel="noopener noreferrer">SPK</a>
             </div>
           </div>
         </div>
