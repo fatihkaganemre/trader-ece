@@ -1,0 +1,43 @@
+.testimonials-track-wrapper {
+  overflow: hidden;
+  margin-top: 48px;
+  /* Fade edges */
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 10%,
+    black 90%,
+    transparent 100%
+  );
+  mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 10%,
+    black 90%,
+    transparent 100%
+  );
+}
+
+.testimonials-track {
+  display: flex;
+  gap: 24px;
+  width: max-content;
+  animation: scroll-left 60s linear infinite;
+}
+
+.testimonials-track:hover {
+  animation-play-state: paused;
+}
+
+.testimonials-track .testimonial-card {
+  width: 340px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+@keyframes scroll-left {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}

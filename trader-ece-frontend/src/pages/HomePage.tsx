@@ -1,6 +1,8 @@
 import { useEffect, useRef, useState } from "react";
 import "./HomePage.css";
 import type { NavigateFn } from "../App";
+import TickerTape from "./TickerTape";
+import Testimonals from "./Testimonals/Testimonals";
 
 interface HomePageProps {
   navigate: NavigateFn;
@@ -102,19 +104,6 @@ const stats: StatItem[] = [
   { label: "HFM Ortaklığı (Yıl)", value: 4, suffix: "+" },
 ];
 
-const testimonials: Testimonial[] = [
-  {
-    name: "Ahmet K.",
-    text: "HFM hesabımı bu sayede açtım. Platform desteği ve analizler için teşekkürler.",
-    role: "Trader",
-  },
-  {
-    name: "Zeynep M.",
-    text: "Telegram grubundaki analizler piyasayı takip etmemi kolaylaştırdı. Kaliteli içerik.",
-    role: "Yatırımcı",
-  },
-];
-
 const hfmFeatures: string[] = [
   "Uluslararası regülasyon (FCA, CySEC, DFSA ve daha fazlası)",
   "Hızlı para çekme işlemleri",
@@ -124,31 +113,11 @@ const hfmFeatures: string[] = [
 
 const regAuthorities: string[] = ["FCA", "CySEC", "DFSA", "FSC"];
 
-function TickerTape() {
-  useEffect(() => {
-    const script = document.createElement("script");
-    script.src = "https://widgets.tradingview-widget.com/w/en/tv-ticker-tape.js";
-    script.type = "module";
-    script.async = true;
-    document.head.appendChild(script);
-    return () => {
-      document.head.removeChild(script);
-    };
-  }, []);
-
-  return (
-    <div className="ticker-tape">
-      {/* @ts-ignore */}
-      <tv-ticker-tape symbols="FOREXCOM:SPXUSD,FOREXCOM:NSXUSD,FOREXCOM:DJI,FX:EURUSD,BITSTAMP:BTCUSD,BITSTAMP:ETHUSD,CMCMARKETS:GOLD" />
-    </div>
-  );
-}
-
 export default function HomePage({ navigate }: HomePageProps) {
   return (
     <div className="home">
       <TickerTape />
-      
+
       {/* Hero */}
       <section className="hero">
         <div className="hero__bg">
@@ -295,25 +264,7 @@ export default function HomePage({ navigate }: HomePageProps) {
 
       {/* Testimonials */}
       <section className="section testimonials-section">
-        <div className="container">
-          <div className="section-tag">Kullanıcı Görüşleri</div>
-          <h2 className="section-title">Ne Diyorlar?</h2>
-          <div className="grid-2" style={{ marginTop: 48 }}>
-            {testimonials.map((t, i) => (
-              <div key={i} className="card testimonial-card">
-                <div className="testimonial-stars">★★★★★</div>
-                <p className="testimonial-text">"{t.text}"</p>
-                <div className="testimonial-author">
-                  <div className="author-avatar">{t.name[0]}</div>
-                  <div>
-                    <strong>{t.name}</strong>
-                    <span>{t.role}</span>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
+          <Testimonals/>
       </section>
 
       {/* CTA Banner */}
