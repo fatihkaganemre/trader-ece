@@ -1,0 +1,455 @@
+{
+  "nav": {
+    "home": "Ana Sayfa",
+    "about": "Hakkımızda",
+    "services": "Hizmetler",
+    "performance": "Performans",
+    "contact": "İletişim",
+    "menu": "Menü"
+  },
+  "header": {
+    "brand": "TRADER ECE",
+    "subtitle": "TICKMILL IB & Affiliate",
+    "bullex": "BULLEX",
+    "bullexSubtitle": "Sinyal Kanalı"
+  },
+  "footer": {
+    "pages": "Sayfalar",
+    "legal": "Yasal",
+    "links": {
+      "hfmOfficial": "TICKMILL Resmi Site",
+      "hfmRegulation": "TICKMILL Regülasyon"
+    },
+    "riskWarning": "Risk Uyarısı:",
+    "riskDisclaimer": "Forex ve CFD işlemleri yüksek risk içermektedir. Yatırımlarınızın tamamını kaybedebilirsiniz. Bu site, yatırım tavsiyesi veya portföy yönetimi hizmeti sunmamaktadır. Buradaki içerikler yalnızca bilgilendirme amaçlıdır. TICKMILL resmi IB/affiliate ortağı sıfatıyla hizmet verilmektedir. Lütfen yatırım kararlarınızı vermeden önce bağımsız finansal danışmanınıza başvurunuz. Geçmiş performans gelecekteki sonuçların garantisi değildir.",
+    "partnerDesc": "TICKMILL resmi Introducing Broker (IB) ve affiliate ortağı olarak hizmet vermekteyiz. Piyasa analiz içerikleri bilgilendirme amaçlı olarak paylaşılmaktadır. Yatırım danışmanlığı veya portföy yönetimi hizmeti verilmemektedir.",
+    "copyright": "© {{year}} Trader ECE – TICKMILL IB & Affiliate. Tüm hakları saklıdır.",
+    "regulation": "TICKMILL tarafından regüle edilmiş ortamda faaliyet gösterilmektedir.",
+    "bullexSubtitle": "SINYAL KANALI"
+  },
+  "home": {
+    "badge": "TRADER ECE – TICKMILL Resmi IB & Affiliate Partner",
+    "hero": {
+      "title1": "Forex Piyasalarında",
+      "title2": "Bilinçli Adımlar",
+      "subtitle": "15+ yıllık piyasa deneyimi ile TICKMILL ortaklığında. Regüle edilmiş ortamda hesap açılışı ve sinyal grupları. Yatırım danışmanlığı verilmemektedir."
+    },
+    "buttons": {
+      "telegramTraderEce": "Trader Ece Telegram Grubuna Katıl",
+      "telegramBullex": "Bullex Telegram Grubuna Katıl",
+      "info": "Bilgi Al"
+    },
+    "trust": {
+      "title": "Regüle Edilmiş Broker",
+      "item1": "15+ Yıl Deneyim",
+      "item2": "7M$ Aktif Hacim"
+    },
+    "services": {
+      "tag": "Hizmetlerimiz",
+      "title": "Neler Sunuyoruz?",
+      "subtitle": "TICKMILL IB ortağı olarak hesap desteği ve bilgilendirme hizmetleri. Tüm içerikler bilgilendirme amaçlıdır.",
+      "viewAll": "Tüm Hizmetleri Gör →",
+      "cards": [
+        {
+          "icon": "📡",
+          "title": "Telegram & WhatsApp Grupları",
+          "desc": "Özel sinyal gruplarımız aracılığıyla gerçek zamanlı piyasa analizleri ve bültenler. Yatırım tavsiyesi niteliği taşımaz."
+        },
+        {
+          "icon": "🏦",
+          "title": "TICKMILL IB Ortaklığı",
+          "desc": "TICKMILL resmi Introducing Broker ortağı olarak hesap açılışı ve platform desteği sağlıyoruz."
+        },
+        {
+          "icon": "🛡️",
+          "title": "Regüle Edilmiş Ortam",
+          "desc": "TICKMILL, birden fazla uluslararası otorite tarafından regüle edilmiş küresel bir broker'dır."
+        },
+        {
+          "icon": "📊",
+          "title": "Piyasa Analizleri",
+          "desc": "Teknik ve temel analiz içerikleri. Tüm içerikler bilgilendirme amaçlıdır, yatırım tavsiyesi değildir."
+        }
+      ]
+    },
+    "stats": {
+      "experience": "Yıl Deneyim",
+      "volume": "Aktif Hacim ($)",
+      "withdrawals": "Çekim Hacmi ($)",
+      "partnership": "TICKMILL Ortaklığı (Yıl)"
+    },
+    "hfmTrust": {
+      "tag": "Neden TICKMILL?",
+      "title": "Küresel & Regüle Bir Broker",
+      "desc": "TICKMILL, uluslararası finansal piyasalarda faaliyet gösteren ve birden fazla uluslararası finansal otorite tarafından regüle edilmiş küresel bir forex ve CFD brokerıdır. Hızlı çekim süreleri ve güvenilir altyapısı ile tanınmaktadır.",
+      "features": [
+        "Uluslararası regülasyon (FCA, CySEC, DFSA ve daha fazlası)",
+        "Hızlı para çekme işlemleri",
+        "Geniş işlem araçları yelpazesi",
+        "Güvenli müşteri fonu ayrımı"
+      ],
+      "moreLink": "TICKMILL Hakkında Daha Fazla →"
+    },
+    "hfmBadge": {
+      "text": "TICKMILL",
+      "tagline": "Global Broker",
+      "desc": "Regüle Edilmiş Broker"
+    },
+    "regulators": {
+      "fca": "FCA",
+      "cysec": "CySEC",
+      "dfsa": "DFSA",
+      "fsc": "FSC"
+    },
+    "cta": {
+      "title": "TICKMILL Hesabı Açmak İster misiniz?",
+      "subtitle": "Destek ve bilgilendirme için bizimle iletişime geçin.",
+      "telegramBtn": "Telegram'dan Ulaş",
+      "formBtn": "İletişim Formu"
+    }
+  },
+  "performance": {
+    "tag": "Performans & Rakamlar",
+    "hero": {
+      "title1": "Rakamlarla",
+      "title2": "Geçmiş Deneyim",
+      "subtitle": "15+ yıllık piyasa pratiğimiz ve TICKMILL üzerinden takip edilen hacimler. Geçmiş veriler gelecek performansı garanti etmez."
+    },
+    "metrics": [
+      {
+        "value": "15",
+        "suffix": "+",
+        "label": "Yıl Piyasa Deneyimi",
+        "note": "2009'dan bu yana aktif",
+        "prefix": ""
+      },
+      {
+        "value": "7",
+        "suffix": "M+",
+        "prefix": "$",
+        "label": "Aktif Hacim",
+        "note": "IB üzerinden takip edilen toplam hacim"
+      },
+      {
+        "value": "4.6",
+        "suffix": "M+",
+        "prefix": "$",
+        "label": "Çekim Hacmi",
+        "note": "TICKMILL kanalıyla gerçekleşen çekimler"
+      },
+      {
+        "value": "4",
+        "suffix": "+",
+        "label": "TICKMILL Ortaklık Yılı",
+        "note": "Resmi IB ortaklığı",
+        "prefix": ""
+      }
+    ],
+    "disclaimer": "⚠️ Önemli Not:",
+    "disclaimerText": "Yukarıdaki rakamlar yalnızca bilgilendirme amaçlıdır ve geçmiş verileri yansıtmaktadır. Bu rakamlar gelecekteki performans veya getiriyi garanti etmez. Forex işlemleri yüksek risk içermekte olup yatırım yapmadan önce bağımsız finansal danışmana başvurulması tavsiye edilir.",
+    "process": {
+      "tag": "Süreç",
+      "title": "Nasıl Çalışıyoruz?",
+      "subtitle": "TICKMILL IB ortağı olarak yürüttüğümüz faaliyetler.",
+      "steps": [
+        {
+          "number": "01",
+          "title": "TICKMILL Hesap Desteği",
+          "desc": "Kullanıcılar TICKMILL üzerinden hesap açarken rehberlik sağlıyoruz. Hesap kontrolü tamamen kullanıcıdadır."
+        },
+        {
+          "number": "02",
+          "title": "İçerik Paylaşımı",
+          "desc": "Telegram ve WhatsApp gruplarında piyasa analiz içerikleri paylaşılır. Bunlar yatırım tavsiyesi değildir."
+        },
+        {
+          "number": "03",
+          "title": "Destek",
+          "desc": "Platform kullanımı ve TICKMILL süreçleri hakkında teknik destek sağlanır."
+        }
+      ]
+    },
+    "hfmPartnership": {
+      "tag": "TICKMILL Ortaklığı",
+      "title": "Neden TICKMILL?",
+      "desc1": "TICKMILL, birden fazla uluslararası düzenleyici kurum tarafından lisanslanmış küresel bir broker'dır. IB ortağı olarak yalnızca TICKMILL üzerinden hesap açılışı süreçlerine aracılık ediyor ve bilgilendirme sunuyoruz.",
+      "desc2": "Fon yönetimi, portföy yönetimi veya bireysel yatırım danışmanlığı yapılmamaktadır.",
+      "regulationLink": "TICKMILL Regülasyon Bilgisi →",
+      "authorities": {
+        "fca": "Financial Conduct Authority",
+        "cysec": "Cyprus Securities & Exchange",
+        "dfsa": "Dubai Financial Services",
+        "fsc": "Financial Services Commission"
+      }
+    },
+    "cta": {
+      "title": "TICKMILL Hesabı Açmak İster misiniz?",
+      "subtitle": "IB ortağı olarak hesap sürecinizde yardımcı olalım.",
+      "button": "İletişime Geç"
+    }
+  },
+  "about": {
+    "tag": "Hakkımızda",
+    "hero": {
+      "title1": "Kim Olduğumuzu",
+      "title2": "Tanıyın",
+      "subtitle": "15+ yıllık piyasa deneyimi, 4+ yıllık TICKMILL ortaklığı. TICKMILL resmi IB/Affiliate sıfatıyla hizmet vermekteyiz."
+    },
+    "experience": "15+",
+    "experienceLabel": "Yıl Deneyim",
+    "badges": [
+      "TICKMILL Resmi IB Ortağı",
+      "Aktif Sinyal Toplulukları",
+      "Regüle Edilmiş Ortam"
+    ],
+    "biography": {
+      "tag": "Biyografi",
+      "title": "Deneyim ve Güven",
+      "p1": "2009 yılından bu yana Forex piyasalarında aktif olarak bulunmaktayım. Yıllar içinde teknik analiz, temel analiz ve piyasa psikolojisi konularında derinlemesine bilgi birikimine ulaştım.",
+      "p2": "2021 yılından itibaren TICKMILL ile resmi Introducing Broker (IB) ve affiliate ortağı olarak çalışmaktayım. Bu sıfatla; TICKMILL hesap açılışı süreçlerinde destek, platform bilgilendirmesi ve piyasa analiz içerikleri sunmaktayım.",
+      "note": "Önemli Not:",
+      "p3": "Sunulan içerikler ve analizler yatırım tavsiyesi, portföy yönetimi veya bireysel yatırım danışmanlığı niteliği taşımamaktadır. Yalnızca bilgilendirme amaçlıdır.",
+      "button": "İletişime Geç"
+    },
+    "hfmPartnership": {
+      "tag": "Neden TICKMILL?",
+      "title": "TICKMILL ile Ortaklık",
+      "subtitle": "TICKMILL, küresel çapta güvenilir ve regüle edilmiş bir forex brokerıdır. IB ortağı olarak size bu güvenilir altyapıyı sunuyoruz.",
+      "features": [
+        {
+          "icon": "🌍",
+          "title": "Global Regülasyon",
+          "desc": "FCA, CySEC, DFSA, FSC ve daha fazlası tarafından regüle edilmiştir. Güvenilir kurumsal altyapı."
+        },
+        {
+          "icon": "⚡",
+          "title": "Hızlı Çekimler",
+          "desc": "TICKMILL'in hızlı para çekme süreleri ile fonlarınıza hızla erişebilirsiniz."
+        },
+        {
+          "icon": "📱",
+          "title": "Güçlü Platform",
+          "desc": "MT4, MT5 ve TICKMILL'e özel platformlar. Mobil ve masaüstü uyumlu."
+        },
+        {
+          "icon": "🔒",
+          "title": "Fon Güvenliği",
+          "desc": "Müşteri fonları ayrı hesaplarda tutulur. Düzenleyici kurumların denetimine tabidir."
+        },
+        {
+          "icon": "📊",
+          "title": "Geniş Araç Yelpazesi",
+          "desc": "Forex, altın, endeksler, hisseler ve daha fazlası. Tek bir platformda."
+        },
+        {
+          "icon": "🎓",
+          "title": "Eğitim Kaynakları",
+          "desc": "TICKMILL'in resmi eğitim içerikleri ve piyasa araştırmaları."
+        }
+      ]
+    },
+    "timeline": {
+      "tag": "Tarihçemiz",
+      "title": "Yolculuğumuz",
+      "items": [
+        {
+          "year": "2009",
+          "title": "Forex Yolculuğu Başlıyor",
+          "desc": "Forex piyasalarına adım atıldı. Teknik ve temel analiz üzerine yoğun çalışma dönemi."
+        },
+        {
+          "year": "2013",
+          "title": "İlk Profesyonel Adımlar",
+          "desc": "Sinyal grupları kuruldu. Piyasa analizleri paylaşılmaya başlandı. Topluluk büyüdü."
+        },
+        {
+          "year": "2018",
+          "title": "Kurumsal Ortaklıklar",
+          "desc": "Uluslararası broker ortaklıkları kuruldu. IB faaliyetleri başladı."
+        },
+        {
+          "year": "2021",
+          "title": "TICKMILL IB Ortaklığı",
+          "desc": "TICKMILL ile resmi Introducing Broker ortaklığı başladı. Regüle ortama geçiş."
+        },
+        {
+          "year": "2025",
+          "title": "Bugün",
+          "desc": "7M+ dolar aktif işlem hacmi, binlerce kullanıcıya TICKMILL hesap desteği ve piyasa analiz içerikleri."
+        }
+      ]
+    }
+  },
+  "services": {
+    "tag": "Hizmetlerimiz",
+    "title": "Sunduklarımız",
+    "subtitle": "TICKMILL IB ortağı olarak hesap desteği ve piyasa bilgilendirme içerikleri. Yatırım tavsiyesi verilmemektedir.",
+    "cards": [
+      {
+        "icon": "📡",
+        "title": "Telegram & WhatsApp Sinyal Grupları",
+        "desc": "Özel sinyal gruplarımızda günlük ve haftalık piyasa analizleri, bültenler paylaşılmaktadır. Tüm içerikler bilgilendirme amaçlıdır; yatırım tavsiyesi veya bireysel danışmanlık niteliği taşımaz.",
+        "features": [
+          "Günlük teknik analiz bültenleri",
+          "Önemli ekonomik takvim takibi",
+          "Piyasa haberleri ve yorumları",
+          "Gerçek zamanlı bildirimler"
+        ],
+        "disclaimer": "Bu içerikler yatırım tavsiyesi değildir. Kararlarınızı kendiniz alın."
+      },
+      {
+        "icon": "🏦",
+        "title": "TICKMILL Hesap Açılış Desteği",
+        "desc": "TICKMILL resmi IB ortağı olarak, TICKMILL üzerinden hesap açılış sürecinizde rehberlik ve destek sunuyoruz. Hesap yönetimi veya fon yönetimi hizmeti verilmemektedir.",
+        "features": [
+          "TICKMILL hesap açılış rehberliği",
+          "Platform (MT4/MT5) kurulum desteği",
+          "Hesap tipi seçiminde bilgilendirme",
+          "Para yatırma/çekme süreç desteği"
+        ],
+        "disclaimer": "Hesabınız tamamen sizin kontrolünüzdedir. Fon yönetimi yapılmamaktadır."
+      },
+      {
+        "icon": "📊",
+        "title": "Piyasa Analiz İçerikleri",
+        "desc": "Teknik ve temel analiz içerikleri hazırlanarak bilgilendirme amacıyla paylaşılmaktadır. Bu içerikler alım/satım kararlarında tek başına kullanılmamalıdır.",
+        "features": [
+          "Teknik analiz grafik paylaşımları",
+          "Temel analiz özetleri",
+          "Destek/direnç seviyeleri",
+          "Ekonomik veri takibi"
+        ],
+        "disclaimer": "Analizler geçmiş verilere dayalıdır; gelecek sonuçları garanti etmez."
+      }
+    ],
+    "advantages": {
+      "tag": "Avantajlar",
+      "title": "Neden Bizi Seçmelisiniz?",
+      "cards": [
+        {
+          "icon": "🛡️",
+          "title": "Regüle Ortam",
+          "desc": "TICKMILL'in uluslararası regüle altyapısı"
+        },
+        {
+          "icon": "⚡",
+          "title": "Hızlı Çekimler",
+          "desc": "TICKMILL'in tanınan çekim hızı"
+        },
+        {
+          "icon": "🌍",
+          "title": "Global Erişim",
+          "desc": "Dünyanın her yerinden erişilebilir"
+        },
+        {
+          "icon": "📞",
+          "title": "Destek",
+          "desc": "Telegram ve e-posta ile hızlı yanıt"
+        }
+      ]
+    },
+    "packages": {
+      "tag": "Paketler",
+      "title": "İçerik Paketleri",
+      "subtitle": "Bilgilendirme ve analiz içeriklerine erişim paketleri.",
+      "free": {
+        "name": "Ücretsiz",
+        "price": "0",
+        "desc": "Başlangıç için temel bilgilendirme içerikleri",
+        "features": [
+          "Genel piyasa haberleri",
+          "Haftalık analiz özeti",
+          "TICKMILL hesap açılış desteği",
+          "Platform bilgilendirmesi"
+        ],
+        "cta": "Başla"
+      },
+      "premium": {
+        "name": "Premium",
+        "price": "İletişime Geçin",
+        "desc": "Kapsamlı bilgilendirme içerikleri ve öncelikli destek",
+        "badge": "Önerilen",
+        "features": [
+          "Günlük analiz bültenleri",
+          "Özel Telegram grubu erişimi",
+          "Öncelikli platform desteği",
+          "Ekonomik takvim bildirimleri",
+          "Aylık piyasa raporu"
+        ],
+        "cta": "Bilgi Al"
+      },
+      "note": "* Tüm içerikler bilgilendirme amaçlıdır. Yatırım tavsiyesi, portföy yönetimi veya bireysel danışmanlık hizmeti verilmemektedir. Forex işlemleri yüksek risk içerir."
+    }
+  },
+  "contact": {
+    "tag": "İletişim",
+    "title": "Bize Ulaşın",
+    "subtitle": "TICKMILL hesap açılışı, platform desteği ve bilgilendirme için bizimle iletişime geçin.",
+    "channels": {
+      "tag": "İletişim Kanalları",
+      "title": "Nasıl Ulaşırsınız?",
+      "items": [
+        {
+          "icon": "💬",
+          "title": "Bullex Telegram",
+          "desc": "Sinyal ve analiz kanalına katıl",
+          "link": "t.me/channel →"
+        },
+        {
+          "icon": "💬",
+          "title": "Trader Ece Telegram",
+          "desc": "İkinci kanal için buraya tıkla",
+          "link": "t.me/channel2 →"
+        },
+        {
+          "icon": "💬",
+          "title": "WhatsApp",
+          "desc": "WhatsApp üzerinden mesaj gönder",
+          "link": "wa.me/number →"
+        },
+        {
+          "icon": "✉️",
+          "title": "E-posta",
+          "desc": "Detaylı sorularınız için",
+          "link": "info@example.com →"
+        }
+      ]
+    },
+    "hfm": {
+      "logo": "TICKMILL",
+      "title": "TICKMILL'de Hesap Aç",
+      "desc": "IB bağlantımız üzerinden resmi TICKMILL hesabınızı açın",
+      "link": "TICKMILL'e Git →"
+    }
+  },
+  "form": {
+    "success": {
+      "title": "Mesajınız İletildi!",
+      "msg": "En kısa sürede size geri dönüş yapacağız. Telegram grubuna da katılabilirsiniz.",
+      "button": "Telegram Grubuna Katıl"
+    },
+    "card": {
+      "title": "Mesaj Gönder",
+      "subtitle": "TICKMILL hesabı, platform veya analiz içerikleri hakkında sorularınızı gönderin."
+    },
+    "fields": {
+      "name": "Ad Soyad *",
+      "namePlaceholder": "Adınız Soyadınız",
+      "email": "E-posta *",
+      "emailPlaceholder": "ornek@email.com",
+      "subject": "Konu",
+      "subjectDefault": "Konu Seçin",
+      "subjectOptions": [
+        "TICKMILL Hesap Açılışı",
+        "Telegram Grubu",
+        "Platform Desteği",
+        "Diğer"
+      ],
+      "message": "Mesajınız *",
+      "messagePlaceholder": "Mesajınızı buraya yazın..."
+    },
+    "disclaimer": "Bu form yatırım danışmanlığı talebi için kullanılamaz. Yalnızca TICKMILL hesap desteği ve bilgilendirme amaçlıdır.",
+    "submit": "Mesaj Gönder",
+    "submitting": "Gönderiliyor..."
+  }
+}

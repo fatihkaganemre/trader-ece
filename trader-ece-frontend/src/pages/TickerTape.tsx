@@ -15,7 +15,7 @@ export default function TickerTape() {
   return (
     <div className="ticker-tape">
       {/* @ts-ignore */}
-      <tv-ticker-tape symbols="FOREXCOM:SPXUSD,FOREXCOM:NSXUSD,FOREXCOM:DJI,FX:EURUSD,BITSTAMP:BTCUSD,BITSTAMP:ETHUSD,CMCMARKETS:GOLD" />
+      <tv-ticker-tape symbols="TICKMILL:USTEC,TICKMILL:US30,TICKMILL:XAUUSD,TICKMILL:EURUSD,TICKMILL:USDJPY,TICKMILL:DE40,TICKMILL:XAGUSD,TICKMILL:BTCUSD,TICKMILL:ETHUSD" theme="dark"/>
     </div>
   );
 }

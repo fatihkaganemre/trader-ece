@@ -67,7 +67,7 @@
   gap: 16px;
   cursor: pointer;
   flex-shrink: 0;
-  padding-left: 16px;
+  padding-left: 50px;
 }
 
 /* ── RIGHT — Bullex link wrapper ── */
@@ -77,7 +77,7 @@
   gap: 16px;
   text-decoration: none;
   flex-shrink: 0;
-  padding-right: 16px;
+  padding-right: 50px;
 }
 
 /* ── LOGO IMAGES ── */
@@ -294,4 +294,91 @@
   .logo-img--left, .logo-img--right { width: 76px; height: 76px; }
   .logo-text, .logo-text--right { display: none; }
   .header__nav { top: 84px; }
+}
+/* ── LANGUAGE SELECTOR ── */
+.language-selector {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.lang-btn {
+  background: linear-gradient(135deg, rgba(0, 212, 232, 0.1) 0%, rgba(160, 80, 220, 0.1) 100%);
+  border: 1px solid rgba(0, 212, 232, 0.3);
+  color: #00d4e8;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.lang-btn:hover {
+  background: linear-gradient(135deg, rgba(0, 212, 232, 0.2) 0%, rgba(160, 80, 220, 0.2) 100%);
+  border-color: rgba(0, 212, 232, 0.6);
+  box-shadow: 0 0 12px rgba(0, 212, 232, 0.3);
+}
+
+.lang-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  margin-top: 8px;
+  background: rgba(13, 14, 18, 0.98);
+  border: 1px solid rgba(0, 212, 232, 0.3);
+  border-radius: 8px;
+  overflow: hidden;
+  z-index: 1001;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 8px 32px rgba(0, 212, 232, 0.1);
+}
+
+.lang-option {
+  display: block;
+  width: 100%;
+  padding: 12px 18px;
+  background: none;
+  border: none;
+  color: #ccc;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-align: left;
+}
+
+.lang-option:hover {
+  background: rgba(0, 212, 232, 0.1);
+  color: #00d4e8;
+}
+
+.lang-option.active {
+  background: rgba(0, 212, 232, 0.2);
+  color: #00d4e8;
+}
+
+@media (max-width: 768px) {
+  .language-selector {
+    margin-right: 12px;
+  }
+
+  .lang-btn {
+    padding: 6px 10px;
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 480px) {
+  .language-selector {
+    margin-right: 8px;
+  }
+
+  .lang-btn {
+    padding: 5px 8px;
+    font-size: 10px;
+  }
 }

@@ -1,0 +1,455 @@
+{
+  "nav": {
+    "home": "Trang Chủ",
+    "about": "Giới Thiệu",
+    "services": "Dịch Vụ",
+    "performance": "Hiệu Suất",
+    "contact": "Liên Hệ",
+    "menu": "Trình Đơn"
+  },
+  "header": {
+    "brand": "TRADER ECE",
+    "subtitle": "HFM IB & Affiliate",
+    "bullex": "BULLEX",
+    "bullexSubtitle": "Signal Channel"
+  },
+  "footer": {
+    "pages": "Trang",
+    "legal": "Pháp Lý",
+    "links": {
+      "hfmOfficial": "Trang Web Chính Thức HFM",
+      "hfmRegulation": "Quy Định HFM"
+    },
+    "riskWarning": "Cảnh Báo Rủi Ro:",
+    "riskDisclaimer": "Giao dịch forex và CFD liên quan đến rủi ro cao. Bạn có thể mất toàn bộ khoản đầu tư. Trang web này không cung cấp tư vấn đầu tư hoặc dịch vụ quản lý danh mục đầu tư. Nội dung ở đây chỉ dùng cho mục đích thông tin. Chúng tôi hoạt động với tư cách là đối tác Nhà môi giới Giới thiệu (IB) / đối tác liên kết chính thức. Vui lòng tham khảo một顾問tài chính độc lập trước khi đưa ra quyết định đầu tư. Hiệu suất quá khứ không đảm bảo kết quả trong tương lai.",
+    "partnerDesc": "Chúng tôi hoạt động với tư cách là đối tác Nhà môi giới Giới thiệu (IB) và đối tác liên kết chính thức. Nội dung phân tích thị trường được chia sẻ chỉ dùng cho mục đích thông tin. Chúng tôi không cung cấp tư vấn đầu tư hoặc dịch vụ quản lý danh mục đầu tư.",
+    "copyright": "© {{year}} Trader ECE – HFM IB & Liên Kết. Bảo lưu mọi quyền.",
+    "regulation": "Hoạt động trong môi trường được quản lý bởi HF Markets Group.",
+    "bullexSubtitle": "SIGNAL CHANNEL"
+  },
+  "home": {
+    "badge": "TRADER ECE – Đối Tác IB & Liên Kết Chính Thức HFM",
+    "hero": {
+      "title1": "Các Bước Thông Tin Đi Vào",
+      "title2": "Thị Trường Forex",
+      "subtitle": "15+ năm kinh nghiệm thị trường với kemitraan HFM. Mở tài khoản trong môi trường được quản lý và các nhóm tín hiệu. Không cung cấp tư vấn đầu tư."
+    },
+    "buttons": {
+      "telegramTraderEce": "Tham Gia Nhóm Telegram Trader Ece",
+      "telegramBullex": "Tham Gia Nhóm Telegram Bullex",
+      "info": "Nhận Thông Tin"
+    },
+    "trust": {
+      "title": "Nhà Môi Giới Được Quản Lý",
+      "item1": "15+ Năm Kinh Nghiệm",
+      "item2": "Khối Lượng Hoạt Động 7 Triệu USD"
+    },
+    "services": {
+      "tag": "Dịch Vụ",
+      "title": "Chúng Tôi Cung Cấp Gì?",
+      "subtitle": "Hỗ trợ tài khoản với tư cách đối tác HFM IB và dịch vụ thông tin. Tất cả nội dung chỉ dùng cho mục đích thông tin.",
+      "viewAll": "Xem Tất Cả Dịch Vụ →",
+      "cards": [
+        {
+          "icon": "📡",
+          "title": "Nhóm Telegram & WhatsApp",
+          "desc": "Phân tích thị trường thời gian thực và bản tin thông qua các nhóm tín hiệu đặc biệt của chúng tôi. Không phải tư vấn đầu tư."
+        },
+        {
+          "icon": "🏦",
+          "title": "Kemitraan HFM IB",
+          "desc": "Với tư cách là đối tác Nhà môi giới Giới thiệu chính thức, chúng tôi cung cấp hỗ trợ mở tài khoản và hỗ trợ nền tảng."
+        },
+        {
+          "icon": "🛡️",
+          "title": "Môi Trường Được Quản Lý",
+          "desc": "HFM là nhà môi giới toàn cầu được quản lý bởi nhiều cơ quan tài chính quốc tế."
+        },
+        {
+          "icon": "📊",
+          "title": "Phân Tích Thị Trường",
+          "desc": "Nội dung phân tích kỹ thuật và cơ bản. Tất cả nội dung chỉ dùng cho thông tin, không phải tư vấn đầu tư."
+        }
+      ]
+    },
+    "stats": {
+      "experience": "Năm Kinh Nghiệm",
+      "volume": "Khối Lượng Hoạt Động ($)",
+      "withdrawals": "Khối Lượng Rút Tiền ($)",
+      "partnership": "Kemitraan HFM (Năm)"
+    },
+    "hfmTrust": {
+      "tag": "Tại Sao HFM?",
+      "title": "Nhà Môi Giới Toàn Cầu & Được Quản Lý",
+      "desc": "HFM (HF Markets) là nhà môi giới forex và CFD toàn cầu hoạt động kể từ năm 2010, được quản lý bởi nhiều cơ quan tài chính quốc tế. Được biết đến với thời gian rút tiền nhanh và cơ sở hạ tầng đáng tin cậy.",
+      "features": [
+        "Quy định quốc tế (FCA, CySEC, DFSA và hơn nữa)",
+        "Xử lý rút tiền nhanh",
+        "Phạm vi rộng các công cụ giao dịch",
+        "Tách biệt quỹ khách hàng an toàn"
+      ],
+      "moreLink": "Tìm Hiểu Thêm Về HFM →"
+    },
+    "hfmBadge": {
+      "text": "HFM",
+      "tagline": "HF Markets Group",
+      "desc": "Nhà Môi Giới Được Quản Lý"
+    },
+    "regulators": {
+      "fca": "FCA",
+      "cysec": "CySEC",
+      "dfsa": "DFSA",
+      "fsc": "FSC"
+    },
+    "cta": {
+      "title": "Muốn Mở Tài Khoản HFM?",
+      "subtitle": "Liên hệ với chúng tôi để được hỗ trợ và thông tin.",
+      "telegramBtn": "Liên Hệ Qua Telegram",
+      "formBtn": "Mẫu Liên Hệ"
+    }
+  },
+  "performance": {
+    "tag": "Hiệu Suất & Số Liệu",
+    "hero": {
+      "title1": "Thông Qua",
+      "title2": "Kinh Nghiệm Quá Khứ",
+      "subtitle": "15+ năm thực hành thị trường và khối lượng được theo dõi qua HFM. Dữ liệu quá khứ không đảm bảo hiệu suất trong tương lai."
+    },
+    "metrics": [
+      {
+        "value": "15",
+        "suffix": "+",
+        "label": "Năm Kinh Nghiệm Thị Trường",
+        "note": "Hoạt động kể từ năm 2009",
+        "prefix": ""
+      },
+      {
+        "value": "7",
+        "suffix": "M+",
+        "prefix": "$",
+        "label": "Khối Lượng Hoạt Động",
+        "note": "Tổng khối lượng được theo dõi qua IB"
+      },
+      {
+        "value": "4.6",
+        "suffix": "M+",
+        "prefix": "$",
+        "label": "Khối Lượng Rút Tiền",
+        "note": "Rút tiền thông qua kênh HFM"
+      },
+      {
+        "value": "4",
+        "suffix": "+",
+        "label": "Năm Kemitraan HFM",
+        "note": "Kemitraan IB chính thức",
+        "prefix": ""
+      }
+    ],
+    "disclaimer": "⚠️ Lưu Ý Quan Trọng:",
+    "disclaimerText": "Các số liệu trên chỉ dùng cho mục đích thông tin và phản ánh dữ liệu quá khứ. Các con số này không đảm bảo hiệu suất hoặc lợi nhuận trong tương lai. Giao dịch forex liên quan đến rủi ro cao, và nên tham khảo một顾問tài chính độc lập trước khi đầu tư.",
+    "process": {
+      "tag": "Quá Trình",
+      "title": "Chúng Tôi Hoạt Động Như Thế Nào?",
+      "subtitle": "Các hoạt động chúng tôi thực hiện với tư cách là đối tác HFM IB.",
+      "steps": [
+        {
+          "number": "01",
+          "title": "Hỗ Trợ Tài Khoản HFM",
+          "desc": "Chúng tôi cung cấp hướng dẫn khi người dùng mở tài khoản thông qua HFM. Kiểm soát tài khoản hoàn toàn ở tay người dùng."
+        },
+        {
+          "number": "02",
+          "title": "Chia Sẻ Nội Dung",
+          "desc": "Nội dung phân tích thị trường được chia sẻ trong các nhóm Telegram và WhatsApp. Đây không phải tư vấn đầu tư."
+        },
+        {
+          "number": "03",
+          "title": "Hỗ Trợ",
+          "desc": "Cung cấp hỗ trợ kỹ thuật cho việc sử dụng nền tảng và các quy trình HFM."
+        }
+      ]
+    },
+    "hfmPartnership": {
+      "tag": "Kemitraan HFM",
+      "title": "Tại Sao HFM?",
+      "desc1": "HFM (HF Markets) là nhà môi giới toàn cầu được cấp phép bởi nhiều cơ quan quản lý quốc tế. Với tư cách đối tác IB, chúng tôi chỉ hỗ trợ các quy trình mở tài khoản thông qua HFM và cung cấp hỗ trợ thông tin.",
+      "desc2": "Không cung cấp quản lý quỹ, quản lý danh mục đầu tư hoặc tư vấn đầu tư cá nhân.",
+      "regulationLink": "Thông Tin Quy Định HFM →",
+      "authorities": {
+        "fca": "Financial Conduct Authority",
+        "cysec": "Cyprus Securities & Exchange",
+        "dfsa": "Dubai Financial Services",
+        "fsc": "Financial Services Commission"
+      }
+    },
+    "cta": {
+      "title": "Muốn Mở Tài Khoản HFM?",
+      "subtitle": "Để chúng tôi giúp bạn với quy trình tài khoản với tư cách đối tác IB.",
+      "button": "Liên Hệ Với Chúng Tôi"
+    }
+  },
+  "about": {
+    "tag": "Giới Thiệu",
+    "hero": {
+      "title1": "Tìm Hiểu",
+      "title2": "Chúng Tôi Là Ai",
+      "subtitle": "15+ năm kinh nghiệm thị trường, 4+ năm kemitraan HFM. Chúng tôi hoạt động với tư cách là đối tác HFM IB/Liên kết chính thức."
+    },
+    "experience": "15+",
+    "experienceLabel": "Năm Kinh Nghiệm",
+    "badges": [
+      "HFM Official IB Partner",
+      "Active Signal Communities",
+      "Regulated Environment"
+    ],
+    "biography": {
+      "tag": "Tiểu Sử",
+      "title": "Kinh Nghiệm và Niềm Tin",
+      "p1": "Kể từ năm 2009, tôi đã tích cực tham gia vào thị trường Forex. Qua các năm, tôi đã tích lũy kiến thức chuyên sâu về phân tích kỹ thuật, phân tích cơ bản và tâm lý thị trường.",
+      "p2": "Kể từ năm 2021, tôi đã làm việc với tư cách là đối tác Nhà môi giới Giới thiệu (IB) và liên kết chính thức với HFM (HF Markets). Trong vai trò này, tôi cung cấp hỗ trợ trong quá trình mở tài khoản HFM, thông tin nền tảng và nội dung phân tích thị trường.",
+      "note": "Lưu Ý Quan Trọng:",
+      "p3": "Nội dung và phân tích được cung cấp không cấu thành tư vấn đầu tư, quản lý danh mục đầu tư hoặc tư vấn đầu tư cá nhân. Chỉ dùng cho mục đích thông tin.",
+      "button": "Liên Hệ Với Chúng Tôi"
+    },
+    "hfmPartnership": {
+      "tag": "Tại Sao HFM?",
+      "title": "Kemitraan HFM",
+      "subtitle": "HFM là một nhà môi giới forex toàn cầu đáng tin cậy và được quản lý. Với tư cách đối tác IB, chúng tôi cung cấp cho bạn cơ sở hạ tầng đáng tin cậy này.",
+      "features": [
+        {
+          "icon": "🌍",
+          "title": "Quy Định Toàn Cầu",
+          "desc": "Được quản lý bởi FCA, CySEC, DFSA, FSC và những người khác. Cơ sở hạ tầng thể chế đáng tin cậy."
+        },
+        {
+          "icon": "⚡",
+          "title": "Rút Tiền Nhanh",
+          "desc": "Với thời gian rút tiền nhanh của HFM, truy cập vào tiền của bạn nhanh chóng."
+        },
+        {
+          "icon": "📱",
+          "title": "Nền Tảng Mạnh Mẽ",
+          "desc": "MT4, MT5 và các nền tảng cụ thể của HFM. Tương thích di động và máy tính để bàn."
+        },
+        {
+          "icon": "🔒",
+          "title": "Bảo Mật Quỹ",
+          "desc": "Tiền của khách hàng được giữ trong các tài khoản riêng biệt. Tuân theo giám sát quy định."
+        },
+        {
+          "icon": "📊",
+          "title": "Phạm Vi Rộng Các Công Cụ",
+          "desc": "Forex, vàng, chỉ số, chứng chỉ và hơn nữa. Tất cả trên một nền tảng."
+        },
+        {
+          "icon": "🎓",
+          "title": "Tài Nguyên Giáo Dục",
+          "desc": "Nội dung giáo dục chính thức của HFM và nghiên cứu thị trường."
+        }
+      ]
+    },
+    "timeline": {
+      "tag": "Dòng Thời Gian",
+      "title": "Hành Trình Của Chúng Tôi",
+      "items": [
+        {
+          "year": "2009",
+          "title": "Hành Trình Forex Bắt Đầu",
+          "desc": "Bước vào thị trường Forex. Giai đoạn học tập chuyên sâu về phân tích kỹ thuật và cơ bản."
+        },
+        {
+          "year": "2013",
+          "title": "Các Bước Chuyên Nghiệp Đầu Tiên",
+          "desc": "Các nhóm tín hiệu được thành lập. Bắt đầu chia sẻ phân tích thị trường. Cộng đồng phát triển."
+        },
+        {
+          "year": "2018",
+          "title": "Kemitraan Công Ty",
+          "desc": "Thiết lập kemitraan nhà môi giới quốc tế. Các hoạt động IB bắt đầu."
+        },
+        {
+          "year": "2021",
+          "title": "Kemitraan HFM IB",
+          "desc": "Kemitraan Nhà môi giới Giới thiệu chính thức với HFM (HF Markets) bắt đầu. Chuyển đổi sang môi trường được quản lý."
+        },
+        {
+          "year": "2025",
+          "title": "Hôm Nay",
+          "desc": "Khối lượng giao dịch hoạt động 7M+ USD, hỗ trợ tài khoản cho hàng ngàn người dùng và nội dung phân tích thị trường."
+        }
+      ]
+    }
+  },
+  "services": {
+    "tag": "Dịch Vụ",
+    "title": "Chúng Tôi Cung Cấp Gì",
+    "subtitle": "Hỗ trợ tài khoản với tư cách đối tác HFM IB và nội dung thông tin thị trường. Không cung cấp tư vấn đầu tư.",
+    "cards": [
+      {
+        "icon": "📡",
+        "title": "Nhóm Tín Hiệu Telegram & WhatsApp",
+        "desc": "Phân tích thị trường hàng ngày và hàng tuần, các bản tin được chia sẻ trong các nhóm tín hiệu đặc biệt của chúng tôi. Tất cả nội dung chỉ dùng cho thông tin; không phải tư vấn đầu tư hoặc tư vấn cá nhân.",
+        "features": [
+          "Bản tin phân tích kỹ thuật hàng ngày",
+          "Theo dõi lịch kinh tế quan trọng",
+          "Tin tức và nhận xét thị trường",
+          "Thông báo thời gian thực"
+        ],
+        "disclaimer": "Nội dung này không phải tư vấn đầu tư. Hãy đưa ra quyết định của riêng bạn."
+      },
+      {
+        "icon": "🏦",
+        "title": "Hỗ Trợ Mở Tài Khoản HFM",
+        "desc": "Với tư cách đối tác HFM IB chính thức, chúng tôi cung cấp hướng dẫn và hỗ trợ trong quá trình mở tài khoản HFM. Dịch vụ quản lý tài khoản hoặc quản lý quỹ không được cung cấp.",
+        "features": [
+          "Hướng dẫn mở tài khoản HFM",
+          "Hỗ trợ thiết lập nền tảng (MT4/MT5)",
+          "Thông tin lựa chọn loại tài khoản",
+          "Hỗ trợ quy trình gửi/rút tiền"
+        ],
+        "disclaimer": "Tài khoản của bạn hoàn toàn trong tay bạn. Không cung cấp quản lý quỹ."
+      },
+      {
+        "icon": "📊",
+        "title": "Nội Dung Phân Tích Thị Trường",
+        "desc": "Nội dung phân tích kỹ thuật và cơ bản được chuẩn bị và chia sẻ cho mục đích thông tin. Nội dung này không nên được sử dụng một mình trong các quyết định mua/bán.",
+        "features": [
+          "Chia sẻ biểu đồ phân tích kỹ thuật",
+          "Tóm tắt phân tích cơ bản",
+          "Mức hỗ trợ/kháng cự",
+          "Theo dõi dữ liệu kinh tế"
+        ],
+        "disclaimer": "Phân tích dựa trên dữ liệu quá khứ; không đảm bảo kết quả trong tương lai."
+      }
+    ],
+    "advantages": {
+      "tag": "Lợi Thế",
+      "title": "Tại Sao Chọn Chúng Tôi?",
+      "cards": [
+        {
+          "icon": "🛡️",
+          "title": "Môi Trường Được Quản Lý",
+          "desc": "Cơ sở hạ tầng được quản lý quốc tế của HFM"
+        },
+        {
+          "icon": "⚡",
+          "title": "Rút Tiền Nhanh",
+          "desc": "Tốc độ rút tiền được công nhận của HFM"
+        },
+        {
+          "icon": "🌍",
+          "title": "Truy Cập Toàn Cầu",
+          "desc": "Có thể truy cập từ bất kỳ nơi nào trên thế giới"
+        },
+        {
+          "icon": "📞",
+          "title": "Hỗ Trợ",
+          "desc": "Phản ứng nhanh qua Telegram và email"
+        }
+      ]
+    },
+    "packages": {
+      "tag": "Gói",
+      "title": "Gói Nội Dung",
+      "subtitle": "Truy cập các gói nội dung phân tích và thông tin.",
+      "free": {
+        "name": "Miễn Phí",
+        "price": "0",
+        "desc": "Nội dung thông tin cơ bản cho người mới bắt đầu",
+        "features": [
+          "Tin tức thị trường chung",
+          "Tóm tắt phân tích hàng tuần",
+          "Hỗ trợ mở tài khoản HFM",
+          "Thông tin nền tảng"
+        ],
+        "cta": "Bắt Đầu"
+      },
+      "premium": {
+        "name": "Premium",
+        "price": "Liên Hệ Với Chúng Tôi",
+        "desc": "Nội dung thông tin toàn diện và hỗ trợ ưu tiên",
+        "badge": "Được Đề Nghị",
+        "features": [
+          "Bản tin phân tích hàng ngày",
+          "Truy cập nhóm Telegram đặc biệt",
+          "Hỗ trợ nền tảng ưu tiên",
+          "Thông báo lịch kinh tế",
+          "Báo cáo thị trường hàng tháng"
+        ],
+        "cta": "Nhận Thông Tin"
+      },
+      "note": "* Tất cả nội dung chỉ dùng cho mục đích thông tin. Không cung cấp tư vấn đầu tư, quản lý danh mục đầu tư hoặc dịch vụ tư vấn cá nhân. Giao dịch forex liên quan đến rủi ro cao."
+    }
+  },
+  "contact": {
+    "tag": "Liên Hệ",
+    "title": "Liên Hệ Với Chúng Tôi",
+    "subtitle": "Liên hệ với chúng tôi để mở tài khoản HFM, hỗ trợ nền tảng và thông tin.",
+    "channels": {
+      "tag": "Kênh Liên Hệ",
+      "title": "Làm Cách Nào Để Liên Hệ?",
+      "items": [
+        {
+          "icon": "💬",
+          "title": "Bullex Telegram",
+          "desc": "Tham gia kênh tín hiệu và phân tích",
+          "link": "t.me/channel →"
+        },
+        {
+          "icon": "💬",
+          "title": "Trader Ece Telegram",
+          "desc": "Nhấp vào đây để kênh thứ hai",
+          "link": "t.me/channel2 →"
+        },
+        {
+          "icon": "💬",
+          "title": "WhatsApp",
+          "desc": "Gửi tin nhắn qua WhatsApp",
+          "link": "wa.me/number →"
+        },
+        {
+          "icon": "✉️",
+          "title": "Email",
+          "desc": "Để những câu hỏi chi tiết",
+          "link": "info@example.com →"
+        }
+      ]
+    },
+    "hfm": {
+      "logo": "HFM",
+      "title": "Mở Tài Khoản HFM",
+      "desc": "Mở tài khoản HFM chính thức của bạn thông qua liên kết IB của chúng tôi",
+      "link": "Đi Đến HFM →"
+    }
+  },
+  "form": {
+    "success": {
+      "title": "Tin Nhắn Đã Gửi!",
+      "msg": "Chúng tôi sẽ quay lại với bạn sớm nhất có thể. Bạn cũng có thể tham gia nhóm Telegram của chúng tôi.",
+      "button": "Tham Gia Nhóm Telegram"
+    },
+    "card": {
+      "title": "Gửi Tin Nhắn",
+      "subtitle": "Gửi những câu hỏi của bạn về tài khoản HFM, nền tảng hoặc nội dung phân tích."
+    },
+    "fields": {
+      "name": "Họ và Tên *",
+      "namePlaceholder": "Tên Họ Của Bạn",
+      "email": "Email *",
+      "emailPlaceholder": "example@email.com",
+      "subject": "Chủ Đề",
+      "subjectDefault": "Chọn Chủ Đề",
+      "subjectOptions": [
+        "HFM Account Opening",
+        "Telegram Group",
+        "Platform Support",
+        "Other"
+      ],
+      "message": "Tin Nhắn Của Bạn *",
+      "messagePlaceholder": "Nhập tin nhắn của bạn ở đây..."
+    },
+    "disclaimer": "Biểu mẫu này không thể được sử dụng để yêu cầu tư vấn đầu tư. Nó chỉ dành cho mục đích hỗ trợ và thông tin tài khoản HFM.",
+    "submit": "Gửi Tin Nhắn",
+    "submitting": "Đang Gửi..."
+  }
+}

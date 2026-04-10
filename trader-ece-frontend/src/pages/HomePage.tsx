@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import { useTranslation } from "react-i18next";
 import "./HomePage.css";
 import type { NavigateFn } from "../App";
 import TickerTape from "./TickerTape";
@@ -70,50 +71,65 @@ interface Testimonial {
   role: string;
 }
 
-const services: ServiceCard[] = [
-  {
-    icon: "📡",
-    title: "Telegram & WhatsApp Grupları",
-    desc: "Özel sinyal gruplarımız aracılığıyla gerçek zamanlı piyasa analizleri ve bültenler. Yatırım tavsiyesi niteliği taşımaz.",
-    color: "#0088cc",
-  },
-  {
-    icon: "🏦",
-    title: "HFM IB Ortaklığı",
-    desc: "HFM (HF Markets) resmi Introducing Broker ortağı olarak hesap açılışı ve platform desteği sağlıyoruz.",
-    color: "#00d4e8",
-  },
-  {
-    icon: "🛡️",
-    title: "Regüle Edilmiş Ortam",
-    desc: "HFM, birden fazla uluslararası otorite tarafından regüle edilmiş küresel bir broker'dır.",
-    color: "#c9a84c",
-  },
-  {
-    icon: "📊",
-    title: "Piyasa Analizleri",
-    desc: "Teknik ve temel analiz içerikleri. Tüm içerikler bilgilendirme amaçlıdır, yatırım tavsiyesi değildir.",
-    color: "#a855f7",
-  },
-];
 
-const stats: StatItem[] = [
-  { label: "Yıl Deneyim", value: 15, suffix: "+" },
-  { label: "Aktif Hacim ($)", value: 7, prefix: "", suffix: "M+" },
-  { label: "Çekim Hacmi ($)", value: 4.6, suffix: "M+", isFloat: true },
-  { label: "HFM Ortaklığı (Yıl)", value: 4, suffix: "+" },
-];
-
-const hfmFeatures: string[] = [
-  "Uluslararası regülasyon (FCA, CySEC, DFSA ve daha fazlası)",
-  "Hızlı para çekme işlemleri",
-  "Geniş işlem araçları yelpazesi",
-  "Güvenli müşteri fonu ayrımı",
-];
-
-const regAuthorities: string[] = ["FCA", "CySEC", "DFSA", "FSC"];
 
 export default function HomePage({ navigate }: HomePageProps) {
+  const { t } = useTranslation();
+
+  const services: ServiceCard[] = [
+    {
+      icon: "📡",
+      title: t("home.services.cards.0.title"),
+      desc: t("home.services.cards.0.desc"),
+      color: "#0088cc",
+    },
+    {
+      icon: "🏦",
+      title: t("home.services.cards.1.title"),
+      desc: t("home.services.cards.1.desc"),
+      color: "#00d4e8",
+    },
+    {
+      icon: "🛡️",
+      title: t("home.services.cards.2.title"),
+      desc: t("home.services.cards.2.desc"),
+      color: "#c9a84c",
+    },
+    {
+      icon: "📊",
+      title: t("home.services.cards.3.title"),
+      desc: t("home.services.cards.3.desc"),
+      color: "#a855f7",
+    },
+  ];
+
+  const stats: StatItem[] = [
+    { label: t("home.stats.experience"), value: 15, suffix: "+" },
+    { label: t("home.stats.volume"), value: 7, prefix: "", suffix: "M+" },
+    { label: t("home.stats.withdrawals"), value: 4.6, suffix: "M+", isFloat: true },
+    { label: t("home.stats.partnership"), value: 4, suffix: "+" },
+  ];
+
+  const hfmFeatures: string[] = [
+    t("home.hfmTrust.features.0"),
+    t("home.hfmTrust.features.1"),
+    t("home.hfmTrust.features.2"),
+    t("home.hfmTrust.features.3"),
+  ];
+
+  const regAuthorities: string[] = [
+    t("home.regulators.fca"),
+    t("home.regulators.cysec"),
+    t("home.regulators.dfsa"),
+    t("home.regulators.fsc"),
+  ];
+
+  const trustItems = [
+    t("home.trust.title"),
+    t("home.trust.item1"),
+    t("home.trust.item2"),
+  ];
+
   return (
     <div className="home">
       <TickerTape />
@@ -128,39 +144,37 @@ export default function HomePage({ navigate }: HomePageProps) {
 
         <div className="container hero__content">
           <div className="hero__badge">
-            <span className="badge-dot" /> TRADER ECE – HFM Resmi IB &amp; Affiliate Partner
+            <span className="badge-dot" /> {t("home.badge")}
           </div>
           <h1 className="hero__title">
-            Forex Piyasalarında
+            {t("home.hero.title2")}
             <br />
-            <span className="highlight">Bilinçli Adımlar</span>
+            <span className="highlight">{t("home.hero.title1")}</span>
             <br />
             Atın
           </h1>
           <p className="hero__subtitle">
-            15+ yıllık piyasa deneyimi ile HFM ortaklığında. Regüle edilmiş
-            ortamda hesap açılışı ve sinyal grupları. Yatırım danışmanlığı
-            verilmemektedir.
+            {t("home.hero.subtitle")}
           </p>
           <div className="hero__actions">
             <a href="https://t.me/tradereceteam" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12l-6.871 4.326-2.962-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.537-.194 1.006.131.833.941z" />
               </svg>
-              Trader Ece Telegram Grubuna Katıl
+              {t("home.buttons.telegramTraderEce")}
             </a>
             <a href="https://t.me/bullexardav" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12l-6.871 4.326-2.962-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.537-.194 1.006.131.833.941z" />
               </svg>
-              Bullex Telegram Grubuna Katıl
+              {t("home.buttons.telegramBullex")}
             </a>
             <button className="btn btn-outline" onClick={() => navigate("contact")}>
-              Bilgi Al
+              {t("home.buttons.info")}
             </button>
           </div>
           <div className="hero__trust">
-            {["Regüle Edilmiş Broker", "15+ Yıl Deneyim", "7M$ Aktif Hacim"].map((item) => (
+            {trustItems.map((item) => (
               <div key={item} className="trust-item">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                   <polyline points="20 6 9 17 4 12" />
@@ -196,11 +210,10 @@ export default function HomePage({ navigate }: HomePageProps) {
       <section className="section services-overview">
         <div className="container">
           <div className="section-header">
-            <div className="section-tag">Hizmetlerimiz</div>
-            <h2 className="section-title">Neler Sunuyoruz?</h2>
+            <div className="section-tag">{t("home.services.tag")}</div>
+            <h2 className="section-title">{t("home.services.title")}</h2>
             <p className="section-subtitle">
-              HFM IB ortağı olarak hesap desteği ve bilgilendirme hizmetleri.
-              Tüm içerikler bilgilendirme amaçlıdır.
+              {t("home.services.subtitle")}
             </p>
           </div>
           <div className="grid-2 services-grid">
@@ -216,7 +229,7 @@ export default function HomePage({ navigate }: HomePageProps) {
           </div>
           <div className="services-cta">
             <button className="btn btn-outline" onClick={() => navigate("services")}>
-              Tüm Hizmetleri Gör →
+              {t("home.services.viewAll")}
             </button>
           </div>
         </div>
@@ -227,13 +240,10 @@ export default function HomePage({ navigate }: HomePageProps) {
         <div className="container">
           <div className="hfm-inner">
             <div className="hfm-content">
-              <div className="section-tag">Neden HFM?</div>
-              <h2 className="section-title">Küresel &amp; Regüle Bir Broker</h2>
+              <div className="section-tag">{t("home.hfmTrust.tag")}</div>
+              <h2 className="section-title">{t("home.hfmTrust.title")}</h2>
               <p style={{ color: "var(--gray)", lineHeight: 1.7, marginBottom: 24 }}>
-                HFM (HF Markets), 2010'dan bu yana faaliyet gösteren ve birden
-                fazla uluslararası finansal otorite tarafından regüle edilmiş
-                küresel bir forex ve CFD brokerıdır. Hızlı çekim süreleri ve
-                güvenilir altyapısı ile tanınmaktadır.
+                {t("home.hfmTrust.desc")}
               </p>
               <ul className="hfm-features">
                 {hfmFeatures.map((f, i) => (
@@ -243,14 +253,14 @@ export default function HomePage({ navigate }: HomePageProps) {
                 ))}
               </ul>
               <a href="https://www.hfm.com" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
-                HFM Hakkında Daha Fazla →
+                {t("home.hfmTrust.moreLink")}
               </a>
             </div>
             <div className="hfm-visual">
               <div className="hfm-badge-large">
-                <div className="hfm-logo-text">HFM</div>
-                <div className="hfm-tagline">HF Markets Group</div>
-                <div className="hfm-reg">Regüle Edilmiş Broker</div>
+                <div className="hfm-logo-text">{t("home.hfmBadge.text")}</div>
+                <div className="hfm-tagline">{t("home.hfmBadge.tagline")}</div>
+                <div className="hfm-reg">{t("home.hfmBadge.desc")}</div>
               </div>
               <div className="hfm-reg-items">
                 {regAuthorities.map((r) => (
@@ -272,15 +282,15 @@ export default function HomePage({ navigate }: HomePageProps) {
         <div className="container">
           <div className="cta-banner__inner">
             <div>
-              <h2>HFM Hesabı Açmak İster misiniz?</h2>
-              <p>Destek ve bilgilendirme için bizimle iletişime geçin.</p>
+              <h2>{t("home.cta.title")}</h2>
+              <p>{t("home.cta.subtitle")}</p>
             </div>
             <div className="cta-banner__actions">
               <a href="https://t.me/" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
-                Telegram'dan Ulaş
+                {t("home.cta.telegramBtn")}
               </a>
               <button className="btn btn-outline" onClick={() => navigate("contact")}>
-                İletişim Formu
+                {t("home.cta.formBtn")}
               </button>
             </div>
           </div>

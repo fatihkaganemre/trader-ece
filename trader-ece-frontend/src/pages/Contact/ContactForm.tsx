@@ -1,14 +1,16 @@
+import { useTranslation } from "react-i18next";
 import { useContactForm } from "./useContactForm";
 
 export default function ContactForm() {
+  const { t } = useTranslation();
   const { form, submitted, isLoading, error, handleChange, handleSubmit } = useContactForm();
 
   if (submitted) {
     return (
       <div className="card contact-success">
         <div className="success-icon">✓</div>
-        <h3>Mesajınız İletildi!</h3>
-        <p>En kısa sürede size geri dönüş yapacağız. Telegram grubuna da katılabilirsiniz.</p>
+        <h3>{t("form.success.title")}</h3>
+        <p>{t("form.success.msg")}</p>
         <a
           href="https://t.me/tradereceteam"
           target="_blank"
@@ -16,7 +18,7 @@ export default function ContactForm() {
           className="btn btn-primary"
           style={{ marginTop: 16 }}
         >
-          Telegram Grubuna Katıl
+          {t("form.success.button")}
         </a>
       </div>
     );
@@ -24,60 +26,59 @@ export default function ContactForm() {
 
   return (
     <div className="card contact-form-card">
-      <h3>Mesaj Gönder</h3>
+      <h3>{t("form.card.title")}</h3>
       <p className="form-subtitle">
-        HFM hesabı, platform veya analiz içerikleri hakkında sorularınızı gönderin.
+        {t("form.card.subtitle")}
       </p>
       <form onSubmit={handleSubmit} className="contact-form">
         <div className="form-group">
-          <label>Ad Soyad *</label>
+          <label>{t("form.fields.name")}</label>
           <input
             type="text"
             name="name"
             value={form.name}
             onChange={handleChange}
             required
-            placeholder="Adınız Soyadınız"
+            placeholder={t("form.fields.namePlaceholder")}
             className="form-input"
           />
         </div>
         <div className="form-group">
-          <label>E-posta *</label>
+          <label>{t("form.fields.email")}</label>
           <input
             type="email"
             name="email"
             value={form.email}
             onChange={handleChange}
             required
-            placeholder="ornek@email.com"
+            placeholder={t("form.fields.emailPlaceholder")}
             className="form-input"
           />
         </div>
         <div className="form-group">
-          <label>Konu</label>
+          <label>{t("form.fields.subject")}</label>
           <select name="topic" value={form.topic} onChange={handleChange} className="form-input">
-            <option value="">Konu Seçin</option>
-            <option value="hesap">HFM Hesap Açılışı</option>
-            <option value="telegram">Telegram Grubu</option>
-            <option value="platform">Platform Desteği</option>
-            <option value="diger">Diğer</option>
+            <option value="">{t("form.fields.subjectDefault")}</option>
+            <option value="hesap">{t("form.fields.subjectOptions.0")}</option>
+            <option value="telegram">{t("form.fields.subjectOptions.1")}</option>
+            <option value="platform">{t("form.fields.subjectOptions.2")}</option>
+            <option value="diger">{t("form.fields.subjectOptions.3")}</option>
           </select>
         </div>
         <div className="form-group">
-          <label>Mesajınız *</label>
+          <label>{t("form.fields.message")}</label>
           <textarea
             name="message"
             value={form.message}
             onChange={handleChange}
             required
-            placeholder="Mesajınızı buraya yazın..."
+            placeholder={t("form.fields.messagePlaceholder")}
             className="form-input form-textarea"
             rows={5}
           />
         </div>
         <div className="form-disclaimer">
-          Bu form yatırım danışmanlığı talebi için kullanılamaz.
-          Yalnızca HFM hesap desteği ve bilgilendirme amaçlıdır.
+          {t("form.disclaimer")}
         </div>
         {error && (
           <div className="form-disclaimer" style={{ color: "red" }}>
@@ -90,7 +91,7 @@ export default function ContactForm() {
           style={{ width: "100%", justifyContent: "center" }}
           disabled={isLoading}
         >
-          {isLoading ? "Gönderiliyor..." : "Mesaj Gönder"}
+          {isLoading ? t("form.submitting") : t("form.submit")}
         </button>
       </form>
     </div>
