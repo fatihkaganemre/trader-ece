@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import { useTranslation } from "react-i18next";
 import "./PerformancePage.css";
 import type { NavigateFn } from "../App";
 
@@ -104,21 +105,89 @@ const regAuthorities: RegAuthority[] = [
 ];
 
 export default function PerformancePage({ navigate }: PerformancePageProps) {
+  const { t } = useTranslation();
+
+  const metricsFromTranslation: MetricItem[] = [
+    {
+      value: "15",
+      suffix: t("performance.metrics.0.suffix"),
+      prefix: t("performance.metrics.0.prefix"),
+      label: t("performance.metrics.0.label"),
+      note: t("performance.metrics.0.note"),
+    },
+    {
+      value: "7",
+      suffix: t("performance.metrics.1.suffix"),
+      prefix: t("performance.metrics.1.prefix"),
+      label: t("performance.metrics.1.label"),
+      note: t("performance.metrics.1.note"),
+    },
+    {
+      value: "4.6",
+      suffix: t("performance.metrics.2.suffix"),
+      prefix: t("performance.metrics.2.prefix"),
+      label: t("performance.metrics.2.label"),
+      note: t("performance.metrics.2.note"),
+    },
+    {
+      value: "4",
+      suffix: t("performance.metrics.3.suffix"),
+      prefix: t("performance.metrics.3.prefix"),
+      label: t("performance.metrics.3.label"),
+      note: t("performance.metrics.3.note"),
+    },
+  ];
+
+  const processStepsFromTranslation: ProcessStep[] = [
+    {
+      step: t("performance.process.steps.0.number"),
+      title: t("performance.process.steps.0.title"),
+      desc: t("performance.process.steps.0.desc"),
+    },
+    {
+      step: t("performance.process.steps.1.number"),
+      title: t("performance.process.steps.1.title"),
+      desc: t("performance.process.steps.1.desc"),
+    },
+    {
+      step: t("performance.process.steps.2.number"),
+      title: t("performance.process.steps.2.title"),
+      desc: t("performance.process.steps.2.desc"),
+    },
+  ];
+
+  const regAuthoritiesFromTranslation: RegAuthority[] = [
+    {
+      abbr: t("performance.hfmPartnership.authorities.fca"),
+      full: t("performance.hfmPartnership.authorities.fca"),
+    },
+    {
+      abbr: t("performance.hfmPartnership.authorities.cysec"),
+      full: t("performance.hfmPartnership.authorities.cysec"),
+    },
+    {
+      abbr: t("performance.hfmPartnership.authorities.dfsa"),
+      full: t("performance.hfmPartnership.authorities.dfsa"),
+    },
+    {
+      abbr: t("performance.hfmPartnership.authorities.fsc"),
+      full: t("performance.hfmPartnership.authorities.fsc"),
+    },
+  ];
   return (
     <div className="performance-page">
       {/* Hero */}
       <section className="page-hero">
         <div className="page-hero__bg" />
         <div className="container">
-          <div className="section-tag">Performans &amp; Rakamlar</div>
+          <div className="section-tag">{t("performance.tag")}</div>
           <h1 className="section-title" style={{ fontSize: "clamp(40px, 6vw, 64px)" }}>
-            Rakamlarla
+            {t("performance.hero.title1")}
             <br />
-            <span className="highlight">Geçmiş Deneyim</span>
+            <span className="highlight">{t("performance.hero.title2")}</span>
           </h1>
           <p className="section-subtitle" style={{ fontSize: 18 }}>
-            15+ yıllık piyasa pratiğimiz ve HFM üzerinden takip edilen hacimler.
-            Geçmiş veriler gelecek performansı garanti etmez.
+            {t("performance.hero.subtitle")}
           </p>
         </div>
       </section>
@@ -127,7 +196,7 @@ export default function PerformancePage({ navigate }: PerformancePageProps) {
       <section className="section">
         <div className="container">
           <div className="grid-4 counters-grid">
-            {metrics.map((m, i) => (
+            {metricsFromTranslation.map((m, i) => (
               <CounterCard key={i} {...m} />
             ))}
           </div>
@@ -139,10 +208,7 @@ export default function PerformancePage({ navigate }: PerformancePageProps) {
         <div className="perf-disclaimer">
           <span>⚠️</span>
           <div>
-            <strong>Önemli Not:</strong> Yukarıdaki rakamlar yalnızca bilgilendirme amaçlıdır ve geçmiş
-            verileri yansıtmaktadır. Bu rakamlar gelecekteki performans veya getiriyi garanti etmez.
-            Forex işlemleri yüksek risk içermekte olup yatırım yapmadan önce bağımsız
-            finansal danışmana başvurulması tavsiye edilir.
+            <strong>{t("performance.disclaimer")}</strong> {t("performance.disclaimerText")}
           </div>
         </div>
       </div>
@@ -150,13 +216,13 @@ export default function PerformancePage({ navigate }: PerformancePageProps) {
       {/* Process */}
       <section className="section">
         <div className="container">
-          <div className="section-tag">Süreç</div>
-          <h2 className="section-title">Nasıl Çalışıyoruz?</h2>
+          <div className="section-tag">{t("performance.process.tag")}</div>
+          <h2 className="section-title">{t("performance.process.title")}</h2>
           <p className="section-subtitle" style={{ marginBottom: 56 }}>
-            HFM IB ortağı olarak yürüttüğümüz faaliyetler.
+            {t("performance.process.subtitle")}
           </p>
           <div className="grid-3">
-            {processSteps.map((s, i) => (
+            {processStepsFromTranslation.map((s, i) => (
               <div key={i} className="card process-card">
                 <div className="process-step">{s.step}</div>
                 <h3>{s.title}</h3>
@@ -172,19 +238,15 @@ export default function PerformancePage({ navigate }: PerformancePageProps) {
         <div className="container">
           <div className="hfm-proof-grid">
             <div>
-              <div className="section-tag">HFM Ortaklığı</div>
+              <div className="section-tag">{t("performance.hfmPartnership.tag")}</div>
               <h2 className="section-title" style={{ fontSize: "clamp(28px, 4vw, 42px)" }}>
-                Neden HFM?
+                {t("performance.hfmPartnership.title")}
               </h2>
               <p className="about-text">
-                HFM (HF Markets) birden fazla uluslararası düzenleyici kurum
-                tarafından lisanslanmış küresel bir broker'dır. IB ortağı
-                olarak yalnızca HFM üzerinden hesap açılışı süreçlerine
-                aracılık ediyor ve bilgilendirme sunuyoruz.
+                {t("performance.hfmPartnership.desc1")}
               </p>
               <p className="about-text">
-                Fon yönetimi, portföy yönetimi veya bireysel yatırım danışmanlığı
-                yapılmamaktadır.
+                {t("performance.hfmPartnership.desc2")}
               </p>
               <a
                 href="https://www.hfm.com/regulation"
@@ -192,11 +254,11 @@ export default function PerformancePage({ navigate }: PerformancePageProps) {
                 rel="noopener noreferrer"
                 className="btn btn-primary"
               >
-                HFM Regülasyon Bilgisi →
+                {t("performance.hfmPartnership.regulationLink")}
               </a>
             </div>
             <div className="reg-logos">
-              {regAuthorities.map((r, i) => (
+              {regAuthoritiesFromTranslation.map((r, i) => (
                 <div key={i} className="reg-logo-card card">
                   <div className="reg-logo-abbr">{r.abbr}</div>
                   <div className="reg-logo-full">{r.full}</div>
@@ -212,12 +274,12 @@ export default function PerformancePage({ navigate }: PerformancePageProps) {
         <div className="container">
           <div className="cta-banner__inner">
             <div>
-              <h2>HFM Hesabı Açmak İster misiniz?</h2>
-              <p>IB ortağı olarak hesap sürecinizde yardımcı olalım.</p>
+              <h2>{t("performance.cta.title")}</h2>
+              <p>{t("performance.cta.subtitle")}</p>
             </div>
             <div className="cta-banner__actions">
               <button className="btn btn-primary" onClick={() => navigate("contact")}>
-                İletişime Geç
+                {t("performance.cta.button")}
               </button>
             </div>
           </div>

@@ -1,0 +1,455 @@
+{
+  "nav": {
+    "home": "Beranda",
+    "about": "Tentang",
+    "services": "Layanan",
+    "performance": "Performa",
+    "contact": "Kontak",
+    "menu": "Menu"
+  },
+  "header": {
+    "brand": "TRADER ECE",
+    "subtitle": "HFM IB & Affiliate",
+    "bullex": "BULLEX",
+    "bullexSubtitle": "Signal Channel"
+  },
+  "footer": {
+    "pages": "Halaman",
+    "legal": "Hukum",
+    "links": {
+      "hfmOfficial": "Situs Resmi HFM",
+      "hfmRegulation": "Peraturan HFM"
+    },
+    "riskWarning": "Peringatan Risiko:",
+    "riskDisclaimer": "Perdagangan forex dan CFD melibatkan risiko tinggi. Anda mungkin kehilangan seluruh investasi Anda. Situs ini tidak menyediakan nasihat investasi atau layanan manajemen portofolio. Konten di sini hanya untuk tujuan informasi. Kami beroperasi sebagai mitra Introducing Broker (IB) dan afiliasi resmi. Silakan konsultasikan dengan penasihat keuangan independen sebelum membuat keputusan investasi. Kinerja masa lalu tidak menjamin hasil di masa depan.",
+    "partnerDesc": "Kami beroperasi sebagai mitra Introducing Broker (IB) dan afiliasi resmi. Konten analisis pasar dibagikan hanya untuk tujuan informasi. Kami tidak menyediakan nasihat investasi atau layanan manajemen portofolio.",
+    "copyright": "© {{year}} Trader ECE – HFM IB & Afiliasi. Hak cipta dilindungi.",
+    "regulation": "Beroperasi di lingkungan yang diatur oleh HF Markets Group.",
+    "bullexSubtitle": "SIGNAL CHANNEL"
+  },
+  "home": {
+    "badge": "TRADER ECE – Mitra IB & Afiliasi Resmi HFM",
+    "hero": {
+      "title1": "Langkah Terinformasi Ke",
+      "title2": "Pasar Forex",
+      "subtitle": "15+ tahun pengalaman pasar dengan kemitraan HFM. Pembukaan akun di lingkungan yang diatur dan grup sinyal. Nasihat investasi tidak diberikan."
+    },
+    "buttons": {
+      "telegramTraderEce": "Bergabung dengan Grup Telegram Trader Ece",
+      "telegramBullex": "Bergabung dengan Grup Telegram Bullex",
+      "info": "Dapatkan Info"
+    },
+    "trust": {
+      "title": "Broker Teratur",
+      "item1": "Pengalaman 15+ Tahun",
+      "item2": "Volume Aktif 7M$"
+    },
+    "services": {
+      "tag": "Layanan",
+      "title": "Apa yang Kami Tawarkan?",
+      "subtitle": "Dukungan akun sebagai mitra HFM IB dan layanan informasional. Semua konten untuk tujuan informasi.",
+      "viewAll": "Lihat Semua Layanan →",
+      "cards": [
+        {
+          "icon": "📡",
+          "title": "Grup Telegram & WhatsApp",
+          "desc": "Analisis pasar real-time dan buletin melalui grup sinyal khusus kami. Bukan nasihat investasi."
+        },
+        {
+          "icon": "🏦",
+          "title": "HFM IB Partnership",
+          "desc": "Sebagai mitra Introducing Broker resmi, kami menyediakan dukungan pembukaan akun dan dukungan platform."
+        },
+        {
+          "icon": "🛡️",
+          "title": "Lingkungan Teratur",
+          "desc": "HFM adalah broker global yang diatur oleh beberapa otoritas keuangan internasional."
+        },
+        {
+          "icon": "📊",
+          "title": "Analisis Pasar",
+          "desc": "Konten analisis teknis dan fundamental. Semua konten adalah informasi, bukan nasihat investasi."
+        }
+      ]
+    },
+    "stats": {
+      "experience": "Tahun Pengalaman",
+      "volume": "Volume Aktif ($)",
+      "withdrawals": "Volume Penarikan ($)",
+      "partnership": "Kemitraan HFM (Tahun)"
+    },
+    "hfmTrust": {
+      "tag": "Mengapa HFM?",
+      "title": "Broker Global & Teratur",
+      "desc": "HFM (HF Markets) adalah broker forex dan CFD global yang beroperasi sejak 2010, diatur oleh beberapa otoritas keuangan internasional. Dikenal karena waktu penarikan cepat dan infrastruktur yang dapat diandalkan.",
+      "features": [
+        "Regulasi internasional (FCA, CySEC, DFSA dan lainnya)",
+        "Pemrosesan penarikan cepat",
+        "Berbagai instrumen perdagangan",
+        "Pemisahan dana pelanggan yang aman"
+      ],
+      "moreLink": "Pelajari Lebih Lanjut Tentang HFM →"
+    },
+    "hfmBadge": {
+      "text": "HFM",
+      "tagline": "HF Markets Group",
+      "desc": "Broker Teratur"
+    },
+    "regulators": {
+      "fca": "FCA",
+      "cysec": "CySEC",
+      "dfsa": "DFSA",
+      "fsc": "FSC"
+    },
+    "cta": {
+      "title": "Ingin Membuka Akun HFM?",
+      "subtitle": "Hubungi kami untuk dukungan dan informasi.",
+      "telegramBtn": "Jangkau melalui Telegram",
+      "formBtn": "Formulir Kontak"
+    }
+  },
+  "performance": {
+    "tag": "Performa & Angka",
+    "hero": {
+      "title1": "Melalui",
+      "title2": "Pengalaman Masa Lalu",
+      "subtitle": "15+ tahun praktik pasar dan volume yang dilacak melalui HFM. Data masa lalu tidak menjamin kinerja masa depan."
+    },
+    "metrics": [
+      {
+        "value": "15",
+        "suffix": "+",
+        "label": "Tahun Pengalaman Pasar",
+        "note": "Aktif sejak 2009",
+        "prefix": ""
+      },
+      {
+        "value": "7",
+        "suffix": "M+",
+        "prefix": "$",
+        "label": "Volume Aktif",
+        "note": "Total volume dilacak melalui IB"
+      },
+      {
+        "value": "4.6",
+        "suffix": "M+",
+        "prefix": "$",
+        "label": "Volume Penarikan",
+        "note": "Penarikan melalui saluran HFM"
+      },
+      {
+        "value": "4",
+        "suffix": "+",
+        "label": "Tahun Kemitraan HFM",
+        "note": "Kemitraan IB resmi",
+        "prefix": ""
+      }
+    ],
+    "disclaimer": "⚠️ Catatan Penting:",
+    "disclaimerText": "Angka di atas adalah untuk tujuan informasi dan mencerminkan data masa lalu. Angka-angka ini tidak menjamin kinerja atau pengembalian di masa depan. Perdagangan forex melibatkan risiko tinggi, dan disarankan untuk berkonsultasi dengan penasihat keuangan independen sebelum berinvestasi.",
+    "process": {
+      "tag": "Proses",
+      "title": "Bagaimana Kami Bekerja?",
+      "subtitle": "Aktivitas yang kami lakukan sebagai mitra HFM IB.",
+      "steps": [
+        {
+          "number": "01",
+          "title": "Dukungan Akun HFM",
+          "desc": "Kami memberikan panduan ketika pengguna membuka akun melalui HFM. Kontrol akun sepenuhnya ada di tangan pengguna."
+        },
+        {
+          "number": "02",
+          "title": "Berbagi Konten",
+          "desc": "Konten analisis pasar dibagikan di grup Telegram dan WhatsApp. Ini bukan nasihat investasi."
+        },
+        {
+          "number": "03",
+          "title": "Dukungan",
+          "desc": "Dukungan teknis disediakan untuk penggunaan platform dan proses HFM."
+        }
+      ]
+    },
+    "hfmPartnership": {
+      "tag": "Kemitraan HFM",
+      "title": "Mengapa HFM?",
+      "desc1": "HFM (HF Markets) adalah broker global berlisensi oleh beberapa regulator internasional. Sebagai mitra IB, kami hanya memfasilitasi proses pembukaan akun melalui HFM dan memberikan dukungan informasional.",
+      "desc2": "Manajemen dana, manajemen portofolio, atau nasihat investasi individual tidak disediakan.",
+      "regulationLink": "Informasi Peraturan HFM →",
+      "authorities": {
+        "fca": "Financial Conduct Authority",
+        "cysec": "Cyprus Securities & Exchange",
+        "dfsa": "Dubai Financial Services",
+        "fsc": "Financial Services Commission"
+      }
+    },
+    "cta": {
+      "title": "Ingin Membuka Akun HFM?",
+      "subtitle": "Biarkan kami membantu Anda dengan proses akun sebagai mitra IB.",
+      "button": "Hubungi Kami"
+    }
+  },
+  "about": {
+    "tag": "Tentang",
+    "hero": {
+      "title1": "Kenal",
+      "title2": "Siapa Kami",
+      "subtitle": "15+ tahun pengalaman pasar, 4+ tahun kemitraan HFM. Kami beroperasi sebagai mitra HFM IB/Afiliasi resmi."
+    },
+    "experience": "15+",
+    "experienceLabel": "Tahun Pengalaman",
+    "badges": [
+      "HFM Official IB Partner",
+      "Active Signal Communities",
+      "Regulated Environment"
+    ],
+    "biography": {
+      "tag": "Biografi",
+      "title": "Pengalaman dan Kepercayaan",
+      "p1": "Sejak 2009, saya telah terlibat aktif di pasar Forex. Selama bertahun-tahun, saya telah mengumpulkan pengetahuan mendalam dalam analisis teknis, analisis fundamental, dan psikologi pasar.",
+      "p2": "Sejak 2021, saya telah bekerja sebagai mitra Introducing Broker (IB) dan afiliasi resmi dengan HFM (HF Markets). Dalam kapasitas ini, saya memberikan dukungan dalam proses pembukaan akun HFM, informasi platform, dan konten analisis pasar.",
+      "note": "Catatan Penting:",
+      "p3": "Konten dan analisis yang diberikan bukan merupakan nasihat investasi, manajemen portofolio, atau konsultasi investasi individual. Ini hanya untuk tujuan informasi.",
+      "button": "Hubungi Kami"
+    },
+    "hfmPartnership": {
+      "tag": "Mengapa HFM?",
+      "title": "Kemitraan HFM",
+      "subtitle": "HFM adalah broker forex global terpercaya dan teregulasi. Sebagai mitra IB, kami menyediakan infrastruktur yang dapat diandalkan ini untuk Anda.",
+      "features": [
+        {
+          "icon": "🌍",
+          "title": "Regulasi Global",
+          "desc": "Diatur oleh FCA, CySEC, DFSA, FSC dan lainnya. Infrastruktur institusional yang dapat diandalkan."
+        },
+        {
+          "icon": "⚡",
+          "title": "Penarikan Cepat",
+          "desc": "Dengan waktu penarikan HFM yang cepat, akses dana Anda dengan cepat."
+        },
+        {
+          "icon": "📱",
+          "title": "Platform Canggih",
+          "desc": "MT4, MT5 dan platform spesifik HFM. Kompatibel mobile dan desktop."
+        },
+        {
+          "icon": "🔒",
+          "title": "Keamanan Dana",
+          "desc": "Dana pelanggan disimpan di akun terpisah. Tunduk pada pengawasan regulasi."
+        },
+        {
+          "icon": "📊",
+          "title": "Berbagai Instrumen",
+          "desc": "Forex, emas, indeks, saham dan lainnya. Semuanya di satu platform."
+        },
+        {
+          "icon": "🎓",
+          "title": "Sumber Daya Pendidikan",
+          "desc": "Konten pendidikan resmi HFM dan penelitian pasar."
+        }
+      ]
+    },
+    "timeline": {
+      "tag": "Garis Waktu",
+      "title": "Perjalanan Kami",
+      "items": [
+        {
+          "year": "2009",
+          "title": "Perjalanan Forex Dimulai",
+          "desc": "Memasuki pasar Forex. Periode pembelajaran intensif tentang analisis teknis dan fundamental."
+        },
+        {
+          "year": "2013",
+          "title": "Langkah Profesional Pertama",
+          "desc": "Grup sinyal didirikan. Analisis pasar mulai dibagikan. Komunitas berkembang."
+        },
+        {
+          "year": "2018",
+          "title": "Kemitraan Korporat",
+          "desc": "Kemitraan broker internasional didirikan. Aktivitas IB dimulai."
+        },
+        {
+          "year": "2021",
+          "title": "Kemitraan HFM IB",
+          "desc": "Kemitraan Introducing Broker resmi dengan HFM (HF Markets) dimulai. Transisi ke lingkungan teregulasi."
+        },
+        {
+          "year": "2025",
+          "title": "Hari Ini",
+          "desc": "Volume perdagangan aktif 7M+ USD, dukungan akun untuk ribuan pengguna dan konten analisis pasar."
+        }
+      ]
+    }
+  },
+  "services": {
+    "tag": "Layanan",
+    "title": "Apa yang Kami Sediakan",
+    "subtitle": "Dukungan akun sebagai mitra HFM IB dan konten informasi pasar. Nasihat investasi tidak diberikan.",
+    "cards": [
+      {
+        "icon": "📡",
+        "title": "Grup Sinyal Telegram & WhatsApp",
+        "desc": "Analisis pasar harian dan mingguan, buletin dibagikan dalam grup sinyal khusus kami. Semua konten untuk tujuan informasi; bukan nasihat investasi atau konsultasi individual.",
+        "features": [
+          "Buletin analisis teknis harian",
+          "Pelacakan kalender ekonomi penting",
+          "Berita dan komentar pasar",
+          "Notifikasi real-time"
+        ],
+        "disclaimer": "Konten ini bukan nasihat investasi. Buat keputusan Anda sendiri."
+      },
+      {
+        "icon": "🏦",
+        "title": "Dukungan Pembukaan Akun HFM",
+        "desc": "Sebagai mitra HFM IB resmi, kami memberikan panduan dan dukungan dalam proses pembukaan akun HFM. Layanan manajemen akun atau manajemen dana tidak diberikan.",
+        "features": [
+          "Panduan pembukaan akun HFM",
+          "Dukungan pengaturan platform (MT4/MT5)",
+          "Informasi pemilihan jenis akun",
+          "Dukungan proses deposit/penarikan"
+        ],
+        "disclaimer": "Akun Anda sepenuhnya di bawah kontrol Anda. Manajemen dana tidak diberikan."
+      },
+      {
+        "icon": "📊",
+        "title": "Konten Analisis Pasar",
+        "desc": "Konten analisis teknis dan fundamental disiapkan dan dibagikan untuk tujuan informasi. Konten ini tidak boleh digunakan sendiri dalam keputusan membeli/menjual.",
+        "features": [
+          "Berbagi grafik analisis teknis",
+          "Ringkasan analisis fundamental",
+          "Level dukungan/resistansi",
+          "Pelacakan data ekonomi"
+        ],
+        "disclaimer": "Analisis didasarkan pada data masa lalu; tidak menjamin hasil di masa depan."
+      }
+    ],
+    "advantages": {
+      "tag": "Keuntungan",
+      "title": "Mengapa Memilih Kami?",
+      "cards": [
+        {
+          "icon": "🛡️",
+          "title": "Lingkungan Teratur",
+          "desc": "Infrastruktur teregulasi internasional HFM"
+        },
+        {
+          "icon": "⚡",
+          "title": "Penarikan Cepat",
+          "desc": "Kecepatan penarikan HFM yang diakui"
+        },
+        {
+          "icon": "🌍",
+          "title": "Akses Global",
+          "desc": "Dapat diakses dari mana saja di dunia"
+        },
+        {
+          "icon": "📞",
+          "title": "Dukungan",
+          "desc": "Respons cepat melalui Telegram dan email"
+        }
+      ]
+    },
+    "packages": {
+      "tag": "Paket",
+      "title": "Paket Konten",
+      "subtitle": "Akses ke paket konten informasi dan analisis.",
+      "free": {
+        "name": "Gratis",
+        "price": "0",
+        "desc": "Konten informasi dasar untuk pemula",
+        "features": [
+          "Berita pasar umum",
+          "Ringkasan analisis mingguan",
+          "Dukungan pembukaan akun HFM",
+          "Informasi platform"
+        ],
+        "cta": "Mulai"
+      },
+      "premium": {
+        "name": "Premium",
+        "price": "Hubungi Kami",
+        "desc": "Konten informasi komprehensif dan dukungan prioritas",
+        "badge": "Direkomendasikan",
+        "features": [
+          "Buletin analisis harian",
+          "Akses grup Telegram khusus",
+          "Dukungan platform prioritas",
+          "Notifikasi kalender ekonomi",
+          "Laporan pasar bulanan"
+        ],
+        "cta": "Dapatkan Info"
+      },
+      "note": "* Semua konten untuk tujuan informasi. Nasihat investasi, manajemen portofolio atau layanan konsultasi individual tidak diberikan. Perdagangan forex melibatkan risiko tinggi."
+    }
+  },
+  "contact": {
+    "tag": "Kontak",
+    "title": "Hubungi Kami",
+    "subtitle": "Hubungi kami untuk pembukaan akun HFM, dukungan platform dan informasi.",
+    "channels": {
+      "tag": "Saluran Kontak",
+      "title": "Bagaimana Cara Menghubungi?",
+      "items": [
+        {
+          "icon": "💬",
+          "title": "Bullex Telegram",
+          "desc": "Bergabung dengan saluran sinyal dan analisis",
+          "link": "t.me/channel →"
+        },
+        {
+          "icon": "💬",
+          "title": "Trader Ece Telegram",
+          "desc": "Klik di sini untuk saluran kedua",
+          "link": "t.me/channel2 →"
+        },
+        {
+          "icon": "💬",
+          "title": "WhatsApp",
+          "desc": "Kirim pesan melalui WhatsApp",
+          "link": "wa.me/number →"
+        },
+        {
+          "icon": "✉️",
+          "title": "Email",
+          "desc": "Untuk pertanyaan terperinci",
+          "link": "info@example.com →"
+        }
+      ]
+    },
+    "hfm": {
+      "logo": "HFM",
+      "title": "Buka Akun HFM",
+      "desc": "Buka akun HFM resmi Anda melalui tautan IB kami",
+      "link": "Pergi ke HFM →"
+    }
+  },
+  "form": {
+    "success": {
+      "title": "Pesan Terkirim!",
+      "msg": "Kami akan kembali kepada Anda sesegera mungkin. Anda juga dapat bergabung dengan grup Telegram kami.",
+      "button": "Bergabung dengan Grup Telegram"
+    },
+    "card": {
+      "title": "Kirim Pesan",
+      "subtitle": "Kirimkan pertanyaan Anda tentang akun HFM, platform atau konten analisis."
+    },
+    "fields": {
+      "name": "Nama Lengkap *",
+      "namePlaceholder": "Nama Belakang Anda",
+      "email": "Email *",
+      "emailPlaceholder": "example@email.com",
+      "subject": "Subjek",
+      "subjectDefault": "Pilih Subjek",
+      "subjectOptions": [
+        "HFM Account Opening",
+        "Telegram Group",
+        "Platform Support",
+        "Other"
+      ],
+      "message": "Pesan Anda *",
+      "messagePlaceholder": "Ketik pesan Anda di sini..."
+    },
+    "disclaimer": "Formulir ini tidak dapat digunakan untuk permintaan nasihat investasi. Ini hanya untuk dukungan dan tujuan informasi akun HFM.",
+    "submit": "Kirim Pesan",
+    "submitting": "Mengirim..."
+  }
+}

@@ -1,0 +1,455 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "performance": "Performance",
+    "contact": "Contact",
+    "menu": "Menu"
+  },
+  "header": {
+    "brand": "TRADER ECE",
+    "subtitle": "HFM IB & Affiliate",
+    "bullex": "BULLEX",
+    "bullexSubtitle": "Signal Channel"
+  },
+  "footer": {
+    "pages": "Pages",
+    "legal": "Legal",
+    "links": {
+      "hfmOfficial": "HFM Official Site",
+      "hfmRegulation": "HFM Regulation"
+    },
+    "riskWarning": "Risk Warning:",
+    "riskDisclaimer": "Forex and CFD trading involve high risk. You may lose all your investment. This site does not provide investment advice or portfolio management services. Content here is for informational purposes only. We operate as an official IB/affiliate partner. Please consult an independent financial advisor before making investment decisions. Past performance is not a guarantee of future results.",
+    "partnerDesc": "We operate as an official Introducing Broker (IB) and affiliate partner. Market analysis content is shared for informational purposes only. We do not provide investment advice or portfolio management services.",
+    "copyright": "© {{year}} Trader ECE – HFM IB & Affiliate. All rights reserved.",
+    "regulation": "Operating in a regulated environment supervised by HF Markets Group.",
+    "bullexSubtitle": "SIGNAL CHANNEL"
+  },
+  "home": {
+    "badge": "TRADER ECE – HFM Official IB & Affiliate Partner",
+    "hero": {
+      "title1": "Informed Steps In",
+      "title2": "Forex Markets",
+      "subtitle": "15+ years of market experience with HFM partnership. Account opening in a regulated environment and signal groups. Investment advice is not provided."
+    },
+    "buttons": {
+      "telegramTraderEce": "Join Trader Ece Telegram Group",
+      "telegramBullex": "Join Bullex Telegram Group",
+      "info": "Get Info"
+    },
+    "trust": {
+      "title": "Regulated Broker",
+      "item1": "15+ Years Experience",
+      "item2": "7M$ Active Volume"
+    },
+    "services": {
+      "tag": "Services",
+      "title": "What We Offer?",
+      "subtitle": "Account support as an HFM IB partner and informational services. All content is for informational purposes.",
+      "viewAll": "View All Services →",
+      "cards": [
+        {
+          "icon": "📡",
+          "title": "Telegram & WhatsApp Groups",
+          "desc": "Real-time market analysis and bulletins through our special signal groups. Not investment advice."
+        },
+        {
+          "icon": "🏦",
+          "title": "HFM IB Partnership",
+          "desc": "As an official Introducing Broker partner, we provide account opening and platform support."
+        },
+        {
+          "icon": "🛡️",
+          "title": "Regulated Environment",
+          "desc": "HFM is a global broker regulated by multiple international authorities."
+        },
+        {
+          "icon": "📊",
+          "title": "Market Analysis",
+          "desc": "Technical and fundamental analysis content. All content is informational, not investment advice."
+        }
+      ]
+    },
+    "stats": {
+      "experience": "Years Experience",
+      "volume": "Active Volume ($)",
+      "withdrawals": "Withdrawal Volume ($)",
+      "partnership": "HFM Partnership (Years)"
+    },
+    "hfmTrust": {
+      "tag": "Why HFM?",
+      "title": "Global & Regulated Broker",
+      "desc": "HFM (HF Markets) is a global forex and CFD broker operating since 2010, regulated by multiple international financial authorities. Known for fast withdrawal times and reliable infrastructure.",
+      "features": [
+        "International regulation (FCA, CySEC, DFSA and more)",
+        "Fast withdrawal processing",
+        "Wide range of trading instruments",
+        "Secure customer fund segregation"
+      ],
+      "moreLink": "Learn More About HFM →"
+    },
+    "hfmBadge": {
+      "text": "HFM",
+      "tagline": "HF Markets Group",
+      "desc": "Regulated Broker"
+    },
+    "regulators": {
+      "fca": "FCA",
+      "cysec": "CySEC",
+      "dfsa": "DFSA",
+      "fsc": "FSC"
+    },
+    "cta": {
+      "title": "Want to Open an HFM Account?",
+      "subtitle": "Contact us for support and information.",
+      "telegramBtn": "Reach via Telegram",
+      "formBtn": "Contact Form"
+    }
+  },
+  "performance": {
+    "tag": "Performance & Numbers",
+    "hero": {
+      "title1": "Through",
+      "title2": "Past Experience",
+      "subtitle": "15+ years of market practice and volumes tracked through HFM. Past data does not guarantee future performance."
+    },
+    "metrics": [
+      {
+        "value": "15",
+        "suffix": "+",
+        "label": "Years Market Experience",
+        "note": "Active since 2009",
+        "prefix": ""
+      },
+      {
+        "value": "7",
+        "suffix": "M+",
+        "prefix": "$",
+        "label": "Active Volume",
+        "note": "Total volume tracked through IB"
+      },
+      {
+        "value": "4.6",
+        "suffix": "M+",
+        "prefix": "$",
+        "label": "Withdrawal Volume",
+        "note": "Withdrawals through HFM channel"
+      },
+      {
+        "value": "4",
+        "suffix": "+",
+        "label": "HFM Partnership Years",
+        "note": "Official IB partnership",
+        "prefix": ""
+      }
+    ],
+    "disclaimer": "⚠️ Important Note:",
+    "disclaimerText": "The numbers above are for informational purposes and reflect past data. These figures do not guarantee future performance or returns. Forex trading involves high risk, and it is recommended to consult an independent financial advisor before investing.",
+    "process": {
+      "tag": "Process",
+      "title": "How We Work?",
+      "subtitle": "Activities we conduct as an HFM IB partner.",
+      "steps": [
+        {
+          "number": "01",
+          "title": "HFM Account Support",
+          "desc": "We provide guidance when users open accounts through HFM. Account control is entirely with the user."
+        },
+        {
+          "number": "02",
+          "title": "Content Sharing",
+          "desc": "Market analysis content is shared in Telegram and WhatsApp groups. This is not investment advice."
+        },
+        {
+          "number": "03",
+          "title": "Support",
+          "desc": "Technical support is provided for platform usage and HFM processes."
+        }
+      ]
+    },
+    "hfmPartnership": {
+      "tag": "HFM Partnership",
+      "title": "Why HFM?",
+      "desc1": "HFM (HF Markets) is a global broker licensed by multiple international regulators. As an IB partner, we only facilitate account opening processes through HFM and provide informational support.",
+      "desc2": "Fund management, portfolio management, or individual investment advice is not provided.",
+      "regulationLink": "HFM Regulation Information →",
+      "authorities": {
+        "fca": "Financial Conduct Authority",
+        "cysec": "Cyprus Securities & Exchange",
+        "dfsa": "Dubai Financial Services",
+        "fsc": "Financial Services Commission"
+      }
+    },
+    "cta": {
+      "title": "Want to Open an HFM Account?",
+      "subtitle": "Let us help you with the account process as an IB partner.",
+      "button": "Get in Touch"
+    }
+  },
+  "about": {
+    "tag": "About",
+    "hero": {
+      "title1": "Get to Know",
+      "title2": "Who We Are",
+      "subtitle": "15+ years of market experience, 4+ years of HFM partnership. We operate as an official HFM IB/Affiliate partner."
+    },
+    "experience": "15+",
+    "experienceLabel": "Years Experience",
+    "badges": [
+      "HFM Official IB Partner",
+      "Active Signal Communities",
+      "Regulated Environment"
+    ],
+    "biography": {
+      "tag": "Biography",
+      "title": "Experience and Trust",
+      "p1": "Since 2009, I have been actively involved in Forex markets. Over the years, I have accumulated in-depth knowledge in technical analysis, fundamental analysis, and market psychology.",
+      "p2": "Since 2021, I have been working as an official Introducing Broker (IB) and affiliate partner with HFM (HF Markets). In this capacity, I provide support in HFM account opening processes, platform information, and market analysis content.",
+      "note": "Important Note:",
+      "p3": "The content and analysis provided do not constitute investment advice, portfolio management, or individual investment consultation. It is for informational purposes only.",
+      "button": "Get in Touch"
+    },
+    "hfmPartnership": {
+      "tag": "Why HFM?",
+      "title": "HFM Partnership",
+      "subtitle": "HFM is a trusted and regulated global forex broker. As an IB partner, we provide you with this reliable infrastructure.",
+      "features": [
+        {
+          "icon": "🌍",
+          "title": "Global Regulation",
+          "desc": "Regulated by FCA, CySEC, DFSA, FSC and more. Reliable institutional infrastructure."
+        },
+        {
+          "icon": "⚡",
+          "title": "Fast Withdrawals",
+          "desc": "With HFM's fast withdrawal times, quickly access your funds."
+        },
+        {
+          "icon": "📱",
+          "title": "Powerful Platform",
+          "desc": "MT4, MT5 and HFM-specific platforms. Mobile and desktop compatible."
+        },
+        {
+          "icon": "🔒",
+          "title": "Fund Security",
+          "desc": "Customer funds are held in separate accounts. Subject to regulatory oversight."
+        },
+        {
+          "icon": "📊",
+          "title": "Wide Range of Instruments",
+          "desc": "Forex, gold, indices, stocks and more. All on one platform."
+        },
+        {
+          "icon": "🎓",
+          "title": "Educational Resources",
+          "desc": "HFM's official educational content and market research."
+        }
+      ]
+    },
+    "timeline": {
+      "tag": "Timeline",
+      "title": "Our Journey",
+      "items": [
+        {
+          "year": "2009",
+          "title": "Forex Journey Begins",
+          "desc": "Entered Forex markets. Intensive study period on technical and fundamental analysis."
+        },
+        {
+          "year": "2013",
+          "title": "First Professional Steps",
+          "desc": "Signal groups established. Market analysis began to be shared. Community grew."
+        },
+        {
+          "year": "2018",
+          "title": "Corporate Partnerships",
+          "desc": "International broker partnerships established. IB activities began."
+        },
+        {
+          "year": "2021",
+          "title": "HFM IB Partnership",
+          "desc": "Official Introducing Broker partnership with HFM (HF Markets) began. Transition to regulated environment."
+        },
+        {
+          "year": "2025",
+          "title": "Today",
+          "desc": "7M+ USD active trading volume, account support for thousands of users and market analysis content."
+        }
+      ]
+    }
+  },
+  "services": {
+    "tag": "Services",
+    "title": "What We Provide",
+    "subtitle": "Account support as an HFM IB partner and market information content. Investment advice is not provided.",
+    "cards": [
+      {
+        "icon": "📡",
+        "title": "Telegram & WhatsApp Signal Groups",
+        "desc": "Daily and weekly market analysis, bulletins are shared in our special signal groups. All content is for informational purposes; it is not investment advice or individual consultation.",
+        "features": [
+          "Daily technical analysis bulletins",
+          "Important economic calendar tracking",
+          "Market news and commentary",
+          "Real-time notifications"
+        ],
+        "disclaimer": "This content is not investment advice. Make your own decisions."
+      },
+      {
+        "icon": "🏦",
+        "title": "HFM Account Opening Support",
+        "desc": "As an official HFM IB partner, we provide guidance and support in the HFM account opening process. Account management or fund management service is not provided.",
+        "features": [
+          "HFM account opening guidance",
+          "Platform (MT4/MT5) setup support",
+          "Account type selection information",
+          "Deposit/withdrawal process support"
+        ],
+        "disclaimer": "Your account is completely under your control. Fund management is not provided."
+      },
+      {
+        "icon": "📊",
+        "title": "Market Analysis Content",
+        "desc": "Technical and fundamental analysis content is prepared and shared for informational purposes. This content should not be used alone in buying/selling decisions.",
+        "features": [
+          "Technical analysis chart sharing",
+          "Fundamental analysis summaries",
+          "Support/resistance levels",
+          "Economic data tracking"
+        ],
+        "disclaimer": "Analysis is based on past data; it does not guarantee future results."
+      }
+    ],
+    "advantages": {
+      "tag": "Advantages",
+      "title": "Why Choose Us?",
+      "cards": [
+        {
+          "icon": "🛡️",
+          "title": "Regulated Environment",
+          "desc": "HFM's international regulated infrastructure"
+        },
+        {
+          "icon": "⚡",
+          "title": "Fast Withdrawals",
+          "desc": "HFM's recognized withdrawal speed"
+        },
+        {
+          "icon": "🌍",
+          "title": "Global Access",
+          "desc": "Accessible from anywhere in the world"
+        },
+        {
+          "icon": "📞",
+          "title": "Support",
+          "desc": "Quick response via Telegram and email"
+        }
+      ]
+    },
+    "packages": {
+      "tag": "Packages",
+      "title": "Content Packages",
+      "subtitle": "Access to informational and analysis content packages.",
+      "free": {
+        "name": "Free",
+        "price": "0",
+        "desc": "Basic informational content for beginners",
+        "features": [
+          "General market news",
+          "Weekly analysis summary",
+          "HFM account opening support",
+          "Platform information"
+        ],
+        "cta": "Get Started"
+      },
+      "premium": {
+        "name": "Premium",
+        "price": "Contact Us",
+        "desc": "Comprehensive informational content and priority support",
+        "badge": "Recommended",
+        "features": [
+          "Daily analysis bulletins",
+          "Special Telegram group access",
+          "Priority platform support",
+          "Economic calendar notifications",
+          "Monthly market report"
+        ],
+        "cta": "Get Info"
+      },
+      "note": "* All content is for informational purposes. Investment advice, portfolio management or individual consultation service is not provided. Forex trading involves high risk."
+    }
+  },
+  "contact": {
+    "tag": "Contact",
+    "title": "Get in Touch",
+    "subtitle": "Contact us for HFM account opening, platform support and information.",
+    "channels": {
+      "tag": "Contact Channels",
+      "title": "How to Reach?",
+      "items": [
+        {
+          "icon": "💬",
+          "title": "Bullex Telegram",
+          "desc": "Join signal and analysis channel",
+          "link": "t.me/channel →"
+        },
+        {
+          "icon": "💬",
+          "title": "Trader Ece Telegram",
+          "desc": "Click here for second channel",
+          "link": "t.me/channel2 →"
+        },
+        {
+          "icon": "💬",
+          "title": "WhatsApp",
+          "desc": "Send message via WhatsApp",
+          "link": "wa.me/number →"
+        },
+        {
+          "icon": "✉️",
+          "title": "Email",
+          "desc": "For detailed questions",
+          "link": "info@example.com →"
+        }
+      ]
+    },
+    "hfm": {
+      "logo": "HFM",
+      "title": "Open HFM Account",
+      "desc": "Open your official HFM account through our IB link",
+      "link": "Go to HFM →"
+    }
+  },
+  "form": {
+    "success": {
+      "title": "Message Sent!",
+      "msg": "We will get back to you as soon as possible. You can also join our Telegram group.",
+      "button": "Join Telegram Group"
+    },
+    "card": {
+      "title": "Send Message",
+      "subtitle": "Send your questions about HFM account, platform or analysis content."
+    },
+    "fields": {
+      "name": "Full Name *",
+      "namePlaceholder": "Your Name Surname",
+      "email": "Email *",
+      "emailPlaceholder": "example@email.com",
+      "subject": "Subject",
+      "subjectDefault": "Select Subject",
+      "subjectOptions": [
+        "HFM Account Opening",
+        "Telegram Group",
+        "Platform Support",
+        "Other"
+      ],
+      "message": "Your Message *",
+      "messagePlaceholder": "Type your message here..."
+    },
+    "disclaimer": "This form cannot be used for investment advice requests. It is only for HFM account support and information purposes.",
+    "submit": "Send Message",
+    "submitting": "Sending..."
+  }
+}

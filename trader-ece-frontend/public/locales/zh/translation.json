@@ -1,0 +1,455 @@
+{
+  "nav": {
+    "home": "首页",
+    "about": "关于",
+    "services": "服务",
+    "performance": "业绩",
+    "contact": "联系",
+    "menu": "菜单"
+  },
+  "header": {
+    "brand": "TRADER ECE",
+    "subtitle": "HFM IB & Affiliate",
+    "bullex": "BULLEX",
+    "bullexSubtitle": "Signal Channel"
+  },
+  "footer": {
+    "pages": "页面",
+    "legal": "法律",
+    "links": {
+      "hfmOfficial": "HFM官方网站",
+      "hfmRegulation": "HFM监管信息"
+    },
+    "riskWarning": "风险警告:",
+    "riskDisclaimer": "外汇和差价合约交易涉及高风险。您可能会损失全部投资。本网站不提供投资建议或投资组合管理服务。此处的内容仅供信息参考。我们作为官方介绍经纪商(IB)/合作伙伴运营。在做出投资决定前，请咨询独立财务顾问。过往表现不保证未来结果。",
+    "partnerDesc": "我们作为官方介绍经纪商(IB)和合作伙伴运营。市场分析内容仅供信息参考。我们不提供投资建议或投资组合管理服务。",
+    "copyright": "© {{year}} Trader ECE – HFM IB & 合作伙伴。版权所有。",
+    "regulation": "在HF Markets Group监督的受监管环境中运营。",
+    "bullexSubtitle": "SIGNAL CHANNEL"
+  },
+  "home": {
+    "badge": "TRADER ECE – HFM官方IB和合作伙伴",
+    "hero": {
+      "title1": "明智决策进入",
+      "title2": "外汇市场",
+      "subtitle": "与HFM合作伙伴的15年以上市场经验。在受监管环境和信号群组中开设账户。不提供投资建议。"
+    },
+    "buttons": {
+      "telegramTraderEce": "加入Trader Ece Telegram群组",
+      "telegramBullex": "加入Bullex Telegram群组",
+      "info": "获取信息"
+    },
+    "trust": {
+      "title": "受监管的经纪商",
+      "item1": "15年以上经验",
+      "item2": "活跃交易量700万美元"
+    },
+    "services": {
+      "tag": "服务",
+      "title": "我们提供什么?",
+      "subtitle": "作为HFM IB合作伙伴提供账户支持和信息服务。所有内容仅供信息参考。",
+      "viewAll": "查看所有服务 →",
+      "cards": [
+        {
+          "icon": "📡",
+          "title": "Telegram和WhatsApp群组",
+          "desc": "通过我们的特殊信号群组提供实时市场分析和公告。非投资建议。"
+        },
+        {
+          "icon": "🏦",
+          "title": "HFM IB合作伙伴关系",
+          "desc": "作为官方介绍经纪商合作伙伴，我们提供账户开设和平台支持。"
+        },
+        {
+          "icon": "🛡️",
+          "title": "受监管环境",
+          "desc": "HFM是受多个国际金融机构监管的全球经纪商。"
+        },
+        {
+          "icon": "📊",
+          "title": "市场分析",
+          "desc": "技术面和基本面分析内容。所有内容仅供参考，非投资建议。"
+        }
+      ]
+    },
+    "stats": {
+      "experience": "年经验",
+      "volume": "活跃交易量(美元)",
+      "withdrawals": "提取交易量(美元)",
+      "partnership": "HFM合作伙伴关系(年)"
+    },
+    "hfmTrust": {
+      "tag": "为什么选择HFM?",
+      "title": "全球受监管的经纪商",
+      "desc": "HFM (HF Markets)是全球外汇和差价合约经纪商，自2010年起运营，受多个国际金融机构监管。以快速提现和可靠的基础设施而闻名。",
+      "features": [
+        "国际监管(FCA、CySEC、DFSA等)",
+        "快速提现处理",
+        "广泛的交易工具",
+        "客户资金安全隔离"
+      ],
+      "moreLink": "了解更多关于HFM →"
+    },
+    "hfmBadge": {
+      "text": "HFM",
+      "tagline": "HF Markets Group",
+      "desc": "受监管的经纪商"
+    },
+    "regulators": {
+      "fca": "FCA",
+      "cysec": "CySEC",
+      "dfsa": "DFSA",
+      "fsc": "FSC"
+    },
+    "cta": {
+      "title": "想开设HFM账户?",
+      "subtitle": "联系我们获取支持和信息。",
+      "telegramBtn": "通过Telegram联系",
+      "formBtn": "联系表格"
+    }
+  },
+  "performance": {
+    "tag": "业绩和数据",
+    "hero": {
+      "title1": "通过",
+      "title2": "过往经验",
+      "subtitle": "15年以上的市场实践和通过HFM追踪的交易量。过往数据不保证未来表现。"
+    },
+    "metrics": [
+      {
+        "value": "15",
+        "suffix": "+",
+        "label": "年市场经验",
+        "note": "从2009年开始活跃",
+        "prefix": ""
+      },
+      {
+        "value": "7",
+        "suffix": "M+",
+        "prefix": "$",
+        "label": "活跃交易量",
+        "note": "通过IB追踪的总交易量"
+      },
+      {
+        "value": "4.6",
+        "suffix": "M+",
+        "prefix": "$",
+        "label": "提取交易量",
+        "note": "通过HFM渠道的提取"
+      },
+      {
+        "value": "4",
+        "suffix": "+",
+        "label": "HFM合作伙伴关系年限",
+        "note": "官方IB合作伙伴",
+        "prefix": ""
+      }
+    ],
+    "disclaimer": "⚠️ 重要提示:",
+    "disclaimerText": "上述数据仅供信息参考，反映过往数据。这些数据不保证未来表现或回报。外汇交易涉及高风险，建议在投资前咨询独立财务顾问。",
+    "process": {
+      "tag": "流程",
+      "title": "我们如何运营?",
+      "subtitle": "作为HFM IB合作伙伴进行的活动。",
+      "steps": [
+        {
+          "number": "01",
+          "title": "HFM账户支持",
+          "desc": "当用户通过HFM开设账户时，我们提供指导。账户完全由用户控制。"
+        },
+        {
+          "number": "02",
+          "title": "内容分享",
+          "desc": "市场分析内容在Telegram和WhatsApp群组中分享。非投资建议。"
+        },
+        {
+          "number": "03",
+          "title": "支持",
+          "desc": "为平台使用和HFM流程提供技术支持。"
+        }
+      ]
+    },
+    "hfmPartnership": {
+      "tag": "HFM合作伙伴关系",
+      "title": "为什么选择HFM?",
+      "desc1": "HFM (HF Markets)是受多个国际监管机构许可的全球经纪商。作为IB合作伙伴，我们仅便利通过HFM的账户开设流程并提供信息支持。",
+      "desc2": "不提供资金管理、投资组合管理或个人投资建议。",
+      "regulationLink": "HFM监管信息 →",
+      "authorities": {
+        "fca": "Financial Conduct Authority",
+        "cysec": "Cyprus Securities & Exchange",
+        "dfsa": "Dubai Financial Services",
+        "fsc": "Financial Services Commission"
+      }
+    },
+    "cta": {
+      "title": "想开设HFM账户?",
+      "subtitle": "让我们以IB合作伙伴身份帮助您完成账户流程。",
+      "button": "联系我们"
+    }
+  },
+  "about": {
+    "tag": "关于",
+    "hero": {
+      "title1": "了解",
+      "title2": "我们是谁",
+      "subtitle": "15年以上市场经验，4年以上HFM合作伙伴关系。我们作为官方HFM IB/合作伙伴运营。"
+    },
+    "experience": "15+",
+    "experienceLabel": "年经验",
+    "badges": [
+      "HFM Official IB Partner",
+      "Active Signal Communities",
+      "Regulated Environment"
+    ],
+    "biography": {
+      "tag": "个人介绍",
+      "title": "经验和信任",
+      "p1": "自2009年以来，我一直积极参与外汇市场。多年来，我积累了深厚的技术分析、基本面分析和市场心理学知识。",
+      "p2": "自2021年以来，我一直作为官方介绍经纪商(IB)和HFM (HF Markets)合作伙伴运营。在此角色中，我为HFM账户开设流程、平台信息和市场分析内容提供支持。",
+      "note": "重要提示:",
+      "p3": "所提供的内容和分析不构成投资建议、投资组合管理或个人投资咨询。仅供信息参考。",
+      "button": "联系我们"
+    },
+    "hfmPartnership": {
+      "tag": "为什么选择HFM?",
+      "title": "HFM合作伙伴关系",
+      "subtitle": "HFM是一个可信任的、受监管的全球外汇经纪商。作为IB合作伙伴，我们为您提供这一可靠的基础设施。",
+      "features": [
+        {
+          "icon": "🌍",
+          "title": "全球监管",
+          "desc": "受FCA、CySEC、DFSA、FSC等监管。可靠的机构基础设施。"
+        },
+        {
+          "icon": "⚡",
+          "title": "快速提现",
+          "desc": "凭借HFM快速的提现时间，快速获取您的资金。"
+        },
+        {
+          "icon": "📱",
+          "title": "强大平台",
+          "desc": "MT4、MT5和HFM专有平台。兼容手机和桌面。"
+        },
+        {
+          "icon": "🔒",
+          "title": "资金安全",
+          "desc": "客户资金存放在独立账户中。受监管部门监督。"
+        },
+        {
+          "icon": "📊",
+          "title": "广泛工具范围",
+          "desc": "外汇、黄金、指数、股票等。全部在一个平台。"
+        },
+        {
+          "icon": "🎓",
+          "title": "教育资源",
+          "desc": "HFM官方教育内容和市场研究。"
+        }
+      ]
+    },
+    "timeline": {
+      "tag": "时间轴",
+      "title": "我们的旅程",
+      "items": [
+        {
+          "year": "2009",
+          "title": "外汇之旅开始",
+          "desc": "进入外汇市场。技术面和基本面分析的集中学习期。"
+        },
+        {
+          "year": "2013",
+          "title": "专业首步",
+          "desc": "建立信号群组。市场分析开始分享。社区增长。"
+        },
+        {
+          "year": "2018",
+          "title": "企业合作伙伴关系",
+          "desc": "建立国际经纪商合作伙伴关系。IB活动开始。"
+        },
+        {
+          "year": "2021",
+          "title": "HFM IB合作伙伴关系",
+          "desc": "与HFM (HF Markets)的官方介绍经纪商合作伙伴关系开始。向受监管环境的转变。"
+        },
+        {
+          "year": "2025",
+          "title": "今天",
+          "desc": "700万美元以上活跃交易量，为数千用户提供账户支持和市场分析内容。"
+        }
+      ]
+    }
+  },
+  "services": {
+    "tag": "服务",
+    "title": "我们提供什么",
+    "subtitle": "作为HFM IB合作伙伴提供账户支持和市场信息内容。不提供投资建议。",
+    "cards": [
+      {
+        "icon": "📡",
+        "title": "Telegram和WhatsApp信号群组",
+        "desc": "日报和周报市场分析、公告在我们的特殊信号群组中分享。所有内容仅供信息参考；非投资建议或个人咨询。",
+        "features": [
+          "日报技术分析公告",
+          "重要经济日历追踪",
+          "市场新闻和评论",
+          "实时通知"
+        ],
+        "disclaimer": "此内容非投资建议。做出自己的决定。"
+      },
+      {
+        "icon": "🏦",
+        "title": "HFM账户开设支持",
+        "desc": "作为官方HFM IB合作伙伴，我们在HFM账户开设流程中提供指导和支持。不提供账户管理或资金管理服务。",
+        "features": [
+          "HFM账户开设指导",
+          "平台(MT4/MT5)设置支持",
+          "账户类型选择信息",
+          "存取款流程支持"
+        ],
+        "disclaimer": "您的账户完全由您控制。不提供资金管理。"
+      },
+      {
+        "icon": "📊",
+        "title": "市场分析内容",
+        "desc": "技术面和基本面分析内容为信息目的而准备和分享。此内容不应单独用于买卖决定。",
+        "features": [
+          "技术分析图表分享",
+          "基本面分析总结",
+          "支持/阻力位",
+          "经济数据追踪"
+        ],
+        "disclaimer": "分析基于过往数据；不保证未来结果。"
+      }
+    ],
+    "advantages": {
+      "tag": "优势",
+      "title": "为什么选择我们?",
+      "cards": [
+        {
+          "icon": "🛡️",
+          "title": "受监管环境",
+          "desc": "HFM的国际受监管基础设施"
+        },
+        {
+          "icon": "⚡",
+          "title": "快速提现",
+          "desc": "HFM的公认提现速度"
+        },
+        {
+          "icon": "🌍",
+          "title": "全球可访问",
+          "desc": "可从世界任何地方访问"
+        },
+        {
+          "icon": "📞",
+          "title": "支持",
+          "desc": "通过Telegram和电子邮件快速响应"
+        }
+      ]
+    },
+    "packages": {
+      "tag": "套餐",
+      "title": "内容套餐",
+      "subtitle": "访问信息和分析内容套餐。",
+      "free": {
+        "name": "免费",
+        "price": "0",
+        "desc": "初学者基础信息内容",
+        "features": [
+          "一般市场新闻",
+          "周报分析总结",
+          "HFM账户开设支持",
+          "平台信息"
+        ],
+        "cta": "开始使用"
+      },
+      "premium": {
+        "name": "高级版",
+        "price": "联系我们",
+        "desc": "全面的信息内容和优先级支持",
+        "badge": "推荐",
+        "features": [
+          "日报分析公告",
+          "特殊Telegram群组访问权",
+          "优先平台支持",
+          "经济日历通知",
+          "月度市场报告"
+        ],
+        "cta": "获取信息"
+      },
+      "note": "* 所有内容仅供信息参考。不提供投资建议、投资组合管理或个人咨询服务。外汇交易涉及高风险。"
+    }
+  },
+  "contact": {
+    "tag": "联系",
+    "title": "联系我们",
+    "subtitle": "联系我们获取HFM账户开设、平台支持和信息。",
+    "channels": {
+      "tag": "联系渠道",
+      "title": "如何联系?",
+      "items": [
+        {
+          "icon": "💬",
+          "title": "Bullex Telegram",
+          "desc": "加入信号和分析频道",
+          "link": "t.me/channel →"
+        },
+        {
+          "icon": "💬",
+          "title": "Trader Ece Telegram",
+          "desc": "点击此处获取第二个频道",
+          "link": "t.me/channel2 →"
+        },
+        {
+          "icon": "💬",
+          "title": "WhatsApp",
+          "desc": "通过WhatsApp发送消息",
+          "link": "wa.me/number →"
+        },
+        {
+          "icon": "✉️",
+          "title": "电子邮件",
+          "desc": "用于详细问题",
+          "link": "info@example.com →"
+        }
+      ]
+    },
+    "hfm": {
+      "logo": "HFM",
+      "title": "开设HFM账户",
+      "desc": "通过我们的IB链接开设您的官方HFM账户",
+      "link": "前往HFM →"
+    }
+  },
+  "form": {
+    "success": {
+      "title": "消息已发送!",
+      "msg": "我们会尽快回复您。您也可以加入我们的Telegram群组。",
+      "button": "加入Telegram群组"
+    },
+    "card": {
+      "title": "发送消息",
+      "subtitle": "发送您关于HFM账户、平台或分析内容的问题。"
+    },
+    "fields": {
+      "name": "全名 *",
+      "namePlaceholder": "您的姓名",
+      "email": "电子邮件 *",
+      "emailPlaceholder": "example@email.com",
+      "subject": "主题",
+      "subjectDefault": "选择主题",
+      "subjectOptions": [
+        "HFM Account Opening",
+        "Telegram Group",
+        "Platform Support",
+        "Other"
+      ],
+      "message": "您的消息 *",
+      "messagePlaceholder": "在此输入您的消息..."
+    },
+    "disclaimer": "此表格不能用于投资建议请求。仅用于HFM账户支持和信息目的。",
+    "submit": "发送消息",
+    "submitting": "发送中..."
+  }
+}

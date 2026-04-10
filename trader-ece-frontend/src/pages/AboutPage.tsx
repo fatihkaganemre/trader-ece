@@ -1,4 +1,5 @@
 import "./AboutPage.css";
+import { useTranslation } from "react-i18next";
 import type { NavigateFn } from "../App";
 
 interface AboutPageProps {
@@ -22,65 +23,101 @@ interface BioBadge {
   text: string;
 }
 
-const timeline: TimelineItem[] = [
-  {
-    year: "2009",
-    title: "Forex Yolculuğu Başlıyor",
-    desc: "Forex piyasalarına adım atıldı. Teknik ve temel analiz üzerine yoğun çalışma dönemi.",
-  },
-  {
-    year: "2013",
-    title: "İlk Profesyonel Adımlar",
-    desc: "Sinyal grupları kuruldu. Piyasa analizleri paylaşılmaya başlandı. Topluluk büyüdü.",
-  },
-  {
-    year: "2018",
-    title: "Kurumsal Ortaklıklar",
-    desc: "Uluslararası broker ortaklıkları kuruldu. IB faaliyetleri başladı.",
-  },
-  {
-    year: "2021",
-    title: "HFM IB Ortaklığı",
-    desc: "HFM (HF Markets) ile resmi Introducing Broker ortaklığı başladı. Regüle ortama geçiş.",
-  },
-  {
-    year: "2025",
-    title: "Bugün",
-    desc: "7M+ dolar aktif işlem hacmi, binlerce kullanıcıya HFM hesap desteği ve piyasa analiz içerikleri.",
-  },
-];
 
-const hfmFeatures: HfmFeature[] = [
-  { icon: "🌍", title: "Global Regülasyon", desc: "FCA, CySEC, DFSA, FSC ve daha fazlası tarafından regüle edilmiştir. Güvenilir kurumsal altyapı." },
-  { icon: "⚡", title: "Hızlı Çekimler", desc: "HFM'in hızlı para çekme süreleri ile fonlarınıza hızla erişebilirsiniz." },
-  { icon: "📱", title: "Güçlü Platform", desc: "MT4, MT5 ve HFM'e özel platformlar. Mobil ve masaüstü uyumlu." },
-  { icon: "🔒", title: "Fon Güvenliği", desc: "Müşteri fonları ayrı hesaplarda tutulur. Düzenleyici kurumların denetimine tabidir." },
-  { icon: "📊", title: "Geniş Araç Yelpazesi", desc: "Forex, altın, endeksler, hisseler ve daha fazlası. Tek bir platformda." },
-  { icon: "🎓", title: "Eğitim Kaynakları", desc: "HFM'in resmi eğitim içerikleri ve piyasa araştırmaları." },
-];
-
-const bioBadges: BioBadge[] = [
-  { icon: "🏦", text: "HFM Resmi IB Ortağı" },
-  { icon: "📡", text: "Aktif Sinyal Toplulukları" },
-  { icon: "🛡️", text: "Regüle Edilmiş Ortam" },
-];
 
 export default function AboutPage({ navigate }: AboutPageProps) {
+  const { t } = useTranslation();
+
+  const timelineFromTranslation: TimelineItem[] = [
+    {
+      year: t("about.timeline.items.0.year"),
+      title: t("about.timeline.items.0.title"),
+      desc: t("about.timeline.items.0.desc"),
+    },
+    {
+      year: t("about.timeline.items.1.year"),
+      title: t("about.timeline.items.1.title"),
+      desc: t("about.timeline.items.1.desc"),
+    },
+    {
+      year: t("about.timeline.items.2.year"),
+      title: t("about.timeline.items.2.title"),
+      desc: t("about.timeline.items.2.desc"),
+    },
+    {
+      year: t("about.timeline.items.3.year"),
+      title: t("about.timeline.items.3.title"),
+      desc: t("about.timeline.items.3.desc"),
+    },
+    {
+      year: t("about.timeline.items.4.year"),
+      title: t("about.timeline.items.4.title"),
+      desc: t("about.timeline.items.4.desc"),
+    },
+  ];
+
+  const hfmFeaturesFromTranslation: HfmFeature[] = [
+    {
+      icon: "🌍",
+      title: t("about.hfmPartnership.features.0.title"),
+      desc: t("about.hfmPartnership.features.0.desc"),
+    },
+    {
+      icon: "⚡",
+      title: t("about.hfmPartnership.features.1.title"),
+      desc: t("about.hfmPartnership.features.1.desc"),
+    },
+    {
+      icon: "📱",
+      title: t("about.hfmPartnership.features.2.title"),
+      desc: t("about.hfmPartnership.features.2.desc"),
+    },
+    {
+      icon: "🔒",
+      title: t("about.hfmPartnership.features.3.title"),
+      desc: t("about.hfmPartnership.features.3.desc"),
+    },
+    {
+      icon: "📊",
+      title: t("about.hfmPartnership.features.4.title"),
+      desc: t("about.hfmPartnership.features.4.desc"),
+    },
+    {
+      icon: "🎓",
+      title: t("about.hfmPartnership.features.5.title"),
+      desc: t("about.hfmPartnership.features.5.desc"),
+    },
+  ];
+
+  const bioBadgesFromTranslation: BioBadge[] = [
+    {
+      icon: "🏦",
+      text: t("about.badges.0"),
+    },
+    {
+      icon: "📡",
+      text: t("about.badges.1"),
+    },
+    {
+      icon: "🛡️",
+      text: t("about.badges.2"),
+    },
+  ];
+
   return (
     <div className="about-page">
       {/* Hero */}
       <section className="page-hero">
         <div className="page-hero__bg" />
         <div className="container">
-          <div className="section-tag">Hakkımızda</div>
+          <div className="section-tag">{t("about.tag")}</div>
           <h1 className="section-title" style={{ fontSize: "clamp(40px, 6vw, 64px)" }}>
-            Kim Olduğumuzu
+            {t("about.hero.title1")}
             <br />
-            <span className="highlight">Tanıyın</span>
+            <span className="highlight">{t("about.hero.title2")}</span>
           </h1>
           <p className="section-subtitle" style={{ fontSize: 18 }}>
-            15+ yıllık piyasa deneyimi, 4+ yıllık HFM ortaklığı. HFM resmi
-            IB/Affiliate sıfatıyla hizmet vermekteyiz.
+            {t("about.hero.subtitle")}
           </p>
         </div>
       </section>
@@ -92,12 +129,12 @@ export default function AboutPage({ navigate }: AboutPageProps) {
             <div className="about-bio-visual">
               <div className="bio-circle">
                 <div className="bio-circle__inner">
-                  <span className="bio-years">15+</span>
-                  <span className="bio-years-label">Yıl Deneyim</span>
+                  <span className="bio-years">{t("about.experience")}</span>
+                  <span className="bio-years-label">{t("about.experienceLabel")}</span>
                 </div>
               </div>
               <div className="bio-badges">
-                {bioBadges.map((b, i) => (
+                {bioBadgesFromTranslation.map((b, i) => (
                   <div key={i} className="bio-badge">
                     <span>{b.icon}</span> {b.text}
                   </div>
@@ -106,28 +143,21 @@ export default function AboutPage({ navigate }: AboutPageProps) {
             </div>
 
             <div className="about-bio-content">
-              <div className="section-tag">Biyografi</div>
+              <div className="section-tag">{t("about.biography.tag")}</div>
               <h2 className="section-title" style={{ fontSize: "clamp(28px, 4vw, 42px)" }}>
-                Deneyim ve Güven
+                {t("about.biography.title")}
               </h2>
               <p className="about-text">
-                2009 yılından bu yana Forex piyasalarında aktif olarak bulunmaktayım.
-                Yıllar içinde teknik analiz, temel analiz ve piyasa psikolojisi konularında
-                derinlemesine bilgi birikimine ulaştım.
+                {t("about.biography.p1")}
               </p>
               <p className="about-text">
-                2021 yılından itibaren <strong>HFM (HF Markets)</strong> ile resmi Introducing
-                Broker (IB) ve affiliate ortağı olarak çalışmaktayım. Bu sıfatla; HFM hesap
-                açılışı süreçlerinde destek, platform bilgilendirmesi ve piyasa analiz içerikleri
-                sunmaktayım.
+                {t("about.biography.p2")}
               </p>
               <p className="about-text">
-                <strong style={{ color: "var(--accent)" }}>Önemli Not:</strong> Sunulan içerikler
-                ve analizler yatırım tavsiyesi, portföy yönetimi veya bireysel yatırım danışmanlığı
-                niteliği taşımamaktadır. Yalnızca bilgilendirme amaçlıdır.
+                <strong style={{ color: "var(--accent)" }}>{t("about.biography.note")}</strong> {t("about.biography.p3")}
               </p>
               <button className="btn btn-primary" style={{ marginTop: 24 }} onClick={() => navigate("contact")}>
-                İletişime Geç
+                {t("about.biography.button")}
               </button>
             </div>
           </div>
@@ -137,14 +167,13 @@ export default function AboutPage({ navigate }: AboutPageProps) {
       {/* HFM Section */}
       <section className="section hfm-about-section">
         <div className="container">
-          <div className="section-tag">Neden HFM?</div>
-          <h2 className="section-title">HFM ile Ortaklık</h2>
+          <div className="section-tag">{t("about.hfmPartnership.tag")}</div>
+          <h2 className="section-title">{t("about.hfmPartnership.title")}</h2>
           <p className="section-subtitle" style={{ marginBottom: 48 }}>
-            HFM, küresel çapta güvenilir ve regüle edilmiş bir forex brokerıdır.
-            IB ortağı olarak size bu güvenilir altyapıyı sunuyoruz.
+            {t("about.hfmPartnership.subtitle")}
           </p>
           <div className="grid-3">
-            {hfmFeatures.map((item, i) => (
+            {hfmFeaturesFromTranslation.map((item, i) => (
               <div key={i} className="card hfm-feature-card">
                 <div className="feature-icon-lg">{item.icon}</div>
                 <h3>{item.title}</h3>
@@ -158,10 +187,10 @@ export default function AboutPage({ navigate }: AboutPageProps) {
       {/* Timeline */}
       <section className="section timeline-section">
         <div className="container">
-          <div className="section-tag">Tarihçemiz</div>
-          <h2 className="section-title">Yolculuğumuz</h2>
+          <div className="section-tag">{t("about.timeline.tag")}</div>
+          <h2 className="section-title">{t("about.timeline.title")}</h2>
           <div className="timeline">
-            {timeline.map((item, i) => (
+            {timelineFromTranslation.map((item, i) => (
               <div key={i} className={`timeline-item ${i % 2 === 0 ? "left" : "right"}`}>
                 <div className="timeline-year">{item.year}</div>
                 <div className="timeline-dot" />

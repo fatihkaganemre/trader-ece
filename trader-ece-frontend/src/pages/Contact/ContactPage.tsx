@@ -1,4 +1,5 @@
 import "./ContactPage.css";
+import { useTranslation } from "react-i18next";
 import ContactForm from "./ContactForm";
 
 interface ContactChannel {
@@ -65,19 +66,60 @@ const channels: ContactChannel[] = [
 ];
 
 export default function ContactPage() {
+  const { t, i18n } = useTranslation();
+
+  // Determine broker link based on language
+  const brokerLink = i18n.language === 'tr' 
+    ? "https://my.qatr-tickmill.com/tr/login?utm_campaign=ib_link&utm_content=IB54180972&utm_medium=Open+Account&utm_source=link&lp=https%3A%2F%2Fmy.qatr-tickmill.com%2Ftr%2Fsign-up%2F"
+    : "https://register.hfm-trade.com/sv/en/new-live-account/?refid=365189&acid=h4ywf710tx";
+
+  const channelsFromTranslation: ContactChannel[] = [
+    {
+      href: "https://t.me/bullexardav",
+      color: "#0088cc",
+      title: t("contact.channels.items.0.title"),
+      subtitle: t("contact.channels.items.0.desc"),
+      linkLabel: t("contact.channels.items.0.link"),
+      icon: telegramIcon,
+    },
+    {
+      href: "https://t.me/tradereceteam",
+      color: "#0088cc",
+      title: t("contact.channels.items.1.title"),
+      subtitle: t("contact.channels.items.1.desc"),
+      linkLabel: t("contact.channels.items.1.link"),
+      icon: telegramIcon,
+    },
+    {
+      href: "https://wa.link/yy3thb",
+      color: "#25d366",
+      title: t("contact.channels.items.2.title"),
+      subtitle: t("contact.channels.items.2.desc"),
+      linkLabel: t("contact.channels.items.2.link"),
+      icon: whatsappIcon,
+    },
+    {
+      href: "mailto:info@example.com",
+      color: "#00d4e8",
+      title: t("contact.channels.items.3.title"),
+      subtitle: t("contact.channels.items.3.desc"),
+      linkLabel: t("contact.channels.items.3.link"),
+      icon: emailIcon,
+    },
+  ];
+
   return (
     <div className="contact-page">
       {/* Hero */}
       <section className="page-hero">
         <div className="page-hero__bg" />
         <div className="container">
-          <div className="section-tag">İletişim</div>
+          <div className="section-tag">{t("contact.tag")}</div>
           <h1 className="section-title" style={{ fontSize: "clamp(40px, 6vw, 64px)" }}>
-            Bize Ulaşın
+            {t("contact.title")}
           </h1>
           <p className="section-subtitle" style={{ fontSize: 18 }}>
-            HFM hesap açılışı, platform desteği ve bilgilendirme için bizimle
-            iletişime geçin.
+            {t("contact.subtitle")}
           </p>
         </div>
       </section>
@@ -87,13 +129,13 @@ export default function ContactPage() {
           <div className="contact-grid">
             {/* Contact Info */}
             <div className="contact-info">
-              <div className="section-tag">İletişim Kanalları</div>
+              <div className="section-tag">{t("contact.channels.tag")}</div>
               <h2 className="section-title" style={{ fontSize: "clamp(26px, 3vw, 36px)", marginBottom: 32 }}>
-                Nasıl Ulaşırsınız?
+                {t("contact.channels.title")}
               </h2>
 
               <div className="contact-channels">
-                {channels.map((ch, i) => (
+                {channelsFromTranslation.map((ch, i) => (
                   <a key={i} href={ch.href} target="_blank" rel="noopener noreferrer" className="channel-card card">
                     <div className="channel-icon" style={{ "--c": ch.color } as React.CSSProperties}>
                       {ch.icon}
@@ -111,12 +153,12 @@ export default function ContactPage() {
                 <div className="hoa-content">
                   <div className="hoa-logo">HFM</div>
                   <div>
-                    <h4>HFM'de Hesap Aç</h4>
-                    <p>IB bağlantımız üzerinden resmi HFM hesabınızı açın</p>
+                    <h4>{t("contact.hfm.title")}</h4>
+                    <p>{t("contact.hfm.desc")}</p>
                   </div>
                 </div>
-                <a href="https://register.hfm-trade.com/sv/en/new-live-account/?refid=365189&acid=h4ywf710tx" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
-                  HFM'e Git →
+                <a href={brokerLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary">
+                  {t("contact.hfm.link")}
                 </a>
               </div>
             </div>
