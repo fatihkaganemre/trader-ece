@@ -27,7 +27,7 @@
 .footer__logo .logo-mark {
   width: 42px;
   height: 42px;
-  background: linear-gradient(135deg, var(--accent), #00a87a);
+  background: linear-gradient(135deg, var(--accent), var(--accent-dark));
   border-radius: 8px;
   display: flex;
   align-items: center;
@@ -53,7 +53,7 @@
 .footer__logo .logo-trader { color: var(--white); }
 .footer__logo .logo-ece { color: var(--accent); }
 .footer__logo .logo-bullex { 
-  background: linear-gradient(135deg, #00d4e8 0%, #a050dc 100%);
+  background: linear-gradient(135deg, var(--silver-light) 0%, var(--gold) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -125,7 +125,7 @@
 .social-btn:hover {
   color: var(--accent);
   border-color: var(--accent);
-  background: rgba(0,200,150,0.05);
+  background: rgba(182, 138, 68, 0.08);
 }
 
 .footer__links {
@@ -142,7 +142,10 @@
 
 .footer__col h4 {
   font-family: var(--font-display);
-  font-size: 15px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
   color: var(--white);
   margin-bottom: 4px;
 }

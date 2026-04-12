@@ -3,6 +3,7 @@
     "home": "Ana Sayfa",
     "about": "Hakkımızda",
     "services": "Hizmetler",
+    "community": "Topluluk",
     "performance": "Performans",
     "contact": "İletişim",
     "menu": "Menü"
@@ -11,14 +12,23 @@
     "brand": "TRADER ECE",
     "subtitle": "TICKMILL IB & Affiliate",
     "bullex": "BULLEX",
-    "bullexSubtitle": "Sinyal Kanalı"
+    "bullexSubtitle": "Sinyal Kanalı",
+    "language": {
+      "title": "Dil Seçin",
+      "en": "İngilizce",
+      "tr": "Türkçe",
+      "th": "Tayca",
+      "id": "Endonezce",
+      "zh": "Çince",
+      "vi": "Vietnamca"
+    }
   },
   "footer": {
     "pages": "Sayfalar",
     "legal": "Yasal",
     "links": {
-      "hfmOfficial": "TICKMILL Resmi Site",
-      "hfmRegulation": "TICKMILL Regülasyon"
+      "hfmOfficial": "Tickmill Regülasyonu",
+      "hfmRegulation": "HFM Hot Forex Regülasyonları"
     },
     "riskWarning": "Risk Uyarısı:",
     "riskDisclaimer": "Forex ve CFD işlemleri yüksek risk içermektedir. Yatırımlarınızın tamamını kaybedebilirsiniz. Bu site, yatırım tavsiyesi veya portföy yönetimi hizmeti sunmamaktadır. Buradaki içerikler yalnızca bilgilendirme amaçlıdır. TICKMILL resmi IB/affiliate ortağı sıfatıyla hizmet verilmektedir. Lütfen yatırım kararlarınızı vermeden önce bağımsız finansal danışmanınıza başvurunuz. Geçmiş performans gelecekteki sonuçların garantisi değildir.",
@@ -30,9 +40,12 @@
   "home": {
     "badge": "TRADER ECE – TICKMILL Resmi IB & Affiliate Partner",
     "hero": {
-      "title1": "Forex Piyasalarında",
-      "title2": "Bilinçli Adımlar",
-      "subtitle": "15+ yıllık piyasa deneyimi ile TICKMILL ortaklığında. Regüle edilmiş ortamda hesap açılışı ve sinyal grupları. Yatırım danışmanlığı verilmemektedir."
+      "subtitle": "15+ yıllık piyasa deneyimi ile TICKMILL ortaklığında. Regüle edilmiş ortamda hesap açılışı ve sinyal grupları. Yatırım danışmanlığı verilmemektedir.",
+      "titlePre": "",
+      "titleHighlight": "Piyasanın Zirvesinde Yerini Al.",
+      "titlePost": "",
+      "stat": "Piyasanın %75'i kaybederken, siz tecrübenin yanında yer alın. 13+ yıllık deneyimle stratejinizi profesyonelleştirin.",
+      "subtitle": "%75'in dışında kalın. 13 yıllık global tecrübe ve regüle edilmiş işlem ortamıyla tanışın."
     },
     "buttons": {
       "telegramTraderEce": "Trader Ece Telegram Grubuna Katıl",
@@ -47,28 +60,29 @@
     "services": {
       "tag": "Hizmetlerimiz",
       "title": "Neler Sunuyoruz?",
-      "subtitle": "TICKMILL IB ortağı olarak hesap desteği ve bilgilendirme hizmetleri. Tüm içerikler bilgilendirme amaçlıdır.",
+      "subtitle": "TICKMILL ve HFM (HotForex) resmi partner yapımızla hesap açılışı desteği ve bilgilendirme sunuyor, yatırımcıların süreci doğrudan bizimle ilerletmesini öneriyoruz.",
       "viewAll": "Tüm Hizmetleri Gör →",
+      "viewAllDesc": "Tüm hizmet başlıklarını ve detaylarını görmek için devam edin.",
       "cards": [
         {
-          "icon": "📡",
           "title": "Telegram & WhatsApp Grupları",
           "desc": "Özel sinyal gruplarımız aracılığıyla gerçek zamanlı piyasa analizleri ve bültenler. Yatırım tavsiyesi niteliği taşımaz."
         },
         {
-          "icon": "🏦",
-          "title": "TICKMILL IB Ortaklığı",
-          "desc": "TICKMILL resmi Introducing Broker ortağı olarak hesap açılışı ve platform desteği sağlıyoruz."
+          "title": "TICKMILL & HFM Partnerliği",
+          "desc": "TICKMILL ve HFM (HotForex) resmi partner yapımızla hesap açılışı ve platform desteği sağlıyoruz."
         },
         {
-          "icon": "🛡️",
           "title": "Regüle Edilmiş Ortam",
           "desc": "TICKMILL, birden fazla uluslararası otorite tarafından regüle edilmiş küresel bir broker'dır."
         },
         {
-          "icon": "📊",
           "title": "Piyasa Analizleri",
           "desc": "Teknik ve temel analiz içerikleri. Tüm içerikler bilgilendirme amaçlıdır, yatırım tavsiyesi değildir."
+        },
+        {
+          "title": "Ödüllü Broker İşbirliği",
+          "desc": "Uluslararası ödüller almış, regüle edilmiş broker firmalarıyla iş birliği yapıyoruz. Güvenilir ortaklarla güçlü bir yatırım altyapısı sunuyoruz."
         }
       ]
     },
@@ -81,14 +95,16 @@
     "hfmTrust": {
       "tag": "Neden TICKMILL?",
       "title": "Küresel & Regüle Bir Broker",
-      "desc": "TICKMILL, uluslararası finansal piyasalarda faaliyet gösteren ve birden fazla uluslararası finansal otorite tarafından regüle edilmiş küresel bir forex ve CFD brokerıdır. Hızlı çekim süreleri ve güvenilir altyapısı ile tanınmaktadır.",
+      "desc": "TICKMILL, uluslararası otoriteler tarafından regüle edilen güçlü bir broker altyapısı sunar. HFM (HotForex) ise birlikte ilerlediğimiz ikinci regüle broker partneridir; her iki yapıda da süreci doğrudan bizimle yürütmenizi öneriyoruz.",
       "features": [
         "Uluslararası regülasyon (FCA, CySEC, DFSA ve daha fazlası)",
         "Hızlı para çekme işlemleri",
         "Geniş işlem araçları yelpazesi",
         "Güvenli müşteri fonu ayrımı"
       ],
-      "moreLink": "TICKMILL Hakkında Daha Fazla →"
+      "moreLink": "Tickmill'e Git →",
+      "hfmLink": "HFM'ye Git →",
+      "vpnNote": "Eğer bağlantı açılmıyorsa lütfen VPN kullanın."
     },
     "hfmBadge": {
       "text": "TICKMILL",
@@ -103,7 +119,7 @@
     },
     "cta": {
       "title": "TICKMILL Hesabı Açmak İster misiniz?",
-      "subtitle": "Destek ve bilgilendirme için bizimle iletişime geçin.",
+      "subtitle": "TICKMILL ve HFM (HotForex) güvencesiyle hesap açılışı ve destek sürecinizi doğrudan bizimle ilerletin.",
       "telegramBtn": "Telegram'dan Ulaş",
       "formBtn": "İletişim Formu"
     }
@@ -150,7 +166,7 @@
     "process": {
       "tag": "Süreç",
       "title": "Nasıl Çalışıyoruz?",
-      "subtitle": "TICKMILL IB ortağı olarak yürüttüğümüz faaliyetler.",
+      "subtitle": "TICKMILL ve HFM (HotForex) partner yapımız altında yatırımcılarla birlikte yürüttüğümüz destek akışı.",
       "steps": [
         {
           "number": "01",
@@ -172,9 +188,11 @@
     "hfmPartnership": {
       "tag": "TICKMILL Ortaklığı",
       "title": "Neden TICKMILL?",
-      "desc1": "TICKMILL, birden fazla uluslararası düzenleyici kurum tarafından lisanslanmış küresel bir broker'dır. IB ortağı olarak yalnızca TICKMILL üzerinden hesap açılışı süreçlerine aracılık ediyor ve bilgilendirme sunuyoruz.",
+      "desc1": "TICKMILL ve HFM (HotForex), uluslararası regülasyon çerçevesinde faaliyet gösteren güçlü broker yapılarıdır. Resmi partner tarafında yatırımcıların hesap açılışı sürecini doğrudan bizimle ilerletmesini sağlıyor ve bilgilendirme desteği sunuyoruz.",
       "desc2": "Fon yönetimi, portföy yönetimi veya bireysel yatırım danışmanlığı yapılmamaktadır.",
-      "regulationLink": "TICKMILL Regülasyon Bilgisi →",
+      "regulationLink": "Tickmill'e Git →",
+      "hfmLink": "HFM'ye Git →",
+      "vpnNote": "Eğer bağlantı açılmıyorsa lütfen VPN kullanın.",
       "authorities": {
         "fca": "Financial Conduct Authority",
         "cysec": "Cyprus Securities & Exchange",
@@ -184,7 +202,7 @@
     },
     "cta": {
       "title": "TICKMILL Hesabı Açmak İster misiniz?",
-      "subtitle": "IB ortağı olarak hesap sürecinizde yardımcı olalım.",
+      "subtitle": "TICKMILL ve HFM (HotForex) hesap sürecinizi bizimle güvenle ilerletin.",
       "button": "İletişime Geç"
     }
   },
@@ -206,47 +224,48 @@
       "tag": "Biyografi",
       "title": "Deneyim ve Güven",
       "p1": "2009 yılından bu yana Forex piyasalarında aktif olarak bulunmaktayım. Yıllar içinde teknik analiz, temel analiz ve piyasa psikolojisi konularında derinlemesine bilgi birikimine ulaştım.",
-      "p2": "2021 yılından itibaren TICKMILL ile resmi Introducing Broker (IB) ve affiliate ortağı olarak çalışmaktayım. Bu sıfatla; TICKMILL hesap açılışı süreçlerinde destek, platform bilgilendirmesi ve piyasa analiz içerikleri sunmaktayım.",
+      "p2": "2021 yılında HFM ile resmi iş ortaklığı süreci başladı ve 4 yıl boyunca aktif olarak güçlü çalışmalar yürütüldü. Bugün ise TICKMILL ile yeni bir döneme adım atarak hesap açılışı desteği, platform bilgilendirmesi ve piyasa analiz içerikleri sunmaya devam ediyoruz.",
       "note": "Önemli Not:",
       "p3": "Sunulan içerikler ve analizler yatırım tavsiyesi, portföy yönetimi veya bireysel yatırım danışmanlığı niteliği taşımamaktadır. Yalnızca bilgilendirme amaçlıdır.",
       "button": "İletişime Geç"
     },
     "hfmPartnership": {
-      "tag": "Neden TICKMILL?",
-      "title": "TICKMILL ile Ortaklık",
-      "subtitle": "TICKMILL, küresel çapta güvenilir ve regüle edilmiş bir forex brokerıdır. IB ortağı olarak size bu güvenilir altyapıyı sunuyoruz.",
+      "tag": "TICKMILL & HFM",
+      "title": "TICKMILL & HFM Güvencesiyle İlerleyin",
+      "subtitle": "Türkiye piyasasında denetimsiz yapılar yerine, TICKMILL ve HFM (HotForex) partner güvencesiyle süreci doğrudan bizimle ilerletmenin daha sağlıklı ve güven veren bir yol olduğuna inanıyoruz.",
       "features": [
         {
-          "icon": "🌍",
-          "title": "Global Regülasyon",
-          "desc": "FCA, CySEC, DFSA, FSC ve daha fazlası tarafından regüle edilmiştir. Güvenilir kurumsal altyapı."
+          "icon": "",
+          "title": "Regüle ve Şeffaf Altyapı",
+          "desc": "TICKMILL ve HFM (HotForex), uluslararası regülasyon çerçevesiyle yatırımcıya daha net ve izlenebilir bir yapı sunar."
         },
         {
-          "icon": "⚡",
-          "title": "Hızlı Çekimler",
-          "desc": "TICKMILL'in hızlı para çekme süreleri ile fonlarınıza hızla erişebilirsiniz."
+          "icon": "",
+          "title": "Fon ve Süreç Güvenliği",
+          "desc": "Para yatırma ve çekme süreçlerinin belirli standartlarla ilerlemesi, yatırımcı açısından en önemli güven unsurlarından biridir."
         },
         {
-          "icon": "📱",
-          "title": "Güçlü Platform",
-          "desc": "MT4, MT5 ve TICKMILL'e özel platformlar. Mobil ve masaüstü uyumlu."
+          "icon": "",
+          "title": "Doğrudan Bizimle İlerleyin",
+          "desc": "Hesap açılışı, platform kurulumu ve genel yönlendirme süreçlerinde doğrudan bizim desteğimizle yol alırsınız."
         },
         {
-          "icon": "🔒",
-          "title": "Fon Güvenliği",
-          "desc": "Müşteri fonları ayrı hesaplarda tutulur. Düzenleyici kurumların denetimine tabidir."
+          "icon": "",
+          "title": "Denetimsiz Yapılardan Uzak Kalın",
+          "desc": "Merdiven altı ve güven vermeyen yapılardan uzak durmanın en pratik yolu, regüle broker altyapısı ile ilerlemektir."
         },
         {
-          "icon": "📊",
-          "title": "Geniş Araç Yelpazesi",
-          "desc": "Forex, altın, endeksler, hisseler ve daha fazlası. Tek bir platformda."
+          "icon": "",
+          "title": "TICKMILL & HFM Partner Desteği",
+          "desc": "Resmi partner yapımız sayesinde yatırımcıya daha düzenli, takip edilebilir ve destekli bir süreç sunuyoruz."
         },
         {
-          "icon": "🎓",
-          "title": "Eğitim Kaynakları",
-          "desc": "TICKMILL'in resmi eğitim içerikleri ve piyasa araştırmaları."
+          "icon": "",
+          "title": "Tek Önerimiz Bizimle İlerlemek",
+          "desc": "Odak noktamız, yatırımcının TICKMILL ve HFM (HotForex) güvencesiyle süreci doğrudan bizim yönlendirmemizle tamamlamasıdır."
         }
-      ]
+      ],
+      "note": "Not: Hizmet modelimiz kapsamında yatırımcıların TICKMILL ve HFM (HotForex) resmi partner güvencesiyle, bizim bağlantılarımız üzerinden doğrudan bizimle ilerlemesini öneriyoruz."
     },
     "timeline": {
       "tag": "Tarihçemiz",
@@ -269,13 +288,13 @@
         },
         {
           "year": "2021",
-          "title": "TICKMILL IB Ortaklığı",
-          "desc": "TICKMILL ile resmi Introducing Broker ortaklığı başladı. Regüle ortama geçiş."
+          "title": "Resmi HFM Ortaklığı",
+          "desc": "2021 yılında HFM ile resmi iş ortaklığı başladı. Dört yıl boyunca aktif olarak çalışıldı, güçlü sonuçlar üretildi ve güven odaklı bir yapı inşa edildi."
         },
         {
-          "year": "2025",
+          "year": "2026",
           "title": "Bugün",
-          "desc": "7M+ dolar aktif işlem hacmi, binlerce kullanıcıya TICKMILL hesap desteği ve piyasa analiz içerikleri."
+          "desc": "HFM ve TICKMILL ile yapılan anlaşmalarla güçlü bir güven ağı kuruldu. 7M+ üzeri yatırım portföyüne ev sahipliği yapıldı ve ödemeler güvenle sahiplerine ulaştırıldı."
         }
       ]
     }
@@ -283,7 +302,7 @@
   "services": {
     "tag": "Hizmetlerimiz",
     "title": "Sunduklarımız",
-    "subtitle": "TICKMILL IB ortağı olarak hesap desteği ve piyasa bilgilendirme içerikleri. Yatırım tavsiyesi verilmemektedir.",
+    "subtitle": "TICKMILL ve HFM (HotForex) resmi partner yapımızla hesap açılışı desteği ve piyasa bilgilendirme sunuyor, yatırımcıların süreci doğrudan bizimle ilerletmesini öneriyoruz.",
     "cards": [
       {
         "icon": "📡",
@@ -299,8 +318,8 @@
       },
       {
         "icon": "🏦",
-        "title": "TICKMILL Hesap Açılış Desteği",
-        "desc": "TICKMILL resmi IB ortağı olarak, TICKMILL üzerinden hesap açılış sürecinizde rehberlik ve destek sunuyoruz. Hesap yönetimi veya fon yönetimi hizmeti verilmemektedir.",
+        "title": "TICKMILL & HFM Hesap Açılış Desteği",
+        "desc": "TICKMILL ve HFM (HotForex) resmi partner yapımızla hesap açılışı sürecinizde rehberlik ediyor, tüm adımlarda doğrudan bizimle ilerlemenizi sağlıyoruz. Hesap veya fon yönetimi hizmeti verilmemektedir.",
         "features": [
           "TICKMILL hesap açılış rehberliği",
           "Platform (MT4/MT5) kurulum desteği",
@@ -384,7 +403,7 @@
   "contact": {
     "tag": "İletişim",
     "title": "Bize Ulaşın",
-    "subtitle": "TICKMILL hesap açılışı, platform desteği ve bilgilendirme için bizimle iletişime geçin.",
+    "subtitle": "TICKMILL ve HFM (HotForex) hesap açılışı, platform desteği ve güvenli süreç yönetimi için doğrudan bizimle iletişime geçin.",
     "channels": {
       "tag": "İletişim Kanalları",
       "title": "Nasıl Ulaşırsınız?",
@@ -411,16 +430,106 @@
           "icon": "✉️",
           "title": "E-posta",
           "desc": "Detaylı sorularınız için",
-          "link": "info@example.com →"
+          "link": "info@trader-ece.com →"
         }
       ]
     },
     "hfm": {
-      "logo": "TICKMILL",
-      "title": "TICKMILL'de Hesap Aç",
-      "desc": "IB bağlantımız üzerinden resmi TICKMILL hesabınızı açın",
-      "link": "TICKMILL'e Git →"
+      "logo": "TICKMILL / HFM",
+      "title": "TICKMILL / HFM ile Bizimle İlerleyin",
+      "desc": "Resmi partner bağlantılarımız üzerinden TICKMILL veya HFM (HotForex) hesabınızı açın ve süreci doğrudan bizimle ilerletin.",
+      "link": "Tickmill'e Git →",
+      "hfmLink": "HFM'ye Git →",
+      "vpnNote": "Eğer bağlantı açılmıyorsa lütfen VPN kullanın."
     }
+  },
+  "testimonials": {
+    "tag": "Kullanıcı Görüşleri",
+    "title": "Ne Diyorlar?",
+    "items": [
+      {
+        "name": "N. Berkan",
+        "text": "Altın işlemlerindeki analizleriniz harika. Bugün yine değerlendirdik ve kazandık, emeklerinize sağlık.",
+        "role": "Yatırımcı"
+      },
+      {
+        "name": "Neşe Aksoy",
+        "text": "Arda ve Ece hocam, müthiş bir gündü. Analizleriniz ve işlemleriniz sayesinde haftayı çok karlı kapattık, teşekkürler.",
+        "role": "Yatırımcı"
+      },
+      {
+        "name": "İsmet Yılmaz",
+        "text": "Piyasanın en belirsiz olduğu dönemde bile süreci çok profesyonel yönettiniz. Emeğinize sağlık, yine farkınızı konuşturduğunuz bir gün oldu.",
+        "role": "Yatırımcı"
+      },
+      {
+        "name": "T. R. Erdem",
+        "text": "Bu yıl da tercihimiz sizden yana oldu ve yine yanılmadık. Profesyonel bakış açınız güven veriyor.",
+        "role": "Yatırımcı"
+      },
+      {
+        "name": "Tekin K.",
+        "text": "Haftalık kâr çekimimi sorunsuz yaptım. Ece hocam ve ekibi bu işi gerçekten dürüst ve şeffaf yapıyor, iyi ki varsınız.",
+        "role": "Yatırımcı"
+      },
+      {
+        "name": "Kubilay Demir",
+        "text": "Keşke daha önce tanışsaymışız. Sayenizde son 4 ayım hem öğretici hem de çok karlı geçti, teşekkürler.",
+        "role": "Yatırımcı"
+      },
+      {
+        "name": "Esin Varol",
+        "text": "Sektörde sizin gibi bir ekibe denk gelmek büyük şans. İlginiz ve alakanız için çok teşekkür ederim.",
+        "role": "Yatırımcı"
+      },
+      {
+        "name": "Rüstem Q.",
+        "text": "Kâr çekimimi gerçekleştirdim. Arda ve Ece hocamın analizleri, Gül hanımın desteğiyle her şey çok hızlı ilerliyor.",
+        "role": "Yatırımcı"
+      },
+      {
+        "name": "Hasan Sal",
+        "text": "Bugün ilk kâr çekimimi yaptım. Doğru strateji ve sabırla neler yapılabileceğini sayenizde gördüm.",
+        "role": "Yatırımcı"
+      },
+      {
+        "name": "Aykut B.",
+        "text": "Doğru risk yönetimiyle forexte kazanmak sizinle hiç zor değil. Panik ve heyecan olmadan, sadece verilere odaklanarak kazanıyoruz.",
+        "role": "Yatırımcı"
+      },
+      {
+        "name": "Esra Çaylak",
+        "text": "Sizi diğerlerinden ayıran en büyük özellik, bir eğitmen hassasiyetiyle detaylı bilgi paylaşmanız. Farkınız her zaman belli oluyor.",
+        "role": "Yatırımcı"
+      },
+      {
+        "name": "Özlem Çetinkaya",
+        "text": "Piyasa şartları zorlu olsa da Ece hocam sayesinde üst üste başarılı işlemler alıyoruz. Başarı oranınız gerçekten çok yüksek.",
+        "role": "Yatırımcı"
+      },
+      {
+        "name": "Murat Sencer",
+        "text": "Çekim talebim anında hesabıma yansıdı. Başarılı işlemler ve profesyonel destek için teşekkürler. Kesinlikle örnek bir grup.",
+        "role": "Yatırımcı"
+      },
+      {
+        "name": "Cenk Altın",
+        "text": "Bir süredir ara vermiştim ama dönüşüm muhteşem oldu. Bu hafta her şey süper gidiyor, teşekkürler hocam.",
+        "role": "Yatırımcı"
+      },
+      {
+        "name": "Gulare M.",
+        "text": "Sisteminize dahil olduğumdan beri kendimi güvende hissediyorum. İlk kârımı aldım, yardımlarınız için teşekkürler.",
+        "role": "Yatırımcı"
+      }
+    ]
+  },
+  "chat": {
+    "greeting": "Merhaba! Ben Trader Ece asistanıyım. Size nasıl yardımcı olabilirim?",
+    "title": "Trader Ece Asistan",
+    "inputPlaceholder": "Mesajınızı yazın...",
+    "error": "Şu anda yanıt oluşturulamadı. Lütfen tekrar deneyin.",
+    "sendButton": "Gönder"
   },
   "form": {
     "success": {
@@ -449,6 +558,7 @@
       "messagePlaceholder": "Mesajınızı buraya yazın..."
     },
     "disclaimer": "Bu form yatırım danışmanlığı talebi için kullanılamaz. Yalnızca TICKMILL hesap desteği ve bilgilendirme amaçlıdır.",
+    "error": "Bir hata oluştu. Lütfen tekrar deneyin.",
     "submit": "Mesaj Gönder",
     "submitting": "Gönderiliyor..."
   }

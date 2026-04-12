@@ -1,9 +1,23 @@
 import { useEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
+import Lottie from "lottie-react";
 import "./HomePage.css";
 import type { NavigateFn } from "../App";
 import TickerTape from "./TickerTape";
 import Testimonals from "./Testimonals/Testimonals";
+import moneyCoinsAnim from "../assets/money-coin-stack-line.json";
+import globalSearchAnim from "../assets/global-search.json";
+import marketVolatilityAnim from "../assets/market-volatility.json";
+import regulationAnim from "../assets/regulation.json";
+import peopleAnalyzingAnim from "../assets/people-analyzing-growth-charts.json";
+import partnershipAnim from "../assets/partnership.json";
+import moneyWithdrawalAnim from "../assets/money-withdrawal.json";
+import supportAnim from "../assets/support.json";
+import globalAnim from "../assets/global.json";
+import awardAnim from "../assets/award.json";
+import tickmillLogo from "../assets/tickmill-logo.svg";
+import socialSignalAnim from "../assets/social-signal.json";
+import { getBrokerLinks } from "../utils/brokerLinks";
 
 interface HomePageProps {
   navigate: NavigateFn;
@@ -51,7 +65,7 @@ function AnimatedCounter({ end, suffix = "", prefix = "" }: CounterProps) {
 }
 
 interface ServiceCard {
-  icon: string;
+  anim: object;
   title: string;
   desc: string;
   color: string;
@@ -74,32 +88,39 @@ interface Testimonial {
 
 
 export default function HomePage({ navigate }: HomePageProps) {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const { tickmillLink, hfmLink } = getBrokerLinks(i18n.language);
 
   const services: ServiceCard[] = [
     {
-      icon: "📡",
+      anim: socialSignalAnim,
       title: t("home.services.cards.0.title"),
       desc: t("home.services.cards.0.desc"),
       color: "#0088cc",
     },
     {
-      icon: "🏦",
+      anim: partnershipAnim,
       title: t("home.services.cards.1.title"),
       desc: t("home.services.cards.1.desc"),
-      color: "#00d4e8",
+      color: "#b68a44",
     },
     {
-      icon: "🛡️",
+      anim: globalAnim,
       title: t("home.services.cards.2.title"),
       desc: t("home.services.cards.2.desc"),
       color: "#c9a84c",
     },
     {
-      icon: "📊",
+      anim: peopleAnalyzingAnim,
       title: t("home.services.cards.3.title"),
       desc: t("home.services.cards.3.desc"),
       color: "#a855f7",
+    },
+    {
+      anim: awardAnim,
+      title: t("home.services.cards.4.title"),
+      desc: t("home.services.cards.4.desc"),
+      color: "#f59e0b",
     },
   ];
 
@@ -137,7 +158,8 @@ export default function HomePage({ navigate }: HomePageProps) {
       {/* Hero */}
       <section className="hero">
         <div className="hero__bg">
-          <div className="glow" style={{ width: 600, height: 600, background: "rgba(0,212,232,0.06)", top: -100, right: -100 }} />
+          <div className="hero__stars" />
+          <div className="glow" style={{ width: 600, height: 600, background: "rgba(182,138,68,0.08)", top: -100, right: -100 }} />
           <div className="glow" style={{ width: 400, height: 400, background: "rgba(30,30,34,0.6)", bottom: -50, left: -100 }} />
           <div className="hero__grid" />
         </div>
@@ -147,12 +169,11 @@ export default function HomePage({ navigate }: HomePageProps) {
             <span className="badge-dot" /> {t("home.badge")}
           </div>
           <h1 className="hero__title">
-            {t("home.hero.title2")}
-            <br />
-            <span className="highlight">{t("home.hero.title1")}</span>
-            <br />
-            Atın
+            <span className="highlight">{t("home.hero.titleHighlight")}</span>
           </h1>
+          <p className="hero__stat">
+            {t("home.hero.stat")}
+          </p>
           <p className="hero__subtitle">
             {t("home.hero.subtitle")}
           </p>
@@ -220,16 +241,26 @@ export default function HomePage({ navigate }: HomePageProps) {
             {services.map((s, i) => (
               <div key={i} className="card service-card">
                 <div className="service-icon" style={{ "--c": s.color } as React.CSSProperties}>
-                  {s.icon}
+                  <Lottie animationData={s.anim} loop autoplay style={{ width: 56, height: 56 }} />
                 </div>
                 <h3>{s.title}</h3>
                 <p>{s.desc}</p>
               </div>
             ))}
-          </div>
-          <div className="services-cta">
-            <button className="btn btn-outline" onClick={() => navigate("services")}>
-              {t("home.services.viewAll")}
+
+            <button
+              type="button"
+              className="card service-card service-card--cta"
+              onClick={() => navigate("services")}
+            >
+              <div className="service-icon" style={{ "--c": "#d6b06a" } as React.CSSProperties}>
+                <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
+                  <path d="M5 12h14" strokeLinecap="round" />
+                  <path d="m12 5 7 7-7 7" strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
+              </div>
+              <h3>{t("home.services.viewAll")}</h3>
+              <p>{t("home.services.viewAllDesc")}</p>
             </button>
           </div>
         </div>
@@ -252,13 +283,21 @@ export default function HomePage({ navigate }: HomePageProps) {
                   </li>
                 ))}
               </ul>
-              <a href="https://www.hfm.com" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
-                {t("home.hfmTrust.moreLink")}
-              </a>
+              <div className="broker-actions">
+                <a href={tickmillLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary">
+                  {t("home.hfmTrust.moreLink")}
+                </a>
+                <a href={hfmLink} target="_blank" rel="noopener noreferrer" className="btn btn-outline">
+                  {t("home.hfmTrust.hfmLink")}
+                </a>
+              </div>
+              <p className="broker-note">{t("home.hfmTrust.vpnNote")}</p>
             </div>
             <div className="hfm-visual">
               <div className="hfm-badge-large">
-                <div className="hfm-logo-text">{t("home.hfmBadge.text")}</div>
+                <div className="hfm-logo-plate">
+                  <img src={tickmillLogo} alt={t("home.hfmBadge.text")} className="hfm-logo-image" />
+                </div>
                 <div className="hfm-tagline">{t("home.hfmBadge.tagline")}</div>
                 <div className="hfm-reg">{t("home.hfmBadge.desc")}</div>
               </div>

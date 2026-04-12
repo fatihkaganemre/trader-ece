@@ -3,96 +3,111 @@
     "home": "Home",
     "about": "About",
     "services": "Services",
+    "community": "Community",
     "performance": "Performance",
     "contact": "Contact",
     "menu": "Menu"
   },
   "header": {
     "brand": "TRADER ECE",
-    "subtitle": "HFM IB & Affiliate",
+    "subtitle": "Tickmill IB & Affiliate",
     "bullex": "BULLEX",
-    "bullexSubtitle": "Signal Channel"
+    "bullexSubtitle": "Signal Channel",
+    "language": {
+      "title": "Select Language",
+      "en": "English",
+      "tr": "Turkish",
+      "th": "Thai",
+      "id": "Indonesian",
+      "zh": "Chinese",
+      "vi": "Vietnamese"
+    }
   },
   "footer": {
     "pages": "Pages",
     "legal": "Legal",
     "links": {
-      "hfmOfficial": "HFM Official Site",
-      "hfmRegulation": "HFM Regulation"
+      "hfmOfficial": "Tickmill Regulation",
+      "hfmRegulation": "HFM Hot Forex Regulations"
     },
     "riskWarning": "Risk Warning:",
-    "riskDisclaimer": "Forex and CFD trading involve high risk. You may lose all your investment. This site does not provide investment advice or portfolio management services. Content here is for informational purposes only. We operate as an official IB/affiliate partner. Please consult an independent financial advisor before making investment decisions. Past performance is not a guarantee of future results.",
-    "partnerDesc": "We operate as an official Introducing Broker (IB) and affiliate partner. Market analysis content is shared for informational purposes only. We do not provide investment advice or portfolio management services.",
-    "copyright": "© {{year}} Trader ECE – HFM IB & Affiliate. All rights reserved.",
-    "regulation": "Operating in a regulated environment supervised by HF Markets Group.",
+    "riskDisclaimer": "Forex and CFD trading carries a high level of risk and may not be suitable for all investors. You could lose all of your invested capital. This website does not provide investment advice or portfolio management services. All content is strictly for informational purposes. We operate as an official IB and affiliate partner of Tickmill. Please consult an independent financial adviser before making any investment decisions. Past performance is not indicative of future results.",
+    "partnerDesc": "We operate as an official Introducing Broker (IB) and affiliate partner of Tickmill and HFM (HF Markets). Market analysis content is shared for informational purposes only. We do not provide investment advice or portfolio management services.",
+    "copyright": "© {{year}} Trader ECE – Tickmill IB & Affiliate. All rights reserved.",
+    "regulation": "Operating within a regulated environment overseen by Tickmill and HF Markets Group.",
     "bullexSubtitle": "SIGNAL CHANNEL"
   },
   "home": {
-    "badge": "TRADER ECE – HFM Official IB & Affiliate Partner",
+    "badge": "TRADER ECE – Official IB & Affiliate Partner of Tickmill & HFM",
     "hero": {
-      "title1": "Informed Steps In",
-      "title2": "Forex Markets",
-      "subtitle": "15+ years of market experience with HFM partnership. Account opening in a regulated environment and signal groups. Investment advice is not provided."
+      "titlePre": "",
+      "titleHighlight": "Reach the Top of the Market.",
+      "titlePost": "",
+      "stat": "While 75% of retail traders lose money, stand on the right side of the market. Refine your edge with 13+ years of professional trading expertise.",
+      "subtitle": "Stay ahead of the 75%. Discover 13 years of global market experience within a fully regulated, institutional-grade trading environment."
     },
     "buttons": {
-      "telegramTraderEce": "Join Trader Ece Telegram Group",
-      "telegramBullex": "Join Bullex Telegram Group",
-      "info": "Get Info"
+      "telegramTraderEce": "Join the Trader Ece Telegram Group",
+      "telegramBullex": "Join the Bullex Telegram Group",
+      "info": "Get in Touch"
     },
     "trust": {
       "title": "Regulated Broker",
-      "item1": "15+ Years Experience",
-      "item2": "7M$ Active Volume"
+      "item1": "13+ Years of Experience",
+      "item2": "$7M Active Volume"
     },
     "services": {
-      "tag": "Services",
-      "title": "What We Offer?",
-      "subtitle": "Account support as an HFM IB partner and informational services. All content is for informational purposes.",
-      "viewAll": "View All Services →",
+      "tag": "Our Services",
+      "title": "What We Offer",
+      "subtitle": "Through our official Tickmill and HFM (HotForex) partner structure, we support account opening and market guidance, and encourage clients to move forward directly with us.",
+      "viewAll": "Explore All Services →",
+      "viewAllDesc": "Continue to view all service categories and their details.",
       "cards": [
         {
-          "icon": "📡",
-          "title": "Telegram & WhatsApp Groups",
-          "desc": "Real-time market analysis and bulletins through our special signal groups. Not investment advice."
+          "title": "Telegram & WhatsApp Signal Groups",
+          "desc": "Real-time market analysis and daily briefings through our exclusive signal communities. For informational purposes only — not investment advice."
         },
         {
-          "icon": "🏦",
-          "title": "HFM IB Partnership",
-          "desc": "As an official Introducing Broker partner, we provide account opening and platform support."
+          "title": "Tickmill & HFM IB Partnership",
+          "desc": "As an official Introducing Broker for Tickmill and HFM, we guide you through account registration and provide full platform onboarding support."
         },
         {
-          "icon": "🛡️",
-          "title": "Regulated Environment",
-          "desc": "HFM is a global broker regulated by multiple international authorities."
+          "title": "Regulated Trading Environment",
+          "desc": "Tickmill is a globally regulated broker licensed by multiple tier-1 financial authorities, ensuring a transparent and secure trading environment for all clients."
         },
         {
-          "icon": "📊",
-          "title": "Market Analysis",
-          "desc": "Technical and fundamental analysis content. All content is informational, not investment advice."
+          "title": "Market Analysis & Research",
+          "desc": "Regular technical and fundamental analysis shared across our communities. All materials are for informational purposes and do not constitute financial advice."
+        },
+        {
+          "title": "Award-Winning Broker Partners",
+          "desc": "We collaborate exclusively with internationally recognised, multi-award-winning regulated brokers — giving you access to a trusted and robust trading infrastructure."
         }
       ]
     },
     "stats": {
-      "experience": "Years Experience",
+      "experience": "Years of Experience",
       "volume": "Active Volume ($)",
       "withdrawals": "Withdrawal Volume ($)",
-      "partnership": "HFM Partnership (Years)"
+      "partnership": "Years as IB Partner"
     },
     "hfmTrust": {
-      "tag": "Why HFM?",
-      "title": "Global & Regulated Broker",
-      "desc": "HFM (HF Markets) is a global forex and CFD broker operating since 2010, regulated by multiple international financial authorities. Known for fast withdrawal times and reliable infrastructure.",
+      "tag": "Why Tickmill?",
+      "title": "A Global, Regulated Broker",
+      "desc": "Tickmill offers a strong regulated broker infrastructure, while HFM (HotForex) remains our secondary regulated partner. In both cases, we encourage clients to move through the process directly with us.",
       "features": [
-        "International regulation (FCA, CySEC, DFSA and more)",
-        "Fast withdrawal processing",
-        "Wide range of trading instruments",
-        "Secure customer fund segregation"
+        "Multi-jurisdiction regulation (FCA, CySEC, DFSA & more)",
+        "Fast, reliable withdrawal processing",
+        "A broad range of trading instruments",
+        "Segregated client funds for full asset security"
       ],
-      "moreLink": "Learn More About HFM →"
+      "moreLink": "Go to Tickmill →",
+      "hfmLink": "Go to HFM →",
+      "vpnNote": "If the link does not open, please use a VPN."
     },
     "hfmBadge": {
-      "text": "HFM",
-      "tagline": "HF Markets Group",
+      "text": "Tickmill",
+      "tagline": "Primary Broker Partner",
       "desc": "Regulated Broker"
     },
     "regulators": {
@@ -102,180 +117,183 @@
       "fsc": "FSC"
     },
     "cta": {
-      "title": "Want to Open an HFM Account?",
-      "subtitle": "Contact us for support and information.",
-      "telegramBtn": "Reach via Telegram",
-      "formBtn": "Contact Form"
+      "title": "Ready to Open a Tickmill or HFM Account?",
+      "subtitle": "Open your Tickmill or HFM (HotForex) account and move through the support process directly with us.",
+      "telegramBtn": "Contact Us on Telegram",
+      "formBtn": "Send Us a Message"
     }
   },
   "performance": {
-    "tag": "Performance & Numbers",
+    "tag": "Performance & Track Record",
     "hero": {
-      "title1": "Through",
-      "title2": "Past Experience",
-      "subtitle": "15+ years of market practice and volumes tracked through HFM. Past data does not guarantee future performance."
+      "title1": "Results Backed by",
+      "title2": "Real Experience",
+      "subtitle": "Over 13 years of active market participation, with trading volumes tracked through our Tickmill IB partnership. Past performance is not indicative of future results."
     },
     "metrics": [
       {
         "value": "15",
         "suffix": "+",
-        "label": "Years Market Experience",
-        "note": "Active since 2009",
+        "label": "Years of Market Experience",
+        "note": "Actively trading since 2009",
         "prefix": ""
       },
       {
         "value": "7",
         "suffix": "M+",
         "prefix": "$",
-        "label": "Active Volume",
-        "note": "Total volume tracked through IB"
+        "label": "Active Trading Volume",
+        "note": "Total volume tracked via IB accounts"
       },
       {
         "value": "4.6",
         "suffix": "M+",
         "prefix": "$",
-        "label": "Withdrawal Volume",
-        "note": "Withdrawals through HFM channel"
+        "label": "Client Withdrawal Volume",
+        "note": "Withdrawals processed through Tickmill"
       },
       {
         "value": "4",
         "suffix": "+",
-        "label": "HFM Partnership Years",
-        "note": "Official IB partnership",
+        "label": "Years as Official IB Partner",
+        "note": "Official Tickmill IB partnership since 2021",
         "prefix": ""
       }
     ],
-    "disclaimer": "⚠️ Important Note:",
-    "disclaimerText": "The numbers above are for informational purposes and reflect past data. These figures do not guarantee future performance or returns. Forex trading involves high risk, and it is recommended to consult an independent financial advisor before investing.",
+    "disclaimer": "⚠️ Important Disclaimer:",
+    "disclaimerText": "All figures presented are for informational purposes only and reflect historical data. They do not guarantee or predict future performance or returns. Forex and CFD trading carries significant risk. We strongly advise consulting an independent financial adviser before making any investment decisions.",
     "process": {
-      "tag": "Process",
-      "title": "How We Work?",
-      "subtitle": "Activities we conduct as an HFM IB partner.",
+      "tag": "How It Works",
+      "title": "Our Approach",
+      "subtitle": "A transparent overview of the support flow we provide under our Tickmill and HFM (HotForex) partner structure.",
       "steps": [
         {
           "number": "01",
-          "title": "HFM Account Support",
-          "desc": "We provide guidance when users open accounts through HFM. Account control is entirely with the user."
+          "title": "Account Registration Support",
+          "desc": "We guide clients through the Tickmill and HFM account registration process. Full control of the account remains with the client at all times."
         },
         {
           "number": "02",
-          "title": "Content Sharing",
-          "desc": "Market analysis content is shared in Telegram and WhatsApp groups. This is not investment advice."
+          "title": "Market Insights & Analysis",
+          "desc": "Daily and weekly market analysis is shared across our Telegram and WhatsApp communities. All content is strictly for informational purposes and does not constitute financial advice."
         },
         {
           "number": "03",
-          "title": "Support",
-          "desc": "Technical support is provided for platform usage and HFM processes."
+          "title": "Ongoing Platform Support",
+          "desc": "We provide technical guidance on platform setup, account configuration, and general broker processes to help clients get started with confidence."
         }
       ]
     },
     "hfmPartnership": {
-      "tag": "HFM Partnership",
-      "title": "Why HFM?",
-      "desc1": "HFM (HF Markets) is a global broker licensed by multiple international regulators. As an IB partner, we only facilitate account opening processes through HFM and provide informational support.",
-      "desc2": "Fund management, portfolio management, or individual investment advice is not provided.",
-      "regulationLink": "HFM Regulation Information →",
+      "tag": "Our Broker Partnership",
+      "title": "Why Tickmill?",
+      "desc1": "Tickmill and HFM (HotForex) are strong broker structures operating within international regulatory frameworks. Through our official partner model, we help clients move forward with account opening directly with us while providing informational support.",
+      "desc2": "Fund management, portfolio management, and individual investment consulting are not part of our services.",
+      "regulationLink": "Go to Tickmill →",
+      "hfmLink": "Go to HFM →",
+      "vpnNote": "If the link does not open, please use a VPN.",
       "authorities": {
         "fca": "Financial Conduct Authority",
-        "cysec": "Cyprus Securities & Exchange",
-        "dfsa": "Dubai Financial Services",
+        "cysec": "Cyprus Securities & Exchange Commission",
+        "dfsa": "Dubai Financial Services Authority",
         "fsc": "Financial Services Commission"
       }
     },
     "cta": {
-      "title": "Want to Open an HFM Account?",
-      "subtitle": "Let us help you with the account process as an IB partner.",
+      "title": "Ready to Open a Tickmill or HFM Account?",
+      "subtitle": "Move through your Tickmill or HFM (HotForex) account process with us, step by step.",
       "button": "Get in Touch"
     }
   },
   "about": {
-    "tag": "About",
+    "tag": "About Us",
     "hero": {
-      "title1": "Get to Know",
-      "title2": "Who We Are",
-      "subtitle": "15+ years of market experience, 4+ years of HFM partnership. We operate as an official HFM IB/Affiliate partner."
+      "title1": "Who We Are",
+      "title2": "and What We Stand For",
+      "subtitle": "13+ years of market experience, 4+ years of strong broker partnership work with HFM, and a new chapter now beginning with Tickmill."
     },
     "experience": "15+",
-    "experienceLabel": "Years Experience",
+    "experienceLabel": "Years of Experience",
     "badges": [
-      "HFM Official IB Partner",
+      "Official Tickmill & HFM IB Partner",
       "Active Signal Communities",
       "Regulated Environment"
     ],
     "biography": {
-      "tag": "Biography",
-      "title": "Experience and Trust",
-      "p1": "Since 2009, I have been actively involved in Forex markets. Over the years, I have accumulated in-depth knowledge in technical analysis, fundamental analysis, and market psychology.",
-      "p2": "Since 2021, I have been working as an official Introducing Broker (IB) and affiliate partner with HFM (HF Markets). In this capacity, I provide support in HFM account opening processes, platform information, and market analysis content.",
+      "tag": "Our Story",
+      "title": "Experience You Can Trust",
+      "p1": "Since 2009, I have been actively engaged in global Forex markets. Over the years, I have developed deep expertise in technical analysis, fundamental analysis, and market psychology — building a disciplined and consistent approach to trading.",
+      "p2": "The official partnership journey began with HFM in 2021 and continued actively for four productive years. Today, a new chapter with Tickmill has begun, alongside ongoing account-opening support, platform guidance, and market analysis content.",
       "note": "Important Note:",
-      "p3": "The content and analysis provided do not constitute investment advice, portfolio management, or individual investment consultation. It is for informational purposes only.",
-      "button": "Get in Touch"
+      "p3": "All content and analysis shared through our channels is strictly for informational purposes. We do not provide investment advice, portfolio management, or individual investment consultation of any kind.",
+      "button": "Contact Us"
     },
     "hfmPartnership": {
-      "tag": "Why HFM?",
-      "title": "HFM Partnership",
-      "subtitle": "HFM is a trusted and regulated global forex broker. As an IB partner, we provide you with this reliable infrastructure.",
+      "tag": "Why Tickmill?",
+      "title": "Move Forward with Tickmill & HFM Confidence",
+      "subtitle": "Rather than leaving investors exposed to unclear and unregulated structures, we believe the healthier path is to move forward directly with us under the partner assurance of Tickmill and HFM (HotForex).",
       "features": [
         {
-          "icon": "🌍",
-          "title": "Global Regulation",
-          "desc": "Regulated by FCA, CySEC, DFSA, FSC and more. Reliable institutional infrastructure."
+          "icon": "",
+          "title": "Regulated and Transparent Infrastructure",
+          "desc": "Tickmill and HFM (HotForex) provide a more visible, accountable framework through their regulated broker structure."
         },
         {
-          "icon": "⚡",
-          "title": "Fast Withdrawals",
-          "desc": "With HFM's fast withdrawal times, quickly access your funds."
+          "icon": "",
+          "title": "Fund and Process Security",
+          "desc": "Clear deposit and withdrawal workflows are one of the strongest trust signals for any investor."
         },
         {
-          "icon": "📱",
-          "title": "Powerful Platform",
-          "desc": "MT4, MT5 and HFM-specific platforms. Mobile and desktop compatible."
+          "icon": "",
+          "title": "Move Forward Directly with Us",
+          "desc": "From account opening to platform guidance, we help clients progress through the full process directly with our support."
         },
         {
-          "icon": "🔒",
-          "title": "Fund Security",
-          "desc": "Customer funds are held in separate accounts. Subject to regulatory oversight."
+          "icon": "",
+          "title": "Stay Away from Unregulated Structures",
+          "desc": "A practical way to avoid risky and unreliable setups is to remain within a regulated broker environment."
         },
         {
-          "icon": "📊",
-          "title": "Wide Range of Instruments",
-          "desc": "Forex, gold, indices, stocks and more. All on one platform."
+          "icon": "",
+          "title": "Tickmill & HFM Partner Backing",
+          "desc": "Through our official partner structure, we offer a more organised, trackable, and supported path for clients."
         },
         {
-          "icon": "🎓",
-          "title": "Educational Resources",
-          "desc": "HFM's official educational content and market research."
+          "icon": "",
+          "title": "Our Clear Recommendation",
+          "desc": "Our recommendation is simple: move forward with us through the Tickmill and HFM (HotForex) side of the process."
         }
-      ]
+      ],
+      "note": "Note: Within our service model, we recommend that clients move forward directly with us through the official Tickmill and HFM (HotForex) channels we provide."
     },
     "timeline": {
-      "tag": "Timeline",
-      "title": "Our Journey",
+      "tag": "Our Journey",
+      "title": "Milestones",
       "items": [
         {
           "year": "2009",
-          "title": "Forex Journey Begins",
-          "desc": "Entered Forex markets. Intensive study period on technical and fundamental analysis."
+          "title": "Entering the Markets",
+          "desc": "Began active participation in Forex markets. An intensive period of studying technical and fundamental analysis commenced."
         },
         {
           "year": "2013",
           "title": "First Professional Steps",
-          "desc": "Signal groups established. Market analysis began to be shared. Community grew."
+          "desc": "Signal communities were established. Regular market analysis content began to be distributed. A loyal following grew."
         },
         {
           "year": "2018",
-          "title": "Corporate Partnerships",
-          "desc": "International broker partnerships established. IB activities began."
+          "title": "Institutional Partnerships",
+          "desc": "Formal partnerships with international brokers were established. IB activities commenced."
         },
         {
           "year": "2021",
-          "title": "HFM IB Partnership",
-          "desc": "Official Introducing Broker partnership with HFM (HF Markets) began. Transition to regulated environment."
+          "title": "Official HFM Partnership",
+          "desc": "The official partnership with HFM began in 2021. Four years of hands-on work, strong results, and a trust-focused service structure followed."
         },
         {
-          "year": "2025",
+          "year": "2026",
           "title": "Today",
-          "desc": "7M+ USD active trading volume, account support for thousands of users and market analysis content."
+          "desc": "With partnerships built across HFM and Tickmill, a strong network of trust was established. We have supported portfolios exceeding $7M and ensured funds were delivered securely to their rightful owners."
         }
       ]
     }
@@ -283,172 +301,256 @@
   "services": {
     "tag": "Services",
     "title": "What We Provide",
-    "subtitle": "Account support as an HFM IB partner and market information content. Investment advice is not provided.",
+    "subtitle": "As an official Tickmill and HFM (HotForex) partner, we provide account support and market guidance while encouraging clients to progress directly with us.",
     "cards": [
       {
-        "icon": "📡",
         "title": "Telegram & WhatsApp Signal Groups",
-        "desc": "Daily and weekly market analysis, bulletins are shared in our special signal groups. All content is for informational purposes; it is not investment advice or individual consultation.",
+        "desc": "Daily and weekly market analysis, technical briefings, and economic calendar highlights shared across our exclusive communities. For informational purposes only — not investment advice.",
         "features": [
-          "Daily technical analysis bulletins",
-          "Important economic calendar tracking",
-          "Market news and commentary",
+          "Daily technical analysis briefings",
+          "Key economic calendar tracking",
+          "Live market commentary",
           "Real-time notifications"
         ],
-        "disclaimer": "This content is not investment advice. Make your own decisions."
+        "disclaimer": "This content is not investment advice. All trading decisions are your own."
       },
       {
-        "icon": "🏦",
-        "title": "HFM Account Opening Support",
-        "desc": "As an official HFM IB partner, we provide guidance and support in the HFM account opening process. Account management or fund management service is not provided.",
+        "title": "Tickmill & HFM Account Support",
+        "desc": "Through our official Tickmill and HFM (HotForex) partner structure, we guide your account-opening process and help you move forward directly with us. We do not manage accounts or client funds.",
         "features": [
-          "HFM account opening guidance",
-          "Platform (MT4/MT5) setup support",
-          "Account type selection information",
-          "Deposit/withdrawal process support"
+          "Tickmill and HFM account registration guidance",
+          "MT4 / MT5 platform setup support",
+          "Account type selection advisory",
+          "Deposit and withdrawal process assistance"
         ],
-        "disclaimer": "Your account is completely under your control. Fund management is not provided."
+        "disclaimer": "Your account remains entirely under your control. No fund management is provided."
       },
       {
-        "icon": "📊",
         "title": "Market Analysis Content",
-        "desc": "Technical and fundamental analysis content is prepared and shared for informational purposes. This content should not be used alone in buying/selling decisions.",
+        "desc": "Technical and fundamental analysis content is prepared and distributed for informational purposes. This material should not be used as the sole basis for any trading decision.",
         "features": [
-          "Technical analysis chart sharing",
+          "Technical analysis chart breakdowns",
           "Fundamental analysis summaries",
-          "Support/resistance levels",
+          "Key support and resistance levels",
           "Economic data tracking"
         ],
-        "disclaimer": "Analysis is based on past data; it does not guarantee future results."
+        "disclaimer": "Analysis is based on historical data and does not guarantee future results."
       }
     ],
     "advantages": {
-      "tag": "Advantages",
+      "tag": "Our Advantages",
       "title": "Why Choose Us?",
       "cards": [
         {
-          "icon": "🛡️",
           "title": "Regulated Environment",
-          "desc": "HFM's international regulated infrastructure"
+          "desc": "Backed by Tickmill and HFM's international regulatory framework"
         },
         {
-          "icon": "⚡",
           "title": "Fast Withdrawals",
-          "desc": "HFM's recognized withdrawal speed"
+          "desc": "Industry-recognised withdrawal speeds via Tickmill and HFM"
         },
         {
-          "icon": "🌍",
           "title": "Global Access",
-          "desc": "Accessible from anywhere in the world"
+          "desc": "Available to traders from anywhere in the world"
         },
         {
-          "icon": "📞",
-          "title": "Support",
-          "desc": "Quick response via Telegram and email"
+          "title": "Dedicated Support",
+          "desc": "Prompt responses via Telegram and email"
         }
       ]
     },
     "packages": {
       "tag": "Packages",
       "title": "Content Packages",
-      "subtitle": "Access to informational and analysis content packages.",
+      "subtitle": "Choose a package that suits your level of engagement with our analysis and education content.",
       "free": {
         "name": "Free",
         "price": "0",
-        "desc": "Basic informational content for beginners",
+        "desc": "Essential market content for those just getting started",
         "features": [
           "General market news",
           "Weekly analysis summary",
-          "HFM account opening support",
-          "Platform information"
+          "Tickmill account registration support",
+          "Platform orientation"
         ],
         "cta": "Get Started"
       },
       "premium": {
         "name": "Premium",
         "price": "Contact Us",
-        "desc": "Comprehensive informational content and priority support",
+        "desc": "Comprehensive analysis content and priority support",
         "badge": "Recommended",
         "features": [
-          "Daily analysis bulletins",
-          "Special Telegram group access",
+          "Daily market analysis briefings",
+          "Exclusive Telegram group access",
           "Priority platform support",
-          "Economic calendar notifications",
-          "Monthly market report"
+          "Economic calendar alerts",
+          "Monthly market outlook report"
         ],
-        "cta": "Get Info"
+        "cta": "Request Information"
       },
-      "note": "* All content is for informational purposes. Investment advice, portfolio management or individual consultation service is not provided. Forex trading involves high risk."
+      "note": "* All content is strictly for informational purposes. Investment advice, portfolio management, and individual financial consultation are not provided. Forex trading involves a high level of risk."
     }
   },
   "contact": {
     "tag": "Contact",
     "title": "Get in Touch",
-    "subtitle": "Contact us for HFM account opening, platform support and information.",
+    "subtitle": "Reach out to move forward directly with us for Tickmill or HFM (HotForex) account opening, platform support, and onboarding.",
     "channels": {
       "tag": "Contact Channels",
-      "title": "How to Reach?",
+      "title": "How to Reach Us",
       "items": [
         {
           "icon": "💬",
           "title": "Bullex Telegram",
-          "desc": "Join signal and analysis channel",
+          "desc": "Join our signal and analysis channel",
           "link": "t.me/channel →"
         },
         {
           "icon": "💬",
           "title": "Trader Ece Telegram",
-          "desc": "Click here for second channel",
+          "desc": "Join our second community channel",
           "link": "t.me/channel2 →"
         },
         {
           "icon": "💬",
           "title": "WhatsApp",
-          "desc": "Send message via WhatsApp",
+          "desc": "Send us a message on WhatsApp",
           "link": "wa.me/number →"
         },
         {
           "icon": "✉️",
           "title": "Email",
-          "desc": "For detailed questions",
-          "link": "info@example.com →"
+          "desc": "For detailed enquiries",
+          "link": "info@trader-ece.com →"
         }
       ]
     },
     "hfm": {
-      "logo": "HFM",
-      "title": "Open HFM Account",
-      "desc": "Open your official HFM account through our IB link",
-      "link": "Go to HFM →"
+      "logo": "Tickmill / HFM",
+      "title": "Move Forward with Tickmill / HFM",
+      "desc": "Use our official partner links to open your Tickmill or HFM (HotForex) account and continue the process directly with us.",
+      "link": "Go to Tickmill →",
+      "hfmLink": "Go to HFM →",
+      "vpnNote": "If the link does not open, please use a VPN."
     }
+  },
+  "testimonials": {
+    "tag": "Community Feedback",
+    "title": "What They Say",
+    "items": [
+      {
+        "name": "N. Berkan",
+        "text": "Your gold market analysis has been excellent. We followed it again today and closed the day profitably.",
+        "role": "Investor"
+      },
+      {
+        "name": "Neşe Aksoy",
+        "text": "It was a fantastic trading day. Your analysis and execution helped us finish the week strongly.",
+        "role": "Investor"
+      },
+      {
+        "name": "İsmet Yılmaz",
+        "text": "Even during the most uncertain market conditions, you handled the process with real professionalism.",
+        "role": "Investor"
+      },
+      {
+        "name": "T. R. Erdem",
+        "text": "Choosing your team again this year proved to be the right decision. Your perspective inspires confidence.",
+        "role": "Investor"
+      },
+      {
+        "name": "Tekin K.",
+        "text": "I completed my weekly withdrawal without any issues. The whole team works in a transparent and trustworthy way.",
+        "role": "Investor"
+      },
+      {
+        "name": "Kubilay Demir",
+        "text": "I only wish we had met earlier. The last four months have been both educational and profitable thanks to your guidance.",
+        "role": "Investor"
+      },
+      {
+        "name": "Esin Varol",
+        "text": "Meeting a team like yours in this sector is a real advantage. Thank you for your care and attention.",
+        "role": "Investor"
+      },
+      {
+        "name": "Rüstem Q.",
+        "text": "I received my withdrawal smoothly. With your analysis and support, everything moves quickly and clearly.",
+        "role": "Investor"
+      },
+      {
+        "name": "Hasan Sal",
+        "text": "Today I made my first profit withdrawal. You showed me what can be achieved with the right strategy and patience.",
+        "role": "Investor"
+      },
+      {
+        "name": "Aykut B.",
+        "text": "Winning in Forex becomes much easier with disciplined risk management and a calm, data-driven approach.",
+        "role": "Investor"
+      },
+      {
+        "name": "Esra Çaylak",
+        "text": "What sets you apart is the way you explain every detail with the care of a true educator.",
+        "role": "Investor"
+      },
+      {
+        "name": "Özlem Çetinkaya",
+        "text": "Even in difficult market conditions, your consistency helps us keep taking successful trades.",
+        "role": "Investor"
+      },
+      {
+        "name": "Murat Sencer",
+        "text": "My withdrawal request reached my account immediately. Thank you for the professional support and strong trading performance.",
+        "role": "Investor"
+      },
+      {
+        "name": "Cenk Altın",
+        "text": "I had taken a break, but my return has been excellent. This week has gone incredibly well.",
+        "role": "Investor"
+      },
+      {
+        "name": "Gulare M.",
+        "text": "Since joining your system, I feel much more secure. I received my first profit and truly appreciate your support.",
+        "role": "Investor"
+      }
+    ]
+  },
+  "chat": {
+    "greeting": "Hello! I'm the Trader Ece assistant. How can I help you today?",
+    "title": "Trader Ece Assistant",
+    "inputPlaceholder": "Type your message...",
+    "error": "A response could not be generated right now. Please try again.",
+    "sendButton": "Send"
   },
   "form": {
     "success": {
       "title": "Message Sent!",
-      "msg": "We will get back to you as soon as possible. You can also join our Telegram group.",
-      "button": "Join Telegram Group"
+      "msg": "We will get back to you as soon as possible. You are also welcome to join our Telegram community.",
+      "button": "Join the Telegram Group"
     },
     "card": {
-      "title": "Send Message",
-      "subtitle": "Send your questions about HFM account, platform or analysis content."
+      "title": "Send a Message",
+      "subtitle": "Submit your questions about Tickmill or HFM account opening, platform support, or analysis content."
     },
     "fields": {
       "name": "Full Name *",
-      "namePlaceholder": "Your Name Surname",
-      "email": "Email *",
-      "emailPlaceholder": "example@email.com",
+      "namePlaceholder": "Your full name",
+      "email": "Email Address *",
+      "emailPlaceholder": "you@example.com",
       "subject": "Subject",
-      "subjectDefault": "Select Subject",
+      "subjectDefault": "Select a Subject",
       "subjectOptions": [
-        "HFM Account Opening",
-        "Telegram Group",
+        "Tickmill / HFM Account Opening",
+        "Telegram Community",
         "Platform Support",
         "Other"
       ],
       "message": "Your Message *",
       "messagePlaceholder": "Type your message here..."
     },
-    "disclaimer": "This form cannot be used for investment advice requests. It is only for HFM account support and information purposes.",
+    "disclaimer": "This form cannot be used for investment advice requests. It is intended solely for Tickmill and HFM account support and general information enquiries.",
+    "error": "Something went wrong. Please try again.",
     "submit": "Send Message",
     "submitting": "Sending..."
   }

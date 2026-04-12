@@ -14,6 +14,132 @@
   z-index: 0;
 }
 
+/* ---- Twinkling Stars ---- */
+.hero__stars,
+.hero__stars::before,
+.hero__stars::after {
+  position: absolute;
+  top: 0; left: 0;
+  width: 1px;
+  height: 1px;
+  border-radius: 50%;
+  animation: twinkle 4s infinite alternate ease-in-out;
+}
+
+.hero__stars {
+  box-shadow:
+    120px 80px 0 rgba(255,255,255,0.9),
+    240px 150px 0 rgba(255,255,255,0.6),
+    380px 60px 0 rgba(255,255,255,0.8),
+    500px 200px 0 rgba(0,212,232,0.9),
+    620px 90px 0 rgba(255,255,255,0.5),
+    750px 170px 0 rgba(255,255,255,0.7),
+    870px 40px 0 rgba(0,200,150,0.9),
+    980px 220px 0 rgba(255,255,255,0.6),
+    1100px 110px 0 rgba(255,255,255,0.8),
+    1250px 180px 0 rgba(0,212,232,0.7),
+    60px 300px 0 rgba(255,255,255,0.5),
+    190px 380px 0 rgba(255,255,255,0.9),
+    330px 270px 0 rgba(0,200,150,0.6),
+    460px 350px 0 rgba(255,255,255,0.7),
+    580px 290px 0 rgba(255,255,255,0.8),
+    700px 400px 0 rgba(0,212,232,0.5),
+    820px 310px 0 rgba(255,255,255,0.9),
+    950px 370px 0 rgba(255,255,255,0.6),
+    1070px 260px 0 rgba(255,255,255,0.7),
+    1200px 340px 0 rgba(0,200,150,0.8),
+    30px 480px 0 rgba(255,255,255,0.6),
+    160px 520px 0 rgba(0,212,232,0.7),
+    290px 460px 0 rgba(255,255,255,0.5),
+    420px 550px 0 rgba(255,255,255,0.9),
+    540px 490px 0 rgba(255,255,255,0.6),
+    670px 530px 0 rgba(0,200,150,0.7),
+    790px 470px 0 rgba(255,255,255,0.8),
+    920px 560px 0 rgba(255,255,255,0.5),
+    1040px 500px 0 rgba(0,212,232,0.9),
+    1170px 540px 0 rgba(255,255,255,0.7);
+  animation-duration: 8s;
+}
+
+.hero__stars::before {
+  content: '';
+  box-shadow:
+    90px 130px 0 rgba(255,255,255,0.7),
+    210px 70px 0 rgba(0,200,150,0.8),
+    350px 140px 0 rgba(255,255,255,0.5),
+    470px 50px 0 rgba(255,255,255,0.9),
+    590px 160px 0 rgba(0,212,232,0.6),
+    710px 80px 0 rgba(255,255,255,0.7),
+    840px 130px 0 rgba(255,255,255,0.8),
+    960px 50px 0 rgba(0,200,150,0.5),
+    1090px 140px 0 rgba(255,255,255,0.9),
+    1220px 70px 0 rgba(0,212,232,0.7),
+    50px 240px 0 rgba(255,255,255,0.6),
+    180px 320px 0 rgba(255,255,255,0.8),
+    310px 230px 0 rgba(0,200,150,0.7),
+    440px 300px 0 rgba(255,255,255,0.5),
+    560px 240px 0 rgba(0,212,232,0.9),
+    680px 330px 0 rgba(255,255,255,0.6),
+    800px 250px 0 rgba(255,255,255,0.8),
+    930px 320px 0 rgba(0,200,150,0.7),
+    1060px 240px 0 rgba(255,255,255,0.5),
+    1190px 310px 0 rgba(255,255,255,0.9),
+    20px 420px 0 rgba(0,212,232,0.6),
+    150px 450px 0 rgba(255,255,255,0.7),
+    280px 410px 0 rgba(255,255,255,0.5),
+    410px 480px 0 rgba(0,200,150,0.8),
+    530px 430px 0 rgba(255,255,255,0.7),
+    650px 490px 0 rgba(255,255,255,0.6),
+    780px 420px 0 rgba(0,212,232,0.5),
+    910px 500px 0 rgba(255,255,255,0.9),
+    1030px 440px 0 rgba(255,255,255,0.7),
+    1160px 480px 0 rgba(0,200,150,0.6);
+  animation-duration: 11s;
+  animation-delay: -3s;
+}
+
+.hero__stars::after {
+  content: '';
+  box-shadow:
+    70px 100px 0 1px rgba(255,255,255,0.5),
+    200px 180px 0 1px rgba(0,212,232,0.7),
+    330px 100px 0 1px rgba(255,255,255,0.8),
+    460px 170px 0 1px rgba(0,200,150,0.5),
+    600px 110px 0 1px rgba(255,255,255,0.6),
+    730px 200px 0 1px rgba(255,255,255,0.9),
+    860px 120px 0 1px rgba(0,212,232,0.7),
+    990px 190px 0 1px rgba(255,255,255,0.5),
+    1120px 100px 0 1px rgba(0,200,150,0.8),
+    100px 350px 0 1px rgba(255,255,255,0.7),
+    230px 420px 0 1px rgba(0,212,232,0.5),
+    370px 360px 0 1px rgba(255,255,255,0.9),
+    490px 430px 0 1px rgba(255,255,255,0.6),
+    620px 370px 0 1px rgba(0,200,150,0.7),
+    750px 440px 0 1px rgba(255,255,255,0.5),
+    890px 360px 0 1px rgba(0,212,232,0.8),
+    1010px 420px 0 1px rgba(255,255,255,0.7),
+    1140px 370px 0 1px rgba(255,255,255,0.5),
+    40px 560px 0 1px rgba(0,200,150,0.6),
+    170px 510px 0 1px rgba(255,255,255,0.8),
+    300px 570px 0 1px rgba(0,212,232,0.5),
+    430px 520px 0 1px rgba(255,255,255,0.7),
+    550px 580px 0 1px rgba(255,255,255,0.9),
+    690px 530px 0 1px rgba(0,200,150,0.6),
+    810px 570px 0 1px rgba(255,255,255,0.5),
+    940px 520px 0 1px rgba(0,212,232,0.8),
+    1080px 560px 0 1px rgba(255,255,255,0.7),
+    1200px 510px 0 1px rgba(255,255,255,0.6);
+  animation-duration: 14s;
+  animation-delay: -6s;
+}
+
+@keyframes twinkle {
+  0%   { opacity: 0.15; }
+  30%  { opacity: 1; }
+  60%  { opacity: 0.9; }
+  100% { opacity: 0.1; }
+}
+
 .hero__grid {
   position: absolute;
   inset: 0;
@@ -36,15 +162,17 @@
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: rgba(0,200,150,0.1);
-  border: 1px solid rgba(0,200,150,0.25);
+  background: rgba(182, 138, 68, 0.12);
+  border: 1px solid rgba(182, 138, 68, 0.24);
   border-radius: 100px;
   padding: 6px 16px;
-  font-size: 13px;
-  font-weight: 500;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
   color: var(--accent);
   margin-bottom: 32px;
-  animation: fadeUp 0.6s ease forwards;
+  animation: fadeIn 0.9s ease forwards;
 }
 
 .badge-dot {
@@ -57,27 +185,40 @@
 
 .hero__title {
   font-family: var(--font-display);
-  font-size: clamp(42px, 7vw, 80px);
-  font-weight: 900;
-  line-height: 1.05;
+  font-size: clamp(32px, 5vw, 60px);
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -0.045em;
   margin-bottom: 28px;
-  animation: fadeUp 0.7s 0.1s ease both;
+  animation: fadeIn 1s 0.15s ease both;
 }
 
 .highlight {
-  background: linear-gradient(135deg, var(--accent) 0%, #00a87a 60%, var(--gold) 100%);
+  background: linear-gradient(135deg, var(--silver-light) 0%, var(--accent) 55%, var(--gold) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
-.hero__subtitle {
-  font-size: clamp(16px, 2vw, 19px);
+.hero__stat {
+  font-size: clamp(13px, 1.4vw, 15px);
   color: var(--gray);
   max-width: 560px;
-  line-height: 1.7;
+  line-height: 1.6;
+  margin-bottom: 16px;
+  font-style: italic;
+  opacity: 0.75;
+  animation: fadeIn 1s 0.3s ease both;
+}
+
+.hero__subtitle {
+  font-size: clamp(16px, 2vw, 19px);
+  font-weight: 500;
+  color: rgba(235, 227, 214, 0.78);
+  max-width: 560px;
+  line-height: 1.75;
   margin-bottom: 40px;
-  animation: fadeUp 0.7s 0.2s ease both;
+  animation: fadeIn 1s 0.3s ease both;
 }
 
 .hero__actions {
@@ -85,14 +226,14 @@
   gap: 16px;
   flex-wrap: wrap;
   margin-bottom: 40px;
-  animation: fadeUp 0.7s 0.3s ease both;
+  animation: fadeIn 1s 0.45s ease both;
 }
 
 .hero__trust {
   display: flex;
   gap: 24px;
   flex-wrap: wrap;
-  animation: fadeUp 0.7s 0.4s ease both;
+  animation: fadeIn 1s 0.6s ease both;
 }
 
 .trust-item {
@@ -108,9 +249,23 @@
   flex-shrink: 0;
 }
 
+.broker-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.broker-note {
+  margin-top: 12px;
+  font-size: 12px;
+  line-height: 1.6;
+  color: rgba(248, 250, 255, 0.72);
+}
+
 /* STATS */
 .stats-section {
-  background: rgba(0,200,150,0.04);
+  background: rgba(182, 138, 68, 0.05);
   border-top: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
   padding: 56px 0;
@@ -154,6 +309,13 @@
 
 .services-grid { margin-bottom: 40px; }
 
+.service-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
 .service-card h3 {
   font-family: var(--font-display);
   font-size: 20px;
@@ -169,19 +331,41 @@
 
 .service-icon {
   font-size: 36px;
-  width: 64px;
-  height: 64px;
-  border-radius: 12px;
+  width: 72px;
+  height: 72px;
+  border-radius: 14px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: color-mix(in srgb, var(--c) 12%, transparent);
-  border: 1px solid color-mix(in srgb, var(--c) 25%, transparent);
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(8px);
+  padding: 8px;
+  box-shadow: 0 2px 12px color-mix(in srgb, var(--c) 20%, transparent);
 }
 
 .services-cta {
   text-align: center;
   margin-top: 16px;
+}
+
+.service-card--cta {
+  width: 100%;
+  border: 1px solid rgba(182, 138, 68, 0.28);
+  background: linear-gradient(180deg, rgba(182, 138, 68, 0.08), rgba(7, 11, 17, 0.85));
+  cursor: pointer;
+}
+
+.service-card--cta:hover {
+  border-color: rgba(214, 176, 106, 0.48);
+}
+
+.service-card--cta .service-icon {
+  color: var(--accent);
+}
+
+.service-card--cta p {
+  max-width: 320px;
 }
 
 /* HFM SECTION */
@@ -224,27 +408,38 @@
 }
 
 .hfm-badge-large {
-  width: 220px;
+  width: 230px;
   height: 220px;
+  padding: 22px;
   border-radius: 50%;
-  background: linear-gradient(135deg, rgba(0,200,150,0.1), rgba(26,58,107,0.3));
-  border: 2px solid rgba(0,200,150,0.3);
+  background: radial-gradient(circle at top, rgba(182, 138, 68, 0.12), rgba(15, 22, 32, 0.22) 45%, rgba(6, 10, 16, 0.92) 100%);
+  border: 2px solid rgba(182, 138, 68, 0.28);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 0 60px rgba(0,200,150,0.1);
+  box-shadow: 0 0 60px rgba(182, 138, 68, 0.12);
 }
 
-.hfm-logo-text {
-  font-family: var(--font-display);
-  font-size: 48px;
-  font-weight: 900;
-  color: var(--accent);
-  line-height: 1;
+.hfm-logo-plate {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  height: auto;
+  padding: 0;
+  background: none;
+  border: none;
+  box-shadow: none;
 }
 
-.hfm-tagline { font-size: 12px; color: var(--gray); margin-top: 4px; }
+.hfm-logo-image {
+  display: block;
+  width: 120px;
+  height: auto;
+}
+
+.hfm-tagline { font-size: 12px; color: var(--gray); margin-top: 10px; }
 
 .hfm-reg {
   font-size: 11px;
@@ -273,8 +468,6 @@
 }
 
 /* TESTIMONIALS */
-.testimonials-section {}
-
 .testimonial-card { display: flex; flex-direction: column; gap: 16px; }
 
 .testimonial-stars { color: var(--gold); font-size: 16px; letter-spacing: 2px; }

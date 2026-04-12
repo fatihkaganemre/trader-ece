@@ -1,13 +1,21 @@
 import "./ServicesPage.css";
 import { useTranslation } from "react-i18next";
+import Lottie from "lottie-react";
 import type { NavigateFn } from "../App";
+import socialSignalAnim from "../assets/social-signal.json";
+import moneyWithdrawalAnim from "../assets/money-withdrawal.json";
+import partnershipAnim from "../assets/partnership.json";
+import peopleAnalyzingAnim from "../assets/people-analyzing-growth-charts.json";
+import regulationAnim from "../assets/regulation.json";
+import supportAnim from "../assets/support.json";
+import globalAnim from "../assets/global.json";
 
 interface ServicesPageProps {
   navigate: NavigateFn;
 }
 
 interface Service {
-  icon: string;
+  anim: object;
   title: string;
   color: string;
   desc: string;
@@ -25,7 +33,7 @@ interface Package {
 }
 
 interface Advantage {
-  icon: string;
+  anim: object;
   title: string;
   desc: string;
 }
@@ -35,7 +43,7 @@ export default function ServicesPage({ navigate }: ServicesPageProps) {
 
   const servicesFromTranslation: Service[] = [
     {
-      icon: "📡",
+      anim: socialSignalAnim,
       title: t("services.cards.0.title"),
       color: "#0088cc",
       desc: t("services.cards.0.desc"),
@@ -48,9 +56,9 @@ export default function ServicesPage({ navigate }: ServicesPageProps) {
       disclaimer: t("services.cards.0.disclaimer"),
     },
     {
-      icon: "🏦",
+      anim: partnershipAnim,
       title: t("services.cards.1.title"),
-      color: "#00d4e8",
+      color: "#b68a44",
       desc: t("services.cards.1.desc"),
       features: [
         t("services.cards.1.features.0"),
@@ -61,7 +69,7 @@ export default function ServicesPage({ navigate }: ServicesPageProps) {
       disclaimer: t("services.cards.1.disclaimer"),
     },
     {
-      icon: "📊",
+      anim: peopleAnalyzingAnim,
       title: t("services.cards.2.title"),
       color: "#a855f7",
       desc: t("services.cards.2.desc"),
@@ -107,22 +115,22 @@ export default function ServicesPage({ navigate }: ServicesPageProps) {
 
   const advantagesFromTranslation: Advantage[] = [
     {
-      icon: "🛡️",
+      anim: regulationAnim,
       title: t("services.advantages.cards.0.title"),
       desc: t("services.advantages.cards.0.desc"),
     },
     {
-      icon: "⚡",
+      anim: moneyWithdrawalAnim,
       title: t("services.advantages.cards.1.title"),
       desc: t("services.advantages.cards.1.desc"),
     },
     {
-      icon: "🌍",
+      anim: globalAnim,
       title: t("services.advantages.cards.2.title"),
       desc: t("services.advantages.cards.2.desc"),
     },
     {
-      icon: "📞",
+      anim: supportAnim,
       title: t("services.advantages.cards.3.title"),
       desc: t("services.advantages.cards.3.desc"),
     },
@@ -152,7 +160,7 @@ export default function ServicesPage({ navigate }: ServicesPageProps) {
               <div key={i} className="service-detail-card card">
                 <div className="sdc-header">
                   <div className="service-icon-lg" style={{ "--c": svc.color } as React.CSSProperties}>
-                    {svc.icon}
+                    <Lottie animationData={svc.anim} loop autoplay style={{ width: 56, height: 56 }} />
                   </div>
                   <div>
                     <h3>{svc.title}</h3>
@@ -184,7 +192,9 @@ export default function ServicesPage({ navigate }: ServicesPageProps) {
           <div className="grid-4" style={{ marginTop: 48 }}>
             {advantagesFromTranslation.map((a, i) => (
               <div key={i} className="card adv-card">
-                <div style={{ fontSize: 32, marginBottom: 12 }}>{a.icon}</div>
+                <div style={{ marginBottom: 12, background: "rgba(255,255,255,0.08)", border: "1px solid rgba(255,255,255,0.15)", borderRadius: 12, padding: 8, width: 64, height: 64, display: "flex", alignItems: "center", justifyContent: "center" }}>
+                  <Lottie animationData={a.anim} loop autoplay style={{ width: 44, height: 44 }} />
+                </div>
                 <h4>{a.title}</h4>
                 <p>{a.desc}</p>
               </div>
