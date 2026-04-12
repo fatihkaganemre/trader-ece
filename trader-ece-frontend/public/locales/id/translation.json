@@ -3,72 +3,85 @@
     "home": "Beranda",
     "about": "Tentang",
     "services": "Layanan",
+    "community": "Komunitas",
     "performance": "Performa",
     "contact": "Kontak",
     "menu": "Menu"
   },
   "header": {
     "brand": "TRADER ECE",
-    "subtitle": "HFM IB & Affiliate",
+    "subtitle": "Tickmill IB & Affiliate",
     "bullex": "BULLEX",
-    "bullexSubtitle": "Signal Channel"
+    "bullexSubtitle": "Saluran Sinyal",
+    "language": {
+      "title": "Pilih Bahasa",
+      "en": "Inggris",
+      "tr": "Turki",
+      "th": "Thailand",
+      "id": "Indonesia",
+      "zh": "Mandarin",
+      "vi": "Vietnam"
+    }
   },
   "footer": {
     "pages": "Halaman",
-    "legal": "Hukum",
+    "legal": "Legal",
     "links": {
-      "hfmOfficial": "Situs Resmi HFM",
-      "hfmRegulation": "Peraturan HFM"
+      "hfmOfficial": "Regulasi Tickmill",
+      "hfmRegulation": "Regulasi HFM Hot Forex"
     },
     "riskWarning": "Peringatan Risiko:",
-    "riskDisclaimer": "Perdagangan forex dan CFD melibatkan risiko tinggi. Anda mungkin kehilangan seluruh investasi Anda. Situs ini tidak menyediakan nasihat investasi atau layanan manajemen portofolio. Konten di sini hanya untuk tujuan informasi. Kami beroperasi sebagai mitra Introducing Broker (IB) dan afiliasi resmi. Silakan konsultasikan dengan penasihat keuangan independen sebelum membuat keputusan investasi. Kinerja masa lalu tidak menjamin hasil di masa depan.",
-    "partnerDesc": "Kami beroperasi sebagai mitra Introducing Broker (IB) dan afiliasi resmi. Konten analisis pasar dibagikan hanya untuk tujuan informasi. Kami tidak menyediakan nasihat investasi atau layanan manajemen portofolio.",
-    "copyright": "© {{year}} Trader ECE – HFM IB & Afiliasi. Hak cipta dilindungi.",
-    "regulation": "Beroperasi di lingkungan yang diatur oleh HF Markets Group.",
-    "bullexSubtitle": "SIGNAL CHANNEL"
+    "riskDisclaimer": "Perdagangan Forex dan CFD mengandung risiko tinggi dan mungkin tidak sesuai untuk semua investor. Anda dapat kehilangan seluruh modal yang diinvestasikan. Situs ini tidak memberikan saran investasi atau layanan manajemen portofolio. Semua konten bersifat informatif. Kami beroperasi sebagai mitra IB dan Affiliate resmi Tickmill. Konsultasikan dengan penasihat keuangan independen sebelum mengambil keputusan investasi. Kinerja masa lalu bukan jaminan hasil di masa depan.",
+    "partnerDesc": "Kami beroperasi sebagai mitra Introducing Broker (IB) dan Affiliate resmi Tickmill dan HFM (HF Markets). Konten analisis pasar dibagikan hanya untuk tujuan informasi. Kami tidak memberikan saran investasi atau layanan manajemen portofolio.",
+    "copyright": "© {{year}} Trader ECE – Tickmill IB & Affiliate. Seluruh hak cipta dilindungi.",
+    "regulation": "Beroperasi dalam lingkungan teregulasi yang diawasi oleh Tickmill dan HF Markets Group.",
+    "bullexSubtitle": "KANAL SINYAL"
   },
   "home": {
-    "badge": "TRADER ECE – Mitra IB & Afiliasi Resmi HFM",
+    "badge": "TRADER ECE – Mitra IB & Affiliate Resmi Tickmill & HFM",
     "hero": {
-      "title1": "Langkah Terinformasi Ke",
-      "title2": "Pasar Forex",
-      "subtitle": "15+ tahun pengalaman pasar dengan kemitraan HFM. Pembukaan akun di lingkungan yang diatur dan grup sinyal. Nasihat investasi tidak diberikan."
+      "titlePre": "",
+      "titleHighlight": "Raih Puncak Pasar.",
+      "titlePost": "",
+      "stat": "Saat 75% trader ritel merugi, tempatkan diri Anda di sisi yang benar. Tajamkan strategi Anda bersama 13+ tahun pengalaman profesional.",
+      "subtitle": "Keluar dari kelompok 75%. Bergabunglah dengan 13 tahun pengalaman global dalam lingkungan trading teregulasi."
     },
     "buttons": {
-      "telegramTraderEce": "Bergabung dengan Grup Telegram Trader Ece",
-      "telegramBullex": "Bergabung dengan Grup Telegram Bullex",
-      "info": "Dapatkan Info"
+      "telegramTraderEce": "Bergabung ke Grup Telegram Trader Ece",
+      "telegramBullex": "Bergabung ke Grup Telegram Bullex",
+      "info": "Hubungi Kami"
     },
     "trust": {
-      "title": "Broker Teratur",
-      "item1": "Pengalaman 15+ Tahun",
-      "item2": "Volume Aktif 7M$"
+      "title": "Broker Teregulasi",
+      "item1": "13+ Tahun Pengalaman",
+      "item2": "Volume Aktif $7 Juta"
     },
     "services": {
-      "tag": "Layanan",
-      "title": "Apa yang Kami Tawarkan?",
-      "subtitle": "Dukungan akun sebagai mitra HFM IB dan layanan informasional. Semua konten untuk tujuan informasi.",
+      "tag": "Layanan Kami",
+      "title": "Apa yang Kami Tawarkan",
+      "subtitle": "Sebagai mitra IB resmi Tickmill dan HFM, kami menyediakan dukungan pembukaan akun dan edukasi pasar. Semua konten hanya untuk tujuan informasi.",
       "viewAll": "Lihat Semua Layanan →",
+      "viewAllDesc": "Lanjutkan untuk melihat semua kategori layanan beserta detailnya.",
       "cards": [
         {
-          "icon": "📡",
-          "title": "Grup Telegram & WhatsApp",
-          "desc": "Analisis pasar real-time dan buletin melalui grup sinyal khusus kami. Bukan nasihat investasi."
+          "title": "Grup Sinyal Telegram & WhatsApp",
+          "desc": "Analisis pasar real-time dan briefing harian melalui komunitas sinyal eksklusif kami. Hanya untuk tujuan informasi — bukan saran investasi."
         },
         {
-          "icon": "🏦",
-          "title": "HFM IB Partnership",
-          "desc": "Sebagai mitra Introducing Broker resmi, kami menyediakan dukungan pembukaan akun dan dukungan platform."
+          "title": "Kemitraan IB Tickmill & HFM",
+          "desc": "Sebagai Introducing Broker resmi Tickmill dan HFM, kami memandu proses pendaftaran akun dan memberikan dukungan onboarding platform secara penuh."
         },
         {
-          "icon": "🛡️",
-          "title": "Lingkungan Teratur",
-          "desc": "HFM adalah broker global yang diatur oleh beberapa otoritas keuangan internasional."
+          "title": "Lingkungan Trading Teregulasi",
+          "desc": "Tickmill adalah broker teregulasi global yang dilisensikan oleh otoritas keuangan internasional tier-1, memastikan lingkungan trading yang transparan dan aman."
         },
         {
-          "icon": "📊",
-          "title": "Analisis Pasar",
-          "desc": "Konten analisis teknis dan fundamental. Semua konten adalah informasi, bukan nasihat investasi."
+          "title": "Analisis & Riset Pasar",
+          "desc": "Analisis teknikal dan fundamental rutin dibagikan di komunitas kami. Semua materi hanya untuk tujuan informasi dan bukan merupakan saran keuangan."
+        },
+        {
+          "title": "Mitra Broker Terpercaya & Berprestasi",
+          "desc": "Kami bekerja sama secara eksklusif dengan broker teregulasi yang diakui secara internasional — memberikan Anda akses ke infrastruktur trading yang terpercaya."
         }
       ]
     },
@@ -76,24 +89,26 @@
       "experience": "Tahun Pengalaman",
       "volume": "Volume Aktif ($)",
       "withdrawals": "Volume Penarikan ($)",
-      "partnership": "Kemitraan HFM (Tahun)"
+      "partnership": "Tahun sebagai Mitra IB"
     },
     "hfmTrust": {
-      "tag": "Mengapa HFM?",
-      "title": "Broker Global & Teratur",
-      "desc": "HFM (HF Markets) adalah broker forex dan CFD global yang beroperasi sejak 2010, diatur oleh beberapa otoritas keuangan internasional. Dikenal karena waktu penarikan cepat dan infrastruktur yang dapat diandalkan.",
+      "tag": "Mengapa Tickmill?",
+      "title": "Broker Global Teregulasi",
+      "desc": "Tickmill adalah broker Forex dan CFD global terkemuka yang diregulasi oleh otoritas internasional tier-1 termasuk FCA, CySEC, dan DFSA. Dikenal atas penarikan cepat, spread ketat, dan infrastruktur institusional. HFM (HF Markets) adalah mitra broker sekunder kami — sama-sama teregulasi dan dipercaya di pasar global.",
       "features": [
-        "Regulasi internasional (FCA, CySEC, DFSA dan lainnya)",
-        "Pemrosesan penarikan cepat",
-        "Berbagai instrumen perdagangan",
-        "Pemisahan dana pelanggan yang aman"
+        "Regulasi multi-yurisdiksi (FCA, CySEC, DFSA & lainnya)",
+        "Proses penarikan dana yang cepat dan andal",
+        "Berbagai pilihan instrumen trading",
+        "Dana nasabah tersimpan di akun terpisah untuk keamanan penuh"
       ],
-      "moreLink": "Pelajari Lebih Lanjut Tentang HFM →"
+      "moreLink": "Ke Tickmill →",
+      "hfmLink": "Ke HFM →",
+      "vpnNote": "Jika tautan tidak terbuka, silakan gunakan VPN."
     },
     "hfmBadge": {
-      "text": "HFM",
-      "tagline": "HF Markets Group",
-      "desc": "Broker Teratur"
+      "text": "Tickmill",
+      "tagline": "Mitra Broker Utama",
+      "desc": "Broker Teregulasi"
     },
     "regulators": {
       "fca": "FCA",
@@ -102,180 +117,182 @@
       "fsc": "FSC"
     },
     "cta": {
-      "title": "Ingin Membuka Akun HFM?",
-      "subtitle": "Hubungi kami untuk dukungan dan informasi.",
-      "telegramBtn": "Jangkau melalui Telegram",
-      "formBtn": "Formulir Kontak"
+      "title": "Siap Membuka Akun Tickmill atau HFM?",
+      "subtitle": "Hubungi kami untuk panduan, dukungan, dan informasi lebih lanjut.",
+      "telegramBtn": "Hubungi Kami di Telegram",
+      "formBtn": "Kirim Pesan"
     }
   },
   "performance": {
-    "tag": "Performa & Angka",
+    "tag": "Performa & Rekam Jejak",
     "hero": {
-      "title1": "Melalui",
-      "title2": "Pengalaman Masa Lalu",
-      "subtitle": "15+ tahun praktik pasar dan volume yang dilacak melalui HFM. Data masa lalu tidak menjamin kinerja masa depan."
+      "title1": "Hasil yang Didukung",
+      "title2": "Pengalaman Nyata",
+      "subtitle": "Lebih dari 13 tahun partisipasi aktif di pasar, dengan volume trading terlacak melalui kemitraan IB Tickmill kami. Kinerja masa lalu bukan indikasi hasil di masa depan."
     },
     "metrics": [
       {
         "value": "15",
         "suffix": "+",
         "label": "Tahun Pengalaman Pasar",
-        "note": "Aktif sejak 2009",
+        "note": "Aktif trading sejak 2009",
         "prefix": ""
       },
       {
         "value": "7",
         "suffix": "M+",
         "prefix": "$",
-        "label": "Volume Aktif",
-        "note": "Total volume dilacak melalui IB"
+        "label": "Volume Trading Aktif",
+        "note": "Total volume terlacak via akun IB"
       },
       {
         "value": "4.6",
         "suffix": "M+",
         "prefix": "$",
-        "label": "Volume Penarikan",
-        "note": "Penarikan melalui saluran HFM"
+        "label": "Volume Penarikan Nasabah",
+        "note": "Penarikan diproses melalui Tickmill"
       },
       {
         "value": "4",
         "suffix": "+",
-        "label": "Tahun Kemitraan HFM",
-        "note": "Kemitraan IB resmi",
+        "label": "Tahun sebagai Mitra IB Resmi",
+        "note": "Kemitraan IB Tickmill resmi sejak 2021",
         "prefix": ""
       }
     ],
-    "disclaimer": "⚠️ Catatan Penting:",
-    "disclaimerText": "Angka di atas adalah untuk tujuan informasi dan mencerminkan data masa lalu. Angka-angka ini tidak menjamin kinerja atau pengembalian di masa depan. Perdagangan forex melibatkan risiko tinggi, dan disarankan untuk berkonsultasi dengan penasihat keuangan independen sebelum berinvestasi.",
+    "disclaimer": "⚠️ Pernyataan Penting:",
+    "disclaimerText": "Semua angka yang ditampilkan hanya untuk tujuan informasi dan mencerminkan data historis. Angka-angka ini tidak menjamin atau memprediksi kinerja atau imbal hasil di masa depan. Trading Forex dan CFD mengandung risiko signifikan. Kami sangat menyarankan untuk berkonsultasi dengan penasihat keuangan independen sebelum mengambil keputusan investasi.",
     "process": {
-      "tag": "Proses",
-      "title": "Bagaimana Kami Bekerja?",
-      "subtitle": "Aktivitas yang kami lakukan sebagai mitra HFM IB.",
+      "tag": "Cara Kerja",
+      "title": "Pendekatan Kami",
+      "subtitle": "Gambaran transparan tentang layanan yang kami berikan sebagai mitra IB resmi Tickmill.",
       "steps": [
         {
           "number": "01",
-          "title": "Dukungan Akun HFM",
-          "desc": "Kami memberikan panduan ketika pengguna membuka akun melalui HFM. Kontrol akun sepenuhnya ada di tangan pengguna."
+          "title": "Dukungan Pendaftaran Akun",
+          "desc": "Kami memandu klien melalui proses pendaftaran akun Tickmill dan HFM. Kendali penuh atas akun tetap berada di tangan klien setiap saat."
         },
         {
           "number": "02",
-          "title": "Berbagi Konten",
-          "desc": "Konten analisis pasar dibagikan di grup Telegram dan WhatsApp. Ini bukan nasihat investasi."
+          "title": "Wawasan & Analisis Pasar",
+          "desc": "Analisis pasar harian dan mingguan dibagikan melalui komunitas Telegram dan WhatsApp kami. Semua konten hanya untuk tujuan informasi dan bukan merupakan saran keuangan."
         },
         {
           "number": "03",
-          "title": "Dukungan",
-          "desc": "Dukungan teknis disediakan untuk penggunaan platform dan proses HFM."
+          "title": "Dukungan Platform Berkelanjutan",
+          "desc": "Kami memberikan panduan teknis tentang pengaturan platform, konfigurasi akun, dan proses broker umum untuk membantu klien memulai dengan percaya diri."
         }
       ]
     },
     "hfmPartnership": {
-      "tag": "Kemitraan HFM",
-      "title": "Mengapa HFM?",
-      "desc1": "HFM (HF Markets) adalah broker global berlisensi oleh beberapa regulator internasional. Sebagai mitra IB, kami hanya memfasilitasi proses pembukaan akun melalui HFM dan memberikan dukungan informasional.",
-      "desc2": "Manajemen dana, manajemen portofolio, atau nasihat investasi individual tidak disediakan.",
-      "regulationLink": "Informasi Peraturan HFM →",
+      "tag": "Kemitraan Broker Kami",
+      "title": "Mengapa Tickmill?",
+      "desc1": "Tickmill adalah broker berlisensi global yang diregulasi oleh berbagai otoritas keuangan internasional. Sebagai mitra IB resmi, peran kami terbatas pada memfasilitasi pendaftaran akun dan memberikan dukungan informasi. Kami tidak mengelola dana klien atau memberikan saran investasi.",
+      "desc2": "Manajemen dana, manajemen portofolio, dan konsultasi investasi individual bukan bagian dari layanan kami.",
+      "regulationLink": "Ke Tickmill →",
+      "hfmLink": "Ke HFM →",
+      "vpnNote": "Jika tautan tidak terbuka, silakan gunakan VPN.",
       "authorities": {
         "fca": "Financial Conduct Authority",
-        "cysec": "Cyprus Securities & Exchange",
-        "dfsa": "Dubai Financial Services",
+        "cysec": "Cyprus Securities & Exchange Commission",
+        "dfsa": "Dubai Financial Services Authority",
         "fsc": "Financial Services Commission"
       }
     },
     "cta": {
-      "title": "Ingin Membuka Akun HFM?",
-      "subtitle": "Biarkan kami membantu Anda dengan proses akun sebagai mitra IB.",
+      "title": "Siap Membuka Akun Tickmill atau HFM?",
+      "subtitle": "Sebagai mitra IB Anda, kami siap mendampingi setiap langkah Anda.",
       "button": "Hubungi Kami"
     }
   },
   "about": {
-    "tag": "Tentang",
+    "tag": "Tentang Kami",
     "hero": {
-      "title1": "Kenal",
-      "title2": "Siapa Kami",
-      "subtitle": "15+ tahun pengalaman pasar, 4+ tahun kemitraan HFM. Kami beroperasi sebagai mitra HFM IB/Afiliasi resmi."
+      "title1": "Siapa Kami",
+      "title2": "dan Apa yang Kami Lakukan",
+      "subtitle": "13+ tahun pengalaman pasar, 4+ tahun kemitraan kuat bersama HFM, dan kini babak baru dimulai bersama Tickmill."
     },
     "experience": "15+",
     "experienceLabel": "Tahun Pengalaman",
     "badges": [
-      "HFM Official IB Partner",
-      "Active Signal Communities",
-      "Regulated Environment"
+      "Mitra IB Resmi Tickmill & HFM",
+      "Komunitas Sinyal Aktif",
+      "Lingkungan Teregulasi"
     ],
     "biography": {
-      "tag": "Biografi",
-      "title": "Pengalaman dan Kepercayaan",
-      "p1": "Sejak 2009, saya telah terlibat aktif di pasar Forex. Selama bertahun-tahun, saya telah mengumpulkan pengetahuan mendalam dalam analisis teknis, analisis fundamental, dan psikologi pasar.",
-      "p2": "Sejak 2021, saya telah bekerja sebagai mitra Introducing Broker (IB) dan afiliasi resmi dengan HFM (HF Markets). Dalam kapasitas ini, saya memberikan dukungan dalam proses pembukaan akun HFM, informasi platform, dan konten analisis pasar.",
+      "tag": "Kisah Kami",
+      "title": "Pengalaman yang Dapat Dipercaya",
+      "p1": "Sejak 2009, saya aktif terlibat di pasar Forex global. Selama bertahun-tahun, saya mengembangkan keahlian mendalam dalam analisis teknikal, analisis fundamental, dan psikologi pasar — membangun pendekatan trading yang disiplin dan konsisten.",
+      "p2": "Perjalanan kemitraan resmi dimulai dengan HFM pada 2021 dan berjalan aktif selama empat tahun yang produktif. Kini babak baru bersama Tickmill telah dimulai, sambil kami terus memberikan dukungan pembukaan akun, panduan platform, dan konten analisis pasar.",
       "note": "Catatan Penting:",
-      "p3": "Konten dan analisis yang diberikan bukan merupakan nasihat investasi, manajemen portofolio, atau konsultasi investasi individual. Ini hanya untuk tujuan informasi.",
+      "p3": "Semua konten dan analisis yang dibagikan melalui saluran kami hanya untuk tujuan informasi. Kami tidak memberikan saran investasi, manajemen portofolio, atau konsultasi investasi individual dalam bentuk apapun.",
       "button": "Hubungi Kami"
     },
     "hfmPartnership": {
-      "tag": "Mengapa HFM?",
-      "title": "Kemitraan HFM",
-      "subtitle": "HFM adalah broker forex global terpercaya dan teregulasi. Sebagai mitra IB, kami menyediakan infrastruktur yang dapat diandalkan ini untuk Anda.",
+      "tag": "Mengapa Tickmill?",
+      "title": "Kemitraan Broker Kami",
+      "subtitle": "Tickmill adalah broker Forex dan CFD multi-teregulasi yang terpercaya secara global. Sebagai mitra IB resmi mereka, kami menghubungkan komunitas kami dengan infrastruktur trading berkelas institusional.",
       "features": [
         {
           "icon": "🌍",
           "title": "Regulasi Global",
-          "desc": "Diatur oleh FCA, CySEC, DFSA, FSC dan lainnya. Infrastruktur institusional yang dapat diandalkan."
+          "desc": "Diregulasi oleh FCA, CySEC, DFSA, FSC dan lainnya. Infrastruktur institusional yang terpercaya."
         },
         {
           "icon": "⚡",
           "title": "Penarikan Cepat",
-          "desc": "Dengan waktu penarikan HFM yang cepat, akses dana Anda dengan cepat."
+          "desc": "Akses dana Anda dengan cepat melalui waktu pemrosesan penarikan terdepan industri dari Tickmill."
         },
         {
           "icon": "📱",
           "title": "Platform Canggih",
-          "desc": "MT4, MT5 dan platform spesifik HFM. Kompatibel mobile dan desktop."
+          "desc": "Trading di MT4, MT5, dan platform proprietary Tickmill — kompatibel penuh dengan mobile dan desktop."
         },
         {
           "icon": "🔒",
           "title": "Keamanan Dana",
-          "desc": "Dana pelanggan disimpan di akun terpisah. Tunduk pada pengawasan regulasi."
+          "desc": "Dana klien disimpan di akun terpisah, tunduk pada pengawasan regulasi penuh."
         },
         {
           "icon": "📊",
-          "title": "Berbagai Instrumen",
-          "desc": "Forex, emas, indeks, saham dan lainnya. Semuanya di satu platform."
+          "title": "Instrumen Beragam",
+          "desc": "Akses Forex, emas, indeks, saham, dan lainnya — semua dalam satu platform."
         },
         {
           "icon": "🎓",
-          "title": "Sumber Daya Pendidikan",
-          "desc": "Konten pendidikan resmi HFM dan penelitian pasar."
+          "title": "Sumber Edukasi",
+          "desc": "Konten edukasi resmi Tickmill, riset pasar, dan webinar."
         }
       ]
     },
     "timeline": {
-      "tag": "Garis Waktu",
-      "title": "Perjalanan Kami",
+      "tag": "Perjalanan Kami",
+      "title": "Tonggak Pencapaian",
       "items": [
         {
           "year": "2009",
-          "title": "Perjalanan Forex Dimulai",
-          "desc": "Memasuki pasar Forex. Periode pembelajaran intensif tentang analisis teknis dan fundamental."
+          "title": "Memasuki Pasar",
+          "desc": "Mulai berpartisipasi aktif di pasar Forex. Periode intensif mempelajari analisis teknikal dan fundamental dimulai."
         },
         {
           "year": "2013",
           "title": "Langkah Profesional Pertama",
-          "desc": "Grup sinyal didirikan. Analisis pasar mulai dibagikan. Komunitas berkembang."
+          "desc": "Komunitas sinyal didirikan. Konten analisis pasar rutin mulai didistribusikan. Pengikut setia terus bertumbuh."
         },
         {
           "year": "2018",
-          "title": "Kemitraan Korporat",
-          "desc": "Kemitraan broker internasional didirikan. Aktivitas IB dimulai."
+          "title": "Kemitraan Institusional",
+          "desc": "Kemitraan formal dengan broker internasional terjalin. Aktivitas IB dimulai."
         },
         {
           "year": "2021",
-          "title": "Kemitraan HFM IB",
-          "desc": "Kemitraan Introducing Broker resmi dengan HFM (HF Markets) dimulai. Transisi ke lingkungan teregulasi."
+          "title": "Kemitraan Resmi HFM",
+          "desc": "Kemitraan resmi dengan HFM dimulai pada 2021. Selama empat tahun, kerja aktif, hasil yang kuat, dan layanan berbasis kepercayaan terus dibangun."
         },
         {
-          "year": "2025",
-          "title": "Hari Ini",
-          "desc": "Volume perdagangan aktif 7M+ USD, dukungan akun untuk ribuan pengguna dan konten analisis pasar."
+          "year": "2026",
+          "title": "Saat Ini",
+          "desc": "Melalui kemitraan dengan HFM dan Tickmill, jaringan kepercayaan yang kuat telah dibangun. Kami telah mendukung portofolio investasi di atas $7M dan memastikan dana tersalurkan dengan aman kepada pemiliknya."
         }
       ]
     }
@@ -283,172 +300,220 @@
   "services": {
     "tag": "Layanan",
     "title": "Apa yang Kami Sediakan",
-    "subtitle": "Dukungan akun sebagai mitra HFM IB dan konten informasi pasar. Nasihat investasi tidak diberikan.",
+    "subtitle": "Sebagai mitra IB resmi Tickmill dan HFM, kami menawarkan dukungan akun dan edukasi pasar. Saran investasi tidak diberikan.",
     "cards": [
       {
-        "icon": "📡",
         "title": "Grup Sinyal Telegram & WhatsApp",
-        "desc": "Analisis pasar harian dan mingguan, buletin dibagikan dalam grup sinyal khusus kami. Semua konten untuk tujuan informasi; bukan nasihat investasi atau konsultasi individual.",
+        "desc": "Analisis pasar harian dan mingguan, briefing teknikal, dan sorotan kalender ekonomi dibagikan di komunitas eksklusif kami. Hanya untuk tujuan informasi — bukan saran investasi.",
         "features": [
-          "Buletin analisis teknis harian",
-          "Pelacakan kalender ekonomi penting",
-          "Berita dan komentar pasar",
+          "Briefing analisis teknikal harian",
+          "Pelacakan kalender ekonomi utama",
+          "Komentar pasar langsung",
           "Notifikasi real-time"
         ],
-        "disclaimer": "Konten ini bukan nasihat investasi. Buat keputusan Anda sendiri."
+        "disclaimer": "Konten ini bukan saran investasi. Semua keputusan trading adalah tanggung jawab Anda sendiri."
       },
       {
-        "icon": "🏦",
-        "title": "Dukungan Pembukaan Akun HFM",
-        "desc": "Sebagai mitra HFM IB resmi, kami memberikan panduan dan dukungan dalam proses pembukaan akun HFM. Layanan manajemen akun atau manajemen dana tidak diberikan.",
+        "title": "Dukungan Akun Tickmill & HFM",
+        "desc": "Sebagai mitra IB resmi Tickmill dan HFM, kami memandu Anda melalui proses pendaftaran akun. Kami tidak mengelola akun atau dana klien.",
         "features": [
-          "Panduan pembukaan akun HFM",
-          "Dukungan pengaturan platform (MT4/MT5)",
-          "Informasi pemilihan jenis akun",
-          "Dukungan proses deposit/penarikan"
+          "Panduan pendaftaran akun Tickmill dan HFM",
+          "Dukungan pengaturan platform MT4/MT5",
+          "Konsultasi pemilihan jenis akun",
+          "Bantuan proses deposit dan penarikan"
         ],
-        "disclaimer": "Akun Anda sepenuhnya di bawah kontrol Anda. Manajemen dana tidak diberikan."
+        "disclaimer": "Akun Anda sepenuhnya berada di bawah kendali Anda. Tidak ada manajemen dana yang diberikan."
       },
       {
-        "icon": "📊",
         "title": "Konten Analisis Pasar",
-        "desc": "Konten analisis teknis dan fundamental disiapkan dan dibagikan untuk tujuan informasi. Konten ini tidak boleh digunakan sendiri dalam keputusan membeli/menjual.",
+        "desc": "Konten analisis teknikal dan fundamental dipersiapkan dan didistribusikan untuk tujuan informasi. Materi ini tidak boleh dijadikan satu-satunya dasar keputusan trading.",
         "features": [
-          "Berbagi grafik analisis teknis",
+          "Uraian grafik analisis teknikal",
           "Ringkasan analisis fundamental",
-          "Level dukungan/resistansi",
+          "Level support dan resistance utama",
           "Pelacakan data ekonomi"
         ],
-        "disclaimer": "Analisis didasarkan pada data masa lalu; tidak menjamin hasil di masa depan."
+        "disclaimer": "Analisis didasarkan pada data historis dan tidak menjamin hasil di masa depan."
       }
     ],
     "advantages": {
-      "tag": "Keuntungan",
+      "tag": "Keunggulan Kami",
       "title": "Mengapa Memilih Kami?",
       "cards": [
         {
-          "icon": "🛡️",
-          "title": "Lingkungan Teratur",
-          "desc": "Infrastruktur teregulasi internasional HFM"
+          "title": "Lingkungan Teregulasi",
+          "desc": "Didukung oleh kerangka regulasi internasional Tickmill dan HFM"
         },
         {
-          "icon": "⚡",
           "title": "Penarikan Cepat",
-          "desc": "Kecepatan penarikan HFM yang diakui"
+          "desc": "Kecepatan penarikan yang diakui industri via Tickmill dan HFM"
         },
         {
-          "icon": "🌍",
           "title": "Akses Global",
-          "desc": "Dapat diakses dari mana saja di dunia"
+          "desc": "Tersedia untuk trader dari seluruh penjuru dunia"
         },
         {
-          "icon": "📞",
-          "title": "Dukungan",
-          "desc": "Respons cepat melalui Telegram dan email"
+          "title": "Dukungan Dedikasi",
+          "desc": "Respons cepat via Telegram dan email"
         }
       ]
     },
     "packages": {
       "tag": "Paket",
       "title": "Paket Konten",
-      "subtitle": "Akses ke paket konten informasi dan analisis.",
+      "subtitle": "Pilih paket yang sesuai dengan tingkat keterlibatan Anda dengan konten analisis dan edukasi kami.",
       "free": {
         "name": "Gratis",
         "price": "0",
-        "desc": "Konten informasi dasar untuk pemula",
+        "desc": "Konten pasar esensial untuk pemula",
         "features": [
           "Berita pasar umum",
           "Ringkasan analisis mingguan",
-          "Dukungan pembukaan akun HFM",
-          "Informasi platform"
+          "Dukungan pendaftaran akun Tickmill",
+          "Orientasi platform"
         ],
-        "cta": "Mulai"
+        "cta": "Mulai Sekarang"
       },
       "premium": {
         "name": "Premium",
         "price": "Hubungi Kami",
-        "desc": "Konten informasi komprehensif dan dukungan prioritas",
+        "desc": "Konten analisis komprehensif dan dukungan prioritas",
         "badge": "Direkomendasikan",
         "features": [
-          "Buletin analisis harian",
-          "Akses grup Telegram khusus",
+          "Briefing analisis pasar harian",
+          "Akses grup Telegram eksklusif",
           "Dukungan platform prioritas",
           "Notifikasi kalender ekonomi",
-          "Laporan pasar bulanan"
+          "Laporan prospek pasar bulanan"
         ],
-        "cta": "Dapatkan Info"
+        "cta": "Minta Informasi"
       },
-      "note": "* Semua konten untuk tujuan informasi. Nasihat investasi, manajemen portofolio atau layanan konsultasi individual tidak diberikan. Perdagangan forex melibatkan risiko tinggi."
+      "note": "* Semua konten hanya untuk tujuan informasi. Saran investasi, manajemen portofolio, dan konsultasi keuangan individual tidak disediakan. Trading Forex mengandung risiko tinggi."
     }
   },
   "contact": {
     "tag": "Kontak",
     "title": "Hubungi Kami",
-    "subtitle": "Hubungi kami untuk pembukaan akun HFM, dukungan platform dan informasi.",
+    "subtitle": "Hubungi kami untuk pembukaan akun Tickmill atau HFM, dukungan platform, atau informasi umum.",
     "channels": {
       "tag": "Saluran Kontak",
-      "title": "Bagaimana Cara Menghubungi?",
+      "title": "Cara Menghubungi Kami",
       "items": [
         {
           "icon": "💬",
           "title": "Bullex Telegram",
-          "desc": "Bergabung dengan saluran sinyal dan analisis",
+          "desc": "Bergabung ke saluran sinyal dan analisis kami",
           "link": "t.me/channel →"
         },
         {
           "icon": "💬",
           "title": "Trader Ece Telegram",
-          "desc": "Klik di sini untuk saluran kedua",
+          "desc": "Bergabung ke saluran komunitas kedua kami",
           "link": "t.me/channel2 →"
         },
         {
           "icon": "💬",
           "title": "WhatsApp",
-          "desc": "Kirim pesan melalui WhatsApp",
+          "desc": "Kirim pesan kepada kami di WhatsApp",
           "link": "wa.me/number →"
         },
         {
           "icon": "✉️",
           "title": "Email",
           "desc": "Untuk pertanyaan terperinci",
-          "link": "info@example.com →"
+          "link": "info@trader-ece.com →"
         }
       ]
     },
     "hfm": {
-      "logo": "HFM",
-      "title": "Buka Akun HFM",
-      "desc": "Buka akun HFM resmi Anda melalui tautan IB kami",
-      "link": "Pergi ke HFM →"
+      "logo": "Tickmill / HFM",
+      "title": "Buka Akun Tickmill atau HFM",
+      "desc": "Buka akun broker resmi Anda melalui tautan partner kami dan lanjutkan prosesnya langsung bersama kami.",
+      "link": "Ke Tickmill →",
+      "hfmLink": "Ke HFM →",
+      "vpnNote": "Jika tautan tidak terbuka, silakan gunakan VPN."
     }
+  },
+  "testimonials": {
+    "tag": "Ulasan Komunitas",
+    "title": "Apa Kata Mereka",
+    "items": [
+      {
+        "name": "N. Berkan",
+        "text": "Analisis emas yang Anda bagikan sangat tepat. Hari ini kami kembali mengikutinya dan menutup hari dengan hasil positif.",
+        "role": "Investor"
+      },
+      {
+        "name": "Neşe Aksoy",
+        "text": "Hari trading yang luar biasa. Analisis dan eksekusi Anda membantu kami menutup minggu dengan sangat baik.",
+        "role": "Investor"
+      },
+      {
+        "name": "İsmet Yılmaz",
+        "text": "Bahkan saat pasar sangat tidak pasti, Anda tetap mengelola prosesnya dengan profesional dan jelas.",
+        "role": "Investor"
+      },
+      {
+        "name": "T. R. Erdem",
+        "text": "Memilih tim Anda lagi tahun ini ternyata keputusan yang sangat tepat. Cara pandang Anda benar-benar memberi rasa percaya.",
+        "role": "Investor"
+      },
+      {
+        "name": "Tekin K.",
+        "text": "Saya berhasil melakukan penarikan mingguan tanpa kendala. Tim Anda bekerja secara transparan dan dapat dipercaya.",
+        "role": "Investor"
+      },
+      {
+        "name": "Kubilay Demir",
+        "text": "Seandainya kami bertemu lebih cepat. Empat bulan terakhir terasa sangat edukatif sekaligus menguntungkan.",
+        "role": "Investor"
+      },
+      {
+        "name": "Esin Varol",
+        "text": "Menemukan tim yang begitu peduli pada detail di sektor ini benar-benar sebuah keuntungan besar.",
+        "role": "Investor"
+      },
+      {
+        "name": "Rüstem Q.",
+        "text": "Penarikan saya berjalan lancar. Dengan analisis dan dukungan Anda, semuanya terasa cepat dan jelas.",
+        "role": "Investor"
+      }
+    ]
+  },
+  "chat": {
+    "greeting": "Halo! Saya asisten Trader Ece. Ada yang bisa saya bantu hari ini?",
+    "title": "Asisten Trader Ece",
+    "inputPlaceholder": "Tulis pesan Anda...",
+    "error": "Maaf, respons belum bisa dibuat saat ini. Silakan coba lagi.",
+    "sendButton": "Kirim"
   },
   "form": {
     "success": {
       "title": "Pesan Terkirim!",
-      "msg": "Kami akan kembali kepada Anda sesegera mungkin. Anda juga dapat bergabung dengan grup Telegram kami.",
-      "button": "Bergabung dengan Grup Telegram"
+      "msg": "Kami akan segera menghubungi Anda kembali. Anda juga dapat bergabung ke komunitas Telegram kami.",
+      "button": "Bergabung ke Grup Telegram"
     },
     "card": {
       "title": "Kirim Pesan",
-      "subtitle": "Kirimkan pertanyaan Anda tentang akun HFM, platform atau konten analisis."
+      "subtitle": "Sampaikan pertanyaan Anda tentang pembukaan akun Tickmill atau HFM, dukungan platform, atau konten analisis."
     },
     "fields": {
       "name": "Nama Lengkap *",
-      "namePlaceholder": "Nama Belakang Anda",
-      "email": "Email *",
-      "emailPlaceholder": "example@email.com",
+      "namePlaceholder": "Nama lengkap Anda",
+      "email": "Alamat Email *",
+      "emailPlaceholder": "anda@contoh.com",
       "subject": "Subjek",
       "subjectDefault": "Pilih Subjek",
       "subjectOptions": [
-        "HFM Account Opening",
-        "Telegram Group",
-        "Platform Support",
-        "Other"
+        "Pembukaan Akun Tickmill / HFM",
+        "Komunitas Telegram",
+        "Dukungan Platform",
+        "Lainnya"
       ],
       "message": "Pesan Anda *",
       "messagePlaceholder": "Ketik pesan Anda di sini..."
     },
-    "disclaimer": "Formulir ini tidak dapat digunakan untuk permintaan nasihat investasi. Ini hanya untuk dukungan dan tujuan informasi akun HFM.",
+    "disclaimer": "Formulir ini tidak dapat digunakan untuk permintaan saran investasi. Hanya ditujukan untuk dukungan akun Tickmill dan HFM serta pertanyaan informasi umum.",
     "submit": "Kirim Pesan",
     "submitting": "Mengirim..."
   }

@@ -1,18 +1,24 @@
 import { useTranslation } from "react-i18next";
 import "./Footer.css";
 import type { NavigateFn, Page } from "../App";
+import { getLegalContent } from "../content/legalContent";
 
 interface FooterProps {
   navigate: NavigateFn;
 }
 
+const TICKMILL_REGULATION_URL = "https://tickmill.com/en/about/regulatory-information";
+const HFM_REGULATION_URL = "https://www.hfm.com/int/en/about-us/regulatory-environment";
+
 export default function Footer({ navigate }: FooterProps) {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const legalContent = getLegalContent(i18n.language);
 
   const pageLinks: [Page, string][] = [
     ["home", t("nav.home")],
     ["about", t("nav.about")],
     ["services", t("nav.services")],
+    ["community", t("nav.community")],
     ["performance", t("nav.performance")],
     ["contact", t("nav.contact")],
   ];
@@ -61,8 +67,10 @@ export default function Footer({ navigate }: FooterProps) {
             </div>
             <div className="footer__col">
               <h4>{t("footer.legal")}</h4>
-              <a href="https://my.qatr-tickmill.com/tr/login" target="_blank" rel="noopener noreferrer">{t("footer.links.hfmOfficial")}</a>
-              <a href="https://tickmill.com/en/about/regulatory-information" target="_blank" rel="noopener noreferrer">{t("footer.links.hfmRegulation")}</a>
+              <button onClick={() => navigate("privacy")}>{legalContent.privacy.navLabel}</button>
+              <button onClick={() => navigate("cookies")}>{legalContent.cookies.navLabel}</button>
+              <a href={TICKMILL_REGULATION_URL} target="_blank" rel="noopener noreferrer">{t("footer.links.hfmOfficial")}</a>
+              <a href={HFM_REGULATION_URL} target="_blank" rel="noopener noreferrer">{t("footer.links.hfmRegulation")}</a>
             </div>
           </div>
         </div>

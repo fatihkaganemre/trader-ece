@@ -1,22 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap');
 
 :root {
-  --navy: #0e0e0f;
-  --navy-light: #161618;
-  --blue: #1e1e22;
-  --accent: #00d4e8;
-  --accent-dark: #00aabe;
-  --accent-glow: rgba(0, 212, 232, 0.18);
-  --silver: #b0b8c8;
-  --silver-light: #d4dae6;
-  --gold: #c9a84c;
-  --white: #f0f4f8;
-  --gray: #7a8599;
-  --card-bg: rgba(255,255,255,0.03);
-  --border: rgba(0, 212, 232, 0.12);
-  --border-silver: rgba(180, 190, 210, 0.12);
-  --font-display: 'Playfair Display', serif;
-  --font-body: 'DM Sans', sans-serif;
+  --navy: #030508;
+  --navy-light: #080c12;
+  --blue: #0f1620;
+  --accent: #b68a44;
+  --accent-dark: #866329;
+  --accent-glow: rgba(182, 138, 68, 0.18);
+  --silver: #a5adba;
+  --silver-light: #ebe3d6;
+  --gold: #d6b06a;
+  --white: #f7f3ec;
+  --gray: #969ead;
+  --card-bg: rgba(7, 11, 17, 0.78);
+  --border: rgba(182, 138, 68, 0.16);
+  --border-silver: rgba(189, 179, 162, 0.16);
+  --font-display: 'Montserrat', sans-serif;
+  --font-body: 'Montserrat', sans-serif;
   --transition: 0.3s cubic-bezier(0.4,0,0.2,1);
 
   /* Header height as a CSS variable — single source of truth */
@@ -29,10 +29,23 @@ html { scroll-behavior: smooth; }
 
 body {
   font-family: var(--font-body);
-  background: var(--navy);
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  background:
+    radial-gradient(circle at top center, rgba(182, 138, 68, 0.10), transparent 0, transparent 42%),
+    radial-gradient(circle at bottom left, rgba(214, 176, 106, 0.07), transparent 0, transparent 36%),
+    linear-gradient(180deg, #020305 0%, #05080d 48%, #030508 100%);
   color: var(--white);
   line-height: 1.6;
   overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  letter-spacing: -0.025em;
 }
 
 .app { min-height: 100vh; display: flex; flex-direction: column; }
@@ -71,17 +84,19 @@ main {
 .section-title {
   font-family: var(--font-display);
   font-size: clamp(32px, 5vw, 52px);
-  font-weight: 700;
-  line-height: 1.15;
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.035em;
   color: var(--white);
   margin-bottom: 20px;
 }
 
 .section-subtitle {
   font-size: 17px;
-  color: var(--gray);
+  font-weight: 500;
+  color: rgba(235, 227, 214, 0.74);
   max-width: 580px;
-  line-height: 1.7;
+  line-height: 1.75;
 }
 
 .btn {
@@ -91,8 +106,10 @@ main {
   padding: 14px 28px;
   border-radius: 6px;
   font-family: var(--font-body);
-  font-size: 15px;
-  font-weight: 600;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
   cursor: pointer;
   transition: var(--transition);
   border: none;
@@ -100,16 +117,16 @@ main {
 }
 
 .btn-primary {
-  background: var(--accent);
-  color: #0a0a0b;
+  background: linear-gradient(135deg, var(--accent) 0%, var(--gold) 100%);
+  color: #090b0f;
   font-weight: 700;
   letter-spacing: 0.02em;
 }
 
 .btn-primary:hover {
-  background: var(--accent-dark);
+  background: linear-gradient(135deg, var(--accent-dark) 0%, #a77b3b 100%);
   transform: translateY(-2px);
-  box-shadow: 0 12px 32px rgba(0, 212, 232, 0.3);
+  box-shadow: 0 12px 32px rgba(182, 138, 68, 0.24);
 }
 
 .btn-outline {
@@ -130,13 +147,14 @@ main {
   border-radius: 12px;
   padding: 32px;
   transition: var(--transition);
-  backdrop-filter: blur(8px);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.22);
 }
 
 .card:hover {
-  border-color: rgba(0,200,150,0.35);
+  border-color: rgba(24, 199, 181, 0.3);
   transform: translateY(-4px);
-  box-shadow: 0 20px 48px rgba(0,0,0,0.3);
+  box-shadow: 0 20px 48px rgba(0,0,0,0.36);
 }
 
 /* Grid patterns */
@@ -156,6 +174,11 @@ main {
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(30px); }
   to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
 @keyframes countUp {

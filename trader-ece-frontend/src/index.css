@@ -3,7 +3,15 @@
 @tailwind utilities;
 
 body {
-  @apply bg-darkBg text-white font-sans;
+  @apply bg-darkBg text-white;
+  font-family: 'Montserrat', sans-serif;
+}
+
+button,
+input,
+textarea,
+select {
+  font-family: 'Montserrat', sans-serif;
 }
 
 .section-padding {

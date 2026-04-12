@@ -1,6 +1,10 @@
 import "./AboutPage.css";
+import Lottie from "lottie-react";
 import { useTranslation } from "react-i18next";
 import type { NavigateFn } from "../App";
+import customerSupportAnim from "../assets/customer-support.json";
+import partnershipAnim from "../assets/partnership.json";
+import regulationAnim from "../assets/regulation.json";
 
 interface AboutPageProps {
   navigate: NavigateFn;
@@ -13,14 +17,14 @@ interface TimelineItem {
 }
 
 interface HfmFeature {
-  icon: string;
   title: string;
   desc: string;
 }
 
 interface BioBadge {
-  icon: string;
+  animationData: object;
   text: string;
+  iconClassName: string;
 }
 
 
@@ -58,32 +62,26 @@ export default function AboutPage({ navigate }: AboutPageProps) {
 
   const hfmFeaturesFromTranslation: HfmFeature[] = [
     {
-      icon: "🌍",
       title: t("about.hfmPartnership.features.0.title"),
       desc: t("about.hfmPartnership.features.0.desc"),
     },
     {
-      icon: "⚡",
       title: t("about.hfmPartnership.features.1.title"),
       desc: t("about.hfmPartnership.features.1.desc"),
     },
     {
-      icon: "📱",
       title: t("about.hfmPartnership.features.2.title"),
       desc: t("about.hfmPartnership.features.2.desc"),
     },
     {
-      icon: "🔒",
       title: t("about.hfmPartnership.features.3.title"),
       desc: t("about.hfmPartnership.features.3.desc"),
     },
     {
-      icon: "📊",
       title: t("about.hfmPartnership.features.4.title"),
       desc: t("about.hfmPartnership.features.4.desc"),
     },
     {
-      icon: "🎓",
       title: t("about.hfmPartnership.features.5.title"),
       desc: t("about.hfmPartnership.features.5.desc"),
     },
@@ -91,16 +89,19 @@ export default function AboutPage({ navigate }: AboutPageProps) {
 
   const bioBadgesFromTranslation: BioBadge[] = [
     {
-      icon: "🏦",
+      animationData: partnershipAnim,
       text: t("about.badges.0"),
+      iconClassName: "bio-badge__icon bio-badge__icon--partnership",
     },
     {
-      icon: "📡",
+      animationData: customerSupportAnim,
       text: t("about.badges.1"),
+      iconClassName: "bio-badge__icon bio-badge__icon--community",
     },
     {
-      icon: "🛡️",
+      animationData: regulationAnim,
       text: t("about.badges.2"),
+      iconClassName: "bio-badge__icon bio-badge__icon--regulated",
     },
   ];
 
@@ -136,7 +137,10 @@ export default function AboutPage({ navigate }: AboutPageProps) {
               <div className="bio-badges">
                 {bioBadgesFromTranslation.map((b, i) => (
                   <div key={i} className="bio-badge">
-                    <span>{b.icon}</span> {b.text}
+                    <div className={b.iconClassName}>
+                      <Lottie animationData={b.animationData} loop autoplay />
+                    </div>
+                    <span className="bio-badge__text">{b.text}</span>
                   </div>
                 ))}
               </div>
@@ -172,15 +176,17 @@ export default function AboutPage({ navigate }: AboutPageProps) {
           <p className="section-subtitle" style={{ marginBottom: 48 }}>
             {t("about.hfmPartnership.subtitle")}
           </p>
-          <div className="grid-3">
+          <div className="grid-2 hfm-features-grid">
             {hfmFeaturesFromTranslation.map((item, i) => (
               <div key={i} className="card hfm-feature-card">
-                <div className="feature-icon-lg">{item.icon}</div>
                 <h3>{item.title}</h3>
                 <p>{item.desc}</p>
               </div>
             ))}
           </div>
+          <p className="hfm-partnership-note">
+            {t("about.hfmPartnership.note")}
+          </p>
         </div>
       </section>
 

@@ -23,10 +23,10 @@
   height: 1px;
   background: linear-gradient(
     to right,
-    rgba(0, 212, 232, 0.5) 0%,
-    rgba(0, 212, 232, 0.12) 35%,
-    rgba(160, 80, 220, 0.12) 65%,
-    rgba(160, 80, 220, 0.5) 100%
+    rgba(182, 138, 68, 0.46) 0%,
+    rgba(182, 138, 68, 0.14) 35%,
+    rgba(235, 227, 214, 0.10) 65%,
+    rgba(214, 176, 106, 0.4) 100%
   );
 }
 
@@ -51,12 +51,12 @@
 }
 
 .header__sep--left {
-  background: linear-gradient(to bottom, transparent, rgba(0, 212, 232, 0.25), transparent);
+  background: linear-gradient(to bottom, transparent, rgba(182, 138, 68, 0.28), transparent);
   margin: 0 40px;
 }
 
 .header__sep--right {
-  background: linear-gradient(to bottom, transparent, rgba(160, 80, 220, 0.25), transparent);
+  background: linear-gradient(to bottom, transparent, rgba(214, 176, 106, 0.22), transparent);
   margin: 0 40px;
 }
 
@@ -119,16 +119,17 @@
 
 .logo-brand {
   font-size: 26px;
-  font-weight: 900;
-  letter-spacing: 0.07em;
+  font-weight: 800;
+  letter-spacing: 0.12em;
   line-height: 1;
+  text-transform: uppercase;
 }
 
 .logo-trader { color: #e8eaec; }
 
 .logo-ece {
-  color: #00d4e8;
-  text-shadow: 0 0 18px rgba(0, 212, 232, 0.45);
+  color: var(--gold);
+  text-shadow: 0 0 18px rgba(182, 138, 68, 0.4);
 }
 
 .logo-sub {
@@ -146,10 +147,11 @@
 
 .bullex-name {
   font-size: 26px;
-  font-weight: 900;
-  letter-spacing: 0.07em;
+  font-weight: 800;
+  letter-spacing: 0.12em;
   line-height: 1;
-  background: linear-gradient(135deg, #00d4e8 0%, #a050dc 100%);
+  text-transform: uppercase;
+  background: linear-gradient(135deg, var(--silver-light) 0%, var(--gold) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -171,11 +173,13 @@
 .nav-item {
   background: none;
   border: none;
-  color: rgba(240, 244, 248, 0.55);
+  color: rgba(240, 244, 248, 0.62);
   font-family: var(--font-body);
-  font-size: 15px;
-  font-weight: 500;
-  padding: 10px 18px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 10px 16px;
   border-radius: 6px;
   cursor: pointer;
   transition: var(--transition);
@@ -188,8 +192,8 @@
 }
 
 .nav-item.active {
-  color: #00d4e8;
-  background: rgba(0, 212, 232, 0.07);
+  color: var(--gold);
+  background: rgba(182, 138, 68, 0.1);
 }
 
 /* ── RIGHT actions block ── */
@@ -304,9 +308,9 @@
 }
 
 .lang-btn {
-  background: linear-gradient(135deg, rgba(0, 212, 232, 0.1) 0%, rgba(160, 80, 220, 0.1) 100%);
-  border: 1px solid rgba(0, 212, 232, 0.3);
-  color: #00d4e8;
+  background: linear-gradient(135deg, rgba(182, 138, 68, 0.12) 0%, rgba(214, 176, 106, 0.08) 100%);
+  border: 1px solid rgba(182, 138, 68, 0.28);
+  color: var(--gold);
   padding: 8px 14px;
   border-radius: 6px;
   font-size: 12px;
@@ -318,9 +322,9 @@
 }
 
 .lang-btn:hover {
-  background: linear-gradient(135deg, rgba(0, 212, 232, 0.2) 0%, rgba(160, 80, 220, 0.2) 100%);
-  border-color: rgba(0, 212, 232, 0.6);
-  box-shadow: 0 0 12px rgba(0, 212, 232, 0.3);
+  background: linear-gradient(135deg, rgba(182, 138, 68, 0.2) 0%, rgba(214, 176, 106, 0.16) 100%);
+  border-color: rgba(182, 138, 68, 0.5);
+  box-shadow: 0 0 12px rgba(182, 138, 68, 0.25);
 }
 
 .lang-menu {
@@ -329,12 +333,12 @@
   right: 0;
   margin-top: 8px;
   background: rgba(13, 14, 18, 0.98);
-  border: 1px solid rgba(0, 212, 232, 0.3);
+  border: 1px solid rgba(182, 138, 68, 0.28);
   border-radius: 8px;
   overflow: hidden;
   z-index: 1001;
   backdrop-filter: blur(20px);
-  box-shadow: 0 8px 32px rgba(0, 212, 232, 0.1);
+  box-shadow: 0 8px 32px rgba(182, 138, 68, 0.1);
 }
 
 .lang-option {
@@ -352,13 +356,13 @@
 }
 
 .lang-option:hover {
-  background: rgba(0, 212, 232, 0.1);
-  color: #00d4e8;
+  background: rgba(182, 138, 68, 0.1);
+  color: var(--gold);
 }
 
 .lang-option.active {
-  background: rgba(0, 212, 232, 0.2);
-  color: #00d4e8;
+  background: rgba(182, 138, 68, 0.18);
+  color: var(--gold);
 }
 
 @media (max-width: 768px) {

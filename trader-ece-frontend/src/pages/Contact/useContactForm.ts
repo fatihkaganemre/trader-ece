@@ -1,4 +1,5 @@
 import React, { useState, ChangeEvent } from "react";
+import { useTranslation } from "react-i18next";
 
 interface FormState {
   name: string;
@@ -8,6 +9,7 @@ interface FormState {
 }
 
 export function useContactForm() {
+  const { t } = useTranslation();
   const [form, setForm] = useState<FormState>({ name: "", email: "", topic: "", message: "" });
   const [submitted, setSubmitted] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
@@ -38,7 +40,7 @@ export function useContactForm() {
 
       setSubmitted(true);
     } catch {
-      setError("Bir hata oluştu. Lütfen tekrar deneyin.");
+      setError(t("form.error"));
     } finally {
       setIsLoading(false);
     }

@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
 import "./PerformancePage.css";
 import type { NavigateFn } from "../App";
+import { getBrokerLinks } from "../utils/brokerLinks";
 
 interface PerformancePageProps {
   navigate: NavigateFn;
@@ -72,40 +73,9 @@ function CounterCard({ value, suffix, prefix, label, note }: CounterCardProps) {
   );
 }
 
-const metrics: MetricItem[] = [
-  { value: "15", suffix: "+", prefix: "", label: "Yıl Piyasa Deneyimi", note: "2009'dan bu yana aktif" },
-  { value: "7", suffix: "M+", prefix: "$", label: "Aktif Hacim", note: "IB üzerinden takip edilen toplam hacim" },
-  { value: "4.6", suffix: "M+", prefix: "$", label: "Çekim Hacmi", note: "HFM kanalıyla gerçekleşen çekimler" },
-  { value: "4", suffix: "+", prefix: "", label: "HFM Ortaklık Yılı", note: "Resmi IB ortaklığı" },
-];
-
-const processSteps: ProcessStep[] = [
-  {
-    step: "01",
-    title: "HFM Hesap Desteği",
-    desc: "Kullanıcılar HFM üzerinden hesap açarken rehberlik sağlıyoruz. Hesap kontrolü tamamen kullanıcıdadır.",
-  },
-  {
-    step: "02",
-    title: "İçerik Paylaşımı",
-    desc: "Telegram ve WhatsApp gruplarında piyasa analiz içerikleri paylaşılır. Bunlar yatırım tavsiyesi değildir.",
-  },
-  {
-    step: "03",
-    title: "Destek",
-    desc: "Platform kullanımı ve HFM süreçleri hakkında teknik destek sağlanır.",
-  },
-];
-
-const regAuthorities: RegAuthority[] = [
-  { abbr: "FCA", full: "Financial Conduct Authority" },
-  { abbr: "CySEC", full: "Cyprus Securities & Exchange" },
-  { abbr: "DFSA", full: "Dubai Financial Services" },
-  { abbr: "FSC", full: "Financial Services Commission" },
-];
-
 export default function PerformancePage({ navigate }: PerformancePageProps) {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const { tickmillLink, hfmLink } = getBrokerLinks(i18n.language);
 
   const metricsFromTranslation: MetricItem[] = [
     {
@@ -248,14 +218,25 @@ export default function PerformancePage({ navigate }: PerformancePageProps) {
               <p className="about-text">
                 {t("performance.hfmPartnership.desc2")}
               </p>
-              <a
-                href="https://www.hfm.com/regulation"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn btn-primary"
-              >
-                {t("performance.hfmPartnership.regulationLink")}
-              </a>
+              <div className="broker-actions">
+                <a
+                  href={tickmillLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-primary"
+                >
+                  {t("performance.hfmPartnership.regulationLink")}
+                </a>
+                <a
+                  href={hfmLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-outline"
+                >
+                  {t("performance.hfmPartnership.hfmLink")}
+                </a>
+              </div>
+              <p className="broker-note">{t("performance.hfmPartnership.vpnNote")}</p>
             </div>
             <div className="reg-logos">
               {regAuthoritiesFromTranslation.map((r, i) => (

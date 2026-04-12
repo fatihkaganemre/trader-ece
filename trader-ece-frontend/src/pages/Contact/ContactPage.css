@@ -38,6 +38,13 @@
   color: var(--c);
   flex-shrink: 0;
   transition: var(--transition);
+  overflow: hidden;
+}
+
+.telegram-lottie {
+  width: 34px;
+  height: 34px;
+  pointer-events: none;
 }
 
 .channel-card h3 {
@@ -64,8 +71,8 @@
   align-items: center;
   justify-content: space-between;
   gap: 24px;
-  background: rgba(0,200,150,0.07);
-  border: 1px solid rgba(0,200,150,0.2);
+  background: rgba(182, 138, 68, 0.08);
+  border: 1px solid rgba(182, 138, 68, 0.2);
   border-radius: 12px;
   padding: 24px;
   flex-wrap: wrap;
@@ -80,7 +87,7 @@
 .hoa-logo {
   width: 48px;
   height: 48px;
-  background: linear-gradient(135deg, var(--accent), #00a87a);
+  background: linear-gradient(135deg, var(--accent), var(--accent-dark));
   border-radius: 10px;
   display: flex;
   align-items: center;
@@ -102,6 +109,20 @@
 .hoa-content p {
   font-size: 13px;
   color: var(--gray);
+}
+
+.hoa-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.hoa-note {
+  width: 100%;
+  margin: 4px 0 0;
+  font-size: 12px;
+  line-height: 1.6;
+  color: rgba(248, 250, 255, 0.72);
 }
 
 /* Form */
@@ -158,8 +179,8 @@
 
 .form-input:focus {
   border-color: var(--accent);
-  background: rgba(0,200,150,0.04);
-  box-shadow: 0 0 0 3px rgba(0,200,150,0.1);
+  background: rgba(182, 138, 68, 0.05);
+  box-shadow: 0 0 0 3px rgba(182, 138, 68, 0.12);
 }
 
 .form-input::placeholder {
@@ -199,7 +220,7 @@
 .success-icon {
   width: 72px;
   height: 72px;
-  background: linear-gradient(135deg, var(--accent), #00a87a);
+  background: linear-gradient(135deg, var(--accent), var(--accent-dark));
   border-radius: 50%;
   display: flex;
   align-items: center;

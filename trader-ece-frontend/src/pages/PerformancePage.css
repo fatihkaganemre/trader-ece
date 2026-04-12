@@ -101,6 +101,20 @@
   margin-bottom: 16px;
 }
 
+.broker-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.broker-note {
+  margin-top: 12px;
+  font-size: 12px;
+  line-height: 1.6;
+  color: rgba(248, 250, 255, 0.72);
+}
+
 .reg-logos {
   display: grid;
   grid-template-columns: 1fr 1fr;

@@ -29,7 +29,17 @@ export default function Header({ currentPage, navigate }: HeaderProps) {
     { key: "home" as Page, label: t("nav.home") },
     { key: "about" as Page, label: t("nav.about") },
     { key: "services" as Page, label: t("nav.services") },
+    { key: "community" as Page, label: t("nav.community") },
     { key: "performance" as Page, label: t("nav.performance") },
+  ];
+
+  const languageOptions = [
+    { code: "en", label: t("header.language.en") },
+    { code: "tr", label: t("header.language.tr") },
+    { code: "th", label: t("header.language.th") },
+    { code: "id", label: t("header.language.id") },
+    { code: "zh", label: t("header.language.zh") },
+    { code: "vi", label: t("header.language.vi") },
   ];
 
   return (
@@ -82,48 +92,21 @@ export default function Header({ currentPage, navigate }: HeaderProps) {
             <button
               className="lang-btn"
               onClick={() => setLangMenuOpen(!langMenuOpen)}
-              title="Select Language"
+              title={t("header.language.title")}
             >
               {i18n.language.toUpperCase()}
             </button>
             {langMenuOpen && (
               <div className="lang-menu">
-                <button
-                  className={`lang-option ${i18n.language === 'en' ? 'active' : ''}`}
-                  onClick={() => changeLanguage('en')}
-                >
-                  English
-                </button>
-                <button
-                  className={`lang-option ${i18n.language === 'tr' ? 'active' : ''}`}
-                  onClick={() => changeLanguage('tr')}
-                >
-                  Türkçe
-                </button>
-                <button
-                  className={`lang-option ${i18n.language === 'th' ? 'active' : ''}`}
-                  onClick={() => changeLanguage('th')}
-                >
-                  ไทย
-                </button>
-                <button
-                  className={`lang-option ${i18n.language === 'id' ? 'active' : ''}`}
-                  onClick={() => changeLanguage('id')}
-                >
-                  Bahasa Indonesia
-                </button>
-                <button
-                  className={`lang-option ${i18n.language === 'zh' ? 'active' : ''}`}
-                  onClick={() => changeLanguage('zh')}
-                >
-                  中文
-                </button>
-                <button
-                  className={`lang-option ${i18n.language === 'vi' ? 'active' : ''}`}
-                  onClick={() => changeLanguage('vi')}
-                >
-                  Tiếng Việt
-                </button>
+                {languageOptions.map((option) => (
+                  <button
+                    key={option.code}
+                    className={`lang-option ${i18n.language === option.code ? 'active' : ''}`}
+                    onClick={() => changeLanguage(option.code)}
+                  >
+                    {option.label}
+                  </button>
+                ))}
               </div>
             )}
           </div>
