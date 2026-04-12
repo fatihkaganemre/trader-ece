@@ -7,7 +7,6 @@ const router = express.Router();
 
 router.post("/", async (req, res) => {
   const { name, email, title, message } = req.body;
-  const destination = process.env.CONTACT_RECEIVER || "info@trader-ece.com";
 
   try {
     const transporter = nodemailer.createTransport({
@@ -19,9 +18,8 @@ router.post("/", async (req, res) => {
     });
 
     await transporter.sendMail({
-      from: process.env.GMAIL_USER,
-      replyTo: email,
-      to: destination,
+      from: email,
+      to: process.env.GMAIL_USER,
       subject: `${name} - ${title}`,
       text: message,
     });
