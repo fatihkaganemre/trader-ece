@@ -30,6 +30,9 @@ interface CommunityCopy {
   badge: string;
   title: string;
   subtitle: string;
+  constructionTitle: string;
+  constructionMessage: string;
+  constructionButton: string;
   composerTitle: string;
   composerSubtitle: string;
   titleLabel: string;
@@ -78,6 +81,9 @@ const copyByLocale: Record<CommunityLocale, CommunityCopy> = {
     badge: "Trader Tartışma Panosu",
     title: "Topluluğun Konuştuğu Konular",
     subtitle: "Trend başlıkları takip edin, giriş yaparak yeni post açın ve piyasaya dair yorumları tek bir profesyonel akışta görün.",
+    constructionTitle: "Topluluk Sayfası Yapım Aşamasında",
+    constructionMessage: "Bu alan şu anda geliştiriliyor. Çok yakında topluluk paylaşımları, yorumlar ve canlı etkileşim özellikleri aktif olacak.",
+    constructionButton: "Anladım",
     composerTitle: "Yeni Tartışma Başlat",
     composerSubtitle: "Supabase entegrasyonu ile canlı yayın akışı hazır.",
     titleLabel: "Başlık",
@@ -114,6 +120,9 @@ const copyByLocale: Record<CommunityLocale, CommunityCopy> = {
     badge: "Trader Discussion Board",
     title: "What The Community Is Discussing",
     subtitle: "Track trending topics, sign in to share posts and engage in market discussions in one professional feed.",
+    constructionTitle: "Community Page Under Construction",
+    constructionMessage: "This area is currently being built. Community posts, comments, and live interaction features will be available soon.",
+    constructionButton: "Got it",
     composerTitle: "Start A New Discussion",
     composerSubtitle: "Supabase integration ready for live discussions.",
     titleLabel: "Title",
@@ -150,6 +159,9 @@ const copyByLocale: Record<CommunityLocale, CommunityCopy> = {
     badge: "กระดานสนทนานักเทรด",
     title: "ประเด็นที่ชุมชนกำลังพูดถึง",
     subtitle: "ติดตามหัวข้อที่กำลังมาแรง เข้าสู่ระบบเพื่อเปิดโพสต์และมีส่วนร่วมในทั้งหมด",
+    constructionTitle: "หน้าชุมชนกำลังอยู่ระหว่างการพัฒนา",
+    constructionMessage: "พื้นที่นี้กำลังถูกพัฒนา เร็ว ๆ นี้จะมีระบบโพสต์ คอมเมนต์ และการโต้ตอบแบบสดให้ใช้งาน",
+    constructionButton: "เข้าใจแล้ว",
     composerTitle: "เริ่มหัวข้อสนทนาใหม่",
     composerSubtitle: "Supabase ผสานรวมพร้อมสำหรับการอภิปรายแบบสด",
     titleLabel: "หัวข้อ",
@@ -186,6 +198,9 @@ const copyByLocale: Record<CommunityLocale, CommunityCopy> = {
     badge: "Papan Diskusi Trader",
     title: "Topik Yang Sedang Dibahas Komunitas",
     subtitle: "Pantau topik yang sedang tren, masuk untuk membagikan posting dan terlibat dalam diskusi pasar.",
+    constructionTitle: "Halaman Komunitas Sedang Dalam Pengembangan",
+    constructionMessage: "Bagian ini sedang dibangun. Postingan komunitas, komentar, dan fitur interaksi langsung akan segera tersedia.",
+    constructionButton: "Mengerti",
     composerTitle: "Mulai Diskusi Baru",
     composerSubtitle: "Integrasi Supabase siap untuk diskusi langsung.",
     titleLabel: "Judul",
@@ -222,6 +237,9 @@ const copyByLocale: Record<CommunityLocale, CommunityCopy> = {
     badge: "交易者讨论板",
     title: "社区正在讨论的话题",
     subtitle: "查看趋势主题，登录以分享帖子并参与市场讨论。",
+    constructionTitle: "社区页面正在建设中",
+    constructionMessage: "该区域目前正在开发中。社区帖子、评论和实时互动功能将很快开放。",
+    constructionButton: "知道了",
     composerTitle: "发起新的讨论",
     composerSubtitle: "Supabase 集成已准备好进行实时讨论。",
     titleLabel: "标题",
@@ -258,6 +276,9 @@ const copyByLocale: Record<CommunityLocale, CommunityCopy> = {
     badge: "Bảng Thảo Luận Trader",
     title: "Những Chủ Đề Cộng Đồng Đang Bàn",
     subtitle: "Theo dõi các chủ đề đang nổi, đăng nhập để chia sẻ bài viết và tham gia thảo luận thị trường.",
+    constructionTitle: "Trang Cộng Đồng Đang Được Xây Dựng",
+    constructionMessage: "Khu vực này hiện đang được phát triển. Bài đăng cộng đồng, bình luận và các tính năng tương tác trực tiếp sẽ sớm xuất hiện.",
+    constructionButton: "Đã hiểu",
     composerTitle: "Bắt Đầu Một Chủ Đề Mới",
     composerSubtitle: "Tích hợp Supabase sẵn sàng cho các cuộc thảo luận trực tiếp.",
     titleLabel: "Tiêu đề",
@@ -310,6 +331,7 @@ export default function CommunityPage() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [postError, setPostError] = useState<string | null>(null);
+  const [showConstructionPopup, setShowConstructionPopup] = useState(true);
 
   // Load trends and posts on mount
   useEffect(() => {
@@ -447,6 +469,33 @@ export default function CommunityPage() {
 
   return (
     <div className="community-page">
+      {showConstructionPopup && (
+        <div className="community-popup-backdrop" role="presentation">
+          <div
+            className="community-popup"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="community-construction-title"
+          >
+            <div className="community-popup__badge">
+              <Flame size={18} />
+              {copy.badge}
+            </div>
+            <h2 id="community-construction-title" className="community-popup__title">
+              {copy.constructionTitle}
+            </h2>
+            <p className="community-popup__text">{copy.constructionMessage}</p>
+            <button
+              type="button"
+              className="community-button community-button--primary community-popup__button"
+              onClick={() => setShowConstructionPopup(false)}
+            >
+              {copy.constructionButton}
+            </button>
+          </div>
+        </div>
+      )}
+
       {/* Auth Header */}
       <div className="community-auth-header">
         <div className="container community-auth-header__inner">

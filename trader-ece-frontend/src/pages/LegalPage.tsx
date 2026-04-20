@@ -58,6 +58,13 @@ export default function LegalPage({ kind, navigate }: LegalPageProps) {
               >
                 {content.cookies.navLabel}
               </button>
+              <button
+                type="button"
+                className={`legal__tab ${kind === "terms" ? "legal__tab--active" : ""}`}
+                onClick={() => navigate("terms")}
+              >
+                {content.terms.navLabel}
+              </button>
             </div>
             <button type="button" className="btn btn-outline" onClick={() => navigate("contact")}>
               {content.backToContact}
