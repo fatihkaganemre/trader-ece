@@ -408,10 +408,10 @@
 }
 
 .hfm-badge-large {
-  width: 230px;
-  height: 220px;
+  width: 260px;
+  min-height: 248px;
   padding: 22px;
-  border-radius: 50%;
+  border-radius: 999px;
   background: radial-gradient(circle at top, rgba(182, 138, 68, 0.12), rgba(15, 22, 32, 0.22) 45%, rgba(6, 10, 16, 0.92) 100%);
   border: 2px solid rgba(182, 138, 68, 0.28);
   display: flex;
@@ -435,19 +435,27 @@
 
 .hfm-logo-image {
   display: block;
-  width: 120px;
+  width: 136px;
   height: auto;
 }
 
-.hfm-tagline { font-size: 12px; color: var(--gray); margin-top: 10px; }
+.hfm-tagline {
+  font-size: 12px;
+  color: var(--gray);
+  margin-top: 10px;
+  text-align: center;
+}
 
 .hfm-reg {
-  font-size: 11px;
+  font-size: 10px;
   color: var(--accent);
   margin-top: 6px;
   font-weight: 600;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
+  text-align: center;
+  max-width: 160px;
+  line-height: 1.35;
 }
 
 .hfm-reg-items {
