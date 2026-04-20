@@ -75,7 +75,7 @@ function CounterCard({ value, suffix, prefix, label, note }: CounterCardProps) {
 
 export default function PerformancePage({ navigate }: PerformancePageProps) {
   const { t, i18n } = useTranslation();
-  const { tickmillLink, hfmLink } = getBrokerLinks(i18n.language);
+  const { tickmillLink, hfmLink, isHfmAllowed } = getBrokerLinks(i18n.language);
 
   const metricsFromTranslation: MetricItem[] = [
     {
@@ -227,16 +227,18 @@ export default function PerformancePage({ navigate }: PerformancePageProps) {
                 >
                   {t("performance.hfmPartnership.regulationLink")}
                 </a>
-                <a
-                  href={hfmLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn btn-outline"
-                >
-                  {t("performance.hfmPartnership.hfmLink")}
-                </a>
+                {isHfmAllowed && hfmLink && (
+                  <a
+                    href={hfmLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn btn-outline"
+                  >
+                    {t("performance.hfmPartnership.hfmLink")}
+                  </a>
+                )}
               </div>
-              <p className="broker-note">{t("performance.hfmPartnership.vpnNote")}</p>
+              {isHfmAllowed && <p className="broker-note">{t("performance.hfmPartnership.vpnNote")}</p>}
             </div>
             <div className="reg-logos">
               {regAuthoritiesFromTranslation.map((r, i) => (

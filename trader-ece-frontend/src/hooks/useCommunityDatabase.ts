@@ -183,6 +183,38 @@ export function useCommunityDatabase() {
     []
   );
 
+  const fetchComments = useCallback(async (postId: string): Promise<DatabaseComment[]> => {
+    try {
+      const { data, error: err } = await supabase
+        .from("comments")
+        .select(
+          `id, post_id, author_id, content, created_at,
+           users:author_id(display_name, avatar_url, is_banned)`
+        )
+        .eq("post_id", postId)
+        .order("created_at", { ascending: false });
+
+      if (err) throw err;
+
+      return (data || []).map((comment: any) => ({
+        id: comment.id,
+        post_id: comment.post_id,
+        author_id: comment.author_id,
+        content: comment.content,
+        created_at: comment.created_at,
+        author: {
+          display_name: comment.users?.display_name || "User",
+          avatar_url: comment.users?.avatar_url,
+          is_banned: comment.users?.is_banned || false,
+        },
+      }));
+    } catch (err) {
+      const message = err instanceof Error ? err.message : "Failed to fetch comments";
+      setError(message);
+      return [];
+    }
+  }, []);
+
   // Returns whether the user now likes the post (true = liked, false = unliked)
   const toggleLike = useCallback(async (postId: string, userId: string): Promise<boolean> => {
     try {
@@ -240,6 +272,7 @@ export function useCommunityDatabase() {
     error,
     fetchTrendingTopics,
     fetchPosts,
+    fetchComments,
     fetchUserLikes,
     createPost,
     addComment,

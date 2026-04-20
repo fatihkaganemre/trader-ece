@@ -1,5 +1,6 @@
 import "./AboutPage.css";
 import Lottie from "lottie-react";
+import { useEffect, useRef, useState, type CSSProperties } from "react";
 import { useTranslation } from "react-i18next";
 import type { NavigateFn } from "../App";
 import customerSupportAnim from "../assets/customer-support.json";
@@ -31,6 +32,8 @@ interface BioBadge {
 
 export default function AboutPage({ navigate }: AboutPageProps) {
   const { t } = useTranslation();
+  const timelineItemRefs = useRef<Array<HTMLDivElement | null>>([]);
+  const [visibleTimelineItems, setVisibleTimelineItems] = useState<Set<number>>(new Set());
 
   const timelineFromTranslation: TimelineItem[] = [
     {
@@ -104,6 +107,41 @@ export default function AboutPage({ navigate }: AboutPageProps) {
       iconClassName: "bio-badge__icon bio-badge__icon--regulated",
     },
   ];
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          const index = Number((entry.target as HTMLElement).dataset.timelineIndex);
+          if (Number.isNaN(index)) return;
+
+          setVisibleTimelineItems((prev) => {
+            if (prev.has(index)) return prev;
+            const next = new Set(prev);
+            next.add(index);
+            return next;
+          });
+        });
+      },
+      {
+        threshold: 0.3,
+        rootMargin: "0px 0px -10% 0px",
+      }
+    );
+
+    timelineItemRefs.current.forEach((item) => {
+      if (item) observer.observe(item);
+    });
+
+    return () => observer.disconnect();
+  }, [timelineFromTranslation.length]);
+
+  const maxVisibleIndex = visibleTimelineItems.size > 0 ? Math.max(...visibleTimelineItems) : -1;
+  const timelineProgress =
+    timelineFromTranslation.length > 1
+      ? (Math.max(maxVisibleIndex, 0) / (timelineFromTranslation.length - 1)) * 100
+      : 0;
 
   return (
     <div className="about-page">
@@ -196,8 +234,23 @@ export default function AboutPage({ navigate }: AboutPageProps) {
           <div className="section-tag">{t("about.timeline.tag")}</div>
           <h2 className="section-title">{t("about.timeline.title")}</h2>
           <div className="timeline">
+            <div
+              className="timeline-progress"
+              style={{ "--progress": `${timelineProgress}%` } as CSSProperties}
+              aria-hidden="true"
+            />
             {timelineFromTranslation.map((item, i) => (
-              <div key={i} className={`timeline-item ${i % 2 === 0 ? "left" : "right"}`}>
+              <div
+                key={i}
+                ref={(el) => {
+                  timelineItemRefs.current[i] = el;
+                }}
+                data-timeline-index={i}
+                className={`timeline-item ${i % 2 === 0 ? "left" : "right"} ${
+                  visibleTimelineItems.has(i) ? "is-visible" : ""
+                }`}
+                style={{ "--reveal-delay": `${i * 90}ms` } as CSSProperties}
+              >
                 <div className="timeline-year">{item.year}</div>
                 <div className="timeline-dot" />
                 <div className="timeline-card card">

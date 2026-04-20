@@ -1,3 +1,4 @@
+  const hfmFeatures = i18n.language !== 'tr' ? (t("home.hfmTrust.features", { returnObjects: true }) as string[]) : [];
 import { useEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
 import Lottie from "lottie-react";
@@ -89,7 +90,7 @@ interface Testimonial {
 
 export default function HomePage({ navigate }: HomePageProps) {
   const { t, i18n } = useTranslation();
-  const { tickmillLink, hfmLink } = getBrokerLinks(i18n.language);
+  const { tickmillLink, hfmLink, isHfmAllowed } = getBrokerLinks(i18n.language);
 
   const services: ServiceCard[] = [
     {
@@ -267,49 +268,54 @@ export default function HomePage({ navigate }: HomePageProps) {
       </section>
 
       {/* HFM Trust */}
-      <section className="section hfm-section">
-        <div className="container">
-          <div className="hfm-inner">
-            <div className="hfm-content">
-              <div className="section-tag">{t("home.hfmTrust.tag")}</div>
-              <h2 className="section-title">{t("home.hfmTrust.title")}</h2>
-              <p style={{ color: "var(--gray)", lineHeight: 1.7, marginBottom: 24 }}>
-                {t("home.hfmTrust.desc")}
-              </p>
-              <ul className="hfm-features">
-                {hfmFeatures.map((f, i) => (
-                  <li key={i}>
-                    <span className="check">✓</span> {f}
-                  </li>
-                ))}
-              </ul>
-              <div className="broker-actions">
-                <a href={tickmillLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary">
-                  {t("home.hfmTrust.moreLink")}
-                </a>
-                <a href={hfmLink} target="_blank" rel="noopener noreferrer" className="btn btn-outline">
-                  {t("home.hfmTrust.hfmLink")}
-                </a>
-              </div>
-              <p className="broker-note">{t("home.hfmTrust.vpnNote")}</p>
-            </div>
-            <div className="hfm-visual">
-              <div className="hfm-badge-large">
-                <div className="hfm-logo-plate">
-                  <img src={tickmillLogo} alt={t("home.hfmBadge.text")} className="hfm-logo-image" />
+      {/* HFM Trust - Only show if not Turkish */}
+      {i18n.language !== 'tr' && (
+        <section className="section hfm-section">
+          <div className="container">
+            <div className="hfm-inner">
+              <div className="hfm-content">
+                <div className="section-tag">{t("home.hfmTrust.tag")}</div>
+                <h2 className="section-title">{t("home.hfmTrust.title")}</h2>
+                <p style={{ color: "var(--gray)", lineHeight: 1.7, marginBottom: 24 }}>
+                  {t("home.hfmTrust.desc")}
+                </p>
+                <ul className="hfm-features">
+                  {hfmFeatures.map((f, i) => (
+                    <li key={i}>
+                      <span className="check">✓</span> {f}
+                    </li>
+                  ))}
+                </ul>
+                <div className="broker-actions">
+                  <a href={tickmillLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary">
+                    {t("home.hfmTrust.moreLink")}
+                  </a>
+                  {isHfmAllowed && hfmLink && (
+                    <a href={hfmLink} target="_blank" rel="noopener noreferrer" className="btn btn-outline">
+                      {t("home.hfmTrust.hfmLink")}
+                    </a>
+                  )}
                 </div>
-                <div className="hfm-tagline">{t("home.hfmBadge.tagline")}</div>
-                <div className="hfm-reg">{t("home.hfmBadge.desc")}</div>
+                {isHfmAllowed && <p className="broker-note">{t("home.hfmTrust.vpnNote")}</p>}
               </div>
-              <div className="hfm-reg-items">
-                {regAuthorities.map((r) => (
-                  <div key={r} className="reg-badge">{r}</div>
-                ))}
+              <div className="hfm-visual">
+                <div className="hfm-badge-large">
+                  <div className="hfm-logo-plate">
+                    <img src={tickmillLogo} alt={t("home.hfmBadge.text")} className="hfm-logo-image" />
+                  </div>
+                  <div className="hfm-tagline">{t("home.hfmBadge.tagline")}</div>
+                  <div className="hfm-reg">{t("home.hfmBadge.desc")}</div>
+                </div>
+                <div className="hfm-reg-items">
+                  {regAuthorities.map((r) => (
+                    <div key={r} className="reg-badge">{r}</div>
+                  ))}
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+      )}
 
       {/* Testimonials */}
       <section className="section testimonials-section">

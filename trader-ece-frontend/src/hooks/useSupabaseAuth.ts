@@ -103,7 +103,7 @@ export function useSupabaseAuth() {
       const { error } = await supabase.auth.signInWithOAuth({
         provider: "google",
         options: {
-          redirectTo: "http://localhost:5173/community",
+          redirectTo: `${window.location.origin}/community`,
         },
       });
       if (error) throw error;

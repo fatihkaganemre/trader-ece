@@ -387,61 +387,43 @@
         "name": "Premium",
         "price": "İletişime Geçin",
         "desc": "Kapsamlı bilgilendirme içerikleri ve öncelikli destek",
-        "badge": "Önerilen",
-        "features": [
-          "Günlük analiz bültenleri",
-          "Özel Telegram grubu erişimi",
-          "Öncelikli platform desteği",
-          "Ekonomik takvim bildirimleri",
-          "Aylık piyasa raporu"
-        ],
-        "cta": "Bilgi Al"
-      },
-      "note": "* Tüm içerikler bilgilendirme amaçlıdır. Yatırım tavsiyesi, portföy yönetimi veya bireysel danışmanlık hizmeti verilmemektedir. Forex işlemleri yüksek risk içerir."
-    }
-  },
-  "contact": {
-    "tag": "İletişim",
-    "title": "Bize Ulaşın",
-    "subtitle": "TICKMILL ve HFM (HotForex) hesap açılışı, platform desteği ve güvenli süreç yönetimi için doğrudan bizimle iletişime geçin.",
-    "channels": {
-      "tag": "İletişim Kanalları",
-      "title": "Nasıl Ulaşırsınız?",
-      "items": [
-        {
-          "icon": "💬",
-          "title": "Bullex Telegram",
-          "desc": "Sinyal ve analiz kanalına katıl",
-          "link": "t.me/channel →"
+        "badge": "Premium Trading",
+        "hero": {
+          "titleHighlight": "TraderEce",
+          "stat": "10,000+ Aktif Kullanıcı",
+          "subtitle": "Gelişmiş algoritmalar ve uzman analizi ile karlı ticaret fırsatları yakalayın."
         },
-        {
-          "icon": "💬",
-          "title": "Trader Ece Telegram",
-          "desc": "İkinci kanal için buraya tıkla",
-          "link": "t.me/channel2 →"
+        "buttons": {
+          "telegramTraderEce": "TraderEce Telegram",
+          "telegramBullex": "Bullex Telegram",
+          "info": "Daha Fazla Bilgi"
         },
-        {
-          "icon": "💬",
-          "title": "WhatsApp",
-          "desc": "WhatsApp üzerinden mesaj gönder",
-          "link": "wa.me/number →"
+        "services": {
+          "tag": "Hizmetlerimiz",
+          "title": "Kapsamlı Ticaret Çözümleri",
+          "subtitle": "Profesyonel araçlar ve stratejilerle ticaret deneyimini geliştirin.",
+          "viewAll": "Tüm Hizmetleri Gör",
+          "viewAllDesc": "Detaylı hizmet listemizi inceleyin."
         },
-        {
-          "icon": "✉️",
-          "title": "E-posta",
-          "desc": "Detaylı sorularınız için",
-          "link": "info@trader-ece.com →"
+        "hfmTrust": {
+          "tag": "Güvenilir Broker",
+          "title": "Düzenlenmiş ve Güvenilir Broker Ortaklıkları",
+          "desc": "Tickmill gibi önde gelen brokerlarla işbirliği yaparak kullanıcılarımıza en iyi ticaret koşullarını sunuyoruz.",
+          "features": [],
+          "moreLink": "Tickmill'e Git"
+        },
+        "hfmBadge": {
+          "text": "Tickmill",
+          "tagline": "Düzenlenmiş Broker",
+          "regs": [],
+          "desc": "FCA, CySEC, ASIC, FSCA tarafından lisanslı"
+        },
+        "cta": {
+          "title": "Hazır mısınız?",
+          "subtitle": "TraderEce ile ticaret yolculuğunuza başlayın.",
+          "telegramBtn": "Telegram'a Katıl",
+          "formBtn": "İletişim Formu"
         }
-      ]
-    },
-    "hfm": {
-      "logo": "TICKMILL / HFM",
-      "title": "TICKMILL / HFM ile Bizimle İlerleyin",
-      "desc": "Resmi partner bağlantılarımız üzerinden TICKMILL veya HFM (HotForex) hesabınızı açın ve süreci doğrudan bizimle ilerletin.",
-      "link": "Tickmill'e Git →",
-      "hfmLink": "HFM'ye Git →",
-      "vpnNote": "Eğer bağlantı açılmıyorsa lütfen VPN kullanın."
-    }
   },
   "testimonials": {
     "tag": "Kullanıcı Görüşleri",
@@ -562,4 +544,3 @@
     "submit": "Mesaj Gönder",
     "submitting": "Gönderiliyor..."
   }
-}

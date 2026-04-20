@@ -29,10 +29,12 @@ export function resolveBrokerLocale(language: string): BrokerLocale {
 
 export function getBrokerLinks(language: string) {
   const locale = resolveBrokerLocale(language);
+    const isHfmAllowed = locale !== "tr";
 
   return {
     locale,
+    isHfmAllowed,
     tickmillLink: locale === "tr" ? TICKMILL_TR_LINK : TICKMILL_GLOBAL_LINK,
-    hfmLink: HFM_LINKS[locale],
+    hfmLink: isHfmAllowed ? HFM_LINKS[locale] : undefined,
   };
 }

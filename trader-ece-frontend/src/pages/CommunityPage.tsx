@@ -298,10 +298,11 @@ export default function CommunityPage() {
   const copy = copyByLocale[locale];
 
   const { user, profile, loading: authLoading, signInWithGoogle, signOut, isAdmin, isBanned } = useSupabaseAuth();
-  const { loading: dbLoading, error: dbError, fetchTrendingTopics, fetchPosts, fetchUserLikes, createPost, addComment, toggleLike, banUser } = useCommunityDatabase();
+  const { loading: dbLoading, error: dbError, fetchTrendingTopics, fetchPosts, fetchComments, fetchUserLikes, createPost, addComment, toggleLike, banUser } = useCommunityDatabase();
 
   const [trendingTopics, setTrendingTopics] = useState<TrendingTopic[]>([]);
   const [posts, setPosts] = useState<DatabasePost[]>([]);
+  const [commentsByPost, setCommentsByPost] = useState<Record<string, DatabaseComment[]>>({});
   const [likedPostIds, setLikedPostIds] = useState<Set<string>>(new Set());
   const [draftTitle, setDraftTitle] = useState("");
   const [draftContent, setDraftContent] = useState("");
@@ -313,16 +314,24 @@ export default function CommunityPage() {
 
   // Load trends and posts on mount
   useEffect(() => {
+    const loadCommentsForPosts = async (postList: DatabasePost[]) => {
+      const pairs = await Promise.all(
+        postList.map(async (post) => [post.id, await fetchComments(post.id)] as const)
+      );
+      setCommentsByPost(Object.fromEntries(pairs));
+    };
+
     const load = async () => {
       setLoading(true);
       const [trends, postList] = await Promise.all([fetchTrendingTopics(), fetchPosts()]);
       setTrendingTopics(trends);
       setPosts(postList);
+      await loadCommentsForPosts(postList);
       setLoading(false);
     };
 
     void load();
-  }, [fetchTrendingTopics, fetchPosts]);
+  }, [fetchTrendingTopics, fetchPosts, fetchComments]);
 
   // Load user's liked posts whenever the user changes
   useEffect(() => {
@@ -377,6 +386,9 @@ export default function CommunityPage() {
       // Refresh posts to show new comment
       const updatedPosts = await fetchPosts();
       setPosts(updatedPosts);
+
+      const updatedComments = await fetchComments(postId);
+      setCommentsByPost((prev) => ({ ...prev, [postId]: updatedComments }));
     } catch (err) {
       const msg = err instanceof Error ? err.message : "Failed to add comment";
       setPostError(msg);
@@ -442,6 +454,10 @@ export default function CommunityPage() {
     setLoading(true);
     const updatedPosts = await fetchPosts();
     setPosts(updatedPosts);
+    const pairs = await Promise.all(
+      updatedPosts.map(async (post) => [post.id, await fetchComments(post.id)] as const)
+    );
+    setCommentsByPost(Object.fromEntries(pairs));
     setLoading(false);
   };
 
@@ -712,6 +728,20 @@ export default function CommunityPage() {
                           <Send size={14} />
                           {copy.sendComment}
                         </button>
+                      </div>
+                    )}
+
+                    {(commentsByPost[post.id]?.length ?? 0) > 0 && (
+                      <div className="community-comments">
+                        {commentsByPost[post.id].map((comment) => (
+                          <div key={comment.id} className="community-comment-card">
+                            <div className="community-comment-card__meta">
+                              <span className="community-comment-card__author">{comment.author.display_name}</span>
+                              <span>{comment.created_at}</span>
+                            </div>
+                            <p className="community-comment-card__content">{comment.content}</p>
+                          </div>
+                        ))}
                       </div>
                     )}
                   </article>

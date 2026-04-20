@@ -31,7 +31,7 @@ const emailIcon = (
 
 export default function ContactPage() {
   const { t, i18n } = useTranslation();
-  const { tickmillLink, hfmLink } = getBrokerLinks(i18n.language);
+  const { tickmillLink, hfmLink, isHfmAllowed } = getBrokerLinks(i18n.language);
 
   const channelsFromTranslation: ContactChannel[] = [
     {
@@ -121,11 +121,13 @@ export default function ContactPage() {
                   <a href={tickmillLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary">
                     {t("contact.hfm.link")}
                   </a>
-                  <a href={hfmLink} target="_blank" rel="noopener noreferrer" className="btn btn-outline">
-                    {t("contact.hfm.hfmLink")}
-                  </a>
+                  {isHfmAllowed && hfmLink && (
+                    <a href={hfmLink} target="_blank" rel="noopener noreferrer" className="btn btn-outline">
+                      {t("contact.hfm.hfmLink")}
+                    </a>
+                  )}
                 </div>
-                <p className="hoa-note">{t("contact.hfm.vpnNote")}</p>
+                {isHfmAllowed && <p className="hoa-note">{t("contact.hfm.vpnNote")}</p>}
               </div>
             </div>
 

@@ -13,6 +13,7 @@ const HFM_REGULATION_URL = "https://www.hfm.com/int/en/about-us/regulatory-envir
 export default function Footer({ navigate }: FooterProps) {
   const { t, i18n } = useTranslation();
   const legalContent = getLegalContent(i18n.language);
+  const isTurkish = i18n.language.toLowerCase().startsWith("tr");
 
   const pageLinks: [Page, string][] = [
     ["home", t("nav.home")],
@@ -70,7 +71,9 @@ export default function Footer({ navigate }: FooterProps) {
               <button onClick={() => navigate("privacy")}>{legalContent.privacy.navLabel}</button>
               <button onClick={() => navigate("cookies")}>{legalContent.cookies.navLabel}</button>
               <a href={TICKMILL_REGULATION_URL} target="_blank" rel="noopener noreferrer">{t("footer.links.hfmOfficial")}</a>
-              <a href={HFM_REGULATION_URL} target="_blank" rel="noopener noreferrer">{t("footer.links.hfmRegulation")}</a>
+              {!isTurkish && (
+                <a href={HFM_REGULATION_URL} target="_blank" rel="noopener noreferrer">{t("footer.links.hfmRegulation")}</a>
+              )}
             </div>
           </div>
         </div>
