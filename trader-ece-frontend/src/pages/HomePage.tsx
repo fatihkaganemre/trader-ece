@@ -15,7 +15,6 @@ import moneyWithdrawalAnim from "../assets/money-withdrawal.json";
 import supportAnim from "../assets/support.json";
 import globalAnim from "../assets/global.json";
 import awardAnim from "../assets/award.json";
-import tickmillLogo from "../assets/tickmill-logo.svg";
 import socialSignalAnim from "../assets/social-signal.json";
 import { getBrokerLinks } from "../utils/brokerLinks";
 
@@ -90,6 +89,7 @@ interface Testimonial {
 export default function HomePage({ navigate }: HomePageProps) {
   const { t, i18n } = useTranslation();
   const { tickmillLink, hfmLink } = getBrokerLinks(i18n.language);
+  const isTurkish = i18n.language.toLowerCase().startsWith("tr");
 
   const services: ServiceCard[] = [
     {
@@ -287,16 +287,18 @@ export default function HomePage({ navigate }: HomePageProps) {
                 <a href={tickmillLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary">
                   {t("home.hfmTrust.moreLink")}
                 </a>
-                <a href={hfmLink} target="_blank" rel="noopener noreferrer" className="btn btn-outline">
-                  {t("home.hfmTrust.hfmLink")}
-                </a>
+                {!isTurkish && (
+                  <a href={hfmLink} target="_blank" rel="noopener noreferrer" className="btn btn-outline">
+                    {t("home.hfmTrust.hfmLink")}
+                  </a>
+                )}
               </div>
               <p className="broker-note">{t("home.hfmTrust.vpnNote")}</p>
             </div>
             <div className="hfm-visual">
               <div className="hfm-badge-large">
                 <div className="hfm-logo-plate">
-                  <img src={tickmillLogo} alt={t("home.hfmBadge.text")} className="hfm-logo-image" />
+                  <img src="/TickmillLogo.png" alt={t("home.hfmBadge.text")} className="hfm-logo-image" />
                 </div>
                 <div className="hfm-tagline">{t("home.hfmBadge.tagline")}</div>
                 <div className="hfm-reg">{t("home.hfmBadge.desc")}</div>
