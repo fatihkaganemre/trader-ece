@@ -1,5 +1,5 @@
 export type LegalLocale = "tr" | "en" | "zh" | "id" | "vi" | "th";
-export type PolicyKind = "privacy" | "cookies";
+export type PolicyKind = "privacy" | "cookies" | "terms";
 
 export interface LegalSection {
   title: string;
@@ -25,6 +25,7 @@ export interface LegalContent {
   summaryTitle: string;
   privacy: PolicyContent;
   cookies: PolicyContent;
+  terms: PolicyContent;
 }
 
 const legalContent: Record<LegalLocale, LegalContent> = {
@@ -123,6 +124,50 @@ const legalContent: Record<LegalLocale, LegalContent> = {
       ],
       note:
         "Çerezler yatırım tavsiyesi vermek için değil, güvenli ve daha işlevsel bir kullanıcı deneyimi sunmak için kullanılır."
+    },
+    terms: {
+      navLabel: "Kullanım Koşulları",
+      title: "Kullanım Koşulları",
+      intro:
+        "Bu web sitesine erişen veya siteyi kullanan herkes aşağıdaki kullanım koşullarını kabul etmiş sayılır. Bu metin, Google Ads gereklilikleri ve geçerli yasal standartlar dikkate alınarak hazırlanmıştır.",
+      highlights: [
+        "Sitedeki içerikler yalnızca genel bilgilendirme amaçlıdır ve yatırım tavsiyesi niteliği taşımaz.",
+        "Kullanıcılar siteyi hukuka uygun, dürüst ve üçüncü kişilerin haklarını ihlal etmeyecek şekilde kullanmalıdır.",
+        "Trader Ece, site içeriğini ve hizmet kapsamını önceden bildirim yapmadan güncelleme hakkını saklı tutar.",
+        "Üçüncü taraf bağlantılar ayrı platformlara yönlendirebilir; bu platformların içerik ve uygulamalarından doğrudan sorumluluk kabul edilmez."
+      ],
+      sections: [
+        {
+          title: "1. Hizmetin Kapsamı",
+          paragraphs: [
+            "Web sitemiz hesap açılışı rehberliği, genel piyasa içerikleri, topluluk bilgilendirmesi ve iletişim kanalları hakkında bilgi sunar.",
+            "Sitede yer alan hiçbir içerik kişiye özel yatırım tavsiyesi veya getiri garantisi olarak değerlendirilmemelidir."
+          ]
+        },
+        {
+          title: "2. Kullanıcı Yükümlülükleri",
+          paragraphs: [
+            "Kullanıcılar siteyi yürürlükteki yasalara uygun şekilde kullanmalı ve sistem güvenliğini veya kullanılabilirliğini bozacak girişimlerde bulunmamalıdır.",
+            "Formlar ve topluluk alanları spam, yasa dışı içerik, hakaret veya yanıltıcı beyan paylaşımı için kullanılamaz."
+          ]
+        },
+        {
+          title: "3. Sorumluluk Reddi",
+          paragraphs: [
+            "Trader Ece, içeriklerin doğruluğunu ve güncelliğini makul ölçüde korumaya çalışsa da, içeriğin hatasız veya kesintisiz olacağını garanti etmez.",
+            "Kullanıcıların site içeriklerine dayanarak aldığı kararlar kendi sorumluluğundadır. Forex ve CFD işlemleri yüksek risk içerir."
+          ]
+        },
+        {
+          title: "4. Fikri Mülkiyet ve İletişim",
+          paragraphs: [
+            "Sitedeki metinler, tasarımlar, görseller ve marka unsurları aksi belirtilmedikçe Trader Ece veya ilgili hak sahiplerine aittir ve izinsiz çoğaltılamaz.",
+            "Kullanım koşullarıyla ilgili sorularınız için info@trader-ece.com adresi üzerinden bizimle iletişime geçebilirsiniz."
+          ]
+        }
+      ],
+      note:
+        "Bu kullanım koşulları, kullanıcı ile site arasındaki genel kullanım çerçevesini tanımlar ve yatırım tavsiyesi niteliği taşımaz."
     }
   },
   en: {
@@ -220,6 +265,50 @@ const legalContent: Record<LegalLocale, LegalContent> = {
       ],
       note:
         "Cookies are used to provide a safer and more functional browsing experience, not to deliver investment advice."
+    },
+    terms: {
+      navLabel: "Terms of Service",
+      title: "Terms of Service",
+      intro:
+        "By accessing or using this website, you agree to the following terms. This page is provided to support transparency, Google Ads compliance requirements, and applicable legal standards.",
+      highlights: [
+        "All content on the site is for general informational purposes only and does not constitute investment advice or portfolio management.",
+        "Users must use the website lawfully, responsibly, and without disrupting the rights of others or the operation of the service.",
+        "Trader Ece may update content, access terms, or service scope at any time without prior notice.",
+        "External links may lead to third-party services, and Trader Ece is not directly responsible for third-party content or practices."
+      ],
+      sections: [
+        {
+          title: "1. Scope of Service",
+          paragraphs: [
+            "This website provides information about account guidance, general market content, community participation, and communication channels.",
+            "Nothing on this website should be interpreted as personalised investment advice or a guarantee of financial results."
+          ]
+        },
+        {
+          title: "2. User Responsibilities",
+          paragraphs: [
+            "Users must comply with applicable laws and must not misuse the website, interfere with its availability, or attempt unauthorised access.",
+            "Forms, community areas, and contact channels must not be used for spam, unlawful activity, abusive content, or misleading claims."
+          ]
+        },
+        {
+          title: "3. Disclaimer of Liability",
+          paragraphs: [
+            "Trader Ece makes reasonable efforts to keep information current and accurate, but does not guarantee uninterrupted access, error-free operation, or suitability for every user or purpose.",
+            "Any decisions made based on website content are the sole responsibility of the user. Trading and investing involve risk."
+          ]
+        },
+        {
+          title: "4. Intellectual Property and Contact",
+          paragraphs: [
+            "Unless otherwise stated, the text, visuals, branding, and design of this website belong to Trader Ece or the relevant rights holders and may not be copied without permission.",
+            "If you have questions regarding these terms, please contact us at info@trader-ece.com."
+          ]
+        }
+      ],
+      note:
+        "These terms define the general framework for using the website and do not create any investment advisory relationship."
     }
   },
   zh: {
@@ -315,6 +404,49 @@ const legalContent: Record<LegalLocale, LegalContent> = {
         }
       ],
       note: "Cookie 的使用旨在提供更安全、更顺畅的浏览体验，并非用于提供投资建议。"
+    },
+    terms: {
+      navLabel: "服务条款",
+      title: "服务条款",
+      intro:
+        "访问或使用本网站即表示您同意以下条款。本页面旨在满足透明度要求、Google Ads 要求以及适用法律标准。",
+      highlights: [
+        "网站内容仅供一般信息参考，不构成投资建议或资产管理服务。",
+        "用户必须合法、诚信地使用本网站，不得干扰网站运行或侵犯他人权利。",
+        "Trader Ece 可在不另行通知的情况下更新网站内容、访问条件或服务范围。",
+        "外部链接可能跳转至第三方平台，Trader Ece 不对第三方内容或做法承担直接责任。"
+      ],
+      sections: [
+        {
+          title: "1. 服务范围",
+          paragraphs: [
+            "本网站用于提供开户指引、一般市场内容、社区信息以及联系渠道相关说明。",
+            "网站中的任何内容均不应被视为个性化投资建议或收益保证。"
+          ]
+        },
+        {
+          title: "2. 用户义务",
+          paragraphs: [
+            "用户必须遵守适用法律，不得滥用网站、破坏可用性，或尝试未经授权访问网站的任何部分。",
+            "联系表单和社区区域不得用于垃圾信息、违法内容、侮辱性表达或误导性陈述。"
+          ]
+        },
+        {
+          title: "3. 责任声明",
+          paragraphs: [
+            "Trader Ece 会尽合理努力保持信息准确与更新，但不保证网站持续可访问、无错误，或适合所有用户与用途。",
+            "用户基于网站内容作出的决定由用户自行承担责任。交易和投资具有风险。"
+          ]
+        },
+        {
+          title: "4. 知识产权与联系",
+          paragraphs: [
+            "除非另有说明，网站中的文本、视觉内容、品牌元素和设计归 Trader Ece 或相关权利人所有，未经许可不得复制。",
+            "如对本条款有任何疑问，请通过 info@trader-ece.com 与我们联系。"
+          ]
+        }
+      ],
+      note: "本条款规定了用户使用网站的一般框架，不构成任何投资顾问关系。"
     }
   },
   id: {
@@ -410,6 +542,49 @@ const legalContent: Record<LegalLocale, LegalContent> = {
         }
       ],
       note: "Cookie digunakan untuk memberikan pengalaman browsing yang lebih aman dan lebih fungsional, bukan untuk memberikan nasihat investasi."
+    },
+    terms: {
+      navLabel: "Ketentuan Layanan",
+      title: "Ketentuan Layanan",
+      intro:
+        "Dengan mengakses atau menggunakan situs ini, Anda dianggap menyetujui ketentuan berikut. Halaman ini disediakan untuk mendukung transparansi, persyaratan Google Ads, dan standar hukum yang berlaku.",
+      highlights: [
+        "Semua konten di situs hanya untuk tujuan informasi umum dan bukan merupakan nasihat investasi atau manajemen portofolio.",
+        "Pengguna wajib menggunakan situs secara sah, bertanggung jawab, dan tanpa mengganggu hak pihak lain atau operasional layanan.",
+        "Trader Ece berhak memperbarui konten, syarat akses, atau cakupan layanan kapan saja tanpa pemberitahuan sebelumnya.",
+        "Tautan eksternal dapat mengarahkan ke layanan pihak ketiga dan Trader Ece tidak bertanggung jawab langsung atas konten atau praktik pihak ketiga tersebut."
+      ],
+      sections: [
+        {
+          title: "1. Cakupan Layanan",
+          paragraphs: [
+            "Situs ini menyediakan informasi mengenai panduan pembukaan akun, konten pasar umum, partisipasi komunitas, dan saluran komunikasi.",
+            "Tidak ada bagian dari situs ini yang boleh dianggap sebagai nasihat investasi pribadi atau jaminan hasil finansial."
+          ]
+        },
+        {
+          title: "2. Tanggung Jawab Pengguna",
+          paragraphs: [
+            "Pengguna harus mematuhi hukum yang berlaku dan tidak boleh menyalahgunakan situs, mengganggu ketersediaannya, atau mencoba mengakses bagian mana pun tanpa izin.",
+            "Formulir, area komunitas, dan saluran kontak tidak boleh digunakan untuk spam, aktivitas ilegal, konten abusif, atau klaim menyesatkan."
+          ]
+        },
+        {
+          title: "3. Penafian Tanggung Jawab",
+          paragraphs: [
+            "Trader Ece berupaya secara wajar menjaga informasi tetap akurat dan mutakhir, namun tidak menjamin akses tanpa gangguan, operasi bebas kesalahan, atau kesesuaian untuk setiap pengguna.",
+            "Setiap keputusan yang dibuat berdasarkan konten situs sepenuhnya menjadi tanggung jawab pengguna. Trading dan investasi memiliki risiko."
+          ]
+        },
+        {
+          title: "4. Kekayaan Intelektual dan Kontak",
+          paragraphs: [
+            "Kecuali dinyatakan lain, teks, visual, elemen merek, dan desain situs ini dimiliki oleh Trader Ece atau pemegang hak terkait dan tidak boleh disalin tanpa izin.",
+            "Jika Anda memiliki pertanyaan tentang ketentuan ini, silakan hubungi kami melalui info@trader-ece.com."
+          ]
+        }
+      ],
+      note: "Ketentuan ini menetapkan kerangka umum penggunaan situs dan tidak menciptakan hubungan penasihat investasi."
     }
   },
   vi: {
@@ -505,6 +680,49 @@ const legalContent: Record<LegalLocale, LegalContent> = {
         }
       ],
       note: "Cookie được sử dụng để mang lại trải nghiệm duyệt web an toàn và tiện lợi hơn, không phải để cung cấp tư vấn đầu tư."
+    },
+    terms: {
+      navLabel: "Điều Khoản Dịch Vụ",
+      title: "Điều Khoản Dịch Vụ",
+      intro:
+        "Khi truy cập hoặc sử dụng website này, bạn được xem là đã đồng ý với các điều khoản dưới đây. Trang này được xây dựng nhằm đáp ứng yêu cầu minh bạch, chính sách Google Ads và các tiêu chuẩn pháp lý hiện hành.",
+      highlights: [
+        "Toàn bộ nội dung trên website chỉ nhằm mục đích cung cấp thông tin chung và không cấu thành tư vấn đầu tư hoặc quản lý danh mục.",
+        "Người dùng phải sử dụng website một cách hợp pháp, có trách nhiệm và không cản trở hoạt động của website hoặc quyền của bên khác.",
+        "Trader Ece có quyền cập nhật nội dung, điều kiện truy cập hoặc phạm vi dịch vụ bất kỳ lúc nào mà không cần thông báo trước.",
+        "Các liên kết ngoài có thể dẫn đến nền tảng của bên thứ ba và Trader Ece không chịu trách nhiệm trực tiếp đối với nội dung hoặc chính sách của các bên đó."
+      ],
+      sections: [
+        {
+          title: "1. Phạm Vi Dịch Vụ",
+          paragraphs: [
+            "Website này cung cấp thông tin về hướng dẫn mở tài khoản, nội dung thị trường tổng quát, tham gia cộng đồng và các kênh liên hệ.",
+            "Không có nội dung nào trên website nên được hiểu là tư vấn đầu tư cá nhân hóa hoặc bảo đảm kết quả tài chính."
+          ]
+        },
+        {
+          title: "2. Trách Nhiệm Của Người Dùng",
+          paragraphs: [
+            "Người dùng phải tuân thủ pháp luật hiện hành và không được lạm dụng website, làm gián đoạn khả năng truy cập hoặc cố gắng truy cập trái phép.",
+            "Biểu mẫu, khu vực cộng đồng và các kênh liên hệ không được sử dụng cho spam, hoạt động trái pháp luật, nội dung xúc phạm hoặc tuyên bố gây hiểu lầm."
+          ]
+        },
+        {
+          title: "3. Tuyên Bố Miễn Trừ Trách Nhiệm",
+          paragraphs: [
+            "Trader Ece nỗ lực hợp lý để giữ thông tin chính xác và cập nhật, nhưng không đảm bảo website luôn truy cập liên tục, không có lỗi hoặc phù hợp với mọi người dùng.",
+            "Mọi quyết định được đưa ra dựa trên nội dung của website là trách nhiệm riêng của người dùng. Giao dịch và đầu tư luôn có rủi ro."
+          ]
+        },
+        {
+          title: "4. Sở Hữu Trí Tuệ và Liên Hệ",
+          paragraphs: [
+            "Trừ khi có nêu khác đi, văn bản, hình ảnh, yếu tố thương hiệu và thiết kế của website thuộc sở hữu của Trader Ece hoặc các chủ thể quyền liên quan và không được sao chép khi chưa có phép.",
+            "Nếu bạn có câu hỏi về các điều khoản này, vui lòng liên hệ qua info@trader-ece.com."
+          ]
+        }
+      ],
+      note: "Các điều khoản này xác định khuôn khổ chung cho việc sử dụng website và không tạo ra quan hệ tư vấn đầu tư."
     }
   },
   th: {
@@ -600,6 +818,49 @@ const legalContent: Record<LegalLocale, LegalContent> = {
         }
       ],
       note: "คุกกี้ถูกใช้เพื่อมอบประสบการณ์การใช้งานที่ปลอดภัยและมีประสิทธิภาพมากขึ้น ไม่ใช่เพื่อให้คำแนะนำการลงทุน."
+    },
+    terms: {
+      navLabel: "ข้อกำหนดการใช้งาน",
+      title: "ข้อกำหนดการใช้งาน",
+      intro:
+        "การเข้าถึงหรือใช้งานเว็บไซต์นี้ถือว่าคุณยอมรับข้อกำหนดต่อไปนี้ เอกสารนี้จัดทำขึ้นเพื่อรองรับความโปร่งใส ข้อกำหนดของ Google Ads และมาตรฐานทางกฎหมายที่เกี่ยวข้อง.",
+      highlights: [
+        "เนื้อหาทั้งหมดบนเว็บไซต์มีไว้เพื่อข้อมูลทั่วไปเท่านั้น และไม่ถือเป็นคำแนะนำการลงทุนหรือการบริหารพอร์ต.",
+        "ผู้ใช้ต้องใช้งานเว็บไซต์อย่างถูกกฎหมาย มีความรับผิดชอบ และไม่รบกวนการทำงานของเว็บไซต์หรือสิทธิของผู้อื่น.",
+        "Trader Ece ขอสงวนสิทธิ์ในการปรับปรุงเนื้อหา เงื่อนไขการเข้าถึง หรือขอบเขตบริการได้ทุกเมื่อโดยไม่ต้องแจ้งล่วงหน้า.",
+        "ลิงก์ภายนอกอาจนำไปยังแพลตฟอร์มของบุคคลที่สาม และ Trader Ece จะไม่รับผิดชอบโดยตรงต่อเนื้อหาหรือแนวปฏิบัติของบุคคลที่สามดังกล่าว."
+      ],
+      sections: [
+        {
+          title: "1. ขอบเขตของบริการ",
+          paragraphs: [
+            "เว็บไซต์นี้ให้ข้อมูลเกี่ยวกับการแนะนำการเปิดบัญชี เนื้อหาตลาดทั่วไป การมีส่วนร่วมของชุมชน และช่องทางการติดต่อ.",
+            "ไม่มีส่วนใดของเว็บไซต์นี้ที่ควรถูกตีความว่าเป็นคำแนะนำการลงทุนส่วนบุคคลหรือการรับประกันผลลัพธ์ทางการเงิน."
+          ]
+        },
+        {
+          title: "2. หน้าที่ของผู้ใช้",
+          paragraphs: [
+            "ผู้ใช้ต้องปฏิบัติตามกฎหมายที่เกี่ยวข้อง และต้องไม่ใช้เว็บไซต์ในทางที่ผิด รบกวนการให้บริการ หรือพยายามเข้าถึงส่วนใดของบริการโดยไม่ได้รับอนุญาต.",
+            "แบบฟอร์ม พื้นที่ชุมชน และช่องทางการติดต่อห้ามใช้เพื่อสแปม กิจกรรมที่ผิดกฎหมาย เนื้อหาที่ไม่เหมาะสม หรือข้อความที่ทำให้เข้าใจผิด."
+          ]
+        },
+        {
+          title: "3. ข้อจำกัดความรับผิดชอบ",
+          paragraphs: [
+            "Trader Ece พยายามอย่างสมเหตุสมผลในการรักษาความถูกต้องและความทันสมัยของข้อมูล แต่ไม่รับประกันว่าเว็บไซต์จะเข้าถึงได้อย่างต่อเนื่อง ปราศจากข้อผิดพลาด หรือเหมาะสมกับผู้ใช้ทุกคน.",
+            "การตัดสินใจใด ๆ ที่ทำโดยอ้างอิงจากเนื้อหาบนเว็บไซต์เป็นความรับผิดชอบของผู้ใช้แต่เพียงผู้เดียว การเทรดและการลงทุนมีความเสี่ยง."
+          ]
+        },
+        {
+          title: "4. ทรัพย์สินทางปัญญาและการติดต่อ",
+          paragraphs: [
+            "เว้นแต่จะระบุไว้เป็นอย่างอื่น ข้อความ ภาพ องค์ประกอบแบรนด์ และการออกแบบของเว็บไซต์นี้เป็นทรัพย์สินของ Trader Ece หรือเจ้าของสิทธิ์ที่เกี่ยวข้อง และห้ามคัดลอกโดยไม่ได้รับอนุญาต.",
+            "หากคุณมีคำถามเกี่ยวกับข้อกำหนดเหล่านี้ โปรดติดต่อเราที่ info@trader-ece.com."
+          ]
+        }
+      ],
+      note: "ข้อกำหนดนี้กำหนดกรอบทั่วไปสำหรับการใช้งานเว็บไซต์ และไม่ก่อให้เกิดความสัมพันธ์ในลักษณะคำแนะนำการลงทุน."
     }
   }
 };

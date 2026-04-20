@@ -69,6 +69,7 @@ export default function Footer({ navigate }: FooterProps) {
               <h4>{t("footer.legal")}</h4>
               <button onClick={() => navigate("privacy")}>{legalContent.privacy.navLabel}</button>
               <button onClick={() => navigate("cookies")}>{legalContent.cookies.navLabel}</button>
+              <button onClick={() => navigate("terms")}>{legalContent.terms.navLabel}</button>
               <a href={TICKMILL_REGULATION_URL} target="_blank" rel="noopener noreferrer">{t("footer.links.hfmOfficial")}</a>
               <a href={HFM_REGULATION_URL} target="_blank" rel="noopener noreferrer">{t("footer.links.hfmRegulation")}</a>
             </div>

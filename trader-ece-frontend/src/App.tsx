@@ -12,7 +12,7 @@ import LegalPage from "./pages/LegalPage";
 import CommunityPage from "./pages/CommunityPage";
 import "./App.css";
 
-export type Page = "home" | "about" | "services" | "performance" | "community" | "contact" | "privacy" | "cookies";
+export type Page = "home" | "about" | "services" | "performance" | "community" | "contact" | "privacy" | "cookies" | "terms";
 export type NavigateFn = (page: Page) => void;
 
 const SEO_BY_LANGUAGE = {
@@ -69,6 +69,7 @@ const PAGE_PATHS: Record<Page, string> = {
   contact: "/contact",
   privacy: "/privacy",
   cookies: "/cookies",
+  terms: "/terms",
 };
 
 function resolvePageFromPath(pathname: string): Page {
@@ -142,6 +143,7 @@ export default function App() {
     contact: <ContactPage />,
     privacy: <LegalPage kind="privacy" navigate={navigate} />,
     cookies: <LegalPage kind="cookies" navigate={navigate} />,
+    terms: <LegalPage kind="terms" navigate={navigate} />,
   };
 
   return (
