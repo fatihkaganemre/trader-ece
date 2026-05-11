@@ -268,6 +268,12 @@
   gap: 30px;
 }
 
+/* News Feed row — full width above the two-column layout */
+.community-newsfeed-row {
+  grid-column: 1 / -1;
+  margin-bottom: 0;
+}
+
 .community-column {
   display: grid;
   gap: 30px;

@@ -171,6 +171,16 @@ export default function HomePage({ navigate }: HomePageProps) {
           <h1 className="hero__title">
             <span className="highlight">{t("home.hero.titleHighlight")}</span>
           </h1>
+          <div className={`hero__mobile-logos ${isTurkish ? "hero__mobile-logos--single" : ""}`} aria-label="Broker logos">
+            <a href={tickmillLink} target="_blank" rel="noopener noreferrer" className="hero__mobile-logo-link">
+              <img src="/TickmillLogo.png" alt="Tickmill" className="hero__mobile-logo hero__mobile-logo--tickmill" />
+            </a>
+            {!isTurkish && (
+              <a href={hfmLink} target="_blank" rel="noopener noreferrer" className="hero__mobile-logo-link">
+                <img src="/HfmLogo.jpg" alt="HFM" className="hero__mobile-logo hero__mobile-logo--hfm" />
+              </a>
+            )}
+          </div>
           <p className="hero__stat">
             {t("home.hero.stat")}
           </p>
@@ -182,13 +192,15 @@ export default function HomePage({ navigate }: HomePageProps) {
               <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12l-6.871 4.326-2.962-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.537-.194 1.006.131.833.941z" />
               </svg>
-              {t("home.buttons.telegramTraderEce")}
+              <span className="btn-label-full">{t("home.buttons.telegramTraderEce")}</span>
+              <span className="btn-label-short">Trader ECE</span>
             </a>
             <a href="https://t.me/bullexardav" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12l-6.871 4.326-2.962-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.537-.194 1.006.131.833.941z" />
               </svg>
-              {t("home.buttons.telegramBullex")}
+              <span className="btn-label-full">{t("home.buttons.telegramBullex")}</span>
+              <span className="btn-label-short">Bullex</span>
             </a>
             <button className="btn btn-outline" onClick={() => navigate("contact")}>
               {t("home.buttons.info")}

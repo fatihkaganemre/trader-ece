@@ -25,7 +25,11 @@
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-html { scroll-behavior: smooth; }
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  max-width: 100%;
+}
 
 body {
   font-family: var(--font-body);
@@ -49,6 +53,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .app { min-height: 100vh; display: flex; flex-direction: column; }
+.page-loading { min-height: 60vh; }
 
 /* main is pushed down by exactly the header height */
 main {
@@ -208,14 +213,22 @@ main {
 }
 
 @media (max-width: 768px) {
-  :root { --header-h: 110px; }
-  .section { padding: 64px 0; }
+  :root { --header-h: 70px; }
+  .section { padding: 56px 0; }
   .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; }
+  .card { padding: 20px; }
+  .section-title { margin-bottom: 14px; }
+  .section-header { margin-bottom: 36px; }
+  .container { padding: 0 16px; }
+    h1, h2, h3 { word-break: break-word; overflow-wrap: break-word; }
+    .section-title { font-size: clamp(24px, 7vw, 36px); }
 }
 
 @media (max-width: 480px) {
-  :root { --header-h: 84px; }
+  :root { --header-h: 60px; }
   .grid-4 { grid-template-columns: repeat(2, 1fr); }
+  .section { padding: 44px 0; }
+  .card { padding: 16px; }
 }
 
 @media (max-width: 1024px) {

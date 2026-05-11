@@ -214,4 +214,14 @@
     flex-direction: column;
     text-align: center;
   }
+
+  .footer__disclaimer {
+    font-size: 12px;
+    padding: 16px;
+  }
+
+  .footer_logo_group {
+    gap: 20px;
+    flex-wrap: wrap;
+  }
 }

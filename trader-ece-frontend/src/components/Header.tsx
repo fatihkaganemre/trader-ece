@@ -20,6 +20,11 @@ export default function Header({ currentPage, navigate }: HeaderProps) {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+  useEffect(() => {
+    document.body.style.overflow = menuOpen ? "hidden" : "";
+    return () => { document.body.style.overflow = ""; };
+  }, [menuOpen]);
+
   const changeLanguage = (lng: string) => {
     i18n.changeLanguage(lng);
     setLangMenuOpen(false);
@@ -34,17 +39,28 @@ export default function Header({ currentPage, navigate }: HeaderProps) {
   ];
 
   const languageOptions = [
-    { code: "en", label: t("header.language.en") },
-    { code: "tr", label: t("header.language.tr") },
-    { code: "th", label: t("header.language.th") },
-    { code: "id", label: t("header.language.id") },
-    { code: "zh", label: t("header.language.zh") },
-    { code: "vi", label: t("header.language.vi") },
+    { code: "en", label: t("header.language.en"), flag: "🇬🇧" },
+    { code: "tr", label: t("header.language.tr"), flag: "🇹🇷" },
+    { code: "th", label: t("header.language.th"), flag: "🇹🇭" },
+    { code: "id", label: t("header.language.id"), flag: "🇮🇩" },
+    { code: "zh", label: t("header.language.zh"), flag: "🇨🇳" },
+    { code: "vi", label: t("header.language.vi"), flag: "🇻🇳" },
   ];
 
   return (
     <header className={`header ${scrolled ? "header--scrolled" : ""}`}>
       <div className="header__inner">
+
+        {/* MOBILE LEFT — Hamburger */}
+        <button
+          className={`hamburger ${menuOpen ? "open" : ""}`}
+          onClick={() => setMenuOpen(!menuOpen)}
+          aria-label={t("nav.menu")}
+        >
+          <span />
+          <span />
+          <span />
+        </button>
 
         {/* LEFT — Trader ECE */}
         <div className="header__logo-left" onClick={() => navigate("home")}>
@@ -94,7 +110,8 @@ export default function Header({ currentPage, navigate }: HeaderProps) {
               onClick={() => setLangMenuOpen(!langMenuOpen)}
               title={t("header.language.title")}
             >
-              {i18n.language.toUpperCase()}
+              <span className="lang-flag">{languageOptions.find(o => i18n.language.startsWith(o.code))?.flag ?? "🌐"}</span>
+              {i18n.language.toUpperCase().slice(0, 2)}
             </button>
             {langMenuOpen && (
               <div className="lang-menu">
@@ -104,6 +121,7 @@ export default function Header({ currentPage, navigate }: HeaderProps) {
                     className={`lang-option ${i18n.language === option.code ? 'active' : ''}`}
                     onClick={() => changeLanguage(option.code)}
                   >
+                    <span className="lang-flag">{option.flag}</span>
                     {option.label}
                   </button>
                 ))}
@@ -114,21 +132,13 @@ export default function Header({ currentPage, navigate }: HeaderProps) {
           <div
             className="header__logo-right"
             onClick={() => navigate("home")}
-          >
+          >  
             <div className="logo-text logo-text--right">
               <span className="bullex-name">{t("header.bullex")}</span>
               <span className="logo-sub logo-sub--right">{t("header.bullexSubtitle")}</span>
             </div>
           </div>
-          <button
-            className={`hamburger ${menuOpen ? "open" : ""}`}
-            onClick={() => setMenuOpen(!menuOpen)}
-            aria-label={t("nav.menu")}
-          >
-            <span />
-            <span />
-            <span />
-          </button>
+
         </div>
 
       </div>
