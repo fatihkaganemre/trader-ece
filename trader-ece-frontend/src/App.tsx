@@ -1,16 +1,17 @@
-import { useEffect, useState } from "react";
+import { lazy, Suspense, useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import ChatAssistant from "./components/ChatAssistant";
 import HomePage from "./pages/HomePage";
-import AboutPage from "./pages/AboutPage";
-import ServicesPage from "./pages/ServicesPage";
-import PerformancePage from "./pages/PerformancePage";
-import ContactPage from "./pages/Contact/ContactPage";
-import LegalPage from "./pages/LegalPage";
-import CommunityPage from "./pages/CommunityPage";
 import "./App.css";
+
+const AboutPage = lazy(() => import("./pages/AboutPage"));
+const ServicesPage = lazy(() => import("./pages/ServicesPage"));
+const PerformancePage = lazy(() => import("./pages/PerformancePage"));
+const ContactPage = lazy(() => import("./pages/Contact/ContactPage"));
+const LegalPage = lazy(() => import("./pages/LegalPage"));
+const CommunityPage = lazy(() => import("./pages/CommunityPage"));
 
 export type Page = "home" | "about" | "services" | "performance" | "community" | "contact" | "privacy" | "cookies" | "terms";
 export type NavigateFn = (page: Page) => void;
@@ -136,14 +137,14 @@ export default function App() {
 
   const pages: Record<Page, React.ReactNode> = {
     home: <HomePage navigate={navigate} />,
-    about: <AboutPage navigate={navigate} />,
-    services: <ServicesPage navigate={navigate} />,
-    performance: <PerformancePage navigate={navigate} />,
-    community: <CommunityPage />,
-    contact: <ContactPage />,
-    privacy: <LegalPage kind="privacy" navigate={navigate} />,
-    cookies: <LegalPage kind="cookies" navigate={navigate} />,
-    terms: <LegalPage kind="terms" navigate={navigate} />,
+    about: <Suspense fallback={<div className="page-loading" />}><AboutPage navigate={navigate} /></Suspense>,
+    services: <Suspense fallback={<div className="page-loading" />}><ServicesPage navigate={navigate} /></Suspense>,
+    performance: <Suspense fallback={<div className="page-loading" />}><PerformancePage navigate={navigate} /></Suspense>,
+    community: <Suspense fallback={<div className="page-loading" />}><CommunityPage /></Suspense>,
+    contact: <Suspense fallback={<div className="page-loading" />}><ContactPage /></Suspense>,
+    privacy: <Suspense fallback={<div className="page-loading" />}><LegalPage kind="privacy" navigate={navigate} /></Suspense>,
+    cookies: <Suspense fallback={<div className="page-loading" />}><LegalPage kind="cookies" navigate={navigate} /></Suspense>,
+    terms: <Suspense fallback={<div className="page-loading" />}><LegalPage kind="terms" navigate={navigate} /></Suspense>,
   };
 
   return (

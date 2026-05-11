@@ -219,6 +219,9 @@
   border: none;
   cursor: pointer;
   padding: 4px;
+  padding-left: 20px;
+  flex-shrink: 0;
+  z-index: 2;
 }
 
 .hamburger span {
@@ -252,10 +255,29 @@
 @media (max-width: 768px) {
   .hamburger { display: flex; }
 
-  .header__inner { height: 110px; }
+  .header__inner {
+    height: 70px;
+    position: relative;
+    justify-content: space-between;
+  }
 
-  .logo-img--left, .logo-img--right { width: 100px; height: 100px; }
-  .logo-brand, .bullex-name { font-size: 16px; }
+  .header__logo-left {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-left: 0;
+    cursor: pointer;
+  }
+
+  .header__logo-right { display: none; }
+
+  .logo-img--left, .logo-img--right { width: 48px; height: 48px; }
+  .logo-brand, .bullex-name { font-size: 18px; }
+
+  .header__actions {
+    margin-left: auto;
+    padding-right: 20px;
+  }
 
   .header__actions .btn { display: none; }
 
@@ -263,7 +285,7 @@
 
   .header__nav {
     position: fixed;
-    top: 110px;
+    top: 70px;
     left: 0;
     right: 0;
     background: rgba(13, 14, 18, 0.98);
@@ -294,10 +316,11 @@
 }
 
 @media (max-width: 480px) {
-  .header__inner { height: 84px; }
-  .logo-img--left, .logo-img--right { width: 76px; height: 76px; }
-  .logo-text, .logo-text--right { display: none; }
-  .header__nav { top: 84px; }
+  .header__inner { height: 60px; }
+  .logo-img--left, .logo-img--right { width: 40px; height: 40px; }
+  .logo-brand, .bullex-name { font-size: 16px; }
+  .logo-text--right { display: none; }
+  .header__nav { top: 60px; }
 }
 /* ── LANGUAGE SELECTOR ── */
 .language-selector {
@@ -308,6 +331,9 @@
 }
 
 .lang-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
   background: linear-gradient(135deg, rgba(182, 138, 68, 0.12) 0%, rgba(214, 176, 106, 0.08) 100%);
   border: 1px solid rgba(182, 138, 68, 0.28);
   color: var(--gold);
@@ -342,7 +368,9 @@
 }
 
 .lang-option {
-  display: block;
+  display: flex;
+  align-items: center;
+  gap: 10px;
   width: 100%;
   padding: 12px 18px;
   background: none;
@@ -353,6 +381,12 @@
   cursor: pointer;
   transition: all 0.2s ease;
   text-align: left;
+}
+
+.lang-flag {
+  font-size: 14px;
+  line-height: 1;
+  flex-shrink: 0;
 }
 
 .lang-option:hover {

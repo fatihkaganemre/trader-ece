@@ -43,7 +43,7 @@ export default function Footer({ navigate }: FooterProps) {
                 </div>
                 <div className="footer__logo">
                   <div className="footer-logo-img-wrap">
-                    <img src="/bullexLogo.png" alt="Bullex" className="footer-logo-img" />
+                    <img src="/BullexLogo2.png" alt="Bullex" className="footer-logo-img" />
                   </div>
                   <div className="logo-text">
                     <span className="logo-brand">

@@ -15,6 +15,7 @@ import {
 } from "lucide-react";
 import { useSupabaseAuth } from "../hooks/useSupabaseAuth";
 import { useCommunityDatabase, DatabasePost, DatabaseComment } from "../hooks/useCommunityDatabase";
+import NewsFeed from "../components/NewsFeed";
 import "./CommunityPage.css";
 
 type CommunityLocale = "tr" | "en" | "th" | "id" | "zh" | "vi";
@@ -583,6 +584,12 @@ export default function CommunityPage() {
 
       <section className="community-section">
         <div className="community-layout container">
+
+          {/* Telegram News Feed — aktif edilmek için Supabase tablosu gerekli */}
+          {/* <div className="community-newsfeed-row">
+            <NewsFeed />
+          </div> */}
+
           <div className="community-column">
             {/* Trending Topics */}
             <div className="community-panel">

@@ -1,0 +1,521 @@
+{
+  "nav": {
+    "home": "首页",
+    "about": "关于我们",
+    "services": "服务",
+    "community": "社区",
+    "performance": "业绩表现",
+    "contact": "联系我们",
+    "menu": "菜单"
+  },
+  "header": {
+    "brand": "TRADER ECE",
+    "subtitle": "Tickmill IB 和联盟伙伴",
+    "bullex": "BULLEX",
+    "bullexSubtitle": "信号频道",
+    "language": {
+      "title": "选择语言",
+      "en": "英语",
+      "tr": "土耳其语",
+      "th": "泰语",
+      "id": "印尼语",
+      "zh": "中文",
+      "vi": "越南语"
+    }
+  },
+  "footer": {
+    "pages": "页面",
+    "legal": "法律声明",
+    "links": {
+      "hfmOfficial": "Tickmill 监管信息",
+      "hfmRegulation": "HFM Hot Forex 监管信息"
+    },
+    "riskWarning": "风险提示：",
+    "riskDisclaimer": "外汇和CFD交易具有高风险，可能不适合所有投资者。您可能损失全部投入资金。本网站不提供投资建议或资产管理服务。我们作为Tickmill和HFM的官方IB和联盟伙伴运营。",
+    "partnerDesc": "我们是Tickmill和HFM（HF Markets）的官方Introducing Broker（IB）和联盟伙伴。市场分析内容仅供信息参考。我们不提供投资建议或资产管理。",
+    "copyright": "© {{year}} Trader ECE – Tickmill IB 和联盟伙伴。版权所有。",
+    "regulation": "在Tickmill和HF Markets Group的监管框架下运营。",
+    "bullexSubtitle": "信号频道"
+  },
+  "home": {
+    "badge": "TRADER ECE – Tickmill 和 HFM 官方 IB 和联盟伙伴",
+    "hero": {
+      "titlePre": "",
+      "titleHighlight": "占领市场制高点。",
+      "titlePost": "",
+      "stat": "当 75% 的交易者亏损时，选择站在经验一侧。借助 13+ 年专业经验优化您的交易策略。",
+      "subtitle": "脱离一般 75%。认识 13 年全球经验与合规监管的交易平台。"
+    },
+    "buttons": {
+      "telegramTraderEce": "加入 Trader Ece Telegram 群组",
+      "telegramBullex": "加入 Bullex Telegram 群组",
+      "info": "联系我们"
+    },
+    "trust": {
+      "title": "合规监管经纪商",
+      "item1": "13+ 年专业经验",
+      "item2": "700万美元交易量"
+    },
+    "services": {
+      "tag": "我们的服务",
+      "title": "我们提供什么",
+      "subtitle": "作为Tickmill和HFM的官方IB伙伴，我们提供开户支持和市场教育内容。不提供投资建议。",
+      "viewAll": "查看全部服务 →",
+      "viewAllDesc": "继续查看全部服务内容与详细说明。",
+      "cards": [
+        {
+          "title": "Telegram 和 WhatsApp 信号群组",
+          "desc": "通过我们的专属信号社区，实时分享市场分析和日报资讯。仅供信息参考 — 不构成投资建议。"
+        },
+        {
+          "title": "Tickmill 和 HFM IB 合作伙伴关系",
+          "desc": "作为Tickmill和HFM的官方IB伙伴，我们全程指导开户流程和平台入驻支持。"
+        },
+        {
+          "title": "合规监管的交易环境",
+          "desc": "Tickmill是全球合规经纪商，受多个顶级金融监管机构监管，确保透明安全的交易环境。"
+        },
+        {
+          "title": "市场分析与研究",
+          "desc": "定期分享技术分析和基本面分析。所有内容仅供信息参考，不构成金融建议。"
+        },
+        {
+          "title": "获奖优质经纪商合作",
+          "desc": "我们与国际合规且获奖经纪商建立合作关系，为您提供可信赖的交易基础设施。"
+        }
+      ]
+    },
+    "stats": {
+      "experience": "年专业经验",
+      "volume": "交易量（美元）",
+      "withdrawals": "出金量（美元）",
+      "partnership": "年IB伙伴关系"
+    },
+    "hfmTrust": {
+      "tag": "为什么选择Tickmill？",
+      "title": "全球合规监管经纪商",
+      "desc": "Tickmill是顶级全球外汇和CFD经纪商，受FCA、CySEC和DFSA监管。以快速出金、紧扳差和机构级基础设施著称。HFM（HF Markets）是我们的次级伙伴经纪商 — 同样合规且在全球市场受到信赖。",
+      "features": [
+        "多司法岗层监管（FCA、CySEC、DFSA等）",
+        "快速可靠的出金流程",
+        "多样化交易工具选择",
+        "客户资金存放于隔离账户"
+      ],
+      "moreLink": "前往 Tickmill →",
+      "hfmLink": "前往 HFM →",
+      "vpnNote": "如果链接无法打开，请使用 VPN。"
+    },
+    "hfmBadge": {
+      "text": "Tickmill",
+      "tagline": "首选伙伴经纪商",
+      "desc": "合规监管经纪商"
+    },
+    "regulators": {
+      "fca": "FCA",
+      "cysec": "CySEC",
+      "dfsa": "DFSA",
+      "fsc": "FSC"
+    },
+    "cta": {
+      "title": "准备开设 Tickmill 或 HFM 账户了吗？",
+      "subtitle": "联系我们获取指导和支持。",
+      "telegramBtn": "通过Telegram联系我们",
+      "formBtn": "发送消息"
+    }
+  },
+  "performance": {
+    "tag": "业绩表现与记录",
+    "hero": {
+      "title1": "经实证的专业经验",
+      "title2": "支撑一流成果",
+      "subtitle": "超过13年的一线市场参与经历，交易量通过Tickmill IB伙伴关系全程可查。历史业绩不代表未来投资收益。"
+    },
+    "metrics": [
+      {
+        "value": "15",
+        "suffix": "+",
+        "label": "年市场经验",
+        "note": "自2009年起持续活跃交易",
+        "prefix": ""
+      },
+      {
+        "value": "7",
+        "suffix": "M+",
+        "prefix": "$",
+        "label": "活跃交易量",
+        "note": "通过IB账户累计成交"
+      },
+      {
+        "value": "4.6",
+        "suffix": "M+",
+        "prefix": "$",
+        "label": "客户出金量",
+        "note": "通过Tickmill处理的出金记录"
+      },
+      {
+        "value": "4",
+        "suffix": "+",
+        "label": "年官方IB伙伴",
+        "note": "自2021年起与Tickmill的正式IB伙伴关系",
+        "prefix": ""
+      }
+    ],
+    "disclaimer": "⚠️ 重要声明：",
+    "disclaimerText": "所有数据仅供信息参考，反映历史数据。这些数据不保证未来的投资回报。外汇和CFD交易具有重大风险。",
+    "process": {
+      "tag": "运作模式",
+      "title": "我们的方法论",
+      "subtitle": "作为Tickmill官方IB伙伴，我们提供服务的透明说明。",
+      "steps": [
+        {
+          "number": "01",
+          "title": "开户全程支持",
+          "desc": "引导客户完成Tickmill和HFM的开户流程。客户始终拥有账户完全自主权。"
+        },
+        {
+          "number": "02",
+          "title": "市场资讯与分析",
+          "desc": "通过我们的Telegram和WhatsApp社区每日分享市场分析。所有内容仅供信息参考。"
+        },
+        {
+          "number": "03",
+          "title": "持续平台支持",
+          "desc": "提供平台设置、账户配置的技术指导。"
+        }
+      ]
+    },
+    "hfmPartnership": {
+      "tag": "我们的经纪商关系",
+      "title": "为什么选择Tickmill？",
+      "desc1": "Tickmill是全球持牌经纪商，受多个国际金融监管机构监管。作为官方IB伙伴，我们的职能仅限于演示开户流程和提供信息支持。我们不管理客户资金或提供投资建议。",
+      "desc2": "资产管理、投资组合管理和个人投资咨询均不属于我们的服务范围。",
+      "regulationLink": "前往 Tickmill →",
+      "hfmLink": "前往 HFM →",
+      "vpnNote": "如果链接无法打开，请使用 VPN。",
+
+      "authorities": {
+        "fca": "Financial Conduct Authority",
+        "cysec": "Cyprus Securities & Exchange Commission",
+        "dfsa": "Dubai Financial Services Authority",
+        "fsc": "Financial Services Commission"
+      }
+    },
+    "cta": {
+      "title": "准备开设 Tickmill 或 HFM 账户？",
+      "subtitle": "作为您的IB伙伴，我们全程陨伴。",
+      "button": "联系我们"
+    }
+  },
+  "about": {
+    "tag": "关于我们",
+    "hero": {
+      "title1": "我们是谁",
+      "title2": "我们做什么",
+      "subtitle": "13年以上市场经验、与HFM长达4年以上的稳健合作历程，以及如今与Tickmill开启的新篇章。"
+    },
+    "experience": "15+",
+    "experienceLabel": "年专业经验",
+    "badges": [
+      "Tickmill & HFM 官方IB伙伴",
+      "活跃信号社区",
+      "合规监管环境"
+    ],
+    "biography": {
+      "tag": "我们的故事",
+      "title": "可信赖的专业经验",
+      "p1": "自2009年起，我就深耕于全球外汇市场。多年来，我在技术分析、基本面分析和市场心理学方面形成了深厚的专业累积。",
+      "p2": "官方合作之路始于2021年与HFM的合作，并持续了四年卓有成效的深度运营。如今，我们已开启与Tickmill的新阶段，继续提供开户支持、平台指导与市场分析内容。",
+      "note": "重要声明：",
+      "p3": "我们分享的所有内容均仅供信息参考。我们不提供任何形式的投资建议、资产管理或个人投资和咨询。",
+      "button": "联系我们"
+    },
+    "hfmPartnership": {
+      "tag": "为什么选择Tickmill？",
+      "title": "我们的经纪商关系",
+      "subtitle": "Tickmill是多层级合规的全球外汇和CFD经纪商。作为其官方IB伙伴，我们为社区客户接通机构级交易基础设施。",
+      "features": [
+        {
+          "icon": "🌍",
+          "title": "全球监管",
+          "desc": "受FCA、CySEC、DFSA和FSC监管。可信赖的机构级基础设施。"
+        },
+        {
+          "icon": "⚡",
+          "title": "快速出金",
+          "desc": "通过Tickmill市场领先的出金流程快速获取资金。"
+        },
+        {
+          "icon": "📱",
+          "title": "顶级交易平台",
+          "desc": "在MT4、MT5和Tickmill特有平台上交易。"
+        },
+        {
+          "icon": "🔒",
+          "title": "资金安全",
+          "desc": "客户资金存入隔离账户，受监管机构全面监管。"
+        },
+        {
+          "icon": "📊",
+          "title": "多样化个品",
+          "desc": "外汇、黄金、指数、股票等全在一个平台上可交易。"
+        },
+        {
+          "icon": "🎓",
+          "title": "教学资源",
+          "desc": "Tickmill官方教育内容、市场研究和网络研讨会。"
+        }
+      ]
+    },
+    "timeline": {
+      "tag": "我们的路程",
+      "title": "重要里程碑",
+      "items": [
+        {
+          "year": "2009",
+          "title": "踏入市场",
+          "desc": "开始积极参与外汇市场。深入学习技术分析与基本面分析的强化阶段就此开始。"
+        },
+        {
+          "year": "2013",
+          "title": "走向专业化",
+          "desc": "信号社区正式成立。定期市场分析内容开始对外分发。"
+        },
+        {
+          "year": "2018",
+          "title": "机构级合作",
+          "desc": "与多个国际经纪商建立正式合作关系。IB业务正式展开。"
+        },
+        {
+          "year": "2021",
+          "title": "正式与HFM合作",
+          "desc": "2021年与HFM正式建立合作关系。随后四年持续深耕，取得了稳健成果，并建立了以信任为核心的服务体系。"
+        },
+        {
+          "year": "2026",
+          "title": "目前",
+          "desc": "借助与HFM和Tickmill的合作，我们建立了强大的信任网络，服务了超过700万美元的投资组合，并将资金安全地交付给所属客户。"
+        }
+      ]
+    }
+  },
+  "services": {
+    "tag": "服务",
+    "title": "我们提供什么",
+    "subtitle": "作为Tickmill和HFM的官方IB伙伴，我们提供开户支持和市场教育内容。",
+    "cards": [
+      {
+        "title": "Telegram 和 WhatsApp 信号群组",
+        "desc": "每日分享市场分析、技术分析简报和经济日历要点，仅供信息参考。",
+        "features": [
+          "每日技术分析简报",
+          "主要经济日历跟踪",
+          "实时市场评论",
+          "实时推送通知"
+        ],
+        "disclaimer": "内容不构成投资建议。"
+      },
+      {
+        "title": "Tickmill 和 HFM 开户支持",
+        "desc": "作为官方IB伙伴，我们全程指导开户流程。不管理账户或资金。",
+        "features": [
+          "开设 Tickmill 和 HFM 账户",
+          "MT4/MT5平台安装指导",
+          "账户类型和选择咨询",
+          "入金出金流程指导"
+        ],
+        "disclaimer": "您的账户完全由您自主控制。不提供资金管理。"
+      },
+      {
+        "title": "市场分析内容",
+        "desc": "定期制作和发布技术分析和基本面分析内容，仅供信息参考。",
+        "features": [
+          "技术分析图表解读",
+          "基本面分析摘要",
+          "主要支撑与阻力位",
+          "经济数据跟踪"
+        ],
+        "disclaimer": "分析基于历史数据，不保证未来结果。"
+      }
+    ],
+    "advantages": {
+      "tag": "我们的优势",
+      "title": "为什么选择我们？",
+      "cards": [
+        {
+          "title": "合规监管环境",
+          "desc": "由Tickmill和HFM的国际监管框架支撑"
+        },
+        {
+          "title": "快速出金",
+          "desc": "行业领先的出金速度"
+        },
+        {
+          "title": "全球访问",
+          "desc": "面向全球交易者"
+        },
+        {
+          "title": "专属支持",
+          "desc": "通过Telegram和邮件快速响应"
+        }
+      ]
+    },
+    "packages": {
+      "tag": "服务套餐",
+      "title": "内容套餐",
+      "subtitle": "选择适合您参与深度的套餐。",
+      "free": {
+        "name": "免费",
+        "price": "0",
+        "desc": "适合初入市场的基础市场内容",
+        "features": [
+          "市场一般资讯",
+          "每周分析摘要",
+          "Tickmill开户支持",
+          "平台入驻指导"
+        ],
+        "cta": "立即开始"
+      },
+      "premium": {
+        "name": "高级版",
+        "price": "联系我们",
+        "desc": "全面市场分析和优先支持",
+        "badge": "推荐优选",
+        "features": [
+          "每日市场分析简报",
+          "専属Telegram群组访问权限",
+          "优先平台支持",
+          "经济日历通知",
+          "每月市场展望报告"
+        ],
+        "cta": "申请详情"
+      },
+      "note": "* 所有内容仅供信息参考。不提供投资建议。"
+    }
+  },
+  "contact": {
+    "tag": "联系我们",
+    "title": "与我们联系",
+    "subtitle": "如需开设 Tickmill 或 HFM 账户、平台支持或一般咨询，请随时联系我们。",
+    "channels": {
+      "tag": "联系渠道",
+      "title": "如何联系我们",
+      "items": [
+        {
+          "icon": "💬",
+          "title": "Bullex Telegram",
+          "desc": "加入我们的信号分析频道",
+          "link": "t.me/channel →"
+        },
+        {
+          "icon": "💬",
+          "title": "Trader Ece Telegram",
+          "desc": "加入我们的社区频道",
+          "link": "t.me/channel2 →"
+        },
+        {
+          "icon": "💬",
+          "title": "WhatsApp",
+          "desc": "通过 WhatsApp 联系我们",
+          "link": "wa.me/number →"
+        },
+        {
+          "icon": "✉️",
+          "title": "电子邮件",
+          "desc": "适合详细咨询",
+          "link": "info@trader-ece.com →"
+        }
+      ]
+    },
+    "hfm": {
+      "logo": "Tickmill / HFM",
+      "title": "开设 Tickmill 或 HFM 账户",
+      "desc": "通过我们的官方合作链接开设您的 Tickmill 或 HFM（HotForex）账户，并直接与我们继续后续流程。",
+      "link": "前往 Tickmill →",
+      "hfmLink": "前往 HFM →",
+      "vpnNote": "如果链接无法打开，请使用 VPN。"
+    }
+  },
+  "testimonials": {
+    "tag": "社区反馈",
+    "title": "他们怎么说",
+    "items": [
+      {
+        "name": "N. Berkan",
+        "text": "你们对黄金市场的分析非常出色。我们今天再次按照计划执行，并顺利盈利收尾。",
+        "role": "投资者"
+      },
+      {
+        "name": "Neşe Aksoy",
+        "text": "这是非常精彩的一天。你们的分析和执行帮助我们强势结束了这一周。",
+        "role": "投资者"
+      },
+      {
+        "name": "İsmet Yılmaz",
+        "text": "即使在市场最不确定的时候，你们依然以非常专业的方式处理整个过程。",
+        "role": "投资者"
+      },
+      {
+        "name": "T. R. Erdem",
+        "text": "今年再次选择你们的团队，证明这依然是正确的决定。你们的视角非常值得信赖。",
+        "role": "投资者"
+      },
+      {
+        "name": "Tekin K.",
+        "text": "我的每周出金非常顺利。团队始终透明可靠，让人放心。",
+        "role": "投资者"
+      },
+      {
+        "name": "Kubilay Demir",
+        "text": "只希望能更早认识你们。过去四个月既有学习收获，也有不错的成果。",
+        "role": "投资者"
+      },
+      {
+        "name": "Esin Varol",
+        "text": "在这个行业里遇到像你们这样认真负责的团队，确实是一种优势。非常感谢。",
+        "role": "投资者"
+      },
+      {
+        "name": "Rüstem Q.",
+        "text": "我的出金到账很顺利。有了你们的分析和支持，一切都变得更清晰、更高效。",
+        "role": "投资者"
+      }
+    ]
+  },
+  "chat": {
+    "greeting": "您好！我是 Trader Ece 助手。请问今天我可以如何帮助您？",
+    "title": "Trader Ece 助手",
+    "inputPlaceholder": "请输入您的消息...",
+    "error": "抱歉，当前无法生成回复，请稍后再试。",
+    "sendButton": "发送"
+  },
+  "form": {
+    "success": {
+      "title": "消息发送成功！",
+      "msg": "我们将尽快与您联系。您也可以加入我们的Telegram社区。",
+      "button": "加入Telegram群组"
+    },
+    "card": {
+      "title": "发送消息",
+      "subtitle": "就开设 Tickmill 或 HFM 账户等问题发送您的和询。"
+    },
+    "fields": {
+      "name": "姓名 *",
+      "namePlaceholder": "您的全名",
+      "email": "电子邮件 *",
+      "emailPlaceholder": "you@example.com",
+      "subject": "主题",
+      "subjectDefault": "选择主题",
+      "subjectOptions": [
+        "开设 Tickmill / HFM 账户",
+        "Telegram 社区",
+        "平台支持",
+        "其他"
+      ],
+      "message": "您的消息 *",
+      "messagePlaceholder": "在此输入您的消息..."
+    },
+    "disclaimer": "此表单仅供 Tickmill/HFM 开户支持和一般信息和咨询。",
+    "submit": "发送消息",
+    "submitting": "发送中..."
+  }
+}

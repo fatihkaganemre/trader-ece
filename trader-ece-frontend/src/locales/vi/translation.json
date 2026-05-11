@@ -1,0 +1,450 @@
+{
+  "nav": {
+    "home": "Trang Chủ",
+    "about": "Giới Thiệu",
+    "services": "Dịch Vụ",
+    "performance": "Hiệu Suất",
+    "contact": "Liên Hệ",
+    "menu": "Menu"
+  },
+  "header": {
+    "brand": "TRADER ECE",
+    "subtitle": "Tickmill IB & Affiliate",
+    "bullex": "BULLEX",
+    "bullexSubtitle": "Kênh Tín Hiệu"
+  },
+  "footer": {
+    "pages": "Trang",
+    "legal": "Pháp Lý",
+    "links": {
+      "hfmOfficial": "Trang Chính Thức Tickmill",
+      "hfmRegulation": "Quy Định Tickmill"
+    },
+    "riskWarning": "Cảnh Báo Rủi Ro:",
+    "riskDisclaimer": "Giao dịch Forex và CFD có rủi ro cao và có thể không phù hợp với mọi nhà đầu tư. Bạn có thể mất toàn bộ số vốn. Trang web này không cung cấp tư vấn đầu tư. Chúng tôi hoạt động với tư cách đối tác IB và Affiliate chính thức của Tickmill và HFM.",
+    "partnerDesc": "Chúng tôi là đối tác Introducing Broker (IB) và Affiliate chính thức của Tickmill và HFM. Nội dung phân tích thị trường chỉ mang tính thông tin. Chúng tôi không tư vấn đầu tư hay quản lý danh mục.",
+    "copyright": "© {{year}} Trader ECE – Tickmill IB & Affiliate. Đảm bảo toàn quyền.",
+    "regulation": "Hoạt động trong môi trường được quản lý bởi Tickmill và HF Markets Group.",
+    "bullexSubtitle": "KÊnh TÍN HIỆU"
+  },
+  "home": {
+    "badge": "TRADER ECE – Đối Tác IB & Affiliate Chính Thức Tickmill & HFM",
+    "hero": {
+      "titlePre": "",
+      "titleHighlight": "Chiếm Lĩnh Đỉnh Cao Thị Trường.",
+      "titlePost": "",
+      "stat": "Khi 75% nhà giao dịch thua lỗ, hãy đứng về phía kinh nghiệm. 13+ năm chuyên môn giúp bạn tối ưu hóa chiến lược giao dịch.",
+      "subtitle": "Thoát khỏi nhóm 75%. Tiếp cận 13 năm kinh nghiệm toàn cầu trong môi trường giao dịch được cấp phép."
+    },
+    "buttons": {
+      "telegramTraderEce": "Tham Gia Nhóm Telegram Trader Ece",
+      "telegramBullex": "Tham Gia Nhóm Telegram Bullex",
+      "info": "Liên Hệ Chúng Tôi"
+    },
+    "trust": {
+      "title": "Broker Được Cấp Phép",
+      "item1": "13+ Năm Kinh Nghiệm",
+      "item2": "$7 Triệu Khối Lượng Giao Dịch"
+    },
+    "services": {
+      "tag": "Dịch Vụ Của Chúng Tôi",
+      "title": "Chúng Tôi Cung Cấp Gì",
+      "subtitle": "Với tư cách đối tác IB chính thức của Tickmill và HFM, chúng tôi hỗ trợ mở tài khoản và cung cấp nội dung giáo dục. Không cung cấp tư vấn đầu tư.",
+      "viewAll": "Xem Tất Cả Dịch Vụ →",
+      "cards": [
+        {
+          "title": "Nhóm Tín Hiệu Telegram & WhatsApp",
+          "desc": "Phân tích thị trường thời gian thực và bản tin hàng ngày qua cộng đồng tín hiệu độc quyền của chúng tôi. Chỉ mang tính thông tin — không phải tư vấn đầu tư."
+        },
+        {
+          "title": "Hợp Tác IB Tickmill & HFM",
+          "desc": "Là đối tác IB chính thức của Tickmill và HFM, chúng tôi hướng dẫn quy trình đăng ký tài khoản và hỗ trợ onboarding nền tảng đầy đủ."
+        },
+        {
+          "title": "Môi Trường Giao Dịch Được Cấp Phép",
+          "desc": "Tickmill là broker được cấp phép toàn cầu, được giám sát bởi các cơ quan tài chính hàng đầu, đảm bảo môi trường giao dịch minh bạch và an toàn."
+        },
+        {
+          "title": "Phân Tích & Nghiên Cứu Thị Trường",
+          "desc": "Phân tích kỹ thuật và cơ bản được chia sẻ thường xuyên. Tất cả nội dung chỉ mang tính thông tin và không phải lời khuyên tài chính."
+        },
+        {
+          "title": "Hợp Tác Broker Uy Tín & Đạt Giải Thưởng",
+          "desc": "Chúng tôi hợp tác độc quyền với các broker được cấp phép quốc tế — mang lại cho bạn quyền tiếp cận cơ sở hạ tầng giao dịch đáng tin cậy."
+        }
+      ]
+    },
+    "stats": {
+      "experience": "Năm Kinh Nghiệm",
+      "volume": "Khối Lượng Giao Dịch ($)",
+      "withdrawals": "Khối Lượng Rút Tiền ($)",
+      "partnership": "Năm Làm Đối Tác IB"
+    },
+    "hfmTrust": {
+      "tag": "Tại Sao Chọn Tickmill?",
+      "title": "Broker Quốc Tế Được Cấp Phép",
+      "desc": "Tickmill là broker Forex và CFD hàng đầu toàn cầu, được cấp phép bởi FCA, CySEC và DFSA. Nổi tiếng với tốc độ rút tiền nhanh, spread chặt và cơ sở hạ tầng tầm cỡ tổ chức. HFM (HF Markets) là đối tác broker thứ cấp của chúng tôi — cũng được cấp phép và được tin cậy trên toàn cầu.",
+      "features": [
+        "Giấy phép đa quốc gia (FCA, CySEC, DFSA và nhiều hơn)",
+        "Quy trình rút tiền nhanh và đáng tin cậy",
+        "Danh mục công cụ giao dịch đa dạng",
+        "Vốn khách hàng được lưu giữ trong tài khoản tách biệt"
+      ],
+      "moreLink": "Tìm Hiểu Thêm Về Tickmill →"
+    },
+    "hfmBadge": {
+      "text": "Tickmill",
+      "tagline": "Đối Tác Broker Chính",
+      "desc": "Broker Được Cấp Phép"
+    },
+    "regulators": {
+      "fca": "FCA",
+      "cysec": "CySEC",
+      "dfsa": "DFSA",
+      "fsc": "FSC"
+    },
+    "cta": {
+      "title": "Sẵn Sàng Mở Tài Khoản Tickmill hoặc HFM?",
+      "subtitle": "Liên hệ chúng tôi để được hướng dẫn và hỗ trợ.",
+      "telegramBtn": "Liên Hệ Qua Telegram",
+      "formBtn": "Gửi Tin Nhắn"
+    }
+  },
+  "performance": {
+    "tag": "Hiệu Suất & Hồ Sơ Thành Tích",
+    "hero": {
+      "title1": "Kết Quả Được Chứng Minh",
+      "title2": "Bằng Kinh Nghiệm Thực Tế",
+      "subtitle": "Hơn 13 năm tham gia thiết thực trên thị trường, với khối lượng giao dịch được theo dõi qua quan hệ đối tác IB Tickmill. Thành tích trong quá khứ không đảm bảo kết quả trong tương lai."
+    },
+    "metrics": [
+      {
+        "value": "15",
+        "suffix": "+",
+        "label": "Năm Kinh Nghiệm Thị Trường",
+        "note": "Giao dịch tích cực từ năm 2009",
+        "prefix": ""
+      },
+      {
+        "value": "7",
+        "suffix": "M+",
+        "prefix": "$",
+        "label": "Khối Lượng Giao Dịch Hoạt Động",
+        "note": "Tổng khối lượng qua tài khoản IB"
+      },
+      {
+        "value": "4.6",
+        "suffix": "M+",
+        "prefix": "$",
+        "label": "Khối Lượng Rút Tiền Khách Hàng",
+        "note": "Giao dịch rút tiền qua Tickmill"
+      },
+      {
+        "value": "4",
+        "suffix": "+",
+        "label": "Năm Là Đối Tác IB Chính Thức",
+        "note": "Quan hệ đối tác IB chính thức với Tickmill từ 2021",
+        "prefix": ""
+      }
+    ],
+    "disclaimer": "⚠️ Tuyên Bố Quan Trọng:",
+    "disclaimerText": "Tất cả các số liệu chỉ mang tính thông tin và phản ánh dữ liệu lịch sử. Chúng không đảm bảo kết quả trong tương lai. Giao dịch Forex và CFD có rủi ro đáng kể.",
+    "process": {
+      "tag": "Cách Hoạt Động",
+      "title": "Phương Pháp Của Chúng Tôi",
+      "subtitle": "Tổng quan minh bạch về các dịch vụ chúng tôi cung cấp với tư cách đối tác IB Tickmill.",
+      "steps": [
+        {
+          "number": "01",
+          "title": "Hỗ Trợ Đăng Ký Tài Khoản",
+          "desc": "Chúng tôi hướng dẫn khách hàng qua quy trình đăng ký tài khoản Tickmill và HFM. Quyền kiểm soát đầy đủ đối với tài khoản luôn thuộc về khách hàng."
+        },
+        {
+          "number": "02",
+          "title": "Thông Tin & Phân Tích Thị Trường",
+          "desc": "Phân tích thị trường hàng ngày được chia sẻ qua cộng đồng Telegram và WhatsApp. Tất cả nội dung chỉ mang tính thông tin."
+        },
+        {
+          "number": "03",
+          "title": "Hỗ Trợ Nền Tảng Liên Tục",
+          "desc": "Chúng tôi cung cấp hướng dẫn kỹ thuật về cài đặt nền tảng và cấu hình tài khoản."
+        }
+      ]
+    },
+    "hfmPartnership": {
+      "tag": "Quan Hệ Đối Tác Broker",
+      "title": "Tại Sao Chọn Tickmill?",
+      "desc1": "Tickmill là broker được cấp phép toàn cầu. Với tư cách đối tác IB chính thức, vai trò của chúng tôi chỉ giới hạn trong việc tạo thuận lợi đăng ký tài khoản và cung cấp hỗ trợ thông tin. Chúng tôi không quản lý vốn hoặc tư vấn đầu tư.",
+      "desc2": "Quản lý tài sản, quản lý danh mục và tư vấn đầu tư không thuộc phạm vi dịch vụ của chúng tôi.",
+      "regulationLink": "Thông Tin Quy Định Tickmill →",
+      "authorities": {
+        "fca": "Financial Conduct Authority",
+        "cysec": "Cyprus Securities & Exchange Commission",
+        "dfsa": "Dubai Financial Services Authority",
+        "fsc": "Financial Services Commission"
+      }
+    },
+    "cta": {
+      "title": "Sẵn Sàng Mở Tài Khoản Tickmill hoặc HFM?",
+      "subtitle": "Là đối tác IB của bạn, chúng tôi sẵn sàng hỗ trợ từng bước.",
+      "button": "Liên Hệ Chúng Tôi"
+    }
+  },
+  "about": {
+    "tag": "Giới Thiệu",
+    "hero": {
+      "title1": "Chúng Tôi Là Ai",
+      "title2": "Và Chúng Tôi Làm Gì",
+      "subtitle": "13+ năm kinh nghiệm thị trường và 4+ năm là đối tác IB chính thức của Tickmill. Hoạt động với tư cách Introducing Broker và affiliate được cấp phép cho cả Tickmill và HFM."
+    },
+    "experience": "15+",
+    "experienceLabel": "Năm Kinh Nghiệm",
+    "badges": [
+      "Đối Tác IB Chính Thức Tickmill & HFM",
+      "Cộng Đồng Tín Hiệu Hoạt Động",
+      "Được Cấp Phép & Giám Sát"
+    ],
+    "biography": {
+      "tag": "Câu Chuyện Của Chúng Tôi",
+      "title": "Kinh Nghiệm Đáng Tin Cậy",
+      "p1": "Từ năm 2009, tôi đã tham gia tích cực trên thị trường Forex toàn cầu. Qua nhiều năm, tôi phát triển chuyên môn sâu trong phân tích kỹ thuật, phân tích cơ bản và tâm lý thị trường.",
+      "p2": "Từ năm 2021, tôi đảm nhận vai trò Introducing Broker (IB) và affiliate chính thức của Tickmill, với HFM là đối tác broker thứ cấp. Tôi hỗ trợ khách hàng đăng ký tài khoản và chia sẻ nội dung phân tích thường xuyên.",
+      "note": "Lưu Ý Quan Trọng:",
+      "p3": "Tất cả nội dung được chia sẻ chỉ mang tính thông tin. Chúng tôi không tư vấn đầu tư hay quản lý danh mục.",
+      "button": "Liên Hệ Chúng Tôi"
+    },
+    "hfmPartnership": {
+      "tag": "Tại Sao Chọn Tickmill?",
+      "title": "Quan Hệ Đối Tác Broker",
+      "subtitle": "Tickmill là broker Forex và CFD được cấp phép đa quốc gia. Với tư cách đối tác IB chính thức, chúng tôi kết nối cộng đồng với cơ sở hạ tầng giao dịch chuyên nghiệp.",
+      "features": [
+        {
+          "icon": "🌍",
+          "title": "Quy Mô Toàn Cầu",
+          "desc": "Giấy phép FCA, CySEC, DFSA và FSC. Cơ sở hạ tầng tầm cỡ tổ chức đáng tin cậy."
+        },
+        {
+          "icon": "⚡",
+          "title": "Rút Tiền Nhanh",
+          "desc": "Tiếp cận vốn nhanh chóng với tốc độ rút tiền hàng đầu ngành của Tickmill."
+        },
+        {
+          "icon": "📱",
+          "title": "Nền Tảng Tiên Tiến",
+          "desc": "Giao dịch trên MT4, MT5 và các nền tảng độc quyền của Tickmill."
+        },
+        {
+          "icon": "🔒",
+          "title": "An Toàn Vốn",
+          "desc": "Vốn khách hàng được lưu giữ trong tài khoản tách biệt."
+        },
+        {
+          "icon": "📊",
+          "title": "Công Cụ Đa Dạng",
+          "desc": "Forex, vàng, chỉ số, cổ phiếu và nhiều hơn."
+        },
+        {
+          "icon": "🎓",
+          "title": "Tài Nguyên Giáo Dục",
+          "desc": "Nội dung giáo dục chính thức, nghiên cứu thị trường và webinar từ Tickmill."
+        }
+      ]
+    },
+    "timeline": {
+      "tag": "Hành Trình Của Chúng Tôi",
+      "title": "Các Mốc Quan Trọng",
+      "items": [
+        {
+          "year": "2009",
+          "title": "Gia Nhập Thị Trường",
+          "desc": "Bắt đầu tham gia tích cực trên thị trường Forex. Giai đoạn học hỏi cơ bản và kỹ thuật chuyên sâu."
+        },
+        {
+          "year": "2013",
+          "title": "Bước Chuyên Nghiệp Đầu Tiên",
+          "desc": "Cộng đồng tín hiệu được thành lập. Nội dung phân tích định kỳ bắt đầu được phân phối."
+        },
+        {
+          "year": "2018",
+          "title": "Hợp Tác Tổ Chức",
+          "desc": "Quan hệ chính thức với các broker quốc tế được thiết lập. Hoạt động IB bắt đầu."
+        },
+        {
+          "year": "2021",
+          "title": "Quan Hệ IB Chính Thức Tickmill",
+          "desc": "Trở thành Introducing Broker chính thức của Tickmill."
+        },
+        {
+          "year": "2025",
+          "title": "Hiện Tại",
+          "desc": "$7 triệu+ khối lượng giao dịch hoạt động và phân tích hàng ngày gửi đến cộng đồng."
+        }
+      ]
+    }
+  },
+  "services": {
+    "tag": "Dịch Vụ",
+    "title": "Chúng Tôi Cung Cấp Gì",
+    "subtitle": "Với tư cách đối tác IB chính thức của Tickmill và HFM, chúng tôi cung cấp hỗ trợ tài khoản và nội dung giáo dục.",
+    "cards": [
+      {
+        "title": "Nhóm Tín Hiệu Telegram & WhatsApp",
+        "desc": "Phân tích hàng ngày, bản tin kỹ thuật và lịch kinh tế được chia sẻ trong cộng đồng độc quyền. Chỉ mang tính thông tin.",
+        "features": [
+          "Bản tin phân tích kỹ thuật hàng ngày",
+          "Theo dõi lịch kinh tế",
+          "Bình luận thị trường trực tiếp",
+          "Thông báo thời gian thực"
+        ],
+        "disclaimer": "Nội dung không phải tư vấn đầu tư."
+      },
+      {
+        "title": "Hỗ Trợ Tài Khoản Tickmill & HFM",
+        "desc": "Là đối tác IB chính thức, chúng tôi hướng dẫn bạn qua quy trình đăng ký tài khoản. Không quản lý tài khoản hoặc vốn.",
+        "features": [
+          "Hướng dẫn đăng ký Tickmill & HFM",
+          "Hỗ trợ cài đặt MT4/MT5",
+          "Tư vấn chọn loại tài khoản",
+          "Hỗ trợ nạp và rút tiền"
+        ],
+        "disclaimer": "Tài khoản hoàn toàn do bạn kiểm soát. Không có quản lý vốn."
+      },
+      {
+        "title": "Nội Dung Phân Tích Thị Trường",
+        "desc": "Phân tích kỹ thuật và cơ bản được chuẩn bị và phân phối định kỳ chỉ mang tính thông tin.",
+        "features": [
+          "Phân tích biểu đồ kỹ thuật",
+          "Tóm tắt phân tích cơ bản",
+          "Mức hỗ trợ và kháng cự chính",
+          "Theo dõi dữ liệu kinh tế"
+        ],
+        "disclaimer": "Phân tích dựa trên dữ liệu lịch sử. Không bảo đảm kết quả tương lai."
+      }
+    ],
+    "advantages": {
+      "tag": "Lợi Thế Của Chúng Tôi",
+      "title": "Tại Sao Chọn Chúng Tôi?",
+      "cards": [
+        {
+          "title": "Môi Trường Được Cấp Phép",
+          "desc": "Hỗ trợ bởi Tickmill và HFM, được cấp phép bởi các cơ quan quốc tế"
+        },
+        {
+          "title": "Rút Tiền Nhanh",
+          "desc": "Tốc độ rút tiền hàng đầu ngành"
+        },
+        {
+          "title": "Truy Cập Toàn Cầu",
+          "desc": "Dành cho trader từ khắp nơi trên thế giới"
+        },
+        {
+          "title": "Hỗ Trợ Tận Tình",
+          "desc": "Phản hồi nhanh qua Telegram và email"
+        }
+      ]
+    },
+    "packages": {
+      "tag": "Gói Dịch Vụ",
+      "title": "Gói Nội Dung",
+      "subtitle": "Chọn gói phù hợp với mức độ tham gia của bạn.",
+      "free": {
+        "name": "Miễn Phí",
+        "price": "0",
+        "desc": "Nội dung thị trường cơ bản cho người mới",
+        "features": [
+          "Tin tức thị trường tổng quát",
+          "Tóm tắt phân tích hàng tuần",
+          "Hỗ trợ đăng ký tài khoản Tickmill",
+          "Hướng dẫn nền tảng"
+        ],
+        "cta": "Bắt Đầu Ngay"
+      },
+      "premium": {
+        "name": "Premium",
+        "price": "Liên Hệ",
+        "desc": "Phân tích toàn diện và hỗ trợ ưu tiên",
+        "badge": "Được Đề Nghị",
+        "features": [
+          "Bản tin phân tích hàng ngày",
+          "Truy cập nhóm Telegram độc quyền",
+          "Hỗ trợ nền tảng ưu tiên",
+          "Thông báo lịch kinh tế",
+          "Báo cáo triển vọng hàng tháng"
+        ],
+        "cta": "Yêu Cầu Thông Tin"
+      },
+      "note": "* Tất cả nội dung chỉ mang tính thông tin. Tư vấn đầu tư không được cung cấp."
+    }
+  },
+  "contact": {
+    "tag": "Liên Hệ",
+    "title": "Hãy Kết Nối",
+    "subtitle": "Liên hệ chúng tôi để mở tài khoản Tickmill hoặc HFM, hỗ trợ nền tảng, hoặc thông tin chung.",
+    "channels": {
+      "tag": "Kênh Liên Hệ",
+      "title": "Cách Liên Hệ",
+      "items": [
+        {
+          "icon": "💬",
+          "title": "Bullex Telegram",
+          "desc": "Tham gia kênh tín hiệu của chúng tôi",
+          "link": "t.me/channel →"
+        },
+        {
+          "icon": "💬",
+          "title": "Trader Ece Telegram",
+          "desc": "Tham gia kênh cộng đồng của chúng tôi",
+          "link": "t.me/channel2 →"
+        },
+        {
+          "icon": "💬",
+          "title": "WhatsApp",
+          "desc": "Nhắn tin cho chúng tôi qua WhatsApp",
+          "link": "wa.me/number →"
+        },
+        {
+          "icon": "✉️",
+          "title": "Email",
+          "desc": "Dành cho các câu hỏi chi tiết",
+          "link": "info@example.com →"
+        }
+      ]
+    },
+    "hfm": {
+      "logo": "Tickmill / HFM",
+      "title": "Mở Tài Khoản Tickmill hoặc HFM",
+      "desc": "Mở tài khoản broker chính thức qua liên kết IB đã xác minh của chúng tôi",
+      "link": "Tới Tickmill →"
+    }
+  },
+  "form": {
+    "success": {
+      "title": "Gửi Thành Công!",
+      "msg": "Chúng tôi sẽ sớm liên hệ lại. Bạn cũng có thể tham gia cộng đồng Telegram.",
+      "button": "Tham Gia Nhóm Telegram"
+    },
+    "card": {
+      "title": "Gửi Tin Nhắn",
+      "subtitle": "Gửi câu hỏi của bạn về mở tài khoản Tickmill hoặc HFM."
+    },
+    "fields": {
+      "name": "Họ Tên *",
+      "namePlaceholder": "Họ tên đầy đủ của bạn",
+      "email": "Địa Chỉ Email *",
+      "emailPlaceholder": "ban@example.com",
+      "subject": "Chủ Đề",
+      "subjectDefault": "Chọn Chủ Đề",
+      "subjectOptions": [
+        "Mở Tài Khoản Tickmill / HFM",
+        "Cộng Đồng Telegram",
+        "Hỗ Trợ Nền Tảng",
+        "Khác"
+      ],
+      "message": "Tin Nhắn Của Bạn *",
+      "messagePlaceholder": "Nhập tin nhắn của bạn..."
+    },
+    "disclaimer": "Biểu mẫu này chỉ dành cho hỗ trợ tài khoản Tickmill/HFM và câu hỏi thông tin chung.",
+    "submit": "Gửi Tin Nhắn",
+    "submitting": "Guợi..."
+  }
+}
