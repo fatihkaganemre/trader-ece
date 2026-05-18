@@ -1,5 +1,6 @@
 import "./AboutPage.css";
 import Lottie from "lottie-react";
+import { useEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
 import type { NavigateFn } from "../App";
 import customerSupportAnim from "../assets/customer-support.json";
@@ -31,6 +32,31 @@ interface BioBadge {
 
 export default function AboutPage({ navigate }: AboutPageProps) {
   const { t } = useTranslation();
+  const timelineRef = useRef<HTMLDivElement | null>(null);
+  const [timelineInView, setTimelineInView] = useState(false);
+
+  useEffect(() => {
+    const node = timelineRef.current;
+    if (!node) return;
+
+    if (typeof window === "undefined" || !("IntersectionObserver" in window)) {
+      setTimelineInView(true);
+      return;
+    }
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries[0]?.isIntersecting) {
+          setTimelineInView(true);
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.2 }
+    );
+
+    observer.observe(node);
+    return () => observer.disconnect();
+  }, []);
 
   const timelineFromTranslation: TimelineItem[] = [
     {
@@ -195,9 +221,13 @@ export default function AboutPage({ navigate }: AboutPageProps) {
         <div className="container">
           <div className="section-tag">{t("about.timeline.tag")}</div>
           <h2 className="section-title">{t("about.timeline.title")}</h2>
-          <div className="timeline">
+          <div ref={timelineRef} className={`timeline ${timelineInView ? "timeline--in-view" : ""}`}>
             {timelineFromTranslation.map((item, i) => (
-              <div key={i} className={`timeline-item ${i % 2 === 0 ? "left" : "right"}`}>
+              <div
+                key={i}
+                className={`timeline-item timeline-item--animated ${i % 2 === 0 ? "left" : "right"}`}
+                style={{ animationDelay: `${i * 120}ms` }}
+              >
                 <div className="timeline-year">{item.year}</div>
                 <div className="timeline-dot" />
                 <div className="timeline-card card">
