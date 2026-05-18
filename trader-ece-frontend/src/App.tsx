@@ -73,6 +73,9 @@ const PAGE_PATHS: Record<Page, string> = {
   terms: "/terms",
 };
 
+const CONSENT_STORAGE_KEY = "trader_ece_consent_v2";
+const CONSENT_TTL_MS = 30 * 24 * 60 * 60 * 1000;
+
 function resolvePageFromPath(pathname: string): Page {
   const normalizedPath = pathname.toLowerCase();
   const match = Object.entries(PAGE_PATHS).find(([, path]) => path === normalizedPath);
@@ -106,6 +109,14 @@ function setMetaTag(name: string, content: string) {
 export default function App() {
   const { i18n } = useTranslation();
   const [currentPage, setCurrentPage] = useState<Page>(() => resolvePageFromPath(window.location.pathname));
+  const [showConsentBanner, setShowConsentBanner] = useState(false);
+
+  const isTurkish = i18n.language.toLowerCase().startsWith("tr");
+  const consentText = isTurkish
+    ? "Siteyi kullanmaya devam ederek Çerezler, Gizlilik ve Kullanım Koşulları metinlerimizi kabul etmiş olursunuz."
+    : "By continuing to use this website, you acknowledge our Cookies, Privacy, and Terms policies.";
+  const acceptLabel = isTurkish ? "Kabul Et" : "Accept";
+  const dismissLabel = isTurkish ? "Kapat" : "Dismiss";
 
   useEffect(() => {
     const seoLanguage = resolveSeoLanguage(i18n.language);
@@ -125,6 +136,27 @@ export default function App() {
     window.addEventListener("popstate", handlePopState);
     return () => window.removeEventListener("popstate", handlePopState);
   }, []);
+
+  useEffect(() => {
+    try {
+      const rawValue = window.localStorage.getItem(CONSENT_STORAGE_KEY);
+      const acceptedAt = rawValue ? Number(rawValue) : NaN;
+      const isValidTimestamp = Number.isFinite(acceptedAt);
+      const isExpired = !isValidTimestamp || Date.now() - acceptedAt > CONSENT_TTL_MS;
+      setShowConsentBanner(isExpired);
+    } catch {
+      setShowConsentBanner(true);
+    }
+  }, []);
+
+  const acceptConsent = () => {
+    try {
+      window.localStorage.setItem(CONSENT_STORAGE_KEY, String(Date.now()));
+    } catch {
+      // no-op: user can still dismiss banner in-memory
+    }
+    setShowConsentBanner(false);
+  };
 
   const navigate: NavigateFn = (page: Page) => {
     const nextPath = PAGE_PATHS[page];
@@ -151,8 +183,29 @@ export default function App() {
     <div className="app">
       <Header currentPage={currentPage} navigate={navigate} />
       <main>{pages[currentPage]}</main>
-      <ChatAssistant />
+      <ChatAssistant elevated={showConsentBanner} />
       <Footer navigate={navigate} />
+
+      {showConsentBanner && (
+        <div className="consent-banner" role="status" aria-live="polite">
+          <p className="consent-banner__text">
+            {consentText}
+            <button type="button" className="consent-banner__link" onClick={() => navigate("cookies")}>Cookies</button>
+            <span> • </span>
+            <button type="button" className="consent-banner__link" onClick={() => navigate("privacy")}>Privacy</button>
+            <span> • </span>
+            <button type="button" className="consent-banner__link" onClick={() => navigate("terms")}>Terms</button>
+          </p>
+          <div className="consent-banner__actions">
+            <button type="button" className="consent-banner__btn consent-banner__btn--ghost" onClick={() => setShowConsentBanner(false)}>
+              {dismissLabel}
+            </button>
+            <button type="button" className="consent-banner__btn consent-banner__btn--primary" onClick={acceptConsent}>
+              {acceptLabel}
+            </button>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

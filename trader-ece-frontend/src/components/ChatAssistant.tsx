@@ -1,7 +1,11 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { MessageSquare, X, Send, Bot, Loader2 } from 'lucide-react';
 
-const ChatAssistant = () => {
+interface ChatAssistantProps {
+  elevated?: boolean;
+}
+
+const ChatAssistant = ({ elevated = false }: ChatAssistantProps) => {
   const [isOpen, setIsOpen] = useState(false);
   const [message, setMessage] = useState('');
   const [messages, setMessages] = useState([
@@ -51,7 +55,7 @@ const ChatAssistant = () => {
   };
 
   return (
-    <div style={{ position: 'fixed', bottom: '24px', right: '24px', zIndex: 9999 }}>
+    <div style={{ position: 'fixed', bottom: elevated ? '112px' : '24px', right: '24px', zIndex: 9999, transition: 'bottom 220ms ease' }}>
       <button onClick={() => setIsOpen(!isOpen)} style={{ width: '60px', height: '60px', borderRadius: '50%', background: '#D4AF37', border: 'none', cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
         {isOpen ? <X color="black" /> : <MessageSquare color="black" />}
       </button>
