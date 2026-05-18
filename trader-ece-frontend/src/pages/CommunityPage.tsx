@@ -334,6 +334,16 @@ export default function CommunityPage() {
   const [postError, setPostError] = useState<string | null>(null);
   const [showConstructionPopup, setShowConstructionPopup] = useState(true);
 
+  useEffect(() => {
+    if (document.getElementById("soro-blog-script")) return;
+
+    const script = document.createElement("script");
+    script.id = "soro-blog-script";
+    script.src = "https://app.trysoro.com/api/embed/c45b4c7d-2750-448e-b08f-00e02cba74e9";
+    script.defer = true;
+    document.body.appendChild(script);
+  }, []);
+
   // Load trends and posts on mount
   useEffect(() => {
     const load = async () => {
@@ -584,6 +594,10 @@ export default function CommunityPage() {
 
       <section className="community-section">
         <div className="community-layout container">
+
+          <div className="community-newsfeed-row">
+            <div id="soro-blog"></div>
+          </div>
 
           {/* Telegram News Feed — aktif edilmek için Supabase tablosu gerekli */}
           {/* <div className="community-newsfeed-row">
