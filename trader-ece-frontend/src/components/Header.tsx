@@ -2,6 +2,8 @@ import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import "./Header.css";
 import type { NavigateFn, Page } from "../App";
+import { getBrokerLinks } from "../utils/brokerLinks";
+import BrokerAccountAction from "./BrokerAccountAction";
 
 interface HeaderProps {
   currentPage: Page;
@@ -10,6 +12,9 @@ interface HeaderProps {
 
 export default function Header({ currentPage, navigate }: HeaderProps) {
   const { t, i18n } = useTranslation();
+  const language = i18n.language || "en";
+  const { tickmillLink, hfmLink } = getBrokerLinks(language);
+  const hfmAccountLink = language.toLowerCase().startsWith("tr") ? tickmillLink : hfmLink;
   const [scrolled, setScrolled] = useState<boolean>(false);
   const [menuOpen, setMenuOpen] = useState<boolean>(false);
   const [langMenuOpen, setLangMenuOpen] = useState<boolean>(false);
@@ -35,6 +40,7 @@ export default function Header({ currentPage, navigate }: HeaderProps) {
     { key: "about" as Page, label: t("nav.about") },
     { key: "services" as Page, label: t("nav.services") },
     { key: "community" as Page, label: t("nav.community") },
+    { key: "faq" as Page, label: t("nav.faq") },
     { key: "performance" as Page, label: t("nav.performance") },
   ];
 
@@ -45,6 +51,8 @@ export default function Header({ currentPage, navigate }: HeaderProps) {
     { code: "id", label: t("header.language.id"), flag: "🇮🇩" },
     { code: "zh", label: t("header.language.zh"), flag: "🇨🇳" },
     { code: "vi", label: t("header.language.vi"), flag: "🇻🇳" },
+    { code: "ru", label: t("header.language.ru"), flag: "🇷🇺" },
+    { code: "cnr", label: t("header.language.cnr"), flag: "🇲🇪" },
   ];
 
   return (
@@ -73,6 +81,11 @@ export default function Header({ currentPage, navigate }: HeaderProps) {
           </div>
         </div>
 
+        <BrokerAccountAction broker="tickmill" accountLink={tickmillLink} className="header-account-cta header-account-cta--tickmill">
+          <span>Tickmill</span>
+          <small>{t("header.openAccount", { defaultValue: "Open Account" })}</small>
+        </BrokerAccountAction>
+
         {/* LEFT separator */}
         <div className="header__sep header__sep--left" />
 
@@ -90,13 +103,16 @@ export default function Header({ currentPage, navigate }: HeaderProps) {
               {item.label}
             </button>
           ))}
-          <button
-            className="btn btn-primary btn-sm"
-            style={{ marginLeft: "20px" }}
-            onClick={() => { navigate("contact"); setMenuOpen(false); }}
-          >
-            {t("nav.contact")}
-          </button>
+          <div className="mobile-account-actions">
+            <BrokerAccountAction broker="tickmill" accountLink={tickmillLink} className="header-account-cta header-account-cta--tickmill">
+              <span>Tickmill</span>
+              <small>{t("header.openAccount", { defaultValue: "Open Account" })}</small>
+            </BrokerAccountAction>
+            <BrokerAccountAction broker="hfm" accountLink={hfmAccountLink} className="header-account-cta header-account-cta--hfm">
+              <span>HFM</span>
+              <small>{t("header.openAccount", { defaultValue: "Open Account" })}</small>
+            </BrokerAccountAction>
+          </div>
         </nav>
 
         {/* RIGHT separator */}
@@ -110,15 +126,15 @@ export default function Header({ currentPage, navigate }: HeaderProps) {
               onClick={() => setLangMenuOpen(!langMenuOpen)}
               title={t("header.language.title")}
             >
-              <span className="lang-flag">{languageOptions.find(o => i18n.language.startsWith(o.code))?.flag ?? "🌐"}</span>
-              {i18n.language.toUpperCase().slice(0, 2)}
+              <span className="lang-flag">{languageOptions.find(o => language.startsWith(o.code))?.flag ?? "🌐"}</span>
+              {language.toUpperCase().slice(0, 2)}
             </button>
             {langMenuOpen && (
               <div className="lang-menu">
                 {languageOptions.map((option) => (
                   <button
                     key={option.code}
-                    className={`lang-option ${i18n.language === option.code ? 'active' : ''}`}
+                    className={`lang-option ${language === option.code ? 'active' : ''}`}
                     onClick={() => changeLanguage(option.code)}
                   >
                     <span className="lang-flag">{option.flag}</span>
@@ -128,6 +144,11 @@ export default function Header({ currentPage, navigate }: HeaderProps) {
               </div>
             )}
           </div>
+
+          <BrokerAccountAction broker="hfm" accountLink={hfmAccountLink} className="header-account-cta header-account-cta--hfm">
+            <span>HFM</span>
+            <small>{t("header.openAccount", { defaultValue: "Open Account" })}</small>
+          </BrokerAccountAction>
 
           <div
             className="header__logo-right"

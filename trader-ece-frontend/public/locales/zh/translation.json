@@ -12,7 +12,7 @@
     "brand": "TRADER ECE",
     "subtitle": "Tickmill IB 和联盟伙伴",
     "bullex": "BULLEX",
-    "bullexSubtitle": "信号频道",
+    "bullexSubtitle": "分析频道",
     "language": {
       "title": "选择语言",
       "en": "英语",
@@ -35,7 +35,7 @@
     "partnerDesc": "我们是Tickmill和HFM（HF Markets）的官方Introducing Broker（IB）和联盟伙伴。市场分析内容仅供信息参考。我们不提供投资建议或资产管理。",
     "copyright": "© {{year}} Trader ECE – Tickmill IB 和联盟伙伴。版权所有。",
     "regulation": "在Tickmill和HF Markets Group的监管框架下运营。",
-    "bullexSubtitle": "信号频道"
+    "bullexSubtitle": "分析频道"
   },
   "home": {
     "badge": "TRADER ECE – Tickmill 和 HFM 官方 IB 和联盟伙伴",
@@ -43,8 +43,8 @@
       "titlePre": "",
       "titleHighlight": "占领市场制高点。",
       "titlePost": "",
-      "stat": "当 75% 的交易者亏损时，选择站在经验一侧。借助 13+ 年专业经验优化您的交易策略。",
-      "subtitle": "脱离一般 75%。认识 13 年全球经验与合规监管的交易平台。"
+      "stat": "当 75% 的交易者亏损时，选择经验。凭借 15 年以上的专业经验优化您的交易策略。",
+      "subtitle": "凭借 15 年以上的全球市场经验，在受监管的交易环境中走在前列。"
     },
     "buttons": {
       "telegramTraderEce": "加入 Trader Ece Telegram 群组",
@@ -53,8 +53,8 @@
     },
     "trust": {
       "title": "合规监管经纪商",
-      "item1": "13+ 年专业经验",
-      "item2": "700万美元交易量"
+      "item1": "15+ 年专业经验",
+      "item2": "850万美元以上交易量"
     },
     "services": {
       "tag": "我们的服务",
@@ -64,8 +64,8 @@
       "viewAllDesc": "继续查看全部服务内容与详细说明。",
       "cards": [
         {
-          "title": "Telegram 和 WhatsApp 信号群组",
-          "desc": "通过我们的专属信号社区，实时分享市场分析和日报资讯。仅供信息参考 — 不构成投资建议。"
+          "title": "Telegram 和 WhatsApp 分析群组",
+          "desc": "通过我们的专属分析社区，实时分享市场分析和日报资讯。仅供信息参考 — 不构成投资建议。"
         },
         {
           "title": "Tickmill 和 HFM IB 合作伙伴关系",
@@ -89,7 +89,8 @@
       "experience": "年专业经验",
       "volume": "交易量（美元）",
       "withdrawals": "出金量（美元）",
-      "partnership": "年IB伙伴关系"
+      "partnership": "年IB伙伴关系",
+      "hfmPartnership": "HFM 合作年限"
     },
     "hfmTrust": {
       "tag": "为什么选择Tickmill？",
@@ -128,7 +129,7 @@
     "hero": {
       "title1": "经实证的专业经验",
       "title2": "支撑一流成果",
-      "subtitle": "超过13年的一线市场参与经历，交易量通过Tickmill IB伙伴关系全程可查。历史业绩不代表未来投资收益。"
+      "subtitle": "超过15年的市场参与经历，交易量通过IB合作关系持续记录。历史业绩不代表未来投资收益。"
     },
     "metrics": [
       {
@@ -139,24 +140,24 @@
         "prefix": ""
       },
       {
-        "value": "7",
+        "value": "8.5",
         "suffix": "M+",
         "prefix": "$",
         "label": "活跃交易量",
         "note": "通过IB账户累计成交"
       },
       {
-        "value": "4.6",
+        "value": "6.7",
         "suffix": "M+",
         "prefix": "$",
         "label": "客户出金量",
         "note": "通过Tickmill处理的出金记录"
       },
       {
-        "value": "4",
+        "value": "2",
         "suffix": "+",
-        "label": "年官方IB伙伴",
-        "note": "自2021年起与Tickmill的正式IB伙伴关系",
+        "label": "Tickmill持续服务年限",
+        "note": "Tickmill活跃服务约1.5年；HFM经验约5年",
         "prefix": ""
       }
     ],
@@ -211,20 +212,20 @@
     "hero": {
       "title1": "我们是谁",
       "title2": "我们做什么",
-      "subtitle": "13年以上市场经验、与HFM长达4年以上的稳健合作历程，以及如今与Tickmill开启的新篇章。"
+      "subtitle": "13年以上市场经验、与HFM约5年的稳健合作历程，以及与Tickmill约1.5年的持续服务经验。"
     },
     "experience": "15+",
     "experienceLabel": "年专业经验",
     "badges": [
       "Tickmill & HFM 官方IB伙伴",
-      "活跃信号社区",
+      "活跃分析社区",
       "合规监管环境"
     ],
     "biography": {
       "tag": "我们的故事",
       "title": "可信赖的专业经验",
       "p1": "自2009年起，我就深耕于全球外汇市场。多年来，我在技术分析、基本面分析和市场心理学方面形成了深厚的专业累积。",
-      "p2": "官方合作之路始于2021年与HFM的合作，并持续了四年卓有成效的深度运营。如今，我们已开启与Tickmill的新阶段，继续提供开户支持、平台指导与市场分析内容。",
+      "p2": "与HFM的官方合作始于2021年，至今已持续约5年。与此同时，我们与Tickmill已开展约1.5年的持续服务，提供开户支持、平台指导与市场分析内容。",
       "note": "重要声明：",
       "p3": "我们分享的所有内容均仅供信息参考。我们不提供任何形式的投资建议、资产管理或个人投资和咨询。",
       "button": "联系我们"
@@ -256,7 +257,7 @@
         },
         {
           "icon": "📊",
-          "title": "多样化个品",
+          "title": "多样化交易品种",
           "desc": "外汇、黄金、指数、股票等全在一个平台上可交易。"
         },
         {
@@ -264,7 +265,8 @@
           "title": "教学资源",
           "desc": "Tickmill官方教育内容、市场研究和网络研讨会。"
         }
-      ]
+      ],
+      "note": "说明：在我们的服务模式下，建议客户通过我们提供的 Tickmill 和 HFM 官方渠道直接推进相关流程。"
     },
     "timeline": {
       "tag": "我们的路程",
@@ -278,7 +280,7 @@
         {
           "year": "2013",
           "title": "走向专业化",
-          "desc": "信号社区正式成立。定期市场分析内容开始对外分发。"
+          "desc": "分析社区正式成立。定期市场分析内容开始对外分发。"
         },
         {
           "year": "2018",
@@ -288,12 +290,12 @@
         {
           "year": "2021",
           "title": "正式与HFM合作",
-          "desc": "2021年与HFM正式建立合作关系。随后四年持续深耕，取得了稳健成果，并建立了以信任为核心的服务体系。"
+          "desc": "2021年与HFM正式建立合作关系。随后约五年持续深耕，取得了稳健成果，并建立了以信任为核心的服务体系。"
         },
         {
           "year": "2026",
           "title": "目前",
-          "desc": "借助与HFM和Tickmill的合作，我们建立了强大的信任网络，服务了超过700万美元的投资组合，并将资金安全地交付给所属客户。"
+          "desc": "借助与HFM和Tickmill的合作，我们建立了强大的信任网络，服务了超过850万美元的投资组合，并将资金安全地交付给所属客户。"
         }
       ]
     }
@@ -304,7 +306,7 @@
     "subtitle": "作为Tickmill和HFM的官方IB伙伴，我们提供开户支持和市场教育内容。",
     "cards": [
       {
-        "title": "Telegram 和 WhatsApp 信号群组",
+        "title": "Telegram 和 WhatsApp 分析群组",
         "desc": "每日分享市场分析、技术分析简报和经济日历要点，仅供信息参考。",
         "features": [
           "每日技术分析简报",
@@ -403,7 +405,7 @@
         {
           "icon": "💬",
           "title": "Bullex Telegram",
-          "desc": "加入我们的信号分析频道",
+          "desc": "加入我们的分析频道",
           "link": "t.me/channel →"
         },
         {
@@ -496,7 +498,7 @@
     },
     "card": {
       "title": "发送消息",
-      "subtitle": "就开设 Tickmill 或 HFM 账户等问题发送您的和询。"
+      "subtitle": "如需了解 Tickmill 或 HFM 开户事宜，请向我们发送咨询。"
     },
     "fields": {
       "name": "姓名 *",
@@ -514,7 +516,8 @@
       "message": "您的消息 *",
       "messagePlaceholder": "在此输入您的消息..."
     },
-    "disclaimer": "此表单仅供 Tickmill/HFM 开户支持和一般信息和咨询。",
+    "disclaimer": "此表单仅用于 Tickmill/HFM 开户支持及一般信息咨询。",
+    "error": "操作未能完成，请稍后重试。",
     "submit": "发送消息",
     "submitting": "发送中..."
   }

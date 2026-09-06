@@ -4,15 +4,30 @@
     "about": "Hakkımızda",
     "services": "Hizmetler",
     "community": "Topluluk",
+    "faq": "SSS",
     "performance": "Performans",
     "contact": "İletişim",
     "menu": "Menü"
+  },
+  "faq": {
+    "tag": "Yardım Merkezi",
+    "title": "Sıkça Sorulan Sorular",
+    "subtitle": "Hesap açılışı desteği, topluluğumuz ve piyasa içeriklerimiz hakkında net bilgiler.",
+    "guidesTag": "Rehberler ve Güncellemeler",
+    "guidesTitle": "Güncel Rehberler",
+    "guidesSubtitle": "Güncel makaleler ve pratik piyasa kaynaklarından sınırlı bir seçki.",
+    "items": [
+      { "question": "Yatırım tavsiyesi veriyor musunuz?", "answer": "Hayır. Piyasa içeriklerimiz ve topluluk paylaşımlarımız yalnızca bilgilendirme amaçlıdır. İşlem kararları tamamen sizin sorumluluğunuzdadır." },
+      { "question": "Tickmill veya HFM hesabını nasıl açabilirim?", "answer": "Sitemizdeki resmî partner bağlantılarını kullanabilir veya hesap açılışı rehberliği için bizimle iletişime geçebilirsiniz. Hesabınız ve fonlarınız her zaman sizin kontrolünüzdedir." },
+      { "question": "Toplulukta hangi içerikler yer alıyor?", "answer": "Toplulukta piyasa analizleri, teknik bültenler, ekonomik takvim güncellemeleri ve platform desteğine ilişkin bilgiler paylaşılır." }
+    ]
   },
   "header": {
     "brand": "TRADER ECE",
     "subtitle": "TICKMILL IB & Affiliate",
     "bullex": "BULLEX",
-    "bullexSubtitle": "Sinyal Kanalı",
+    "bullexSubtitle": "Analiz Kanalı",
+    "openAccount": "Hesap Aç",
     "language": {
       "title": "Dil Seçin",
       "en": "İngilizce",
@@ -20,7 +35,9 @@
       "th": "Tayca",
       "id": "Endonezce",
       "zh": "Çince",
-      "vi": "Vietnamca"
+      "vi": "Vietnamca",
+      "ru": "Rusça",
+      "cnr": "Karadağca"
     }
   },
   "footer": {
@@ -35,7 +52,7 @@
     "partnerDesc": "TICKMILL resmi Introducing Broker (IB) ve affiliate ortağı olarak hizmet vermekteyiz. Piyasa analiz içerikleri bilgilendirme amaçlı olarak paylaşılmaktadır. Yatırım danışmanlığı veya portföy yönetimi hizmeti verilmemektedir.",
     "copyright": "© {{year}} Trader ECE – TICKMILL IB & Affiliate. Tüm hakları saklıdır.",
     "regulation": "TICKMILL tarafından regüle edilmiş ortamda faaliyet gösterilmektedir.",
-    "bullexSubtitle": "SINYAL KANALI"
+    "bullexSubtitle": "ANALİZ KANALI"
   },
   "home": {
     "badge": "TRADER ECE – TICKMILL Resmi IB & Affiliate Partner",
@@ -43,8 +60,9 @@
       "titlePre": "",
       "titleHighlight": "Piyasanın Zirvesinde Yerini Al.",
       "titlePost": "",
-      "stat": "Piyasanın %75'i kaybederken, siz tecrübenin yanında yer alın. 13+ yıllık deneyimle stratejinizi profesyonelleştirin.",
-      "subtitle": "%75'in dışında kalın. 13 yıllık global tecrübe ve regüle edilmiş işlem ortamıyla tanışın."
+      "stat": "",
+      "subtitle": "15+ yıllık piyasa deneyimiyle, düzenlemeye tabi işlem ortamında yanınızdayız.",
+      "riskNote": "Bilgi: Araştırmalar, Forex piyasasında yeterli eğitim ve risk yönetimi olmadan işlem yapan yatırımcıların yaklaşık %75'inin kayıp yaşadığını göstermektedir."
     },
     "buttons": {
       "telegramTraderEce": "Trader Ece Telegram Grubuna Katıl",
@@ -65,7 +83,7 @@
       "cards": [
         {
           "title": "Telegram & WhatsApp Grupları",
-          "desc": "Özel sinyal gruplarımız aracılığıyla gerçek zamanlı piyasa analizleri ve bültenler. Yatırım tavsiyesi niteliği taşımaz."
+          "desc": "Özel analiz gruplarımız aracılığıyla gerçek zamanlı piyasa analizleri ve bültenler. Yatırım tavsiyesi niteliği taşımaz."
         },
         {
           "title": "TICKMILL & HFM Partnerliği",
@@ -89,7 +107,8 @@
       "experience": "Yıl Deneyim",
       "volume": "Aktif Hacim ($)",
       "withdrawals": "Çekim Hacmi ($)",
-      "partnership": "TICKMILL Ortaklığı (Yıl)"
+      "partnership": "TICKMILL Ortaklığı (Yıl)",
+      "hfmPartnership": "HFM Ortaklığı (Yıl)"
     },
     "hfmTrust": {
       "tag": "Neden TICKMILL?",
@@ -139,24 +158,31 @@
         "prefix": ""
       },
       {
-        "value": "7",
+        "value": "8.5",
         "suffix": "M+",
         "prefix": "$",
         "label": "Aktif Hacim",
         "note": "IB üzerinden takip edilen toplam hacim"
       },
       {
-        "value": "4.6",
+        "value": "6.7",
         "suffix": "M+",
         "prefix": "$",
         "label": "Çekim Hacmi",
         "note": "TICKMILL kanalıyla gerçekleşen çekimler"
       },
       {
-        "value": "4",
+        "value": "2",
         "suffix": "+",
-        "label": "TICKMILL Ortaklık Yılı",
-        "note": "Resmi IB ortaklığı",
+        "label": "TICKMILL Aktif Hizmet Yılı",
+        "note": "Yaklaşık 1,5 yıl aktif TICKMILL hizmeti; HFM ile yaklaşık 5 yıl deneyim",
+        "prefix": ""
+      },
+      {
+        "value": "5",
+        "suffix": "+",
+        "label": "HFM İş Ortaklığı Yılı",
+        "note": "HFM ile yaklaşık 5 yıllık iş ortaklığı deneyimi",
         "prefix": ""
       }
     ],
@@ -210,20 +236,20 @@
     "hero": {
       "title1": "Kim Olduğumuzu",
       "title2": "Tanıyın",
-      "subtitle": "15+ yıllık piyasa deneyimi, 4+ yıllık TICKMILL ortaklığı. TICKMILL resmi IB/Affiliate sıfatıyla hizmet vermekteyiz."
+      "subtitle": "15+ yıllık piyasa deneyimi, HFM ile yaklaşık 5 yıllık iş ortaklığı ve TICKMILL ile yaklaşık 1,5 yıldır aktif hizmet deneyimi. TICKMILL resmi IB/Affiliate sıfatıyla hizmet vermekteyiz."
     },
     "experience": "15+",
     "experienceLabel": "Yıl Deneyim",
     "badges": [
       "TICKMILL Resmi IB Ortağı",
-      "Aktif Sinyal Toplulukları",
+      "Aktif Analiz Toplulukları",
       "Regüle Edilmiş Ortam"
     ],
     "biography": {
       "tag": "Biyografi",
       "title": "Deneyim ve Güven",
       "p1": "2009 yılından bu yana Forex piyasalarında aktif olarak bulunmaktayım. Yıllar içinde teknik analiz, temel analiz ve piyasa psikolojisi konularında derinlemesine bilgi birikimine ulaştım.",
-      "p2": "2021 yılında HFM ile resmi iş ortaklığı süreci başladı ve 4 yıl boyunca aktif olarak güçlü çalışmalar yürütüldü. Bugün ise TICKMILL ile yeni bir döneme adım atarak hesap açılışı desteği, platform bilgilendirmesi ve piyasa analiz içerikleri sunmaya devam ediyoruz.",
+      "p2": "2021 yılında HFM ile resmi iş ortaklığı süreci başladı ve yaklaşık 5 yıldır aktif olarak devam ediyor. TICKMILL ile de yaklaşık 1,5 yıldır aktif hizmet sunarak hesap açılışı desteği, platform bilgilendirmesi ve piyasa analiz içerikleri paylaşmaya devam ediyoruz.",
       "note": "Önemli Not:",
       "p3": "Sunulan içerikler ve analizler yatırım tavsiyesi, portföy yönetimi veya bireysel yatırım danışmanlığı niteliği taşımamaktadır. Yalnızca bilgilendirme amaçlıdır.",
       "button": "İletişime Geç"
@@ -278,7 +304,7 @@
         {
           "year": "2013",
           "title": "İlk Profesyonel Adımlar",
-          "desc": "Sinyal grupları kuruldu. Piyasa analizleri paylaşılmaya başlandı. Topluluk büyüdü."
+          "desc": "Analiz grupları kuruldu. Piyasa analizleri paylaşılmaya başlandı. Topluluk büyüdü."
         },
         {
           "year": "2018",
@@ -288,12 +314,12 @@
         {
           "year": "2021",
           "title": "Resmi HFM Ortaklığı",
-          "desc": "2021 yılında HFM ile resmi iş ortaklığı başladı. Dört yıl boyunca aktif olarak çalışıldı, güçlü sonuçlar üretildi ve güven odaklı bir yapı inşa edildi."
+          "desc": "2021 yılında HFM ile resmi iş ortaklığı başladı. Yaklaşık beş yıl boyunca aktif olarak çalışıldı, güçlü sonuçlar üretildi ve güven odaklı bir yapı inşa edildi."
         },
         {
           "year": "2026",
           "title": "Bugün",
-          "desc": "HFM ve TICKMILL ile yapılan anlaşmalarla güçlü bir güven ağı kuruldu. 7M+ üzeri yatırım portföyüne ev sahipliği yapıldı ve ödemeler güvenle sahiplerine ulaştırıldı."
+          "desc": "HFM ve TICKMILL ile yapılan anlaşmalarla güçlü bir güven ağı kuruldu. 8.5M+ üzeri yatırım portföyüne ev sahipliği yapıldı ve ödemeler güvenle sahiplerine ulaştırıldı."
         }
       ]
     }
@@ -305,8 +331,8 @@
     "cards": [
       {
         "icon": "📡",
-        "title": "Telegram & WhatsApp Sinyal Grupları",
-        "desc": "Özel sinyal gruplarımızda günlük ve haftalık piyasa analizleri, bültenler paylaşılmaktadır. Tüm içerikler bilgilendirme amaçlıdır; yatırım tavsiyesi veya bireysel danışmanlık niteliği taşımaz.",
+        "title": "Telegram & WhatsApp Analiz Grupları",
+        "desc": "Özel analiz gruplarımızda günlük ve haftalık piyasa analizleri, bültenler paylaşılmaktadır. Tüm içerikler bilgilendirme amaçlıdır; yatırım tavsiyesi veya bireysel danışmanlık niteliği taşımaz.",
         "features": [
           "Günlük teknik analiz bültenleri",
           "Önemli ekonomik takvim takibi",
@@ -406,11 +432,15 @@
     "channels": {
       "tag": "İletişim Kanalları",
       "title": "Nasıl Ulaşırsınız?",
+      "montenegroWhatsapp": {
+        "title": "WhatsApp English or More",
+        "desc": "İngilizce ve diğer diller için WhatsApp üzerinden ulaşın"
+      },
       "items": [
         {
           "icon": "💬",
           "title": "Bullex Telegram",
-          "desc": "Sinyal ve analiz kanalına katıl",
+          "desc": "Analiz kanalına katıl",
           "link": "t.me/channel →"
         },
         {
@@ -524,11 +554,12 @@
     ]
   },
   "chat": {
-    "greeting": "Merhaba! Ben Trader Ece asistanıyım. Size nasıl yardımcı olabilirim?",
     "title": "Trader Ece Asistan",
-    "inputPlaceholder": "Mesajınızı yazın...",
-    "error": "Şu anda yanıt oluşturulamadı. Lütfen tekrar deneyin.",
-    "sendButton": "Gönder"
+    "status": "Merhaba, Trader Ece'ye hoş geldiniz. Yapay zekâ destek asistanımız şu anda geliştirilmektedir.",
+    "contactIntro": "Daha hızlı destek için Telegram topluluğumuzdan veya WhatsApp hatlarımızdan bize ulaşabilirsiniz.",
+    "telegramAction": "Telegram'dan ulaşın",
+    "whatsappTurkey": "WhatsApp Türkiye: +90 545 646 23 53",
+    "whatsappMontenegro": "WhatsApp English or More: +382 67 494 040"
   },
   "form": {
     "success": {

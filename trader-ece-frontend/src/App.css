@@ -295,6 +295,29 @@ main {
   color: #11151d;
 }
 
+.broker-link-notice {
+  position: fixed;
+  left: 16px;
+  bottom: 16px;
+  z-index: 1100;
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  max-width: min(300px, calc(100vw - 32px));
+  padding: 8px 10px;
+  border: 1px solid rgba(238, 92, 92, 0.62);
+  border-radius: 6px;
+  background: rgba(86, 15, 21, 0.95);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.34);
+  color: #ffe0e0;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 1.45;
+}
+
+.broker-link-notice svg { flex: 0 0 auto; width: 15px; height: 15px; margin-top: 1px; color: #ff9898; }
+.broker-link-notice--elevated { bottom: 86px; }
+
 @media (max-width: 768px) {
   .consent-banner {
     flex-direction: column;
@@ -304,4 +327,6 @@ main {
   .consent-banner__actions {
     justify-content: flex-end;
   }
+
+  .broker-link-notice--elevated { bottom: 142px; }
 }

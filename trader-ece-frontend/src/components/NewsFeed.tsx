@@ -22,8 +22,14 @@ function formatDate(iso: string): string {
   });
 }
 
+function replaceSignalTerminology(text: string): string {
+  return text
+    .replace(/\bsignals?\b/gi, (match) => (match.toLowerCase() === "signals" ? "analyses" : "analysis"))
+    .replace(/sinyal/gi, "analiz");
+}
+
 function formatText(text: string): string[] {
-  return text.split("\n").filter((line) => line.trim() !== "");
+  return replaceSignalTerminology(text).split("\n").filter((line) => line.trim() !== "");
 }
 
 export default function NewsFeed() {

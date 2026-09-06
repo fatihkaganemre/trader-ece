@@ -1,4 +1,4 @@
-export type BrokerLocale = "tr" | "en" | "th" | "id" | "vi" | "zh";
+export type BrokerLocale = "tr" | "en" | "th" | "id" | "vi" | "zh" | "ru" | "cnr";
 
 const TICKMILL_TR_LINK =
   "https://my.qatr-tickmill.com/tr/login?utm_campaign=ib_link&utm_content=IB54180972&utm_medium=Open+Account&utm_source=link&lp=https%3A%2F%2Fmy.qatr-tickmill.com%2Ftr%2Fsign-up%2F";
@@ -13,6 +13,8 @@ const HFM_LINKS: Record<BrokerLocale, string> = {
   id: "https://www.hfmtrade-ind.com/sv/en/?refid=365189",
   vi: "https://www.hfreg-vn.com/sv/en/?refid=365189",
   zh: "https://www.hfm-chn.com/sv/en/?refid=365189",
+  ru: "https://www.hfm.com/sv/en/?refid=365189",
+  cnr: "https://www.hfm.com/sv/en/?refid=365189",
 };
 
 export function resolveBrokerLocale(language: string): BrokerLocale {
@@ -23,6 +25,8 @@ export function resolveBrokerLocale(language: string): BrokerLocale {
   if (currentLang.startsWith("id")) return "id";
   if (currentLang.startsWith("vi")) return "vi";
   if (currentLang.startsWith("th")) return "th";
+  if (currentLang.startsWith("ru")) return "ru";
+  if (currentLang.startsWith("cnr")) return "cnr";
 
   return "en";
 }

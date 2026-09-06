@@ -12,13 +12,15 @@ const HFM_REGULATION_URL = "https://www.hfm.com/int/en/about-us/regulatory-envir
 
 export default function Footer({ navigate }: FooterProps) {
   const { t, i18n } = useTranslation();
-  const legalContent = getLegalContent(i18n.language);
+  const language = i18n.language || "en";
+  const legalContent = getLegalContent(language);
 
   const pageLinks: [Page, string][] = [
     ["home", t("nav.home")],
     ["about", t("nav.about")],
     ["services", t("nav.services")],
     ["community", t("nav.community")],
+    ["faq", t("nav.faq")],
     ["performance", t("nav.performance")],
     ["contact", t("nav.contact")],
   ];
@@ -31,7 +33,7 @@ export default function Footer({ navigate }: FooterProps) {
             <div className="footer_logo_group">
                 <div className="footer__logo">
                   <div className="footer-logo-img-wrap">
-                    <img src="/traderEceLogo.png" alt="Trader ECE" className="footer-logo-img" />
+                    <img src="/trader-ece-brand.jpg" alt="Trader ECE" className="footer-logo-img" loading="lazy" decoding="async" />
                   </div>
                   <div className="logo-text">
                     <span className="logo-brand">
@@ -43,7 +45,7 @@ export default function Footer({ navigate }: FooterProps) {
                 </div>
                 <div className="footer__logo">
                   <div className="footer-logo-img-wrap">
-                    <img src="/BullexLogo2.png" alt="Bullex" className="footer-logo-img" />
+                    <img src="/bullex-brand.jpg" alt="BULLEX" className="footer-logo-img" loading="lazy" decoding="async" />
                   </div>
                   <div className="logo-text">
                     <span className="logo-brand">

@@ -12,7 +12,7 @@
     "brand": "TRADER ECE",
     "subtitle": "Tickmill IB & Affiliate",
     "bullex": "BULLEX",
-    "bullexSubtitle": "Signal Channel",
+    "bullexSubtitle": "Analysis Channel",
     "language": {
       "title": "Select Language",
       "en": "English",
@@ -35,7 +35,7 @@
     "partnerDesc": "We operate as an official Introducing Broker (IB) and affiliate partner of Tickmill and HFM (HF Markets). Market analysis content is shared for informational purposes only. We do not provide investment advice or portfolio management services.",
     "copyright": "© {{year}} Trader ECE – Tickmill IB & Affiliate. All rights reserved.",
     "regulation": "Operating within a regulated environment overseen by Tickmill and HF Markets Group.",
-    "bullexSubtitle": "SIGNAL CHANNEL"
+    "bullexSubtitle": "ANALYSIS CHANNEL"
   },
   "home": {
     "badge": "TRADER ECE – Official IB & Affiliate Partner of Tickmill & HFM",
@@ -43,8 +43,8 @@
       "titlePre": "",
       "titleHighlight": "Reach the Top of the Market.",
       "titlePost": "",
-      "stat": "While 75% of retail traders lose money, stand on the right side of the market. Refine your edge with 13+ years of professional trading expertise.",
-      "subtitle": "Stay ahead of the 75%. Discover 13 years of global market experience within a fully regulated, institutional-grade trading environment."
+      "stat": "While 75% of retail traders lose money, stand on the right side of the market. Refine your edge with 15+ years of professional trading expertise.",
+      "subtitle": "Stay ahead of the 75%. Discover 15+ years of global market experience within a regulated trading environment."
     },
     "buttons": {
       "telegramTraderEce": "Join the Trader Ece Telegram Group",
@@ -53,8 +53,8 @@
     },
     "trust": {
       "title": "Regulated Broker",
-      "item1": "13+ Years of Experience",
-      "item2": "$7M Active Volume"
+      "item1": "15+ Years of Experience",
+      "item2": "$8.5M+ Active Volume"
     },
     "services": {
       "tag": "Our Services",
@@ -64,8 +64,8 @@
       "viewAllDesc": "Continue to view all service categories and their details.",
       "cards": [
         {
-          "title": "Telegram & WhatsApp Signal Groups",
-          "desc": "Real-time market analysis and daily briefings through our exclusive signal communities. For informational purposes only — not investment advice."
+          "title": "Telegram & WhatsApp Analysis Groups",
+          "desc": "Real-time market analysis and daily briefings through our exclusive analysis communities. For informational purposes only — not investment advice."
         },
         {
           "title": "Tickmill & HFM IB Partnership",
@@ -89,7 +89,8 @@
       "experience": "Years of Experience",
       "volume": "Active Volume ($)",
       "withdrawals": "Withdrawal Volume ($)",
-      "partnership": "Years as IB Partner"
+      "partnership": "Years as IB Partner",
+      "hfmPartnership": "HFM Partnership (Years)"
     },
     "hfmTrust": {
       "tag": "Why Tickmill?",
@@ -128,7 +129,7 @@
     "hero": {
       "title1": "Results Backed by",
       "title2": "Real Experience",
-      "subtitle": "Over 13 years of active market participation, with trading volumes tracked through our Tickmill IB partnership. Past performance is not indicative of future results."
+      "subtitle": "Over 15 years of active market participation, with trading volumes tracked through our IB partnerships. Past performance is not indicative of future results."
     },
     "metrics": [
       {
@@ -139,24 +140,24 @@
         "prefix": ""
       },
       {
-        "value": "7",
+        "value": "8.5",
         "suffix": "M+",
         "prefix": "$",
         "label": "Active Trading Volume",
         "note": "Total volume tracked via IB accounts"
       },
       {
-        "value": "4.6",
+        "value": "6.7",
         "suffix": "M+",
         "prefix": "$",
         "label": "Client Withdrawal Volume",
         "note": "Withdrawals processed through Tickmill"
       },
       {
-        "value": "4",
+        "value": "2",
         "suffix": "+",
-        "label": "Years as Official IB Partner",
-        "note": "Official Tickmill IB partnership since 2021",
+        "label": "Years of Active Tickmill Service",
+        "note": "Approximately 1.5 years with Tickmill; around 5 years of HFM experience",
         "prefix": ""
       }
     ],
@@ -210,20 +211,20 @@
     "hero": {
       "title1": "Who We Are",
       "title2": "and What We Stand For",
-      "subtitle": "13+ years of market experience, 4+ years of strong broker partnership work with HFM, and a new chapter now beginning with Tickmill."
+      "subtitle": "15+ years of market experience, around 5 years of broker partnership work with HFM, and approximately 1.5 years of active service with Tickmill."
     },
     "experience": "15+",
     "experienceLabel": "Years of Experience",
     "badges": [
       "Official Tickmill & HFM IB Partner",
-      "Active Signal Communities",
+      "Active Analysis Communities",
       "Regulated Environment"
     ],
     "biography": {
       "tag": "Our Story",
       "title": "Experience You Can Trust",
       "p1": "Since 2009, I have been actively engaged in global Forex markets. Over the years, I have developed deep expertise in technical analysis, fundamental analysis, and market psychology — building a disciplined and consistent approach to trading.",
-      "p2": "The official partnership journey began with HFM in 2021 and continued actively for four productive years. Today, a new chapter with Tickmill has begun, alongside ongoing account-opening support, platform guidance, and market analysis content.",
+      "p2": "The official partnership journey began with HFM in 2021 and has continued for around five years. Today, alongside approximately 1.5 years of active service with Tickmill, we continue to provide account-opening support, platform guidance, and market analysis content.",
       "note": "Important Note:",
       "p3": "All content and analysis shared through our channels is strictly for informational purposes. We do not provide investment advice, portfolio management, or individual investment consultation of any kind.",
       "button": "Contact Us"
@@ -241,7 +242,7 @@
         {
           "icon": "",
           "title": "Fund and Process Security",
-          "desc": "Clear deposit and withdrawal workflows are one of the strongest trust signals for any investor."
+          "desc": "Clear deposit and withdrawal workflows are one of the strongest trust indicators for any investor."
         },
         {
           "icon": "",
@@ -278,7 +279,7 @@
         {
           "year": "2013",
           "title": "First Professional Steps",
-          "desc": "Signal communities were established. Regular market analysis content began to be distributed. A loyal following grew."
+          "desc": "Analysis communities were established. Regular market analysis content began to be distributed. A loyal following grew."
         },
         {
           "year": "2018",
@@ -288,12 +289,12 @@
         {
           "year": "2021",
           "title": "Official HFM Partnership",
-          "desc": "The official partnership with HFM began in 2021. Four years of hands-on work, strong results, and a trust-focused service structure followed."
+          "desc": "The official partnership with HFM began in 2021. Around five years of hands-on work, strong results, and a trust-focused service structure followed."
         },
         {
           "year": "2026",
           "title": "Today",
-          "desc": "With partnerships built across HFM and Tickmill, a strong network of trust was established. We have supported portfolios exceeding $7M and ensured funds were delivered securely to their rightful owners."
+          "desc": "With partnerships built across HFM and Tickmill, a strong network of trust was established. We have supported portfolios exceeding $8.5M and ensured funds were delivered securely to their rightful owners."
         }
       ]
     }
@@ -304,7 +305,7 @@
     "subtitle": "As an official Tickmill and HFM (HotForex) partner, we provide account support and market guidance while encouraging clients to progress directly with us.",
     "cards": [
       {
-        "title": "Telegram & WhatsApp Signal Groups",
+        "title": "Telegram & WhatsApp Analysis Groups",
         "desc": "Daily and weekly market analysis, technical briefings, and economic calendar highlights shared across our exclusive communities. For informational purposes only — not investment advice.",
         "features": [
           "Daily technical analysis briefings",
@@ -403,7 +404,7 @@
         {
           "icon": "💬",
           "title": "Bullex Telegram",
-          "desc": "Join our signal and analysis channel",
+          "desc": "Join our analysis channel",
           "link": "t.me/channel →"
         },
         {

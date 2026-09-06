@@ -221,6 +221,14 @@
   animation: fadeIn 1s 0.3s ease both;
 }
 
+.hero__risk-note {
+  margin: -18px 0 32px;
+  max-width: 560px;
+  color: rgba(235, 227, 214, 0.58);
+  font-size: 12px;
+  line-height: 1.5;
+}
+
 .hero__mobile-logos {
   display: none;
   align-items: center;
@@ -386,6 +394,26 @@
   letter-spacing: 0.05em;
 }
 
+.stat-partnership-pair {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  align-items: start;
+}
+
+.stat-secondary {
+  opacity: 0;
+  transform: translateY(8px);
+  animation: stat-secondary-reveal 0.7s ease-out 0.4s forwards;
+}
+
+@keyframes stat-secondary-reveal {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 /* SERVICES OVERVIEW */
 .services-overview { background: transparent; }
 
@@ -415,8 +443,8 @@
 
 .service-icon {
   font-size: 36px;
-  width: 72px;
-  height: 72px;
+  width: 76px;
+  height: 76px;
   border-radius: 14px;
   display: flex;
   align-items: center;
@@ -424,8 +452,13 @@
   background: rgba(255, 255, 255, 0.08);
   border: 1px solid rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(8px);
-  padding: 8px;
+  padding: 4px;
   box-shadow: 0 2px 12px color-mix(in srgb, var(--c) 20%, transparent);
+}
+
+.service-card:not(.service-card--cta) .service-icon {
+  width: 76px;
+  height: 76px;
 }
 
 .services-cta {
@@ -454,9 +487,36 @@
 
 /* HFM SECTION */
 .hfm-section {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
   background: rgba(255,255,255,0.02);
   border-top: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
+}
+
+.hfm-section::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(90deg, rgba(5, 12, 24, 0.9), rgba(5, 12, 24, 0.7), rgba(5, 12, 24, 0.9));
+  pointer-events: none;
+}
+
+.hfm-section__video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: -2;
+  width: min(78vw, 720px);
+  height: auto;
+  aspect-ratio: 1;
+  object-fit: contain;
+  transform: translate(-50%, -50%);
+  opacity: 0.34;
+  filter: brightness(0.6) saturate(0.72);
+  pointer-events: none;
 }
 
 .hfm-inner {
@@ -651,10 +711,10 @@
     display: flex;
     flex-direction: column;
   }
-  .ticker-tape        { order: 0; }
-  .hero               { order: 1; }
-  .services-overview  { order: 2; }
-  .stats-section      { order: 3; }
+  .hero               { order: 0; }
+  .services-overview  { order: 1; }
+  .stats-section      { order: 2; }
+  .ticker-tape        { order: 3; }
   .hfm-section        { order: 4; }
   .testimonials-section { order: 5; }
   .cta-banner         { order: 6; }
@@ -680,6 +740,11 @@
     margin-bottom: 14px !important;
     font-size: clamp(30px, 7.6vw, 42px);
     line-height: 1.08;
+  }
+  .hero__risk-note {
+    margin: -6px 0 28px;
+    font-size: 11px;
+    line-height: 1.55;
   }
   .hero__mobile-logos {
     display: flex;
