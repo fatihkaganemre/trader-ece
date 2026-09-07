@@ -93,7 +93,6 @@ const PAGE_PATHS: Record<Page, string> = {
 
 const CONSENT_STORAGE_KEY = "trader_ece_consent_v2";
 const CONSENT_TTL_MS = 30 * 24 * 60 * 60 * 1000;
-const GOOGLE_ADS_ID = "AW-18171509176";
 
 function hasValidConsent() {
   try {
@@ -182,12 +181,12 @@ export default function App() {
     analyticsWindow.dataLayer ??= [];
     analyticsWindow.gtag ??= (...args: unknown[]) => analyticsWindow.dataLayer?.push(args);
     analyticsWindow.gtag("js", new Date());
-    analyticsWindow.gtag("config", GOOGLE_ADS_ID);
+    analyticsWindow.gtag("config", import.meta.env.VITE_GOOGLE_ADS_ID);
 
     const script = document.createElement("script");
     script.id = "google-ads-script";
     script.async = true;
-    script.src = `https://www.googletagmanager.com/gtag/js?id=${GOOGLE_ADS_ID}`;
+    script.src = `https://www.googletagmanager.com/gtag/js?id=${import.meta.env.VITE_GOOGLE_ADS_ID}`;
     document.head.appendChild(script);
   }, [hasConsent]);
 
