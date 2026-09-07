@@ -3,6 +3,7 @@
     "home": "Trang Chủ",
     "about": "Giới Thiệu",
     "services": "Dịch Vụ",
+    "community": "Cộng Đồng",
     "performance": "Hiệu Suất",
     "contact": "Liên Hệ",
     "menu": "Menu"
@@ -11,7 +12,16 @@
     "brand": "TRADER ECE",
     "subtitle": "Tickmill IB & Affiliate",
     "bullex": "BULLEX",
-    "bullexSubtitle": "Kênh Tín Hiệu"
+    "bullexSubtitle": "Kênh Phân Tích",
+    "language": {
+      "title": "Chọn Ngôn Ngữ",
+      "en": "Tiếng Anh",
+      "tr": "Tiếng Thổ Nhĩ Kỳ",
+      "th": "Tiếng Thái",
+      "id": "Tiếng Indonesia",
+      "zh": "Tiếng Trung",
+      "vi": "Tiếng Việt"
+    }
   },
   "footer": {
     "pages": "Trang",
@@ -25,7 +35,7 @@
     "partnerDesc": "Chúng tôi là đối tác Introducing Broker (IB) và Affiliate chính thức của Tickmill và HFM. Nội dung phân tích thị trường chỉ mang tính thông tin. Chúng tôi không tư vấn đầu tư hay quản lý danh mục.",
     "copyright": "© {{year}} Trader ECE – Tickmill IB & Affiliate. Đảm bảo toàn quyền.",
     "regulation": "Hoạt động trong môi trường được quản lý bởi Tickmill và HF Markets Group.",
-    "bullexSubtitle": "KÊnh TÍN HIỆU"
+    "bullexSubtitle": "KÊNH PHÂN TÍCH"
   },
   "home": {
     "badge": "TRADER ECE – Đối Tác IB & Affiliate Chính Thức Tickmill & HFM",
@@ -33,8 +43,8 @@
       "titlePre": "",
       "titleHighlight": "Chiếm Lĩnh Đỉnh Cao Thị Trường.",
       "titlePost": "",
-      "stat": "Khi 75% nhà giao dịch thua lỗ, hãy đứng về phía kinh nghiệm. 13+ năm chuyên môn giúp bạn tối ưu hóa chiến lược giao dịch.",
-      "subtitle": "Thoát khỏi nhóm 75%. Tiếp cận 13 năm kinh nghiệm toàn cầu trong môi trường giao dịch được cấp phép."
+      "stat": "Khi 75% nhà giao dịch thua lỗ, hãy chọn kinh nghiệm. Hơn 15 năm chuyên môn giúp bạn tối ưu hóa chiến lược giao dịch.",
+      "subtitle": "Vượt lên trên số liệu 75% với hơn 15 năm kinh nghiệm thị trường toàn cầu trong môi trường giao dịch được quản lý."
     },
     "buttons": {
       "telegramTraderEce": "Tham Gia Nhóm Telegram Trader Ece",
@@ -43,18 +53,19 @@
     },
     "trust": {
       "title": "Broker Được Cấp Phép",
-      "item1": "13+ Năm Kinh Nghiệm",
-      "item2": "$7 Triệu Khối Lượng Giao Dịch"
+      "item1": "15+ Năm Kinh Nghiệm",
+      "item2": "$8,5 Triệu+ Khối Lượng Giao Dịch"
     },
     "services": {
       "tag": "Dịch Vụ Của Chúng Tôi",
       "title": "Chúng Tôi Cung Cấp Gì",
       "subtitle": "Với tư cách đối tác IB chính thức của Tickmill và HFM, chúng tôi hỗ trợ mở tài khoản và cung cấp nội dung giáo dục. Không cung cấp tư vấn đầu tư.",
       "viewAll": "Xem Tất Cả Dịch Vụ →",
+      "viewAllDesc": "Xem đầy đủ các hạng mục dịch vụ và thông tin chi tiết.",
       "cards": [
         {
-          "title": "Nhóm Tín Hiệu Telegram & WhatsApp",
-          "desc": "Phân tích thị trường thời gian thực và bản tin hàng ngày qua cộng đồng tín hiệu độc quyền của chúng tôi. Chỉ mang tính thông tin — không phải tư vấn đầu tư."
+          "title": "Nhóm Phân Tích Telegram & WhatsApp",
+          "desc": "Phân tích thị trường thời gian thực và bản tin hàng ngày qua cộng đồng phân tích độc quyền của chúng tôi. Chỉ mang tính thông tin — không phải tư vấn đầu tư."
         },
         {
           "title": "Hợp Tác IB Tickmill & HFM",
@@ -78,7 +89,8 @@
       "experience": "Năm Kinh Nghiệm",
       "volume": "Khối Lượng Giao Dịch ($)",
       "withdrawals": "Khối Lượng Rút Tiền ($)",
-      "partnership": "Năm Làm Đối Tác IB"
+      "partnership": "Năm Làm Đối Tác IB",
+      "hfmPartnership": "Hợp Tác HFM (Năm)"
     },
     "hfmTrust": {
       "tag": "Tại Sao Chọn Tickmill?",
@@ -90,7 +102,9 @@
         "Danh mục công cụ giao dịch đa dạng",
         "Vốn khách hàng được lưu giữ trong tài khoản tách biệt"
       ],
-      "moreLink": "Tìm Hiểu Thêm Về Tickmill →"
+      "moreLink": "Tìm Hiểu Thêm Về Tickmill →",
+      "hfmLink": "Đến HFM →",
+      "vpnNote": "Nếu liên kết không mở được, vui lòng sử dụng VPN."
     },
     "hfmBadge": {
       "text": "Tickmill",
@@ -115,7 +129,7 @@
     "hero": {
       "title1": "Kết Quả Được Chứng Minh",
       "title2": "Bằng Kinh Nghiệm Thực Tế",
-      "subtitle": "Hơn 13 năm tham gia thiết thực trên thị trường, với khối lượng giao dịch được theo dõi qua quan hệ đối tác IB Tickmill. Thành tích trong quá khứ không đảm bảo kết quả trong tương lai."
+      "subtitle": "Hơn 15 năm hoạt động trên thị trường, với khối lượng giao dịch được theo dõi qua các quan hệ đối tác IB. Thành tích trong quá khứ không đảm bảo kết quả trong tương lai."
     },
     "metrics": [
       {
@@ -126,24 +140,24 @@
         "prefix": ""
       },
       {
-        "value": "7",
+        "value": "8.5",
         "suffix": "M+",
         "prefix": "$",
         "label": "Khối Lượng Giao Dịch Hoạt Động",
         "note": "Tổng khối lượng qua tài khoản IB"
       },
       {
-        "value": "4.6",
+        "value": "6.7",
         "suffix": "M+",
         "prefix": "$",
         "label": "Khối Lượng Rút Tiền Khách Hàng",
         "note": "Giao dịch rút tiền qua Tickmill"
       },
       {
-        "value": "4",
+        "value": "2",
         "suffix": "+",
-        "label": "Năm Là Đối Tác IB Chính Thức",
-        "note": "Quan hệ đối tác IB chính thức với Tickmill từ 2021",
+        "label": "Năm Dịch Vụ Tickmill Tích Cực",
+        "note": "Khoảng 1,5 năm với Tickmill; khoảng 5 năm kinh nghiệm với HFM",
         "prefix": ""
       }
     ],
@@ -177,6 +191,8 @@
       "desc1": "Tickmill là broker được cấp phép toàn cầu. Với tư cách đối tác IB chính thức, vai trò của chúng tôi chỉ giới hạn trong việc tạo thuận lợi đăng ký tài khoản và cung cấp hỗ trợ thông tin. Chúng tôi không quản lý vốn hoặc tư vấn đầu tư.",
       "desc2": "Quản lý tài sản, quản lý danh mục và tư vấn đầu tư không thuộc phạm vi dịch vụ của chúng tôi.",
       "regulationLink": "Thông Tin Quy Định Tickmill →",
+      "hfmLink": "Đến HFM →",
+      "vpnNote": "Nếu liên kết không mở được, vui lòng sử dụng VPN.",
       "authorities": {
         "fca": "Financial Conduct Authority",
         "cysec": "Cyprus Securities & Exchange Commission",
@@ -195,20 +211,20 @@
     "hero": {
       "title1": "Chúng Tôi Là Ai",
       "title2": "Và Chúng Tôi Làm Gì",
-      "subtitle": "13+ năm kinh nghiệm thị trường và 4+ năm là đối tác IB chính thức của Tickmill. Hoạt động với tư cách Introducing Broker và affiliate được cấp phép cho cả Tickmill và HFM."
+      "subtitle": "Hơn 15 năm kinh nghiệm thị trường, khoảng 5 năm hợp tác với HFM và khoảng 1,5 năm hoạt động tích cực với Tickmill."
     },
     "experience": "15+",
     "experienceLabel": "Năm Kinh Nghiệm",
     "badges": [
       "Đối Tác IB Chính Thức Tickmill & HFM",
-      "Cộng Đồng Tín Hiệu Hoạt Động",
+      "Cộng Đồng Phân Tích Hoạt Động",
       "Được Cấp Phép & Giám Sát"
     ],
     "biography": {
       "tag": "Câu Chuyện Của Chúng Tôi",
       "title": "Kinh Nghiệm Đáng Tin Cậy",
       "p1": "Từ năm 2009, tôi đã tham gia tích cực trên thị trường Forex toàn cầu. Qua nhiều năm, tôi phát triển chuyên môn sâu trong phân tích kỹ thuật, phân tích cơ bản và tâm lý thị trường.",
-      "p2": "Từ năm 2021, tôi đảm nhận vai trò Introducing Broker (IB) và affiliate chính thức của Tickmill, với HFM là đối tác broker thứ cấp. Tôi hỗ trợ khách hàng đăng ký tài khoản và chia sẻ nội dung phân tích thường xuyên.",
+      "p2": "Quan hệ đối tác chính thức với HFM bắt đầu từ năm 2021 và đã duy trì khoảng 5 năm. Với Tickmill, chúng tôi đã cung cấp dịch vụ tích cực khoảng 1,5 năm, bao gồm hỗ trợ mở tài khoản, hướng dẫn nền tảng và nội dung phân tích thị trường.",
       "note": "Lưu Ý Quan Trọng:",
       "p3": "Tất cả nội dung được chia sẻ chỉ mang tính thông tin. Chúng tôi không tư vấn đầu tư hay quản lý danh mục.",
       "button": "Liên Hệ Chúng Tôi"
@@ -248,7 +264,8 @@
           "title": "Tài Nguyên Giáo Dục",
           "desc": "Nội dung giáo dục chính thức, nghiên cứu thị trường và webinar từ Tickmill."
         }
-      ]
+      ],
+      "note": "Lưu ý: Trong mô hình dịch vụ của chúng tôi, khách hàng được khuyến nghị thực hiện quy trình trực tiếp qua các kênh chính thức của Tickmill và HFM do chúng tôi cung cấp."
     },
     "timeline": {
       "tag": "Hành Trình Của Chúng Tôi",
@@ -262,7 +279,7 @@
         {
           "year": "2013",
           "title": "Bước Chuyên Nghiệp Đầu Tiên",
-          "desc": "Cộng đồng tín hiệu được thành lập. Nội dung phân tích định kỳ bắt đầu được phân phối."
+          "desc": "Cộng đồng phân tích được thành lập. Nội dung phân tích định kỳ bắt đầu được phân phối."
         },
         {
           "year": "2018",
@@ -271,13 +288,13 @@
         },
         {
           "year": "2021",
-          "title": "Quan Hệ IB Chính Thức Tickmill",
-          "desc": "Trở thành Introducing Broker chính thức của Tickmill."
+          "title": "Quan Hệ Đối Tác Chính Thức Với HFM",
+          "desc": "Quan hệ đối tác chính thức với HFM bắt đầu, tạo nền tảng cho hoạt động IB và hỗ trợ khách hàng."
         },
         {
           "year": "2025",
           "title": "Hiện Tại",
-          "desc": "$7 triệu+ khối lượng giao dịch hoạt động và phân tích hàng ngày gửi đến cộng đồng."
+          "desc": "$8,5 triệu+ khối lượng giao dịch hoạt động và phân tích hàng ngày gửi đến cộng đồng."
         }
       ]
     }
@@ -288,7 +305,7 @@
     "subtitle": "Với tư cách đối tác IB chính thức của Tickmill và HFM, chúng tôi cung cấp hỗ trợ tài khoản và nội dung giáo dục.",
     "cards": [
       {
-        "title": "Nhóm Tín Hiệu Telegram & WhatsApp",
+        "title": "Nhóm Phân Tích Telegram & WhatsApp",
         "desc": "Phân tích hàng ngày, bản tin kỹ thuật và lịch kinh tế được chia sẻ trong cộng đồng độc quyền. Chỉ mang tính thông tin.",
         "features": [
           "Bản tin phân tích kỹ thuật hàng ngày",
@@ -387,7 +404,7 @@
         {
           "icon": "💬",
           "title": "Bullex Telegram",
-          "desc": "Tham gia kênh tín hiệu của chúng tôi",
+          "desc": "Tham gia kênh phân tích của chúng tôi",
           "link": "t.me/channel →"
         },
         {
@@ -414,8 +431,53 @@
       "logo": "Tickmill / HFM",
       "title": "Mở Tài Khoản Tickmill hoặc HFM",
       "desc": "Mở tài khoản broker chính thức qua liên kết IB đã xác minh của chúng tôi",
-      "link": "Tới Tickmill →"
+      "link": "Tới Tickmill →",
+      "hfmLink": "Tới HFM →",
+      "vpnNote": "Nếu liên kết không mở được, vui lòng sử dụng VPN."
     }
+  },
+  "testimonials": {
+    "tag": "Phản Hồi Từ Cộng Đồng",
+    "title": "Khách Hàng Chia Sẻ",
+    "items": [
+      {
+        "name": "N. Berkan",
+        "text": "Các bài phân tích thị trường vàng của bạn rất rõ ràng và hữu ích.",
+        "role": "Nhà đầu tư"
+      },
+      {
+        "name": "Neşe Aksoy",
+        "text": "Phân tích và cách thực hiện của đội ngũ đã giúp tôi theo dõi thị trường tự tin hơn.",
+        "role": "Nhà đầu tư"
+      },
+      {
+        "name": "İsmet Yılmaz",
+        "text": "Ngay cả khi thị trường biến động, đội ngũ vẫn hỗ trợ rất chuyên nghiệp.",
+        "role": "Nhà đầu tư"
+      },
+      {
+        "name": "Tekin K.",
+        "text": "Quy trình hỗ trợ rút tiền của tôi diễn ra rõ ràng và thuận lợi.",
+        "role": "Nhà đầu tư"
+      },
+      {
+        "name": "Esin Varol",
+        "text": "Sự tận tâm trong từng giải thích tạo được cảm giác tin cậy.",
+        "role": "Nhà đầu tư"
+      },
+      {
+        "name": "Gulare M.",
+        "text": "Tôi đánh giá cao sự hỗ trợ và nội dung phân tích được chia sẻ.",
+        "role": "Nhà đầu tư"
+      }
+    ]
+  },
+  "chat": {
+    "greeting": "Xin chào! Tôi là trợ lý Trader Ece. Tôi có thể hỗ trợ bạn như thế nào?",
+    "title": "Trợ Lý Trader Ece",
+    "inputPlaceholder": "Nhập tin nhắn của bạn...",
+    "error": "Hiện chưa thể tạo phản hồi. Vui lòng thử lại.",
+    "sendButton": "Gửi"
   },
   "form": {
     "success": {
@@ -444,7 +506,8 @@
       "messagePlaceholder": "Nhập tin nhắn của bạn..."
     },
     "disclaimer": "Biểu mẫu này chỉ dành cho hỗ trợ tài khoản Tickmill/HFM và câu hỏi thông tin chung.",
+    "error": "Đã xảy ra lỗi. Vui lòng thử lại.",
     "submit": "Gửi Tin Nhắn",
-    "submitting": "Guợi..."
+    "submitting": "Đang gửi..."
   }
 }

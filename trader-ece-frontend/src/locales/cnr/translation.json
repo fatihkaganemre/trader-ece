@@ -1,0 +1,596 @@
+{
+  "nav": {
+    "home": "Početna",
+    "about": "O nama",
+    "services": "Usluge",
+    "community": "Zajednica",
+    "faq": "Pitanja i odgovori",
+    "performance": "Performanse",
+    "contact": "Kontakt",
+    "menu": "Meni"
+  },
+  "faq": {
+    "tag": "Centar za pomoć",
+    "title": "Često postavljana pitanja",
+    "subtitle": "Jasne informacije o podršci za otvaranje računa, našoj zajednici i sadržaju tržišta.",
+    "guidesTag": "Vodiči i ažuriranja",
+    "guidesTitle": "Najnoviji vodiči",
+    "guidesSubtitle": "Ograničen izbor aktuelnih artikala i praktičnih tržišnih resursa.",
+    "items": [
+      {
+        "question": "Pružamo li investicione savjete?",
+        "answer": "Ne. Naš sadržaj o tržištu i objave zajednice služe isključivo u informativne svrhe. Sve odluke o trgovanju ostaju isključivo vaša odgovornost."
+      },
+      {
+        "question": "Kako otvoriti Tickmill ili HFM račun?",
+        "answer": "Koristite službene partnerske poveznice na našoj web stranici ili nam se obratite za podršku pri otvaranju računa. Vaš račun i sredstva uvijek ostaju pod vašom kontrolom."
+      },
+      {
+        "question": "Šta obuhvata zajednica?",
+        "answer": "Zajednica dijeli analize tržišta, tehničke preglede, novosti iz ekonomskog kalendara i informacije o podršci za platformu."
+      }
+    ]
+  },
+  "header": {
+    "brand": "TRADER ECE",
+    "subtitle": "Tickmill IB i affiliate partner",
+    "bullex": "BULLEX",
+    "bullexSubtitle": "Kanal za analizu",
+    "openAccount": "Otvori račun",
+    "language": {
+      "title": "Odaberite jezik",
+      "en": "Engleski",
+      "tr": "Turski",
+      "th": "Tajlandski",
+      "id": "Indonežanski",
+      "zh": "Kineski",
+      "vi": "Vijetnamski",
+      "ru": "Ruski",
+      "cnr": "Crnogorski"
+    }
+  },
+  "footer": {
+    "pages": "Stranice",
+    "legal": "Pravne informacije",
+    "links": {
+      "hfmOfficial": "Tickmill regulativa",
+      "hfmRegulation": "HFM / HotForex regulativa"
+    },
+    "riskWarning": "Upozorenje o riziku:",
+    "riskDisclaimer": "Forex i CFD trgovanje nosi visok nivo rizika i možda nije prikladno za sve investitore. Možete izgubiti cjelokupan uloženi kapital. Ova web stranica ne pruža investicione savjete niti usluge upravljanja portfeljem. Sav sadržaj služi isključivo u informativne svrhe. Djelujemo kao službeni IB i affiliate partner Tickmill-a. Prije donošenja investicione odluke, obratite se nezavisnom finansijskom savjetniku. Prethodni rezultati ne ukazuju na buduće rezultate.",
+    "partnerDesc": "Djelujemo kao službeni Introducing Broker (IB) i affiliate partner Tickmill-a i HFM-a (HF Markets). Sadržaj analize tržišta dijeli se isključivo u informativne svrhe. Ne pružamo investicione savjete niti usluge upravljanja portfeljem.",
+    "copyright": "© {{year}} Trader ECE – Tickmill IB & Affiliate. Sva prava zadržana.",
+    "regulation": "Poslovanje u regulisanom okruženju pod nadzorom Tickmill i HF Markets grupacije.",
+    "bullexSubtitle": "KANAL ANALIZE"
+  },
+  "home": {
+    "badge": "TRADER ECE – Zvanični IB i pridruženi partner Tickmill & HFM-a",
+    "hero": {
+      "titlePre": "",
+      "titleHighlight": "Dođite do vrha tržišta.",
+      "titlePost": "",
+      "stat": "Dok 75% trgovaca na malo gubi novac, stoje na desnoj strani tržišta. Poboljšajte svoju prednost sa 15+ godina profesionalne ekspertize u trgovanju.",
+      "subtitle": "Ostanite ispred 75%. Otkrijte 15+ godina iskustva na globalnom tržištu u okviru regulisanog trgovinskog okruženja."
+    },
+    "buttons": {
+      "telegramTraderEce": "Pridružite se Trader Ece Telegram grupi",
+      "telegramBullex": "Pridružite se BULLEX Telegram grupi",
+      "info": "Javite se"
+    },
+    "trust": {
+      "title": "Regulisani broker",
+      "item1": "15+ godina iskustva",
+      "item2": "8,5 miliona dolara+ aktivni obim"
+    },
+    "services": {
+      "tag": "Naše usluge",
+      "title": "Ono što nudimo",
+      "subtitle": "Kroz našu zvaničnu Tickmill i HFM (HotForex) partnersku strukturu, podržavamo otvaranje računa i tržišno vođenje, i podstičemo klijente da napreduju direktno sa nama.",
+      "viewAll": "Istražite sve usluge →",
+      "viewAllDesc": "Nastavite da vidite sve kategorije usluga i njihove detalje.",
+      "cards": [
+        {
+          "title": "Telegram i WhatsApp grupe za analizu",
+          "desc": "Analiza tržišta u stvarnom vremenu i dnevni pregledi kroz naše ekskluzivne zajednice za analizu. Samo u informativne svrhe — nije investicioni savjet."
+        },
+        {
+          "title": "Tickmill & HFM IB partnerstvo",
+          "desc": "Kao zvanični broker za predstavljanje za Tickmill i HFM, mi vas vodimo kroz registraciju računa i pružamo punu podršku za onboarding platforme."
+        },
+        {
+          "title": "Regulisano trgovinsko okruženje",
+          "desc": "Tickmill je globalno regulisan broker licenciran od strane višestrukih finansijskih vlasti prvog nivoa, osiguravajući transparentno i bezbedno okruženje za trgovanje za sve klijente."
+        },
+        {
+          "title": "Analiza i istraživanje tržišta",
+          "desc": "Redovne tehničke i fundamentalne analize koje se dijele u našim zajednicama. Svi materijali služe u informativne svrhe i ne predstavljaju finansijski savjet."
+        },
+        {
+          "title": "Nagrađivani brokerski partneri",
+          "desc": "Sarađujemo isključivo sa međunarodno priznatim, višestruko nagrađivanim regulisanim brokerima — dajući vam pristup pouzdanoj i robusnoj trgovačkoj infrastrukturi."
+        }
+      ]
+    },
+    "stats": {
+      "experience": "Godine iskustva",
+      "volume": "Aktivni obim ($)",
+      "withdrawals": "Obim povlačenja ($)",
+      "partnership": "Godine kao IB partner",
+      "hfmPartnership": "HFM partnerstvo (godine)"
+    },
+    "hfmTrust": {
+      "tag": "Zašto Tickmill?",
+      "title": "Globalni, regulisani broker",
+      "desc": "Tickmill nudi snažnu regulisanu infrastrukturu brokera, dok HFM (HotForex) ostaje naš sekundarni regulisani partner. U oba slučaja, ohrabrujemo klijente da se kroz proces kreću direktno sa nama.",
+      "features": [
+        "Regulacija više nadležnosti (FCA, CySEC, DFSA i više)",
+        "Brza, pouzdana obrada povlačenja",
+        "Širok spektar instrumenata za trgovanje",
+        "Odvojena sredstva klijenata za potpunu sigurnost imovine"
+      ],
+      "moreLink": "Idite na Tickmill →",
+      "hfmLink": "Idite na HFM →",
+      "vpnNote": "Ako se veza ne otvori, koristite VPN."
+    },
+    "hfmBadge": {
+      "text": "Tickmill",
+      "tagline": "Primarni brokerski partner",
+      "desc": "Regulisani broker"
+    },
+    "regulators": {
+      "fca": "FCA",
+      "cysec": "CySEC",
+      "dfsa": "DFSA",
+      "fsc": "FSC"
+    },
+    "cta": {
+      "title": "Spremni da otvorite Tickmill ili HFM račun?",
+      "subtitle": "Otvorite svoj Tickmill ili HFM (HotForex) račun i prođite kroz proces podrške direktno sa nama.",
+      "telegramBtn": "Kontaktirajte nas na Telegramu",
+      "formBtn": "Pošaljite nam poruku"
+    }
+  },
+  "performance": {
+    "tag": "Rekord performansi i staza",
+    "hero": {
+      "title1": "Rezultati podržani od",
+      "title2": "Real Ekperience",
+      "subtitle": "Preko 15 godina aktivnog učešća na tržištu, sa obimom trgovanja koji se prati kroz naša IB partnerstva. Prošli učinak ne ukazuje na buduće rezultate."
+    },
+    "metrics": [
+      {
+        "value": "15",
+        "suffix": "+",
+        "label": "Godine tržišnog iskustva",
+        "note": "Aktivno trguje od 2009",
+        "prefix": ""
+      },
+      {
+        "value": "8.5",
+        "suffix": "M+",
+        "prefix": "$",
+        "label": "Aktivni obim trgovanja",
+        "note": "Ukupan obim praćen preko IB računa"
+      },
+      {
+        "value": "6.7",
+        "suffix": "M+",
+        "prefix": "$",
+        "label": "Obim povlačenja klijenata",
+        "note": "Povlačenja se obrađuju preko Tickmill-a"
+      },
+      {
+        "value": "2",
+        "suffix": "+",
+        "label": "Godine aktivne Tickmill usluge",
+        "note": "Otprilike 1,5 godina sa Tickmill-om; oko 5 godina HFM iskustva",
+        "prefix": ""
+      },
+      {
+        "value": "5",
+        "suffix": "+",
+        "label": "Godine partnerstva s HFM-om",
+        "note": "Približno 5 godina iskustva u partnerstvu s HFM-om",
+        "prefix": ""
+      }
+    ],
+    "disclaimer": "⚠ Važno odricanje odgovornosti:",
+    "disclaimerText": "Sve prikazane brojke su samo u informativne svrhe i odražavaju istorijske podatke. Oni ne garantuju niti predviđaju budući učinak ili povrat. Forek i CFD trgovanje nosi značajan rizik. Preporučujemo da se konsultujete sa nezavisnim finansijskim savetnikom pre nego što donesete bilo kakvu investicionu odluku.",
+    "process": {
+      "tag": "Kako to radi",
+      "title": "Naš pristup",
+      "subtitle": "Transparentan pregled toka podrške koji pružamo u okviru naše partnerske strukture Tickmill i HFM (HotForex).",
+      "steps": [
+        {
+          "number": "01",
+          "title": "Podrška za registraciju računa",
+          "desc": "Vodimo klijente kroz proces registracije Tickmill i HFM računa. Potpuna kontrola računa ostaje klijentu u svakom trenutku."
+        },
+        {
+          "number": "02",
+          "title": "Tržišni uvidi i analize",
+          "desc": "Dnevne i sedmične analize tržišta dijele se u našim Telegram i WhatsApp zajednicama. Sav sadržaj služi isključivo u informativne svrhe i ne predstavlja finansijski savjet."
+        },
+        {
+          "number": "03",
+          "title": "Tekuća podrška platformi",
+          "desc": "Pružamo tehničke smernice o podešavanju platforme, konfiguraciji računa i opštim procesima brokera kako bismo pomogli klijentima da sa poverenjem započnu."
+        }
+      ]
+    },
+    "hfmPartnership": {
+      "tag": "Naše brokersko partnerstvo",
+      "title": "Zašto Tickmill?",
+      "desc1": "Tickmill i HFM (HotForex) su jake brokerske strukture koje deluju unutar međunarodnih regulatornih okvira. Kroz naš zvanični model partnera, pomažemo klijentima da napreduju u otvaranju računa direktno kod nas, istovremeno pružajući informativnu podršku.",
+      "desc2": "Upravljanje fondovima, upravljanje portfoliom i individualni investicioni konsalting nisu deo naših usluga.",
+      "regulationLink": "Idite na Tickmill →",
+      "hfmLink": "Idite na HFM →",
+      "vpnNote": "Ako se veza ne otvori, koristite VPN.",
+      "authorities": {
+        "fca": "Uprava za finansijsko ponašanje",
+        "cysec": "Kiparska komisija za hartije od vrednosti i berze",
+        "dfsa": "Uprava za finansijske usluge Dubaija",
+        "fsc": "Komisija za finansijske usluge"
+      }
+    },
+    "cta": {
+      "title": "Spremni da otvorite Tickmill ili HFM račun?",
+      "subtitle": "Krećite se kroz proces svog Tickmill ili HFM (HotForex) računa sa nama, korak po korak.",
+      "button": "Javite se"
+    }
+  },
+  "about": {
+    "tag": "O nama",
+    "hero": {
+      "title1": "Ko smo mi",
+      "title2": "i za šta se zalažemo",
+      "subtitle": "15+ godina iskustva na tržištu, oko 5 godina brokerskog partnerskog rada sa HFM-om i otprilike 1,5 godina aktivne službe sa Tickmill-om."
+    },
+    "experience": "15+",
+    "experienceLabel": "Godine iskustva",
+    "badges": [
+      "Zvanični Tickmill & HFM IB partner",
+      "Zajednice aktivne analize",
+      "Regulisano okruženje"
+    ],
+    "biography": {
+      "tag": "Naša priča",
+      "title": "Iskustvo kome možete verovati",
+      "p1": "Od 2009. godine aktivno sam angažovan na globalnim Forek tržištima. Tokom godina, razvio sam duboku ekspertizu u tehničkoj analizi, fundamentalnoj analizi i psihologiji tržišta — gradeći disciplinovan i dosledan pristup trgovanju.",
+      "p2": "Zvanični partnerski put započeo je sa HFM-om 2021. godine i nastavio se oko pet godina. Danas, pored približno 1,5 godine aktivne usluge sa Tickmill-om, nastavljamo da pružamo podršku za otvaranje računa, uputstva za platformu i sadržaj analize tržišta.",
+      "note": "Važna napomena:",
+      "p3": "Sav sadržaj i analize koji se dele preko naših kanala su isključivo u informativne svrhe. Ne pružamo savete o ulaganjima, upravljanje portfoliom ili individualne konsultacije bilo koje vrste.",
+      "button": "Kontaktirajte nas"
+    },
+    "hfmPartnership": {
+      "tag": "Zašto Tickmill?",
+      "title": "Krenite napred uz Tickmill & HFM poverenje",
+      "subtitle": "Umesto da investitore ostavimo izloženim nejasnim i neregulisanim strukturama, verujemo da je zdraviji put da se krene napred direktno sa nama uz garanciju partnera Tickmill-a i HFM-a (HotForex).",
+      "features": [
+        {
+          "icon": "",
+          "title": "Regulisana i transparentna infrastruktura",
+          "desc": "Tickmill i HFM (HotForex) pružaju vidljiviji, odgovorniji okvir kroz svoju regulisanu strukturu brokera."
+        },
+        {
+          "icon": "",
+          "title": "Bezbednost fondova i procesa",
+          "desc": "Čisti tokovi rada depozita i povlačenja jedan su od najjačih pokazatelja poverenja za svakog investitora."
+        },
+        {
+          "icon": "",
+          "title": "Krenite napred direktno sa nama",
+          "desc": "Od otvaranja računa do vođenja platforme, pomažemo klijentima da napreduju kroz ceo proces direktno uz našu podršku."
+        },
+        {
+          "icon": "",
+          "title": "Držite se dalje od neregulisanih struktura",
+          "desc": "Praktičan način da se izbegnu rizična i nepouzdana podešavanja je da ostanete u regulisanom okruženju brokera."
+        },
+        {
+          "icon": "",
+          "title": "Tickmill & HFM partnerska podrška",
+          "desc": "Kroz našu zvaničnu partnersku strukturu, nudimo klijentima organizovaniji put koji se može pratiti i podržavati."
+        },
+        {
+          "icon": "",
+          "title": "Naša jasna preporuka",
+          "desc": "Naša preporuka je jednostavna: napredujte sa nama kroz Tickmill i HFM (HotForex) stranu procesa."
+        }
+      ],
+      "note": "Napomena: U okviru našeg modela usluge, preporučujemo klijentima da napreduju direktno sa nama preko zvaničnih Tickmill i HFM (HotForex) kanala koje pružamo."
+    },
+    "timeline": {
+      "tag": "Naše putovanje",
+      "title": "Prekretnice",
+      "items": [
+        {
+          "year": "2009",
+          "title": "Ulazak na tržišta",
+          "desc": "Počeo je aktivno učestvovati na Forek tržištima. Počeo je intenzivan period proučavanja tehničke i fundamentalne analize."
+        },
+        {
+          "year": "2013",
+          "title": "Prvi profesionalni koraci",
+          "desc": "Osnovane su analitičke zajednice. Počeli su da se distribuiraju redovni sadržaji analize tržišta. Porastao je lojalni sledbenik."
+        },
+        {
+          "year": "2018",
+          "title": "Institucionalna partnerstva",
+          "desc": "Uspostavljena su formalna partnerstva sa međunarodnim brokerima. Počele su aktivnosti IB."
+        },
+        {
+          "year": "2021",
+          "title": "Zvanično HFM partnerstvo",
+          "desc": "Zvanično partnerstvo sa HFM-om počelo je 2021. Usledilo je oko pet godina praktičnog rada, snažnih rezultata i strukture usluga usmerene na poverenje."
+        },
+        {
+          "year": "2026",
+          "title": "danas",
+          "desc": "Uz partnerstva izgrađena preko HFM-a i Tickmill-a, uspostavljena je snažna mreža poverenja. Podržali smo portfelje koji premašuju 8,5 miliona dolara i osigurali da su sredstva bezbedno dostavljena njihovim pravim vlasnicima."
+        }
+      ]
+    }
+  },
+  "services": {
+    "tag": "Usluge",
+    "title": "Šta mi pružamo",
+    "subtitle": "Kao zvanični Tickmill i HFM (HotForex) partner, pružamo podršku za račune i tržišne smernice, istovremeno podstičući klijente da napreduju direktno sa nama.",
+    "cards": [
+      {
+        "title": "Telegram i WhatsApp grupe za analizu",
+        "desc": "Dnevne i sedmične analize tržišta, tehnički pregledi i najvažnije objave iz ekonomskog kalendara koje dijele naše ekskluzivne zajednice. Samo u informativne svrhe — nije investicioni savjet.",
+        "features": [
+          "Dnevni brifinzi tehničke analize",
+          "Ključno praćenje ekonomskog kalendara",
+          "Komentar tržišta uživo",
+          "Obaveštenja u realnom vremenu"
+        ],
+        "disclaimer": "Ovaj sadržaj nije investicioni savjet. Sve odluke o trgovanju donosite sami."
+      },
+      {
+        "title": "Podrška za Tickmill & HFM račun",
+        "desc": "Kroz našu zvaničnu Tickmill i HFM (HotForex) partnersku strukturu, mi vodimo vaš proces otvaranja računa i pomažemo vam da napredujete direktno sa nama. Mi ne upravljamo računima ili sredstvima klijenata.",
+        "features": [
+          "Uputstvo za registraciju računa Tickmill i HFM",
+          "Podrška za podešavanje MT4 / MT5 platforme",
+          "Savjet pri odabiru vrste računa",
+          "Pomoć u procesu depozita i povlačenja"
+        ],
+        "disclaimer": "Vaš račun ostaje u potpunosti pod vašom kontrolom. Nije obezbeđeno upravljanje fondovima."
+      },
+      {
+        "title": "Sadržaj analize tržišta",
+        "desc": "Sadržaj tehničke i fundamentalne analize priprema se i distribuira u informativne svrhe. Ovaj materijal ne bi trebalo da se koristi kao jedina osnova za bilo kakvu trgovinsku odluku.",
+        "features": [
+          "Pregledi grafikona tehničke analize",
+          "Sažeci osnovnih analiza",
+          "Ključni nivoi podrške i otpora",
+          "Praćenje ekonomskih podataka"
+        ],
+        "disclaimer": "Analiza se zasniva na istorijskim podacima i ne garantuje buduće rezultate."
+      }
+    ],
+    "advantages": {
+      "tag": "Naše prednosti",
+      "title": "Zašto izabrati nas?",
+      "cards": [
+        {
+          "title": "Regulisano okruženje",
+          "desc": "Uz podršku Tickmill-a i međunarodnog regulatornog okvira HFM-a"
+        },
+        {
+          "title": "Brza povlačenja",
+          "desc": "Brzine povlačenja priznate u industriji preko Tickmill-a i HFM-a"
+        },
+        {
+          "title": "Globalni pristup",
+          "desc": "Dostupan trgovcima sa bilo kog mesta u svetu"
+        },
+        {
+          "title": "Dedicated Support",
+          "desc": "Brzi odgovori putem Telegrama i e-pošte"
+        }
+      ]
+    },
+    "packages": {
+      "tag": "Paketi",
+      "title": "Paketi sadržaja",
+      "subtitle": "Odaberite paket koji odgovara vašem nivou angažovanja sa našim sadržajem za analizu i obrazovanje.",
+      "free": {
+        "name": "Besplatno",
+        "price": "0",
+        "desc": "Osnovni tržišni sadržaj za one koji tek počinju",
+        "features": [
+          "Opšte tržišne vesti",
+          "Nedeljni rezime analize",
+          "Podrška za registraciju Tickmill računa",
+          "Orijentacija platforme"
+        ],
+        "cta": "Započnite"
+      },
+      "premium": {
+        "name": "Premium",
+        "price": "Kontaktirajte nas",
+        "desc": "Sveobuhvatan sadržaj analize i prioritetna podrška",
+        "badge": "Preporučeno",
+        "features": [
+          "Dnevni brifinzi o analizi tržišta",
+          "Ekskluzivni Telegram grupni pristup",
+          "Prioritetna podrška platformi",
+          "Upozorenja ekonomskog kalendara",
+          "Mesečni izveštaj o izgledima tržišta"
+        ],
+        "cta": "Zahtevajte informacije"
+      },
+      "note": "* Sav sadržaj je isključivo u informativne svrhe. Investicioni saveti, upravljanje portfoliom i individualne finansijske konsultacije nisu obezbeđeni. Forek trgovanje uključuje visok nivo rizika."
+    }
+  },
+  "contact": {
+    "tag": "Kontakt",
+    "title": "Javite se",
+    "subtitle": "Obratite nam se da krenete dalje direktno sa nama za otvaranje Tickmill ili HFM (HotForex) računa, podršku platformi i uključenje.",
+    "channels": {
+      "tag": "Kontakt kanali",
+      "title": "Kako doći do nas",
+      "montenegroWhatsapp": {
+        "title": "WhatsApp Crna Gora",
+        "desc": "Pošaljite poruku našoj podršci u Crnoj Gori"
+      },
+      "items": [
+        {
+          "icon": "💬",
+          "title": "BULLEX Telegram",
+          "desc": "Pridružite se našem kanalu za analizu",
+          "link": "t.me/channel →"
+        },
+        {
+          "icon": "💬",
+          "title": "Trgovac Ece Telegram",
+          "desc": "Pridružite se našem drugom kanalu zajednice",
+          "link": "t.me/channel2 →"
+        },
+        {
+          "icon": "💬",
+          "title": "WhatsApp",
+          "desc": "Pošaljite nam poruku na WhatsApp",
+          "link": "va.me/broj →"
+        },
+        {
+          "icon": "✉",
+          "title": "Email",
+          "desc": "Za detaljna pitanja",
+          "link": "info@trader-ece.com →"
+        }
+      ]
+    },
+    "hfm": {
+      "logo": "Tickmill / HFM",
+      "title": "Krenite napred sa Tickmill / HFM",
+      "desc": "Koristite naše zvanične partnerske veze da otvorite svoj Tickmill ili HFM (HotForex) račun i nastavite proces direktno sa nama.",
+      "link": "Idite na Tickmill →",
+      "hfmLink": "Idite na HFM →",
+      "vpnNote": "Ako se veza ne otvori, koristite VPN."
+    }
+  },
+  "testimonials": {
+    "tag": "Povratne informacije zajednice",
+    "title": "Šta oni kažu",
+    "items": [
+      {
+        "name": "N. Berkan",
+        "text": "Vaša analiza tržišta zlata je odlična. Danas smo to ponovo pratili i profitabilno zatvorili dan.",
+        "role": "Investitor"
+      },
+      {
+        "name": "Nese Aksoi",
+        "text": "Bio je to fantastičan trgovački dan. Vaša analiza i izvršenje pomogli su nam da završimo nedelju snažno.",
+        "role": "Investitor"
+      },
+      {
+        "name": "Ismet Iılmaz",
+        "text": "Čak i tokom najneizvesnijih tržišnih uslova, vodili ste proces sa pravim profesionalizmom.",
+        "role": "Investitor"
+      },
+      {
+        "name": "T. R. Erdem",
+        "text": "Ponovo izabrati svoj tim i ove godine se pokazalo kao ispravna odluka. Vaša perspektiva uliva poverenje.",
+        "role": "Investitor"
+      },
+      {
+        "name": "Tekin K.",
+        "text": "Završio sam svoje nedeljno povlačenje bez ikakvih problema. Ceo tim radi na transparentan i pouzdan način.",
+        "role": "Investitor"
+      },
+      {
+        "name": "Kubilai Demir",
+        "text": "Samo bih voleo da smo se ranije sreli. Poslednja četiri meseca bila su i obrazovna i profitabilna zahvaljujući vašem vođstvu.",
+        "role": "Investitor"
+      },
+      {
+        "name": "Esin Varol",
+        "text": "Upoznavanje sa timom poput vašeg u ovom sektoru je prava prednost. Hvala vam na brizi i pažnji.",
+        "role": "Investitor"
+      },
+      {
+        "name": "Rustem K.",
+        "text": "Dobio sam svoje povlačenje glatko. Uz vašu analizu i podršku, sve se kreće brzo i jasno.",
+        "role": "Investitor"
+      },
+      {
+        "name": "Hasan Sal",
+        "text": "Danas sam napravio svoje prvo povlačenje profita. Pokazali ste mi šta se može postići pravilnom strategijom i strpljenjem.",
+        "role": "Investitor"
+      },
+      {
+        "name": "Ajkut B.",
+        "text": "Pobeda na Forek-u postaje mnogo lakša uz disciplinovano upravljanje rizikom i smiren pristup zasnovan na podacima.",
+        "role": "Investitor"
+      },
+      {
+        "name": "Esra Cailak",
+        "text": "Ono što vas izdvaja je način na koji objašnjavate svaki detalj sa pažnjom pravog vaspitača.",
+        "role": "Investitor"
+      },
+      {
+        "name": "Ozlem Cetinkaia",
+        "text": "Čak i u teškim tržišnim uslovima, vaša doslednost nam pomaže da nastavimo sa uspešnim trgovinama.",
+        "role": "Investitor"
+      },
+      {
+        "name": "Murat Sencer",
+        "text": "Moj zahtev za povlačenje je odmah stigao na moj račun. Hvala vam na profesionalnoj podršci i snažnom trgovačkom učinku.",
+        "role": "Investitor"
+      },
+      {
+        "name": "Cenk Altın",
+        "text": "Uzeo sam pauzu, ali moj povratak je bio odličan. Ova nedelja je prošla neverovatno dobro.",
+        "role": "Investitor"
+      },
+      {
+        "name": "Gulare M.",
+        "text": "Otkako sam se pridružio vašem sistemu, osećam se mnogo sigurnije. Dobio sam svoju prvu zaradu i zaista cenim vašu podršku.",
+        "role": "Investitor"
+      }
+    ]
+  },
+  "chat": {
+    "title": "Trader Ece asistent",
+    "status": "Dobro došli u Trader Ece. Naš AI asistent trenutno je u fazi razvoja.",
+    "contactIntro": "Za brži odgovor, kontaktirajte nas putem Telegram zajednice ili WhatsApp linija.",
+    "telegramAction": "Kontaktirajte nas putem Telegrama",
+    "whatsappTurkey": "WhatsApp Turska: +90 545 646 23 53",
+    "whatsappMontenegro": "WhatsApp Crna Gora: +382 67 494 040"
+  },
+  "form": {
+    "success": {
+      "title": "Poruka je poslata!",
+      "msg": "Javićemo vam se što je pre moguće. Takođe ste dobrodošli da se pridružite našoj Telegram zajednici.",
+      "button": "Pridružite se Telegram grupi"
+    },
+    "card": {
+      "title": "Pošaljite poruku",
+      "subtitle": "Pošaljite svoja pitanja o otvaranju Tickmill ili HFM računa, podršci platformi ili sadržaju analize."
+    },
+    "fields": {
+      "name": "Puno ime *",
+      "namePlaceholder": "Vaše puno ime",
+      "email": "Adresa e-pošte *",
+      "emailPlaceholder": "vi@ekample.com",
+      "subject": "Predmet",
+      "subjectDefault": "Izaberite predmet",
+      "subjectOptions": [
+        "Tickmill / HFM otvaranje računa",
+        "Telegram zajednica",
+        "Podrška platformi",
+        "Ostalo"
+      ],
+      "message": "Vaša poruka *",
+      "messagePlaceholder": "Unesite svoju poruku ovde..."
+    },
+    "disclaimer": "Ovaj obrazac se ne može koristiti za zahteve za savete o ulaganjima. Namenjen je isključivo za podršku za Tickmill i HFM račun i opšte informacije.",
+    "error": "Nešto je pošlo po zlu. Pokušajte ponovo.",
+    "submit": "Pošalji poruku",
+    "submitting": "Slanje..."
+  }
+}

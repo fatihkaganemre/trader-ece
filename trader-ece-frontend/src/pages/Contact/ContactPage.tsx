@@ -4,6 +4,7 @@ import Lottie from "lottie-react";
 import ContactForm from "./ContactForm";
 import socialSignalAnim from "../../assets/social-signal.json";
 import { getBrokerLinks } from "../../utils/brokerLinks";
+import BrokerAccountAction from "../../components/BrokerAccountAction";
 
 interface ContactChannel {
   href: string;
@@ -56,6 +57,14 @@ export default function ContactPage() {
       title: t("contact.channels.items.2.title"),
       subtitle: t("contact.channels.items.2.desc"),
       linkLabel: t("contact.channels.items.2.link"),
+      icon: whatsappIcon,
+    },
+    {
+      href: "https://wa.me/38267494040",
+      color: "#25d366",
+      title: t("contact.channels.montenegroWhatsapp.title"),
+      subtitle: t("contact.channels.montenegroWhatsapp.desc"),
+      linkLabel: "+382 67 494 040",
       icon: whatsappIcon,
     },
     {
@@ -118,12 +127,12 @@ export default function ContactPage() {
                   </div>
                 </div>
                 <div className="hoa-actions">
-                  <a href={tickmillLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary">
+                  <BrokerAccountAction broker="tickmill" accountLink={tickmillLink} className="btn btn-primary">
                     {t("contact.hfm.link")}
-                  </a>
-                  <a href={hfmLink} target="_blank" rel="noopener noreferrer" className="btn btn-outline">
+                  </BrokerAccountAction>
+                  <BrokerAccountAction broker="hfm" accountLink={hfmLink} className="btn btn-outline">
                     {t("contact.hfm.hfmLink")}
-                  </a>
+                  </BrokerAccountAction>
                 </div>
                 <p className="hoa-note">{t("contact.hfm.vpnNote")}</p>
               </div>

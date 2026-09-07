@@ -8,6 +8,8 @@ import thTranslation from '../locales/th/translation.json';
 import idTranslation from '../locales/id/translation.json';
 import zhTranslation from '../locales/zh/translation.json';
 import viTranslation from '../locales/vi/translation.json';
+import ruTranslation from '../locales/ru/translation.json';
+import cnrTranslation from '../locales/cnr/translation.json';
 
 const resources = {
   en: {
@@ -27,6 +29,12 @@ const resources = {
   },
   vi: {
     translation: viTranslation,
+  },
+  ru: {
+    translation: ruTranslation,
+  },
+  cnr: {
+    translation: cnrTranslation,
   },
 };
 

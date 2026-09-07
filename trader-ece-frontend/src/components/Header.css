@@ -80,6 +80,60 @@
   padding-right: 50px;
 }
 
+.header-account-cta {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 92px;
+  min-height: 48px;
+  padding: 7px 12px;
+  border: 1px solid rgba(214, 176, 106, 0.62);
+  border-radius: 6px;
+  color: var(--white);
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: var(--transition);
+  white-space: nowrap;
+}
+
+.header-account-cta span {
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  line-height: 1.1;
+}
+
+.header-account-cta small {
+  margin-top: 3px;
+  color: rgba(235, 227, 214, 0.74);
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  line-height: 1;
+}
+
+.header-account-cta:hover {
+  transform: translateY(-2px);
+  border-color: var(--gold);
+  box-shadow: 0 8px 22px rgba(182, 138, 68, 0.2);
+}
+
+.header-account-cta--tickmill {
+  background: linear-gradient(135deg, var(--accent), var(--gold));
+  color: #090b0f;
+}
+
+.header-account-cta--tickmill small { color: rgba(9, 11, 15, 0.72); }
+
+.header-account-cta--hfm { background: rgba(255, 255, 255, 0.035); }
+
+.header__logo-left + .header-account-cta { margin-left: 24px; }
+
+.header__actions .header-account-cta { margin-left: 10px; }
+
+.mobile-account-actions { display: none; }
+
 /* ── LOGO IMAGES ── */
 .logo-img {
   display: block;
@@ -238,11 +292,26 @@
 .hamburger.open span:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
 
 /* ── RESPONSIVE ── */
-@media (max-width: 1200px) {
-  .header__sep--left, .header__sep--right { margin: 0 24px; }
+@media (max-width: 2200px) {
+  .header__logo-left { padding-left: 28px; }
+  .header__logo-right { padding-right: 28px; }
+  .header__sep--left, .header__sep--right { margin: 0 18px; }
   .logo-brand, .bullex-name { font-size: 22px; }
-  .logo-img--left, .logo-img--right { width: 150px; height: 150px; }
-  .nav-item { font-size: 14px; padding: 9px 13px; }
+  .logo-sub { font-size: 11px; }
+  .header__actions { gap: 14px; }
+  .header__logo-left + .header-account-cta { margin-left: 20px; }
+  .header__actions .header-account-cta { margin-left: 6px; }
+  .header-account-cta { min-width: 82px; min-height: 42px; padding: 6px 9px; }
+  .header-account-cta span { font-size: 11px; }
+  .header-account-cta small { font-size: 8px; }
+  .header__nav { min-width: 0; gap: 0; }
+  .nav-item { font-size: 11px; letter-spacing: 0.06em; padding: 9px 10px; }
+  .header__nav .btn-sm { margin-left: 8px !important; padding: 10px 14px; font-size: 11px; }
+}
+
+@media (min-width: 1401px) and (max-width: 2200px) {
+  .nav-item { font-size: 12px; padding: 10px 12px; }
+  .header__nav .btn-sm { padding: 10px 16px; font-size: 12px; }
 }
 
 @media (max-width: 960px) {
@@ -250,6 +319,12 @@
   .logo-brand, .bullex-name { font-size: 18px; }
   .logo-img--left, .logo-img--right { width: 120px; height: 120px; }
   .logo-sub { display: none; }
+  .header-account-cta { min-width: 72px; }
+}
+
+@media (max-width: 1100px) {
+  .header__actions > .header-account-cta,
+  .header__logo-left + .header-account-cta { display: none; }
 }
 
 @media (max-width: 768px) {
@@ -280,7 +355,6 @@
   }
 
   .header__actions .btn { display: none; }
-
   .header__sep--left, .header__sep--right { display: none; }
 
   .header__nav {
@@ -312,6 +386,19 @@
     text-align: center;
     padding: 13px;
     font-size: 15px;
+  }
+
+  .mobile-account-actions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    width: 100%;
+    margin-top: 8px;
+  }
+
+  .mobile-account-actions .header-account-cta {
+    display: inline-flex;
+    min-height: 52px;
   }
 }
 

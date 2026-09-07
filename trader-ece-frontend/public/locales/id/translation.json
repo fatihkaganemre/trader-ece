@@ -12,7 +12,7 @@
     "brand": "TRADER ECE",
     "subtitle": "Tickmill IB & Affiliate",
     "bullex": "BULLEX",
-    "bullexSubtitle": "Saluran Sinyal",
+    "bullexSubtitle": "Saluran Analisis",
     "language": {
       "title": "Pilih Bahasa",
       "en": "Inggris",
@@ -35,7 +35,7 @@
     "partnerDesc": "Kami beroperasi sebagai mitra Introducing Broker (IB) dan Affiliate resmi Tickmill dan HFM (HF Markets). Konten analisis pasar dibagikan hanya untuk tujuan informasi. Kami tidak memberikan saran investasi atau layanan manajemen portofolio.",
     "copyright": "© {{year}} Trader ECE – Tickmill IB & Affiliate. Seluruh hak cipta dilindungi.",
     "regulation": "Beroperasi dalam lingkungan teregulasi yang diawasi oleh Tickmill dan HF Markets Group.",
-    "bullexSubtitle": "KANAL SINYAL"
+    "bullexSubtitle": "KANAL ANALISIS"
   },
   "home": {
     "badge": "TRADER ECE – Mitra IB & Affiliate Resmi Tickmill & HFM",
@@ -43,8 +43,8 @@
       "titlePre": "",
       "titleHighlight": "Raih Puncak Pasar.",
       "titlePost": "",
-      "stat": "Saat 75% trader ritel merugi, tempatkan diri Anda di sisi yang benar. Tajamkan strategi Anda bersama 13+ tahun pengalaman profesional.",
-      "subtitle": "Keluar dari kelompok 75%. Bergabunglah dengan 13 tahun pengalaman global dalam lingkungan trading teregulasi."
+      "stat": "Saat 75% trader ritel merugi, tempatkan diri Anda di sisi yang tepat. Tajamkan strategi Anda bersama 15+ tahun pengalaman profesional.",
+      "subtitle": "Melangkahlah melampaui statistik 75% dengan 15+ tahun pengalaman pasar global dalam lingkungan trading teregulasi."
     },
     "buttons": {
       "telegramTraderEce": "Bergabung ke Grup Telegram Trader Ece",
@@ -53,8 +53,8 @@
     },
     "trust": {
       "title": "Broker Teregulasi",
-      "item1": "13+ Tahun Pengalaman",
-      "item2": "Volume Aktif $7 Juta"
+      "item1": "15+ Tahun Pengalaman",
+      "item2": "Volume Aktif $8,5 Juta+"
     },
     "services": {
       "tag": "Layanan Kami",
@@ -64,8 +64,8 @@
       "viewAllDesc": "Lanjutkan untuk melihat semua kategori layanan beserta detailnya.",
       "cards": [
         {
-          "title": "Grup Sinyal Telegram & WhatsApp",
-          "desc": "Analisis pasar real-time dan briefing harian melalui komunitas sinyal eksklusif kami. Hanya untuk tujuan informasi — bukan saran investasi."
+          "title": "Grup Analisis Telegram & WhatsApp",
+          "desc": "Analisis pasar real-time dan briefing harian melalui komunitas analisis eksklusif kami. Hanya untuk tujuan informasi — bukan saran investasi."
         },
         {
           "title": "Kemitraan IB Tickmill & HFM",
@@ -89,7 +89,8 @@
       "experience": "Tahun Pengalaman",
       "volume": "Volume Aktif ($)",
       "withdrawals": "Volume Penarikan ($)",
-      "partnership": "Tahun sebagai Mitra IB"
+      "partnership": "Tahun sebagai Mitra IB",
+      "hfmPartnership": "Kemitraan HFM (Tahun)"
     },
     "hfmTrust": {
       "tag": "Mengapa Tickmill?",
@@ -128,7 +129,7 @@
     "hero": {
       "title1": "Hasil yang Didukung",
       "title2": "Pengalaman Nyata",
-      "subtitle": "Lebih dari 13 tahun partisipasi aktif di pasar, dengan volume trading terlacak melalui kemitraan IB Tickmill kami. Kinerja masa lalu bukan indikasi hasil di masa depan."
+      "subtitle": "Lebih dari 15 tahun partisipasi aktif di pasar, dengan volume trading yang terlacak melalui kemitraan IB kami. Kinerja masa lalu bukan indikasi hasil di masa depan."
     },
     "metrics": [
       {
@@ -139,24 +140,24 @@
         "prefix": ""
       },
       {
-        "value": "7",
+        "value": "8.5",
         "suffix": "M+",
         "prefix": "$",
         "label": "Volume Trading Aktif",
         "note": "Total volume terlacak via akun IB"
       },
       {
-        "value": "4.6",
+        "value": "6.7",
         "suffix": "M+",
         "prefix": "$",
         "label": "Volume Penarikan Nasabah",
         "note": "Penarikan diproses melalui Tickmill"
       },
       {
-        "value": "4",
+        "value": "2",
         "suffix": "+",
-        "label": "Tahun sebagai Mitra IB Resmi",
-        "note": "Kemitraan IB Tickmill resmi sejak 2021",
+        "label": "Tahun Layanan Aktif Tickmill",
+        "note": "Sekitar 1,5 tahun dengan Tickmill; sekitar 5 tahun pengalaman HFM",
         "prefix": ""
       }
     ],
@@ -210,20 +211,20 @@
     "hero": {
       "title1": "Siapa Kami",
       "title2": "dan Apa yang Kami Lakukan",
-      "subtitle": "13+ tahun pengalaman pasar, 4+ tahun kemitraan kuat bersama HFM, dan kini babak baru dimulai bersama Tickmill."
+      "subtitle": "15+ tahun pengalaman pasar, sekitar 5 tahun kemitraan bersama HFM, dan sekitar 1,5 tahun layanan aktif bersama Tickmill."
     },
     "experience": "15+",
     "experienceLabel": "Tahun Pengalaman",
     "badges": [
       "Mitra IB Resmi Tickmill & HFM",
-      "Komunitas Sinyal Aktif",
+      "Komunitas Analisis Aktif",
       "Lingkungan Teregulasi"
     ],
     "biography": {
       "tag": "Kisah Kami",
       "title": "Pengalaman yang Dapat Dipercaya",
       "p1": "Sejak 2009, saya aktif terlibat di pasar Forex global. Selama bertahun-tahun, saya mengembangkan keahlian mendalam dalam analisis teknikal, analisis fundamental, dan psikologi pasar — membangun pendekatan trading yang disiplin dan konsisten.",
-      "p2": "Perjalanan kemitraan resmi dimulai dengan HFM pada 2021 dan berjalan aktif selama empat tahun yang produktif. Kini babak baru bersama Tickmill telah dimulai, sambil kami terus memberikan dukungan pembukaan akun, panduan platform, dan konten analisis pasar.",
+      "p2": "Kemitraan resmi dengan HFM dimulai pada 2021 dan telah berjalan aktif selama sekitar lima tahun. Bersama Tickmill, kami juga telah memberikan layanan aktif selama sekitar 1,5 tahun, termasuk dukungan pembukaan akun, panduan platform, dan konten analisis pasar.",
       "note": "Catatan Penting:",
       "p3": "Semua konten dan analisis yang dibagikan melalui saluran kami hanya untuk tujuan informasi. Kami tidak memberikan saran investasi, manajemen portofolio, atau konsultasi investasi individual dalam bentuk apapun.",
       "button": "Hubungi Kami"
@@ -263,7 +264,8 @@
           "title": "Sumber Edukasi",
           "desc": "Konten edukasi resmi Tickmill, riset pasar, dan webinar."
         }
-      ]
+      ],
+      "note": "Catatan: Dalam model layanan kami, kami menyarankan klien untuk melanjutkan proses secara langsung melalui kanal resmi Tickmill dan HFM yang kami sediakan."
     },
     "timeline": {
       "tag": "Perjalanan Kami",
@@ -277,7 +279,7 @@
         {
           "year": "2013",
           "title": "Langkah Profesional Pertama",
-          "desc": "Komunitas sinyal didirikan. Konten analisis pasar rutin mulai didistribusikan. Pengikut setia terus bertumbuh."
+          "desc": "Komunitas analisis didirikan. Konten analisis pasar rutin mulai didistribusikan. Pengikut setia terus bertumbuh."
         },
         {
           "year": "2018",
@@ -287,12 +289,12 @@
         {
           "year": "2021",
           "title": "Kemitraan Resmi HFM",
-          "desc": "Kemitraan resmi dengan HFM dimulai pada 2021. Selama empat tahun, kerja aktif, hasil yang kuat, dan layanan berbasis kepercayaan terus dibangun."
+          "desc": "Kemitraan resmi dengan HFM dimulai pada 2021. Selama sekitar lima tahun, kerja aktif, hasil yang kuat, dan layanan berbasis kepercayaan terus dibangun."
         },
         {
           "year": "2026",
           "title": "Saat Ini",
-          "desc": "Melalui kemitraan dengan HFM dan Tickmill, jaringan kepercayaan yang kuat telah dibangun. Kami telah mendukung portofolio investasi di atas $7M dan memastikan dana tersalurkan dengan aman kepada pemiliknya."
+          "desc": "Melalui kemitraan dengan HFM dan Tickmill, jaringan kepercayaan yang kuat telah dibangun. Kami telah mendukung portofolio investasi di atas $8,5M dan memastikan dana tersalurkan dengan aman kepada pemiliknya."
         }
       ]
     }
@@ -303,7 +305,7 @@
     "subtitle": "Sebagai mitra IB resmi Tickmill dan HFM, kami menawarkan dukungan akun dan edukasi pasar. Saran investasi tidak diberikan.",
     "cards": [
       {
-        "title": "Grup Sinyal Telegram & WhatsApp",
+        "title": "Grup Analisis Telegram & WhatsApp",
         "desc": "Analisis pasar harian dan mingguan, briefing teknikal, dan sorotan kalender ekonomi dibagikan di komunitas eksklusif kami. Hanya untuk tujuan informasi — bukan saran investasi.",
         "features": [
           "Briefing analisis teknikal harian",
@@ -402,7 +404,7 @@
         {
           "icon": "💬",
           "title": "Bullex Telegram",
-          "desc": "Bergabung ke saluran sinyal dan analisis kami",
+          "desc": "Bergabung ke saluran analisis kami",
           "link": "t.me/channel →"
         },
         {
@@ -514,6 +516,7 @@
       "messagePlaceholder": "Ketik pesan Anda di sini..."
     },
     "disclaimer": "Formulir ini tidak dapat digunakan untuk permintaan saran investasi. Hanya ditujukan untuk dukungan akun Tickmill dan HFM serta pertanyaan informasi umum.",
+    "error": "Terjadi kesalahan. Silakan coba lagi.",
     "submit": "Kirim Pesan",
     "submitting": "Mengirim..."
   }

@@ -1,22 +1,13 @@
 import { useEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
-import Lottie from "lottie-react";
 import "./HomePage.css";
 import type { NavigateFn } from "../App";
+import DeferredLottie from "../components/DeferredLottie";
+import DeferredBackgroundVideo from "../components/DeferredBackgroundVideo";
 import TickerTape from "./TickerTape";
 import Testimonals from "./Testimonals/Testimonals";
-import moneyCoinsAnim from "../assets/money-coin-stack-line.json";
-import globalSearchAnim from "../assets/global-search.json";
-import marketVolatilityAnim from "../assets/market-volatility.json";
-import regulationAnim from "../assets/regulation.json";
-import peopleAnalyzingAnim from "../assets/people-analyzing-growth-charts.json";
-import partnershipAnim from "../assets/partnership.json";
-import moneyWithdrawalAnim from "../assets/money-withdrawal.json";
-import supportAnim from "../assets/support.json";
-import globalAnim from "../assets/global.json";
-import awardAnim from "../assets/award.json";
-import socialSignalAnim from "../assets/social-signal.json";
 import { getBrokerLinks } from "../utils/brokerLinks";
+import BrokerAccountAction from "../components/BrokerAccountAction";
 
 interface HomePageProps {
   navigate: NavigateFn;
@@ -64,7 +55,7 @@ function AnimatedCounter({ end, suffix = "", prefix = "" }: CounterProps) {
 }
 
 interface ServiceCard {
-  anim: object;
+  loadAnimation: () => Promise<{ default: object }>;
   title: string;
   desc: string;
   color: string;
@@ -76,48 +67,43 @@ interface StatItem {
   suffix: string;
   prefix?: string;
   isFloat?: boolean;
+  secondaryValue?: string;
+  secondaryLabel?: string;
 }
-
-interface Testimonial {
-  name: string;
-  text: string;
-  role: string;
-}
-
-
 
 export default function HomePage({ navigate }: HomePageProps) {
   const { t, i18n } = useTranslation();
-  const { tickmillLink, hfmLink } = getBrokerLinks(i18n.language);
-  const isTurkish = i18n.language.toLowerCase().startsWith("tr");
+  const language = i18n.language || "en";
+  const { tickmillLink, hfmLink } = getBrokerLinks(language);
+  const isTurkish = language.toLowerCase().startsWith("tr");
 
   const services: ServiceCard[] = [
     {
-      anim: socialSignalAnim,
+      loadAnimation: () => import("../assets/social-signal.json"),
       title: t("home.services.cards.0.title"),
       desc: t("home.services.cards.0.desc"),
       color: "#0088cc",
     },
     {
-      anim: partnershipAnim,
+      loadAnimation: () => import("../assets/partnership.json"),
       title: t("home.services.cards.1.title"),
       desc: t("home.services.cards.1.desc"),
       color: "#b68a44",
     },
     {
-      anim: globalAnim,
+      loadAnimation: () => import("../assets/global.json"),
       title: t("home.services.cards.2.title"),
       desc: t("home.services.cards.2.desc"),
       color: "#c9a84c",
     },
     {
-      anim: peopleAnalyzingAnim,
+      loadAnimation: () => import("../assets/people-analyzing-growth-charts.json"),
       title: t("home.services.cards.3.title"),
       desc: t("home.services.cards.3.desc"),
       color: "#a855f7",
     },
     {
-      anim: awardAnim,
+      loadAnimation: () => import("../assets/award.json"),
       title: t("home.services.cards.4.title"),
       desc: t("home.services.cards.4.desc"),
       color: "#f59e0b",
@@ -126,9 +112,16 @@ export default function HomePage({ navigate }: HomePageProps) {
 
   const stats: StatItem[] = [
     { label: t("home.stats.experience"), value: 15, suffix: "+" },
-    { label: t("home.stats.volume"), value: 7, prefix: "", suffix: "M+" },
-    { label: t("home.stats.withdrawals"), value: 4.6, suffix: "M+", isFloat: true },
-    { label: t("home.stats.partnership"), value: 4, suffix: "+" },
+    { label: t("home.stats.volume"), value: 8.5, prefix: "", suffix: "M+", isFloat: true },
+    { label: t("home.stats.withdrawals"), value: 6.7, suffix: "M+", isFloat: true },
+    {
+      label: t("home.stats.partnership"),
+      value: 2,
+      prefix: "+",
+      suffix: "",
+      secondaryValue: "+5",
+      secondaryLabel: t("home.stats.hfmPartnership"),
+    },
   ];
 
   const hfmFeatures: string[] = [
@@ -153,8 +146,6 @@ export default function HomePage({ navigate }: HomePageProps) {
 
   return (
     <div className="home">
-      <TickerTape />
-
       {/* Hero */}
       <section className="hero">
         <div className="hero__bg">
@@ -181,11 +172,11 @@ export default function HomePage({ navigate }: HomePageProps) {
               </a>
             )}
           </div>
-          <p className="hero__stat">
-            {t("home.hero.stat")}
-          </p>
           <p className="hero__subtitle">
             {t("home.hero.subtitle")}
+          </p>
+          <p className="hero__risk-note">
+            {t("home.hero.riskNote", { defaultValue: "(75% of retail traders lose money.)" })}
           </p>
           <div className="hero__actions">
             <a href="https://t.me/tradereceteam" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
@@ -195,7 +186,7 @@ export default function HomePage({ navigate }: HomePageProps) {
               <span className="btn-label-full">{t("home.buttons.telegramTraderEce")}</span>
               <span className="btn-label-short">Trader ECE</span>
             </a>
-            <a href="https://t.me/bullexardav" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
+            <a href="https://t.me/bullexardav" target="_blank" rel="noopener noreferrer" className="btn btn-outline">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12l-6.871 4.326-2.962-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.537-.194 1.006.131.833.941z" />
               </svg>
@@ -225,19 +216,38 @@ export default function HomePage({ navigate }: HomePageProps) {
           <div className="stats-grid">
             {stats.map((s, i) => (
               <div key={i} className="stat-card">
-                <div className="stat-value">
-                  {s.isFloat ? (
-                    <span>{s.prefix}{s.value}{s.suffix}</span>
-                  ) : (
-                    <AnimatedCounter end={s.value} suffix={s.suffix} prefix={s.prefix ?? ""} />
-                  )}
-                </div>
-                <div className="stat-label">{s.label}</div>
+                {s.secondaryValue && s.secondaryLabel ? (
+                  <div className="stat-partnership-pair">
+                    <div className="stat-secondary">
+                      <div className="stat-value">{s.secondaryValue}</div>
+                      <div className="stat-label">{s.secondaryLabel}</div>
+                    </div>
+                    <div>
+                      <div className="stat-value">
+                        <AnimatedCounter end={s.value} suffix={s.suffix} prefix={s.prefix ?? ""} />
+                      </div>
+                      <div className="stat-label">{s.label}</div>
+                    </div>
+                  </div>
+                ) : (
+                  <>
+                    <div className="stat-value">
+                      {s.isFloat ? (
+                        <span>{s.prefix}{s.value}{s.suffix}</span>
+                      ) : (
+                        <AnimatedCounter end={s.value} suffix={s.suffix} prefix={s.prefix ?? ""} />
+                      )}
+                    </div>
+                    <div className="stat-label">{s.label}</div>
+                  </>
+                )}
               </div>
             ))}
           </div>
         </div>
       </section>
+
+      <TickerTape />
 
       {/* Services Overview */}
       <section className="section services-overview">
@@ -253,7 +263,7 @@ export default function HomePage({ navigate }: HomePageProps) {
             {services.map((s, i) => (
               <div key={i} className="card service-card">
                 <div className="service-icon" style={{ "--c": s.color } as React.CSSProperties}>
-                  <Lottie animationData={s.anim} loop autoplay style={{ width: 56, height: 56 }} />
+                  <DeferredLottie loadAnimation={s.loadAnimation} style={{ width: 68, height: 68 }} />
                 </div>
                 <h3>{s.title}</h3>
                 <p>{s.desc}</p>
@@ -280,6 +290,7 @@ export default function HomePage({ navigate }: HomePageProps) {
 
       {/* HFM Trust */}
       <section className="section hfm-section">
+        <DeferredBackgroundVideo src="/trader-ece-intro.mp4" className="hfm-section__video" />
         <div className="container">
           <div className="hfm-inner">
             <div className="hfm-content">
@@ -296,13 +307,13 @@ export default function HomePage({ navigate }: HomePageProps) {
                 ))}
               </ul>
               <div className="broker-actions">
-                <a href={tickmillLink} target="_blank" rel="noopener noreferrer" className="btn btn-primary">
+                <BrokerAccountAction broker="tickmill" accountLink={tickmillLink} className="btn btn-primary">
                   {t("home.hfmTrust.moreLink")}
-                </a>
+                </BrokerAccountAction>
                 {!isTurkish && (
-                  <a href={hfmLink} target="_blank" rel="noopener noreferrer" className="btn btn-outline">
+                  <BrokerAccountAction broker="hfm" accountLink={hfmLink} className="btn btn-outline">
                     {t("home.hfmTrust.hfmLink")}
-                  </a>
+                  </BrokerAccountAction>
                 )}
               </div>
               <p className="broker-note">{t("home.hfmTrust.vpnNote")}</p>

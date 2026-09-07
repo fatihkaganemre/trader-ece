@@ -3,6 +3,7 @@ import { useTranslation } from "react-i18next";
 import "./PerformancePage.css";
 import type { NavigateFn } from "../App";
 import { getBrokerLinks } from "../utils/brokerLinks";
+import BrokerAccountAction from "../components/BrokerAccountAction";
 
 interface PerformancePageProps {
   navigate: NavigateFn;
@@ -86,21 +87,28 @@ export default function PerformancePage({ navigate }: PerformancePageProps) {
       note: t("performance.metrics.0.note"),
     },
     {
-      value: "7",
+      value: "8.5",
       suffix: t("performance.metrics.1.suffix"),
       prefix: t("performance.metrics.1.prefix"),
       label: t("performance.metrics.1.label"),
       note: t("performance.metrics.1.note"),
     },
     {
-      value: "4.6",
+      value: "6.7",
       suffix: t("performance.metrics.2.suffix"),
       prefix: t("performance.metrics.2.prefix"),
       label: t("performance.metrics.2.label"),
       note: t("performance.metrics.2.note"),
     },
     {
-      value: "4",
+      value: "5",
+      suffix: t("performance.metrics.3.suffix"),
+      prefix: t("performance.metrics.3.prefix"),
+      label: t("performance.metrics.4.label"),
+      note: t("performance.metrics.4.note"),
+    },
+    {
+      value: "2",
       suffix: t("performance.metrics.3.suffix"),
       prefix: t("performance.metrics.3.prefix"),
       label: t("performance.metrics.3.label"),
@@ -219,22 +227,12 @@ export default function PerformancePage({ navigate }: PerformancePageProps) {
                 {t("performance.hfmPartnership.desc2")}
               </p>
               <div className="broker-actions">
-                <a
-                  href={tickmillLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn btn-primary"
-                >
+                <BrokerAccountAction broker="tickmill" accountLink={tickmillLink} className="btn btn-primary">
                   {t("performance.hfmPartnership.regulationLink")}
-                </a>
-                <a
-                  href={hfmLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn btn-outline"
-                >
+                </BrokerAccountAction>
+                <BrokerAccountAction broker="hfm" accountLink={hfmLink} className="btn btn-outline">
                   {t("performance.hfmPartnership.hfmLink")}
-                </a>
+                </BrokerAccountAction>
               </div>
               <p className="broker-note">{t("performance.hfmPartnership.vpnNote")}</p>
             </div>

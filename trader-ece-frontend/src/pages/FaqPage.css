@@ -1,0 +1,153 @@
+.faq-hero {
+  padding-bottom: 68px;
+}
+
+.faq-section {
+  padding-top: 68px;
+}
+
+.faq-layout {
+  max-width: 900px;
+}
+
+.faq-list {
+  border-top: 1px solid var(--border);
+}
+
+.faq-item {
+  border-bottom: 1px solid var(--border);
+}
+
+.faq-item__question {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 22px 0;
+  color: var(--white);
+  background: transparent;
+  border: 0;
+  font: 700 16px/1.45 var(--font-body);
+  text-align: left;
+  cursor: pointer;
+}
+
+.faq-item__question svg {
+  flex: 0 0 auto;
+  color: var(--accent);
+  transition: transform var(--transition);
+}
+
+.faq-item--open .faq-item__question svg {
+  transform: rotate(180deg);
+}
+
+.faq-item__answer {
+  max-width: 760px;
+  padding: 0 44px 24px 0;
+  color: var(--gray);
+  line-height: 1.8;
+}
+
+.soro-section {
+  background: rgba(255, 255, 255, 0.015);
+  border-top: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.soro-section .section-header {
+  margin-bottom: 40px;
+}
+
+.soro-gallery .soro-blog-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.soro-gallery .soro-blog-list > * {
+  min-width: 0;
+  width: auto !important;
+}
+
+.soro-gallery .soro-blog-card {
+  display: flex !important;
+  flex-direction: column;
+  gap: 0;
+  min-height: 100%;
+  overflow: hidden;
+  color: var(--white) !important;
+  background: rgba(7, 11, 17, 0.88) !important;
+  border: 1px solid var(--border) !important;
+  border-radius: 8px !important;
+  text-decoration: none;
+}
+
+.soro-gallery .soro-blog-card-image {
+  width: 100% !important;
+  height: 172px !important;
+  flex: 0 0 172px;
+  object-fit: cover;
+}
+
+.soro-gallery .soro-blog-card-content {
+  width: 100% !important;
+  padding: 18px !important;
+}
+
+.soro-gallery .soro-blog-card h2,
+.soro-gallery .soro-blog-card h3 {
+  margin: 0 0 10px !important;
+  color: var(--white) !important;
+  font: 700 17px/1.35 var(--font-display) !important;
+  letter-spacing: 0 !important;
+}
+
+.soro-gallery .soro-blog-card p {
+  display: -webkit-box;
+  margin: 0 0 14px !important;
+  overflow: hidden;
+  color: var(--silver) !important;
+  font-size: 13px !important;
+  line-height: 1.65 !important;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+
+.soro-gallery .soro-blog-card time {
+  display: block;
+  color: var(--accent) !important;
+  font-size: 12px !important;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.soro-gallery .soro-blog-list > :nth-child(n + 7) {
+  display: none !important;
+}
+
+@media (max-width: 900px) {
+  .soro-gallery .soro-blog-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .faq-hero,
+  .faq-section {
+    padding-bottom: 44px;
+  }
+
+  .faq-item__question {
+    font-size: 15px;
+    padding: 18px 0;
+  }
+
+  .faq-item__answer {
+    padding-right: 0;
+  }
+
+  .soro-gallery .soro-blog-list {
+    grid-template-columns: 1fr;
+  }
+}

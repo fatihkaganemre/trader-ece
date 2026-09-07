@@ -1,0 +1,93 @@
+.broker-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background: rgba(2, 3, 5, 0.78);
+  backdrop-filter: blur(8px);
+}
+
+.broker-modal {
+  position: relative;
+  width: min(100%, 460px);
+  padding: 32px;
+  border: 1px solid rgba(214, 176, 106, 0.36);
+  border-radius: 8px;
+  background: #0b1017;
+  box-shadow: 0 24px 64px rgba(0, 0, 0, 0.46);
+}
+
+.broker-modal--email { width: min(100%, 680px); }
+
+.broker-modal__close {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  display: grid;
+  width: 36px;
+  height: 36px;
+  place-items: center;
+  border: 0;
+  border-radius: 6px;
+  background: transparent;
+  color: var(--silver);
+  cursor: pointer;
+}
+
+.broker-modal__close:hover { background: rgba(255, 255, 255, 0.08); color: var(--white); }
+
+.broker-modal__eyebrow {
+  margin-bottom: 6px;
+  color: var(--accent);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.broker-modal h2 { margin-bottom: 16px; font-size: 26px; line-height: 1.2; }
+
+.broker-modal__description { margin-bottom: 16px; color: var(--silver); }
+.broker-modal__description a { color: var(--gold); }
+
+.broker-modal__message {
+  max-height: min(44vh, 360px);
+  margin-bottom: 22px;
+  padding: 16px;
+  overflow: auto;
+  border: 1px solid var(--border-silver);
+  border-radius: 6px;
+  background: #06090d;
+  color: var(--silver-light);
+  font-family: var(--font-body);
+  font-size: 13px;
+  line-height: 1.65;
+  white-space: pre-wrap;
+}
+
+.broker-modal__actions { display: flex; flex-wrap: wrap; gap: 12px; }
+
+.broker-modal__warning {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin-top: 20px;
+  padding: 10px 12px;
+  border: 1px solid rgba(238, 92, 92, 0.58);
+  border-radius: 6px;
+  background: rgba(100, 21, 27, 0.48);
+  color: #ffd4d4;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.45;
+}
+
+.broker-modal__warning svg { flex: 0 0 auto; margin-top: 1px; color: #ff9898; }
+
+@media (max-width: 480px) {
+  .broker-modal-backdrop { padding: 16px; }
+  .broker-modal { padding: 28px 20px 20px; }
+  .broker-modal__actions .btn { width: 100%; justify-content: center; }
+}
